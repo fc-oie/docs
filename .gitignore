@@ -1,7 +1,7 @@
 # Ignore everything
 **
 
-# --- Always keep critical files ---
+# --- Always keep key files ---
 !**/README.md
 !**/index.html
 !.gitignore
@@ -10,20 +10,6 @@
 !**/*.html
 !**/*.pdf
 !**/*.docx
-
-# --- Keep R Markdown / Quarto source files ---
-!**/*.Rmd
-!**/*.qmd
-!**/*.Rproj
-!**/_site.yml
-!**/_quarto.yml
-
-
-# --- Keep knitted outputs and report-like documents ---
-!**/*.html
-!**/*.pdf
-!**/*.docx
-
 
 # --- Keep images and style files used in reports ---
 !**/*.png
