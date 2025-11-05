@@ -6,6 +6,9 @@ This repository serves as the public archive of institutional-research reports p
 This structure enables external stakeholders (faculty, staff, students, community) to easily locate and download key findings and analyses.
 
 ## 📁 Organization  
+
+Note: If you have a better way of organization, please let me know.
+
 The folder structure follows this convention:  
 
 ```
