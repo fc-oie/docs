@@ -1,9 +1,15 @@
 # Ignore everything
 **
 
-# -- Keep Readme ---
+# --- Always keep critical files ---
 !**/README.md
+!**/index.html
+!.gitignore
 
+# --- Keep knitted outputs and report-like documents ---
+!**/*.html
+!**/*.pdf
+!**/*.docx
 
 # --- Keep R Markdown / Quarto source files ---
 !**/*.Rmd
@@ -12,13 +18,12 @@
 !**/_site.yml
 !**/_quarto.yml
 
+
 # --- Keep knitted outputs and report-like documents ---
 !**/*.html
 !**/*.pdf
 !**/*.docx
 
-# --- Keep this gitignore file itself ---
-!.gitignore
 
 # --- Keep images and style files used in reports ---
 !**/*.png
