@@ -38,7 +38,7 @@
 </head>
 <body>
   <h1>Fullerton College Office of Institutional Effectiveness</h1>
-  <p>This compiles all<strong>Report.html</strong> files across this repository:</p>
+  <p>This compiles all <strong>Report.html</strong>, <strong>Report.pdf</strong>, and <strong>Report.docx</strong> files across this repository:</p>
   <ul id="repo-contents"></ul>
 
   <script>
@@ -46,7 +46,7 @@
     const repoName = "docs";
     const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
-    // Recursive function to search for Report.html files
+    // Recursive function to search for report files (HTML, PDF, DOCX)
     async function findReports(path = "", parentElement = null) {
       const url = apiBase + path;
       try {
@@ -60,12 +60,12 @@
           if (item.type === "dir") {
             // Recurse into subfolders
             await findReports(path + item.name + "/", ul);
-          } else if (/^report\.html$/i.test(item.name)) {
-            // Matches only Report.html (case-insensitive)
+          } else if (/^report\.(html|pdf|docx)$/i.test(item.name)) {
+            // Matches Report.html, Report.pdf, or Report.docx (case-insensitive)
             const li = document.createElement("li");
             const link = document.createElement("a");
             link.href = path + item.name;
-            link.textContent = path.replace(/\/$/, "");
+            link.textContent = path.replace(/\/$/, "") + " → " + item.name;
             li.appendChild(link);
             ul.appendChild(li);
           }
