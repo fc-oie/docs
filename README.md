@@ -8,15 +8,18 @@ This structure enables external stakeholders (faculty, staff, students, communit
 ## 📁 Organization  
 The folder structure follows this convention:  
 
-├─ <Topic>/
-│ ├─ <Year>/
-│ │ ├─ Report.html
-│ │ ├─ Report.pdf
-│ │ └─ …
-│ └─ <Year2>/
-│ └─ …
-└─ <AnotherTopic>/
-└─ …
+├─ RealCollegeCA/
+│   ├─ 2023/
+│   │   ├─ Report.html
+│   │   ├─ Report.pdf
+│   └─ 2025/
+│       ├─ Report.html
+│       └─ Report.pdf
+└─ StudentSuccess/
+    └─ 2024/
+        ├─ Report.html
+        └─ Report.pdf
+
 
 Files named "report.html", "report.pdf", or "report.docx" will be automatically indexed. No other files will be indexed.
 
