@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fullerton College OIE Reports</title>
+  <style>
+    body {
+      font-family: "Century Gothic", Arial, sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #0F406B;
+      border-bottom: 2px solid #0F406B;
+      padding-bottom: 0.3em;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 1em;
+    }
+    li {
+      margin: 0.3em 0;
+    }
+    a {
+      color: #0F406B;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .folder {
+      font-weight: bold;
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fullerton College Office of Institutional Effectiveness</h1>
+  <p>Browse available <strong>Report.html</strong> files across all folders:</p>
+  <ul id="repo-contents"></ul>
+
+  <script>
+    const repoOwner = "fc-oie";
+    const repoName = "docs";
+    const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
+
+    // Recursive function to search for Report.html files
+    async function findReports(path = "", parentElement = null) {
+      const url = apiBase + path;
+      try {
+        const response = await fetch(url);
+        const items = await response.json();
+        if (!Array.isArray(items)) return;
+
+        const ul = document.createElement("ul");
+
+        for (const item of items) {
+          if (item.type === "dir") {
+            // Recurse into subfolders
+            await findReports(path + item.name + "/", ul);
+          } else if (/^report\.html$/i.test(item.name)) {
+            // Matches only Report.html (case-insensitive)
+            const li = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = path + item.name;
+            link.textContent = path.replace(/\/$/, "");
+            li.appendChild(link);
+            ul.appendChild(li);
+          }
+        }
+
+        if (ul.children.length > 0) {
+          if (parentElement) parentElement.appendChild(ul);
+          else document.getElementById("repo-contents").appendChild(ul);
+        }
+      } catch (err) {
+        console.error("Error loading contents:", err);
+      }
+    }
+
+    findReports();
+  </script>
+</body>
+</html>
