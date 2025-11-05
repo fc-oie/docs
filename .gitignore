@@ -1,6 +1,10 @@
 # Ignore everything
 **
 
+# -- Keep Readme ---
+!**/README.md
+
+
 # --- Keep R Markdown / Quarto source files ---
 !**/*.Rmd
 !**/*.qmd
