@@ -8,6 +8,7 @@ This structure enables external stakeholders (faculty, staff, students, communit
 ## 📁 Organization  
 The folder structure follows this convention:  
 
+```
 ├─ RealCollegeCA/
 │   ├─ 2023/
 │   │   ├─ Report.html
@@ -19,7 +20,7 @@ The folder structure follows this convention:
     └─ 2024/
         ├─ Report.html
         └─ Report.pdf
-
+```
 
 Files named "report.html", "report.pdf", or "report.docx" will be automatically indexed. No other files will be indexed.
 
