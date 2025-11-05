@@ -1,0 +1,38 @@
+# Ignore everything
+**
+
+# --- Keep R Markdown / Quarto source files ---
+!**/*.Rmd
+!**/*.qmd
+!**/*.Rproj
+!**/_site.yml
+!**/_quarto.yml
+
+# --- Keep knitted outputs and report-like documents ---
+!**/*.html
+!**/*.pdf
+!**/*.docx
+
+# --- Keep this gitignore file itself ---
+!.gitignore
+
+# --- Keep images and style files used in reports ---
+!**/*.png
+!**/*.jpg
+!**/*.jpeg
+!**/*.svg
+!**/*.css
+!**/*.js
+!**/*.yml
+
+# --- Ignore cache and temporary render files ---
+**/*_cache/
+**/cache/
+**/*.utf8.md
+**/*.knit.md
+**/.Rhistory
+**/.RData
+**/.Rproj.user/
+**/.Ruserdata
+**/.DS_Store
+**/Thumbs.db
