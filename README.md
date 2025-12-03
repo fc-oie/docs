@@ -16,6 +16,9 @@ The folder structure follows this convention:
 │   ├─ 2023/
 │   │   ├─ Report.html
 │   │   ├─ Report.pdf
+│   │   ├─ SubReport1.html
+│   │   ├─ SubReport2.html
+|   |   └─ SubReport3.html
 │   └─ 2025/
 │       ├─ Report.html
 │       └─ Report.pdf
@@ -25,7 +28,7 @@ The folder structure follows this convention:
         └─ Report.pdf
 ```
 
-Files named "report.html", "report.pdf", or "report.docx" will be automatically indexed. No other files will be indexed.
+Files named "report.html", "report.pdf", or "report.docx" will be automatically indexed. No other files will be indexed (e.g., SubReport1.html).
 
 - **Topic**: e.g., RealCollegeCA, StudentSuccess, EnrollmentTrends  
 - **Year**:  e.g., 2023, 2024, 2025  
