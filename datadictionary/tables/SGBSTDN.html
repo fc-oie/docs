@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SGBSTDN – Fullerton College Banner Data Dictionary</title>
+<title>sgbstdn – Fullerton College Banner Data Dictionary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,13 +39,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5d2e30ad26079c1dae90a1fd11eba2b9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,77 +69,797 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.scss">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Fullerton College Banner Data Dictionary</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../tables/"> 
-<span class="menu-text">Tables</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../tags.qmd"> 
-<span class="menu-text">Tags</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fullerton College Banner Data Dictionary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tables</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">tables/*.qmd</span>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link active" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">SGBSTDN</h1>
+
+
+
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SGBSTDN</caption>
+<colgroup>
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 74%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">This field identifies the internal identification number of student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_EFF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field identifies the effective term associated with student record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_STST_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies the students status for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_LEVL_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies the level of the student for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_STYP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies the student type for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_MATRIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field identifies the effective term of matriculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_ADMIT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field identifies the term student was first admitted to institution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_EXP_GRAD_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field identifies expected graduation date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CAMP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">This field identifies the campus location associated with the student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_FULL_PART_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies whether the student is a full or part-time student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_SESS_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies the session student is attending for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_RESD_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies the residency status of the student for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_COLL_CODE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies the college associated with the primary curriculum for the effective term..</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DEGC_CODE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field identifies the degree within the primary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the primary major within the primary curriculum for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_MINR_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the primary minor within the primary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_MINR_1_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the secondary minor of the student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the primary concentration within the primary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_1_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the secondary concentration within the primary curriculum for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_1_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the third concentration within the primary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_COLL_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies the college within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DEGC_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field identifies the degree within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the primary major within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_MINR_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the primary minor within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_MINR_2_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the secondary minor within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the primary concentration within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_2_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the secondary concentration within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_2_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the third concentration within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_ORSN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies the orientation session assigned to the student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_PRAC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies the practical training experience of the student for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_ADVR_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">This field identifies the internal identification number for the advisor assigned to the student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_GRAD_CREDIT_APPR_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies eligibility of student to take graduate courses for credit for the effective term. Valid values are Y or blank only.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CAPL_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies career plan of the student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_LEAV_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies reason of leave of absence of student for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_LEAV_FROM_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field identifies the begin date of leave of absence of student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_LEAV_TO_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field identifies the end date of leave of absence of student for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_ASTD_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies the academic standing override for a student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_ASTD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field identifies the term associated with the academic standing override.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_RATE_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">This field identifies a specific assessment rate of the student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field identifies the most current date record was created or updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_1_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the secondary major within the primary curriculum for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_2_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">This field identifies the secondary major within the secondary curriculum for the effective term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_EDLV_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">A two position alphanumeric field which indicate the highest level of the education that the student completed</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_INCM_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">A two position alphanumeric field which indicate the income range of the student</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_ADMT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Admissions type from the admissions application</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_EMEX_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">General Student Employment Expectation Code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_APRN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">General Student Apprenticeship Code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_TRCN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">General Student Transfer Center Code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_GAIN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field identifies the employment and training code of the student for the effective term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_VOED_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">General Student Vocation Eduaction Status Code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_BLCK_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Block Schedule Code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_GRAD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Term student intends to graduate.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_ACYR_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Year student intends to graduate.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DEPT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Department Code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_SITE_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Site Code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DEPT_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Department Code for second curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_EGOL_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Educational Goal code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DEGC_CODE_DUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_LEVL_CODE_DUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DEPT_CODE_DUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_COLL_CODE_DUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_DUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_BSKL_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Student Basic Skills Code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_PRIM_ROLL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether the Primary Curriculum should be Rolled to Academic History</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_PROGRAM_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">Curriculum 1 Program Code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_CTLG_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Curriculum 1 Catalog Term Code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_DEPT_CODE_1_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Curriculum 1 - Department 2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_121</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Concentration Code 1 on Second Major of First Curriculum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_122</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Concentration Code 2 on Second Major on First Curriculum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_123</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Concentration Code 3 on Second Major on First Curriculum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_SECD_ROLL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether the Secondary Curriculum should be Rolled to Academic History</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_ADMIT_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Admission Term Code associated with the Secondary Curriculum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_ADMT_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Admissions Type Code associated with the Secondary Curriculum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_PROGRAM_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">Curriculum 2 Program Code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_CTLG_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Curriculum 2 Catalog Term Code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_LEVL_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Curriculum 2 Level Code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CAMP_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Curriculum 2 Campus Code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DEPT_CODE_2_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Curriculum 2 - Department 2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_221</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Concentration 1 on Second Major of Second Curriculum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_222</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Concentration 2 on Second Major of Second Curriculum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_MAJR_CODE_CONC_223</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Concentration 3 on Second Major of Second Curriculum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CURR_RULE_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Curriculum 1 Rule reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CMJR_RULE_1_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Curriculum 1 Major 1 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_11_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 1, Major 1, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_11_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 2, Major 1, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_11_3</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 3, Major 1, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CMJR_RULE_1_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Major 2, Curriculum Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_12_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 1, Major 2, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_12_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 2, Major 2, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_12_3</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 3, Major 2, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CMNR_RULE_1_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Minor 1, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CMNR_RULE_1_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Minor 2, Curriculum 1 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CURR_RULE_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CMJR_RULE_2_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Major 1, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_21_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 1, Major 1, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_21_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 2, Major 1, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_21_3</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 3, Major 1, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CMJR_RULE_2_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Major 2, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_22_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 1, Major 2, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_22_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 2, Major 2, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CCON_RULE_22_3</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Concentration 3, Major 2, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CMNR_RULE_2_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Minor 1, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_CMNR_RULE_2_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Minor 2, Curriculum 2 Rule Reference</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_PREV_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">General Student record Progress Evaluation code. This code overrides the code in SHRTTRM.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_PREV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">General Student record Progress Evaluation term. This is the term for which the progress evaluation code override becomes effective.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_CAST_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">General Student record Combined Academic Standing code. This code overrides the code in SHRTTRM.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_TERM_CODE_CAST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">General Student record Combined Academic Standing term. This is the term for which the combined academic standing code override becomes effective.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA SOURCE: Source system that created or updated the row</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The most recent user to create or update a record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_SCPC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">STUDENT CENTRIC PERIOD CYCLE CODE: Cycle Code for the student centric period.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBSTDN_GUID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">144</td>
+<td style="text-align: left;">GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.</td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><strong>Other</strong></p>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>{&lt; include table-template.qmd &gt;}</p>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

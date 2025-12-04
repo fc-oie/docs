@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RORSTAT – Fullerton College Banner Data Dictionary</title>
+<title>rorstat – Fullerton College Banner Data Dictionary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,13 +39,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5d2e30ad26079c1dae90a1fd11eba2b9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,77 +69,755 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.scss">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Fullerton College Banner Data Dictionary</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../tables/"> 
-<span class="menu-text">Tables</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../tags.qmd"> 
-<span class="menu-text">Tags</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fullerton College Banner Data Dictionary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tables</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">tables/*.qmd</span>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link active" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">RORSTAT</h1>
+
+
+
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RORSTAT</caption>
+<colgroup>
+<col style="width: 7%">
+<col style="width: 2%">
+<col style="width: 3%">
+<col style="width: 86%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year associated with information in this record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOCK INDICATOR: Indicates whether the applicant’s Need Analysis record is locked.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PGRP_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PACKAGE LOCK INDICATOR: Indicates whether the applicant’s award package is locked.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_BGRP_PROC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BUDGET GROUP PROCESSING INDICATOR: Indicates whether the applicant is waiting for batch budget group assignment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PGRP_PROC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PACKAGING GROUP PROCESSING INDICATOR: Indicates whether the applicant is waiting for batch packaging group assignment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_TGRP_PROC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TRACKING GROUP PROCESSING INDICATOR: Indicates whether the applicant is waiting for batch tracking group assignment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PCKG_FUND_PROC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PACKAGING PROCESSING INDICATOR: Indicates whether the applicant is waiting for batch packaging.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_VER_COMPLETE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VERIFICATION COMPLETE: Indicates whether verification has been completed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information in this record was entered or last updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_VER_PAY_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VERIFICATION STATUS CODE: The code assigned as the applicant’s verification status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_BGRP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">BUDGET GROUP: The budget group assigned to the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_APRD_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">AID PERIOD CODE: The aid period assigned to the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PGRP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PACKAGING GROUP CODE: The packaging group assigned to the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_TGRP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">TRACKING GROUP CODE: The tracking group assigned to the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_RECALC_NA_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECALCULATE NEED ANALYSIS INDICATOR: Indicates whether the applicant is waiting for batch need analysis.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CONTRIBUTION: The parent’s contribution toward educational expenses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_SC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT CONTRIBUTION: The student’s contribution toward educational expenses.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_APPL_RCVD_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">APPLICATION RECEIVED DATE: The date on which the applicant’s financial aid application was received, processed or created, depending on the institutional option.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PCKG_FUND_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PACKAGE FUND DATE: The date packaging was last performed for the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_NEED_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">NEED ANALYSIS DATE: The date the last need analysis calculation was performed for the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PCKG_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PACKAGING COMPLETE DATE: The date the financial aid package was completed for the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_ALL_REQ_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ALL REQUIREMENTS COMPLETE DATE: The date all tracking requirements were satisfied for the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_MEMO_REQ_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">MEMO REQUIREMENTS COMPLETE DATE: The date all tracking requirements which are required to memo were satisfied for the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PCKG_REQ_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PACKAGING REQUIREMENTS COMPLETE DATE: The date all tracking requirements which are required for packaging were satisfied for the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_DISB_REQ_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DISBURSEMENT REQUIREMENTS COMPLETE DATE: The date all tracking requirements which are required for disbursement were satisfied for the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PELL_SCHED_AWD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL SCHEDULED AWARD: The scheduled Pell grant award for the aid year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PRI_SAR_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PRIMARY SAR EFC: The primary SAR expected family contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_SEC_SAR_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SECONDARY SAR EFC: The secondary SAR expected family contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_SAR_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">SAR COMPLETED DATE: The date the SAR was complete and ready for payment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_SAR_TRAN_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">SAR TRANSACTION NUMBER: The SAR transaction number portion of the SAR identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_SAR_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">SAR SOCIAL SECURITY NUMBER: The original SAR social security number portion of the SAR identification number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_SAR_INIT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">SAR INITIALS: The first two characters of the last name portion of the SAR identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_CM_SC_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FM STUDENT CONTRIBUTION LOCK INDICATOR: Indicates whether the federal methodology student contribution is locked.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_CM_PC_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FM PARENT CONTRIBUTION LOCK INDICATOR: Indicates whether the federal methodology parent contribution is locked.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_CM_TFC_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FM EXPECTED FAMILY CONTRIBUTION LOCK INDICATOR: Indicates whether the federal methodology expected family contribution is locked.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PGI_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL EXPECTED FAMILY CONTRIBUTION LOCK INDICATOR: Indicates whether the primary Pell expected family contribution is locked.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_INST_SC_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM STUDENT CONTRIBUTION LOCK INDICATOR: Indicates whether the institutional methodology student contribution is locked.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_INST_PC_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM PARENT CONTRIBUTION LOCK INDICATOR: Indicates whether the institutional methodology parent contribution is locked.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_GRS_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GROSS NEED: The applicant’s gross need.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_UNMET_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">UNMET NEED: The applicant’s unmet need.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_TFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED FAMILY CONTRIBUTION: The applicant’s expected family contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_AWD_LTR_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AWARD LETTER INDICATOR: Indicates whether an award letter should be generated for the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_RESOURCE_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">RESOURCE AMOUNT: The total amount of the applicant’s outside resources.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_RESOURCE_ACT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">RESOURCE ACTIVITY DATE: The date the resource amount was last updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_TRK_LTR_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TRACKING LETTER INDICATOR: Indicates whether a tracking letter should be generated for the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_IM_GRS_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM GROSS NEED: The applicant’s gross need calculated using the institutional methodology.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_IM_UNMET_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM UNMET NEED: The applicant’s unmet need calculated using the institutional methodology.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_IM_TFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM EXPECTED FAMILY CONTRIBUTION: The applicant’s expected family contribution calculated using the institutional methodology.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_ADDL_STFD_ELIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDITIONAL STAFFORD ELIGIBILITY INDICATOR: Indicates if an applicant is eligible for additional Stafford awards.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_IM_LOCK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM LOCK INDICATOR: Indicates whether the IM data is locked from any type of update.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_FM_BATCH_LOCK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FM BATCH LOCK INDICATOR: Indicates whether the federal methodology data is locked from any updating by the batch data load process.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_IM_BATCH_LOCK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM BATCH LOCK INDICATOR: Indicates whether the institutional methodology data is locked from any updating by the batch data load process.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_NSLDS_OVRD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NSLDS OVERRIDE: Indicates which validation tests the Packaging/Disbursement processes should override.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_FORMER_HEAL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HEALTH PROFESSION PROGRAMS AMOUNT INDICATOR: Indicates whether this applicant qualifies for additional Stafford Unsubsidized loans up to the HPPA limits.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PELL_LT_HALF_COA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL LESS THAN HALF TIME COA: The applicant’s Pell cost of attendance if enrolled for less than half time.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_INFO_ACCESS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INFORMATION ACCESS INDICATOR: Indicates if award information for this applicant may be accessed via Voice Response, Banner Self-Service and similar methods. This indicator is used in conjunction with the Info Access Indicator Rule column in the Web Rule</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">s table.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_BORROWER_BASED_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BORROWER BASED CODE: Indicates whether the applicant’s loans are processed using a borrower-based academic year rather than the standard award year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PELL_ORIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CREATE PELL ORIGINATION INDICATOR: Indicates whether an updated Pell Origination Record is to be created automatically.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PELL_DISB_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL DISBURSEMENT LOCK INDICATOR: Indicates that all disbursement activity for Pell is prevented due to COD Disbursement Reference numbers 91 - 99.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_POST_BA_PELL_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">POST BA PELL OVERRIDE INDICATOR: Indicates if a post Bachelor degree applicant can receive Pell grant funds.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">INTERFACE DATA CODE: The source code of the applicant’s financial aid application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_ALTERNATE_PELL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ALTERNATE PELL SCHEDULES INDICATOR: No longer used after the 2007-2008 aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PELL_ATTEND_COST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL COST OF ATTENDANCE: The Cost of Attendance for the student derived from the sum of budget components for the Pell budget type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_LOW_TUITION_COST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LOW TUITION AND FEES COST FOR PELL: No longer used after the 2007-2008 aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_SUB_LOAN_EXCL_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SUBSIDIZED LOAN AMOUNT TO BE EXCLUDED: The amount of the resource that should be excluded when determining eligibility for a subsidized loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_TGRP_CODE_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TRACKING GROUP LOCK: Identifies if the requirements tracking group code is locked preventing further updates.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_BGRP_CODE_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BUDGET GROUP LOCK: Identifies if the budget group code is locked preventing further updates.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PGRP_CODE_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PACKAGING GROUP LOCK: Identifies if the packaging group code is locked preventing further updates.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_TRK_LTR_IND_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">TRACKING LETTER FLAG INDICATOR CHANGE DATE: The date of the most recent change to the tracking letter flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_TURN_OFF_PELL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INDICATOR TO TURN OFF PELL PROCESS: Indicates if the Pell process should be prevented from automatically running for the applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_VER_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID OF PERSON UPDATING VERIFICATION COMPLETE FLAG: The User ID of the person updating the Verification Complete Indicator.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_VER_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DATE VERIFICATION COMPLETE WAS UPDATED: The date the Verification Complete Flag was updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: The latest source for the data contained in this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_PREP_OR_TEACH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PREPARATORY OR TEACHER CERTIFICATION COURSEWORK INDICATOR: Indicates if specific loan limits should be applied due to enrollment in preparatory coursework required prior to enrolling in an undergraduate degree or certificate program or a graduate or prof</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">essional program, or due to coursework necessary for teacher certification.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_ACG_DISB_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACG DISBURSEMENT LOCK INDICATOR: Indicates that all disbursement activity for ACG is prevented due to a COD Negative Disbursement record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_SMART_DISB_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SMART DISBURSEMENT LOCK INDICATOR: Indicates that all disbursement activity for SMART is prevented due to a COD Negative Disbursement record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_AUTO_ZERO_EFC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AUTO ZERO EFC INDICATOR: Indicates that the qualifying criteria for Auto Zero EFC were met.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_ADDL_PELL_ELIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">PELL ADDITIONAL ELIGIBILITY INDICATOR: Indicates if the student is receiving a second Pell award for the aid year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_DEP_NO_PAR_DATA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">DEPENDENT WITHOUT PARENT DATA: Indicates if the dependent student is eligible for unsubsidized Stafford even though parent data has not been submitted on the FAFSA.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_APRD_CODE_PELL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">PELL AID PERIOD: The aid period to be used for Pell grants.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_POST_911_PELL_ELIG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">POST 9/11 PELL ELIGIBILITY INDICATOR: Indicates if student qualifies for full Pell eligibility due to a parent or guardian who died as a result of military service in Iraq or Afghanistan after September 11, 2001 (includes IASG).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_PBUD_INFO_ACCESS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PERIOD BUDGET INFORMATION ACCESS INDICATOR: Indicates whether period budget information for this applicant can be accessed via Banner Self Service and similar methods.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_HIGH_PELL_LEU_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HIGH PELL LEU FLAG: Indicates if the student has a high Pell LEU that reduces or eliminates their Pell eligibility for the aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_SS_INFO_ACCESS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SHOPPING SHEET INFORMATION ACCESS INDICATOR: Indicates whether the shopping sheet link(s) will appear for the student in self-service.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_XES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EXPECTED ENROLLMENT STATUS: The student’s expected enrollment status for the aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_XES_ALGO_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">EXPECTED ENROLLMENT STATUS RULE CODE: The algorithmic rule code used to calculate the expected enrollment status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_XES_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED ENROLLMENT STATUS RULE SEQUENCE NUMBER: The sequence number of the rule code used to calculate the expected enrollment status.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_XES_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EXPECTED ENROLLMENT STATUS LOCK: Identifies if the expected enrollment status is locked preventing further updates.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_APRD_ALGO_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">AID PERIOD RULE CODE: The algorithmic rule code used to calculate the aid period code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_APRD_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AID PERIOD RULE SEQUENCE NUMBER: The sequence number of the rule code used to calculate the aid period code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_APRD_ALGO_CODE_PELL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">PELL AID PERIOD RULE CODE: The algorithmic rule code used to calculate the Pell aid period code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_APRD_SEQ_NO_PELL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL AID PERIOD RULE SEQUENCE NUMBER: The sequence number of the rule code used to calculate the Pell aid period code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_RECALC_IM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECALCULATE IM NEED ANAYLSIS INDICATOR: Indicates whether the applicant is waiting for batch IM need analysis.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_IM_NEED_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">IM NEED ANALYSIS DATE: The date the last IM need analysis calculation was performed for the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_OVRDE_SAYR_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">OVERRIDE SAY CODE: The SAY Code to be used for loan origination instead of the SAY Code associated with the student.s aid period.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_OVRDE_SAYR_ALGO_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">OVERRIDE SAY RULE CODE: The algorithmic rule code used to calculate the SAY code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_OVRDE_SAYR_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OVERRIDE SAY RULE SEQUENCE NUMBER: The sequence number of the rule code used to calculate the SAY code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_CFH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CHILDREN OF FALLEN HEROES ELIGIBILITY INDICATOR: Indicates if the student is eligible for an increased Pell award under Children of Fallen Heroes Scholarship Act(CFH).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RORSTAT_NSUM_FED_GUID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">144</td>
+<td style="text-align: left;">NSUM FED GUID: Global Unique Identifier to uniquely identify the Federal record for integration.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT_NSUM_INST_GUID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">144</td>
+<td style="text-align: left;">NSUM INST GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.</td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><strong>FinancialAid</strong></p>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>{&lt; include table-template.qmd &gt;}</p>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

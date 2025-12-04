@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SPBPERS – Fullerton College Banner Data Dictionary</title>
+<title>spbpers – Fullerton College Banner Data Dictionary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,13 +39,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5d2e30ad26079c1dae90a1fd11eba2b9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,77 +69,431 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.scss">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Fullerton College Banner Data Dictionary</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../tables/"> 
-<span class="menu-text">Tables</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../tags.qmd"> 
-<span class="menu-text">Tags</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fullerton College Banner Data Dictionary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tables</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">tables/*.qmd</span>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link active" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">SPBPERS</h1>
+
+
+
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SPBPERS</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 81%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Internal Identification Number of Person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">This field maintains person social security number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field maintains person birth date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_LGCY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field maintains legacy code associated with person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_ETHN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ETHNIC CODE: This field identifies the ethnic code referenced on the General Person Form (SPAPERS) and by the Source/Base Institution Year Form (SOABGIY). The code is mapped to other codes which are required</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">for government reporting.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_MRTL_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MARITAL CODE: Marital status of person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_RELG_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">This field maintains religious affiliation associated with person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_SEX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field maintains the sex of person. Valid values are: M - Male, F - Female, N - Unknown.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_CONFID_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field identifies if a person record is confidential Valid value is: Y - confidential.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_DEAD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates if a person is deceased. Valid value is: Y - deceased.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_VETC_FILE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">This field maintains veteran identification number associated with person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_LEGAL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">This field maintains legal name associated with person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_PREF_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">This field maintains the preferred first name associated with person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_NAME_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">This field maintains the prefix (Mr, Mrs, etc) used before person name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_NAME_SUFFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">This field maintains the suffix (Jr, Sr, etc) used after person name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field defines the most current date a record is added or changed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_VERA_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Veteran Category. (NULL) Not a Veteran, (B) Protected veteran choosing not to self-identify the classification, (O) Active Wartime or Campaign Badge Veteran, (V) Not a Protected Veteran</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_CITZ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Citizen Indicator.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_DEAD_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Person Deceased Date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_PIN</td>
+<td style="text-align: left;">RAW</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Person Identification Number. This column is obsolete, now gobtpac_pin</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_CITZ_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Person Citizen Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_HAIR_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">The hair color of the person being defined.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_EYES_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">The eye color of the person being defined.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_CITY_BIRTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">The city where the person was born.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_STAT_CODE_BIRTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">The state in which the person was born.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_DRIVER_LICENSE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">The Driver License Number as it appears on the actual license.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_STAT_CODE_DRIVER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">The State code describing the state the driver license was issued.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_NATN_CODE_DRIVER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">The Nation code associated with the Nation the Driver license was issued.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_UOMS_CODE_HEIGHT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">The Unit of Measure describing the height value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_HEIGHT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">The number value describing the height of the person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_UOMS_CODE_WEIGHT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">The Unit of Measure describing the weight value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_WEIGHT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">The number value describing the weight of the person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_SDVET_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicator to identify an individual as a special disabled veteran.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_LICENSE_ISSUED_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">The issue date of the individuals driver license.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_LICENSE_EXPIRES_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">The expiration date of the individuals driver license.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_INCAR_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">The indication of the individuals incarceration.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_WEBID</td>
+<td style="text-align: left;">RAW</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Web identification session token is now obsolete.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_WEB_LAST_ACCESS</td>
+<td style="text-align: left;">RAW</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Web last access time stamp is now obsolete.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_PIN_DISABLED_IND</td>
+<td style="text-align: left;">RAW</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Indicates whether or not the PIN number is disabled. This column is obsolete, now gobtpac_pin_disabled_ind</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_ITIN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">The international tax id number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_ACTIVE_DUTY_SEPR_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Active Duty Separation Date: The Date that the person was separated from active duty.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the row</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: User who inserted or last update the data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_ETHN_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ETHNIC CODE: This field identifies the ethnic code defined by the U.S. government. The valid values are 1 - Not Hispanic or Latino, 2 - Hispanic or Latino, or null.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_CONFIRMED_RE_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RACE AND ETHNICITY CONFIRMED: This field identifies the race and ethnicity has been confirmed. Valid values are (Y)es, (N)o and Null.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_CONFIRMED_RE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">RACE AND ETHNICITY CONFIRMED DATE: This field identifies when the race and ethnicity has been confirmed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_ARMED_SERV_MED_VET_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ARMED FORCES SERVICE MEDAL INDICATOR: Armed Forces Service Medal Indicator. Valid values are (Y)es, (N)o. Default value is N.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPBPERS_GNDR_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">GNDR CODE: This field identifies the gender identity of the person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS_PPRN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">PPRN CODE: This field identifies the personal pronoun of the person.</td>
+</tr>
+</tbody>
+</table>
 </div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><strong>Demographics</strong></p>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>{&lt; include table-template.qmd &gt;}</p>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
