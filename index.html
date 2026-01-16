@@ -48,10 +48,8 @@
   <h1>Fullerton College Office of Institutional Effectiveness</h1>
 
   <p>
-    Maybe this compiles all <strong>Report.html</strong>,
-    <strong>Report.pdf</strong>,
-    <strong>Report.docx</strong>, and
-    <strong>index.html</strong> files across this repository:
+    This compiles all <strong>index.html</strong> and
+    <strong>report.*</strong> files across the repository.
   </p>
 
   <ul id="repo-contents"></ul>
@@ -61,32 +59,26 @@
     const repoName = "docs";
     const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
-    async function findReports(path = "", parentElement) {
+    async function walkRepo(path, container) {
       const response = await fetch(apiBase + path);
       const items = await response.json();
       if (!Array.isArray(items)) return;
-
-      let sectionUl = document.createElement("ul");
-      let hasContent = false;
 
       for (const item of items) {
         if (item.type === "dir") {
           const folderLi = document.createElement("li");
           folderLi.className = "folder";
-          folderLi.textContent = path + item.name;
+          folderLi.textContent = item.name;
 
-          const childUl = document.createElement("ul");
-          await findReports(path + item.name + "/", childUl);
+          const subUl = document.createElement("ul");
+          folderLi.appendChild(subUl);
+          container.appendChild(folderLi);
 
-          if (childUl.children.length > 0) {
-            folderLi.appendChild(childUl);
-            sectionUl.appendChild(folderLi);
-            hasContent = true;
-          }
+          await walkRepo(path + item.name + "/", subUl);
 
         } else if (
-          /^report\.(html|pdf|docx)$/i.test(item.name) ||
-          /^index\.html$/i.test(item.name)
+          /^index\.html$/i.test(item.name) ||
+          /^report\.(html|pdf|docx)$/i.test(item.name)
         ) {
           const li = document.createElement("li");
           const link = document.createElement("a");
@@ -95,17 +87,12 @@
           link.textContent = item.name;
 
           li.appendChild(link);
-          sectionUl.appendChild(li);
-          hasContent = true;
+          container.appendChild(li);
         }
-      }
-
-      if (hasContent) {
-        parentElement.appendChild(sectionUl);
       }
     }
 
-    findReports("", document.getElementById("repo-contents"));
+    walkRepo("", document.getElementById("repo-contents"));
   </script>
 </body>
 </html>
