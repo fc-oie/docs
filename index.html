@@ -58,7 +58,7 @@
   <script>
     const repoOwner = "fc-oie";
     const repoName = "docs";
-    const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
+    const apiBase = https://api.github.com/repos/${repoOwner}/${repoName}/contents/;
 
     // Recursive function to search for report files (HTML, PDF, DOCX)
     async function findReports(path = "", parentElement = null) {
@@ -75,7 +75,6 @@
           if (item.type === "dir") {
             // Recurse into subfolders
             await findReports(path + item.name + "/", ul);
-
           } else if (/^report\.(html|pdf|docx)$/i.test(item.name)) {
             // Matches Report.html, Report.pdf, or Report.docx (case-insensitive)
             const li = document.createElement("li");
@@ -97,7 +96,6 @@
             document.getElementById("repo-contents").appendChild(ul);
           }
         }
-
       } catch (err) {
         console.error("Error loading contents:", err);
       }
