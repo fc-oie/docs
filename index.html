@@ -74,7 +74,7 @@
           folderLi.appendChild(subUl);
           container.appendChild(folderLi);
 
-          await walkRepo(path + item.name + "/", subUl);
+          await walkRepo(item.path + "/", subUl);
 
         } else if (
           /^index\.html$/i.test(item.name) ||
@@ -83,7 +83,7 @@
           const li = document.createElement("li");
           const link = document.createElement("a");
 
-          link.href = path + item.name;
+          link.href = item.path;   // ✅ THIS IS THE FIX
           link.textContent = item.name;
 
           li.appendChild(link);
