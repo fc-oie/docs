@@ -75,6 +75,7 @@
           if (item.type === "dir") {
             // Recurse into subfolders
             await findReports(path + item.name + "/", ul);
+<<<<<<< HEAD
           } else if (/^report\.(html|pdf|docx)$/i.test(item.name)) {
             // Matches Report.html, Report.pdf, or Report.docx (case-insensitive)
             const li = document.createElement("li");
@@ -84,6 +85,20 @@
             link.textContent =
               path.replace(/\/$/, "") + " → " + item.name;
 
+=======
+
+          } else if (
+            /^report\.(html|pdf|docx)$/i.test(item.name) ||
+            /^index\.html$/i.test(item.name)
+          ) {
+            const li = document.createElement("li");
+            const link = document.createElement("a");
+
+            link.href = path + item.name;
+            link.textContent =
+              path.replace(/\/$/, "") + " → " + item.name;
+
+>>>>>>> parent of 8c0fce3 (Update index.html)
             li.appendChild(link);
             ul.appendChild(li);
           }
@@ -96,6 +111,10 @@
             document.getElementById("repo-contents").appendChild(ul);
           }
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 8c0fce3 (Update index.html)
       } catch (err) {
         console.error("Error loading contents:", err);
       }
