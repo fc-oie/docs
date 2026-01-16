@@ -37,8 +37,7 @@
 <h1>Fullerton College Office of Institutional Effectiveness</h1>
 <p>
   This compiles all <strong>Report.html</strong>, <strong>Report.pdf</strong>,
-  <strong>Report.docx</strong>, and section <strong>index.html</strong> files
-  across this repository:
+  and <strong>Report.docx</strong> files across this repository:
 </p>
 
 <ul id="repo-contents"></ul>
@@ -49,8 +48,10 @@
   const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
   async function findReports(path = "", parentElement = null) {
+    const url = apiBase + path;
+
     try {
-      const response = await fetch(apiBase + path);
+      const response = await fetch(url);
       const items = await response.json();
       if (!Array.isArray(items)) return;
 
@@ -60,13 +61,7 @@
         if (item.type === "dir") {
           await findReports(path + item.name + "/", ul);
 
-        } else if (
-          /^report\.(html|pdf|docx)$/i.test(item.name) ||
-          (
-            /^index\.html$/i.test(item.name) &&
-            (path + item.name) !== "index.html"
-          )
-        ) {
+        } else if (/^report\.(html|pdf|docx)$/i.test(item.name)) {
           const li = document.createElement("li");
           const link = document.createElement("a");
 
