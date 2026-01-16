@@ -48,7 +48,7 @@
   <h1>Fullerton College Office of Institutional Effectiveness</h1>
 
   <p>
-    This compiles all <strong>index.html</strong> and
+    T2his compiles all <strong>index.html</strong> and
     <strong>report.*</strong> files across the repository.
   </p>
 
@@ -74,7 +74,8 @@
           folderLi.appendChild(subUl);
           container.appendChild(folderLi);
 
-          await walkRepo(item.path + "/", subUl);
+          // ✅ CORRECT recursion
+          await walkRepo(path + item.name + "/", subUl);
 
         } else if (
           /^index\.html$/i.test(item.name) ||
@@ -83,7 +84,8 @@
           const li = document.createElement("li");
           const link = document.createElement("a");
 
-          link.href = item.path;   // ✅ THIS IS THE FIX
+          // ✅ CORRECT Pages link
+          link.href = item.path;
           link.textContent = item.name;
 
           li.appendChild(link);
