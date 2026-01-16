@@ -18,13 +18,8 @@
       padding-bottom: 0.3em;
     }
 
-    ul {
-      list-style-type: none;
-      padding-left: 1em;
-    }
-
-    li {
-      margin: 0.3em 0;
+    .entry {
+      margin-bottom: 0.6em;
     }
 
     a {
@@ -36,11 +31,6 @@
     a:hover {
       text-decoration: underline;
     }
-
-    .folder {
-      font-weight: bold;
-      margin-top: 0.75em;
-    }
   </style>
 </head>
 
@@ -48,53 +38,70 @@
   <h1>Fullerton College Office of Institutional Effectiveness</h1>
 
   <p>
-    This compiles all <strong>index.html</strong> and
-    <strong>report.*</strong> files across the repository.
+    This lists all folders containing a <strong>report</strong> file.
   </p>
 
-  <ul id="repo-contents"></ul>
+  <div id="repo-contents"></div>
 
   <script>
     const repoOwner = "fc-oie";
     const repoName = "docs";
     const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
-    async function walkRepo(path, container) {
+    // Collect results first (data-only)
+    async function collectReports(path = "", trail = []) {
       const response = await fetch(apiBase + path);
       const items = await response.json();
-      if (!Array.isArray(items)) return;
+      if (!Array.isArray(items)) return [];
+
+      let results = [];
 
       for (const item of items) {
         if (item.type === "dir") {
-          const folderLi = document.createElement("li");
-          folderLi.className = "folder";
-          folderLi.textContent = item.name;
-
-          const subUl = document.createElement("ul");
-          folderLi.appendChild(subUl);
-          container.appendChild(folderLi);
-
-          // ✅ CORRECT recursion
-          await walkRepo(path + item.name + "/", subUl);
+          const subResults = await collectReports(
+            path + item.name + "/",
+            [...trail, item.name]
+          );
+          results = results.concat(subResults);
 
         } else if (
-          /^index\.html$/i.test(item.name) ||
           /^report\.(html|pdf|docx)$/i.test(item.name)
         ) {
-          const li = document.createElement("li");
-          const link = document.createElement("a");
-
-          // ✅ CORRECT Pages link
-          link.href = item.path;
-          link.textContent = item.name;
-
-          li.appendChild(link);
-          container.appendChild(li);
+          results.push({
+            trail: trail,
+            file: item.name,
+            path: item.path
+          });
         }
+      }
+
+      return results;
+    }
+
+    async function buildIndex() {
+      const container = document.getElementById("repo-contents");
+      const entries = await collectReports();
+
+      // Alphabetical sort by full path
+      entries.sort((a, b) =>
+        a.trail.join("/").localeCompare(b.trail.join("/"))
+      );
+
+      for (const entry of entries) {
+        const div = document.createElement("div");
+        div.className = "entry";
+
+        const link = document.createElement("a");
+        link.href = entry.path;
+        link.textContent =
+          entry.trail.join(" → ") + " → " + entry.file;
+
+        div.appendChild(link);
+        container.appendChild(div);
       }
     }
 
-    walkRepo("", document.getElementById("repo-contents"));
+    buildIndex();
   </script>
 </body>
 </html>
