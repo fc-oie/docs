@@ -39,7 +39,7 @@
 
     .folder {
       font-weight: bold;
-      margin-top: 0.5em;
+      margin-top: 0.75em;
     }
   </style>
 </head>
@@ -48,9 +48,10 @@
   <h1>Fullerton College Office of Institutional Effectiveness</h1>
 
   <p>
-    1This compiles all <strong>Report.html</strong>,
-    <strong>Report.pdf</strong>, and
-    <strong>Report.docx</strong> files across this repository:
+    Maybe this compiles all <strong>Report.html</strong>,
+    <strong>Report.pdf</strong>,
+    <strong>Report.docx</strong>, and
+    <strong>index.html</strong> files across this repository:
   </p>
 
   <ul id="repo-contents"></ul>
@@ -58,69 +59,53 @@
   <script>
     const repoOwner = "fc-oie";
     const repoName = "docs";
-    const apiBase = https://api.github.com/repos/${repoOwner}/${repoName}/contents/;
+    const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
-    // Recursive function to search for report files (HTML, PDF, DOCX)
-    async function findReports(path = "", parentElement = null) {
-      const url = apiBase + path;
+    async function findReports(path = "", parentElement) {
+      const response = await fetch(apiBase + path);
+      const items = await response.json();
+      if (!Array.isArray(items)) return;
 
-      try {
-        const response = await fetch(url);
-        const items = await response.json();
-        if (!Array.isArray(items)) return;
+      let sectionUl = document.createElement("ul");
+      let hasContent = false;
 
-        const ul = document.createElement("ul");
+      for (const item of items) {
+        if (item.type === "dir") {
+          const folderLi = document.createElement("li");
+          folderLi.className = "folder";
+          folderLi.textContent = path + item.name;
 
-        for (const item of items) {
-          if (item.type === "dir") {
-            // Recurse into subfolders
-            await findReports(path + item.name + "/", ul);
-<<<<<<< HEAD
-          } else if (/^report\.(html|pdf|docx)$/i.test(item.name)) {
-            // Matches Report.html, Report.pdf, or Report.docx (case-insensitive)
-            const li = document.createElement("li");
-            const link = document.createElement("a");
+          const childUl = document.createElement("ul");
+          await findReports(path + item.name + "/", childUl);
 
-            link.href = path + item.name;
-            link.textContent =
-              path.replace(/\/$/, "") + " → " + item.name;
-
-=======
-
-          } else if (
-            /^report\.(html|pdf|docx)$/i.test(item.name) ||
-            /^index\.html$/i.test(item.name)
-          ) {
-            const li = document.createElement("li");
-            const link = document.createElement("a");
-
-            link.href = path + item.name;
-            link.textContent =
-              path.replace(/\/$/, "") + " → " + item.name;
-
->>>>>>> parent of 8c0fce3 (Update index.html)
-            li.appendChild(link);
-            ul.appendChild(li);
+          if (childUl.children.length > 0) {
+            folderLi.appendChild(childUl);
+            sectionUl.appendChild(folderLi);
+            hasContent = true;
           }
-        }
 
-        if (ul.children.length > 0) {
-          if (parentElement) {
-            parentElement.appendChild(ul);
-          } else {
-            document.getElementById("repo-contents").appendChild(ul);
-          }
-        }
-<<<<<<< HEAD
-=======
+        } else if (
+          /^report\.(html|pdf|docx)$/i.test(item.name) ||
+          /^index\.html$/i.test(item.name)
+        ) {
+          const li = document.createElement("li");
+          const link = document.createElement("a");
 
->>>>>>> parent of 8c0fce3 (Update index.html)
-      } catch (err) {
-        console.error("Error loading contents:", err);
+          link.href = path + item.name;
+          link.textContent = item.name;
+
+          li.appendChild(link);
+          sectionUl.appendChild(li);
+          hasContent = true;
+        }
+      }
+
+      if (hasContent) {
+        parentElement.appendChild(sectionUl);
       }
     }
 
-    findReports();
+    findReports("", document.getElementById("repo-contents"));
   </script>
 </body>
 </html>
