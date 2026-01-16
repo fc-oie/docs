@@ -30,20 +30,18 @@
     a:hover {
       text-decoration: underline;
     }
-    .folder {
-      font-weight: bold;
-      margin-top: 0.5em;
-    }
   </style>
 </head>
 <body>
-  <h1>Fullerton College Office of Institutional Effectiveness</h1>
-  <p>
-    This compiles all <strong>Report.html</strong>, <strong>Report.pdf</strong>,
-    <strong>Report.docx</strong>, and <strong>index.html</strong> files across this repository:
-  </p>
 
-  <ul id="repo-contents"></ul>
+<h1>Fullerton College Office of Institutional Effectiveness</h1>
+<p>
+  This compiles all <strong>Report.html</strong>, <strong>Report.pdf</strong>,
+  <strong>Report.docx</strong>, and section <strong>index.html</strong> files
+  across this repository:
+</p>
+
+<ul id="repo-contents"></ul>
 
 <script>
   const repoOwner = "fc-oie";
@@ -51,10 +49,8 @@
   const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
   async function findReports(path = "", parentElement = null) {
-    const url = apiBase + path;
-
     try {
-      const response = await fetch(url);
+      const response = await fetch(apiBase + path);
       const items = await response.json();
       if (!Array.isArray(items)) return;
 
@@ -68,7 +64,7 @@
           /^report\.(html|pdf|docx)$/i.test(item.name) ||
           (
             /^index\.html$/i.test(item.name) &&
-            path !== ""   // prevent self-reference
+            (path + item.name) !== "index.html"
           )
         ) {
           const li = document.createElement("li");
