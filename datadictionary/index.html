@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -133,16 +168,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#define-your-subject-area-tagging-system-tags.qmd" id="toc-define-your-subject-area-tagging-system-tags.qmd" class="nav-link active" data-scroll-target="#define-your-subject-area-tagging-system-tags.qmd">🔖 <strong>Define your subject-area tagging system (<code>tags.qmd</code>)</strong></a>
   <ul class="collapse">
-  <li><a href="#markdown" id="toc-markdown" class="nav-link" data-scroll-target="#markdown">```markdown</a></li>
-  <li><a href="#title-tags-subject-areas" id="toc-title-tags-subject-areas" class="nav-link" data-scroll-target="#title-tags-subject-areas">title: “Tags (Subject Areas)”</a></li>
-  <li><a href="#enrollment" id="toc-enrollment" class="nav-link" data-scroll-target="#enrollment">Enrollment</a></li>
-  <li><a href="#modality-scheduling" id="toc-modality-scheduling" class="nav-link" data-scroll-target="#modality-scheduling">Modality &amp; Scheduling</a></li>
-  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics">Demographics</a></li>
-  <li><a href="#financial-aid" id="toc-financial-aid" class="nav-link" data-scroll-target="#financial-aid">Financial Aid</a></li>
-  <li><a href="#special-populations" id="toc-special-populations" class="nav-link" data-scroll-target="#special-populations">Special Populations</a></li>
-  <li><a href="#academic-progress" id="toc-academic-progress" class="nav-link" data-scroll-target="#academic-progress">Academic Progress</a></li>
-  <li><a href="#veterans" id="toc-veterans" class="nav-link" data-scroll-target="#veterans">Veterans</a></li>
-  <li><a href="#lookups" id="toc-lookups" class="nav-link" data-scroll-target="#lookups">Lookups</a></li>
+  <li><a href="#browse-tables-by-subject-area" id="toc-browse-tables-by-subject-area" class="nav-link" data-scroll-target="#browse-tables-by-subject-area">🔍 Browse Tables by Subject Area</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -182,49 +208,216 @@ This site documents:</p>
 <li><strong>Searchable table index</strong></li>
 </ul>
 <p>Use the sidebar to browse by table or tag.</p>
-<p>To regenerate pages, in terminal, run:</p>
-<p>quarto render</p>
 <hr>
 <section id="define-your-subject-area-tagging-system-tags.qmd" class="level1">
 <h1>🔖 <strong>Define your subject-area tagging system (<code>tags.qmd</code>)</strong></h1>
-<section id="markdown" class="level2">
-<h2 class="anchored" data-anchor-id="markdown">```markdown</h2>
-</section>
-<section id="title-tags-subject-areas" class="level2">
-<h2 class="anchored" data-anchor-id="title-tags-subject-areas">title: “Tags (Subject Areas)”</h2>
-<p>These tags organize tables by functional domain.</p>
-</section>
-<section id="enrollment" class="level2">
-<h2 class="anchored" data-anchor-id="enrollment">Enrollment</h2>
-<p><code>SV_STUDENT_CURRENT_COURSES</code>, <code>SZWACH1</code>, <code>SZWACH2</code>, <code>SV_TERM_SECTION_FTE</code></p>
-</section>
-<section id="modality-scheduling" class="level2">
-<h2 class="anchored" data-anchor-id="modality-scheduling">Modality &amp; Scheduling</h2>
-<p><code>SSBSECT</code>, <code>SSRMEET</code>, <code>SCBCRSE</code>, <code>STVDIVS</code>, <code>STVDEPT</code></p>
-</section>
-<section id="demographics" class="level2">
-<h2 class="anchored" data-anchor-id="demographics">Demographics</h2>
-<p><code>SPBPERS</code>, <code>GORRACE</code>, <code>GORPRAC</code>, <code>SVBSGPD</code>, <code>SVBSXLO</code></p>
-</section>
-<section id="financial-aid" class="level2">
-<h2 class="anchored" data-anchor-id="financial-aid">Financial Aid</h2>
-<p><code>RORSTAT</code>, <code>RPRATRM</code>, <code>RFRBASE</code></p>
-</section>
-<section id="special-populations" class="level2">
-<h2 class="anchored" data-anchor-id="special-populations">Special Populations</h2>
-<p><code>SGRCHRT</code>, <code>SVBSFYS</code>, <code>SVBPNT E</code>, <code>SVBSUST</code>, <code>SGBEOPS</code></p>
-</section>
-<section id="academic-progress" class="level2">
-<h2 class="anchored" data-anchor-id="academic-progress">Academic Progress</h2>
-<p><code>SVREDPL</code>, <code>SVRASMT</code>, <code>SVRORNT</code></p>
-</section>
-<section id="veterans" class="level2">
-<h2 class="anchored" data-anchor-id="veterans">Veterans</h2>
-<p><code>SGRVETN</code>, <code>STVVETC</code></p>
-</section>
-<section id="lookups" class="level2">
-<h2 class="anchored" data-anchor-id="lookups">Lookups</h2>
-<p><code>GTVDICD</code></p>
+<section id="browse-tables-by-subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="browse-tables-by-subject-area">🔍 Browse Tables by Subject Area</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>dict <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/Banner_Dictionary_WithColumns.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the generated tags from filenames</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>table_files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="st">"tables"</span>, <span class="at">pattern =</span> <span class="st">"*.qmd"</span>, <span class="at">full.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>tables_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">FILE   =</span> table_files,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">TABLE  =</span> <span class="fu">gsub</span>(<span class="st">".qmd"</span>, <span class="st">""</span>, table_files)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">TAG =</span> <span class="fu">sub</span>(<span class="st">".*</span><span class="sc">\\</span><span class="st">((.*)</span><span class="sc">\\</span><span class="st">)"</span>, <span class="st">"</span><span class="sc">\\</span><span class="st">1"</span>, TABLE),          <span class="co"># extract "(Tag)" from title</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">NAME =</span> <span class="fu">sub</span>(<span class="st">" </span><span class="sc">\\</span><span class="st">(.*</span><span class="sc">\\</span><span class="st">)"</span>, <span class="st">""</span>, TABLE),               <span class="co"># strip tag from table name</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">LINK =</span> <span class="fu">glue</span>(<span class="st">"[{NAME}](tables/{FILE})"</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(TAG, NAME)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>tables_df <span class="sc">|&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(TAG, LINK) <span class="sc">|&gt;</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(TAG) <span class="sc">|&gt;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">Tables =</span> <span class="fu">paste</span>(LINK, <span class="at">collapse =</span> <span class="st">"&lt;br&gt;"</span>),</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">escape =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">TAG</th>
+<th style="text-align: left;">Tables</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">GORPRAC</td>
+<td style="text-align: left;"><a href="./tables/GORPRAC.html">GORPRAC</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GORRACE</td>
+<td style="text-align: left;"><a href="./tables/GORRACE.html">GORRACE</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GTVDICD</td>
+<td style="text-align: left;"><a href="./tables/GTVDICD.html">GTVDICD</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RFRBASE</td>
+<td style="text-align: left;"><a href="./tables/RFRBASE.html">RFRBASE</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RORSTAT</td>
+<td style="text-align: left;"><a href="./tables/RORSTAT.html">RORSTAT</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRATRM</td>
+<td style="text-align: left;"><a href="./tables/RPRATRM.html">RPRATRM</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SCBCRSE</td>
+<td style="text-align: left;"><a href="./tables/SCBCRSE.html">SCBCRSE</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGBEOPS</td>
+<td style="text-align: left;"><a href="./tables/SGBEOPS.html">SGBEOPS</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGBSTDN</td>
+<td style="text-align: left;"><a href="./tables/SGBSTDN.html">SGBSTDN</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGRCHRT</td>
+<td style="text-align: left;"><a href="./tables/SGRCHRT.html">SGRCHRT</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGRSPRT</td>
+<td style="text-align: left;"><a href="./tables/SGRSPRT.html">SGRSPRT</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGRVETN</td>
+<td style="text-align: left;"><a href="./tables/SGRVETN.html">SGRVETN</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPBPERS</td>
+<td style="text-align: left;"><a href="./tables/SPBPERS.html">SPBPERS</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SSBSECT</td>
+<td style="text-align: left;"><a href="./tables/SSBSECT.html">SSBSECT</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SSRMEET</td>
+<td style="text-align: left;"><a href="./tables/SSRMEET.html">SSRMEET</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STVDEPT</td>
+<td style="text-align: left;"><a href="./tables/STVDEPT.html">STVDEPT</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">STVDIVS</td>
+<td style="text-align: left;"><a href="./tables/STVDIVS.html">STVDIVS</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">STVVETC</td>
+<td style="text-align: left;"><a href="./tables/STVVETC.html">STVVETC</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVBSFYS</td>
+<td style="text-align: left;"><a href="./tables/SVBSFYS.html">SVBSFYS</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVBSGPD</td>
+<td style="text-align: left;"><a href="./tables/SVBSGPD.html">SVBSGPD</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVBSUST</td>
+<td style="text-align: left;"><a href="./tables/SVBSUST.html">SVBSUST</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVBSXLO</td>
+<td style="text-align: left;"><a href="./tables/SVBSXLO.html">SVBSXLO</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVRASMT</td>
+<td style="text-align: left;"><a href="./tables/SVRASMT.html">SVRASMT</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVREDPL</td>
+<td style="text-align: left;"><a href="./tables/SVREDPL.html">SVREDPL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVRORNT</td>
+<td style="text-align: left;"><a href="./tables/SVRORNT.html">SVRORNT</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SV_STUDENT_CURRENT_COURSES</td>
+<td style="text-align: left;"><a href="./tables/SV_STUDENT_CURRENT_COURSES.html">SV_STUDENT_CURRENT_COURSES</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SV_TERM_SECTION_FTE</td>
+<td style="text-align: left;"><a href="./tables/SV_TERM_SECTION_FTE.html">SV_TERM_SECTION_FTE</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SZWACH1</td>
+<td style="text-align: left;"><a href="./tables/SZWACH1.html">SZWACH1</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SZWACH2</td>
+<td style="text-align: left;"><a href="./tables/SZWACH2.html">SZWACH2</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">table-template</td>
+<td style="text-align: left;"><a href="tables/table-template.qmd">table-template</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Tags (Subject Areas)"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>These tags organize tables by functional domain.</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Enrollment</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="in">`SV_STUDENT_CURRENT_COURSES`</span>, <span class="in">`SZWACH1`</span>, <span class="in">`SZWACH2`</span>, <span class="in">`SV_TERM_SECTION_FTE`</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Modality &amp; Scheduling</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="in">`SSBSECT`</span>, <span class="in">`SSRMEET`</span>, <span class="in">`SCBCRSE`</span>, <span class="in">`STVDIVS`</span>, <span class="in">`STVDEPT`</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Demographics</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="in">`SPBPERS`</span>, <span class="in">`GORRACE`</span>, <span class="in">`GORPRAC`</span>, <span class="in">`SVBSGPD`</span>, <span class="in">`SVBSXLO`</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Financial Aid</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="in">`RORSTAT`</span>, <span class="in">`RPRATRM`</span>, <span class="in">`RFRBASE`</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Special Populations</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="in">`SGRCHRT`</span>, <span class="in">`SVBSFYS`</span>, <span class="in">`SVBPNT E`</span>, <span class="in">`SVBSUST`</span>, <span class="in">`SGBEOPS`</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Academic Progress</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="in">`SVREDPL`</span>, <span class="in">`SVRASMT`</span>, <span class="in">`SVRORNT`</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Veterans</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="in">`SGRVETN`</span>, <span class="in">`STVVETC`</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lookups</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="in">`GTVDICD`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
