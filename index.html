@@ -45,57 +45,56 @@
 
   <ul id="repo-contents"></ul>
 
-  <script>
-    const repoOwner = "fc-oie";
-    const repoName = "docs";
-    const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
+<script>
+  const repoOwner = "fc-oie";
+  const repoName = "docs";
+  const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
-    // Recursive function to search for report files and index.html
-    async function findReports(path = "", parentElement = null) {
-      const url = apiBase + path;
+  async function findReports(path = "", parentElement = null) {
+    const url = apiBase + path;
 
-      try {
-        const response = await fetch(url);
-        const items = await response.json();
-        if (!Array.isArray(items)) return;
+    try {
+      const response = await fetch(url);
+      const items = await response.json();
+      if (!Array.isArray(items)) return;
 
-        const ul = document.createElement("ul");
+      const ul = document.createElement("ul");
 
-        for (const item of items) {
-          if (item.type === "dir") {
-            // Recurse into subfolders
-            await findReports(path + item.name + "/", ul);
+      for (const item of items) {
+        if (item.type === "dir") {
+          await findReports(path + item.name + "/", ul);
 
-          } else if (
-            /^report\.(html|pdf|docx)$/i.test(item.name) ||
-            /^index\.html$/i.test(item.name)
-          ) {
-            const li = document.createElement("li");
-            const link = document.createElement("a");
+        } else if (
+          /^report\.(html|pdf|docx)$/i.test(item.name) ||
+          (
+            /^index\.html$/i.test(item.name) &&
+            path !== ""   // prevent self-reference
+          )
+        ) {
+          const li = document.createElement("li");
+          const link = document.createElement("a");
 
-            link.href = path + item.name;
-            link.textContent =
-              path.replace(/\/$/, "") + " → " + item.name;
+          link.href = path + item.name;
+          link.textContent =
+            path.replace(/\/$/, "") + " → " + item.name;
 
-            li.appendChild(link);
-            ul.appendChild(li);
-          }
+          li.appendChild(link);
+          ul.appendChild(li);
         }
-
-        if (ul.children.length > 0) {
-          if (parentElement) {
-            parentElement.appendChild(ul);
-          } else {
-            document.getElementById("repo-contents").appendChild(ul);
-          }
-        }
-
-      } catch (err) {
-        console.error("Error loading contents:", err);
       }
-    }
 
-    findReports();
-  </script>
+      if (ul.children.length > 0) {
+        (parentElement || document.getElementById("repo-contents"))
+          .appendChild(ul);
+      }
+
+    } catch (err) {
+      console.error("Error loading contents:", err);
+    }
+  }
+
+  findReports();
+</script>
+
 </body>
 </html>
