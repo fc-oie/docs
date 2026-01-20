@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>szwach1 – Fullerton College Banner Data Dictionary</title>
+<title>spriden – Fullerton College Banner Data Dictionary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       
-            <p class="subtitle lead">SZWACH1</p>
+            <p class="subtitle lead">SPRIDEN</p>
                       </div>
   </div>
     
@@ -168,7 +168,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
-<caption>Columns for SZWACH1</caption>
+<caption>Columns for SPRIDEN</caption>
+<colgroup>
+<col style="width: 13%">
+<col style="width: 4%">
+<col style="width: 5%">
+<col style="width: 76%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">COLUMN_NAME</th>
@@ -179,226 +185,160 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">PIDM</td>
+<td style="text-align: left;">SPRIDEN_PIDM</td>
 <td style="text-align: left;">NUMBER</td>
 <td style="text-align: right;">22</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Internal identification number of the person.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">TERM_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ID</td>
+<td style="text-align: left;">SPRIDEN_ID</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">36</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">MAJOR_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">This field defines the identification number used to access person on-line.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ED_LEVEL_CODE</td>
+<td style="text-align: left;">SPRIDEN_LAST_NAME</td>
 <td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">This field defines the last name of person.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">TERM_FIRST_ENROLLED</td>
+<td style="text-align: left;">SPRIDEN_FIRST_NAME</td>
 <td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">This field identifies the first name of person.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ENROLLMENT_STATUS_CODE</td>
+<td style="text-align: left;">SPRIDEN_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">This field identifies the middle name of person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPRIDEN_CHANGE_IND</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">CONCUR_HIGH_SCHOOL_TYPE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">This field identifies whether type of change made to the record was an ID number change or a name change. Valid values: I - ID change, N - name change.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">EOPS_STATUS_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FINANCIAL_AID_STATUS</td>
+<td style="text-align: left;">SPRIDEN_ENTITY_IND</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">HIGH_SCHOOL_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">80</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">This field identifies whether record is person or non-person record. It does not display on the form. Valid values: P - person, C - non-person.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">HIGH_SCHOOL_GRAD_DATE</td>
+<td style="text-align: left;">SPRIDEN_ACTIVITY_DATE</td>
 <td style="text-align: left;">DATE</td>
 <td style="text-align: right;">7</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">This field defines the most current date record is created or changed.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">GOAL_CODE</td>
+<td style="text-align: left;">SPRIDEN_USER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER: The ID for the user that most recently updated the record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPRIDEN_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">ORIGIN: The name of the Banner Object that was used most recently to update the row in the spriden table.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPRIDEN_SEARCH_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">The Last Name field with all spaces and punctuation removed and all letters capitalized.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPRIDEN_SEARCH_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">The First Name field with all spaces and punctuation removed and all letters capitalized.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPRIDEN_SEARCH_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">The MI (Middle Initial) field with all spaces and punctuation removed and all letters capitalized.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPRIDEN_SOUNDEX_LAST_NAME</td>
+<td style="text-align: left;">CHAR</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">The Last Name field in SOUNDEX phonetic format.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPRIDEN_SOUNDEX_FIRST_NAME</td>
+<td style="text-align: left;">CHAR</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">The First Name field in SOUNDEX phonetic format.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPRIDEN_NTYP_CODE</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">16</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">CRN</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NAME TYPE CODE: The field is used to store the code that represents the name type associated with a person’s name.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">SECTION</td>
+<td style="text-align: left;">SPRIDEN_CREATE_USER</td>
 <td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">32</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">Record Create User: This field contains Banner User ID which created new record</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">COLLEGE_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">SPRIDEN_CREATE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Record Create Date: This field contains date new record created</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">DAY_OR_EVENING_CODE</td>
+<td style="text-align: left;">SPRIDEN_DATA_ORIGIN</td>
 <td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA SOURCE: Source system that generated the data</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">DIVISION_CODE</td>
+<td style="text-align: left;">SPRIDEN_CREATE_FDMN_CODE</td>
 <td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">PII DOMAIN: PII Domain of the user who created the spriden row.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">DEPARTMENT_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SUBJECT_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">COURSE_NUMBER</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">COURSE_TITLE</td>
+<td style="text-align: left;">SPRIDEN_NAME_ERROR_CODE</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">120</td>
 <td style="text-align: left;">NA</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">COURSE_ID_DSK</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">44</td>
-<td style="text-align: left;">NA</td>
-</tr>
 <tr class="even">
-<td style="text-align: left;">STUDENT_UNITS</td>
+<td style="text-align: left;">SPRIDEN_SURNAME_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">SURNAME PREFIX: Name tag preceding the last name or surname. (Van, Von, Mac, etc.)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SPRIDEN_SURROGATE_ID</td>
 <td style="text-align: left;">NUMBER</td>
 <td style="text-align: right;">22</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPRIDEN_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">FINAL_GRADE</td>
+<td style="text-align: left;">SPRIDEN_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SPRIDEN_VPDI_CODE</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">24</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">GRADE_ATTEMPTED_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">GRADE_EARNED_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">GRADE_PASSED_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">GRADE_QUALITY_POINTS</td>
-<td style="text-align: left;">NUMBER</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">GRADE_GPA_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">REPEAT_COURSE_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">COURSE_CLASSIF_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">TRANSFER_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">WITHDRAW_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SUCCESS_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">RETENTION_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NONCREDIT_CATEGORY</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
 </tr>
 </tbody>
 </table>
@@ -406,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="subject-area" class="level2">
 <h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
-<p>Enrollment</p>
+<p>Demographics</p>
 <hr>
 <p><a href="../index.html">← Back to Table Index</a></p>
 

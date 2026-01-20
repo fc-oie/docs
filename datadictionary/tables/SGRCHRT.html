@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5d2e30ad26079c1dae90a1fd11eba2b9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3de4c8fa41698b4fbf527e9295059c09.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -92,7 +92,24 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">SGRCHRT</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
@@ -142,7 +159,8 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
 
 
 
@@ -170,7 +188,19 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">SGRCHRT_PIDM</td>
 <td style="text-align: left;">NUMBER</td>
 <td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGRCHRT_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
 <td style="text-align: left;">Internal Identification Number of the person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGRCHRT_TERM_CODE_EFF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SGRCHRT_TERM_CODE_EFF</td>
@@ -182,7 +212,19 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">SGRCHRT_CHRT_CODE</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">40</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGRCHRT_CHRT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
 <td style="text-align: left;">Cohort Code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGRCHRT_ACTIVE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SGRCHRT_ACTIVE_IND</td>
@@ -194,7 +236,19 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">SGRCHRT_CREA_CODE</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">16</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGRCHRT_CREA_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
 <td style="text-align: left;">Cohort Reason Code. Reason for inactivity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGRCHRT_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SGRCHRT_ACTIVITY_DATE</td>
@@ -209,16 +263,40 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">STUDY PATH SEQUENCE: Key sequence of the study path to which the cohort pertains.</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">SGRCHRT_STSP_KEY_SEQUENCE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">SGRCHRT_SURROGATE_ID</td>
 <td style="text-align: left;">NUMBER</td>
 <td style="text-align: right;">22</td>
 <td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">SGRCHRT_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
 <tr class="odd">
 <td style="text-align: left;">SGRCHRT_VERSION</td>
 <td style="text-align: left;">NUMBER</td>
 <td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGRCHRT_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
 <td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGRCHRT_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SGRCHRT_USER_ID</td>
@@ -233,10 +311,22 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">SGRCHRT_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">SGRCHRT_VPDI_CODE</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">24</td>
 <td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SGRCHRT_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">SGRCHRT_GUID</td>
@@ -245,88 +335,16 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">SGRCHRT_END_TERM_ETHOS</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: left;">END TERM ETHOS: Indicates the end term for cohort for Ethos.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SGRCHRT_PIDM</td>
-<td style="text-align: left;">NUMBER</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SGRCHRT_TERM_CODE_EFF</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SGRCHRT_CHRT_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">40</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SGRCHRT_ACTIVE_IND</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SGRCHRT_CREA_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SGRCHRT_ACTIVITY_DATE</td>
-<td style="text-align: left;">DATE</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SGRCHRT_STSP_KEY_SEQUENCE</td>
-<td style="text-align: left;">NUMBER</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SGRCHRT_SURROGATE_ID</td>
-<td style="text-align: left;">NUMBER</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SGRCHRT_VERSION</td>
-<td style="text-align: left;">NUMBER</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SGRCHRT_USER_ID</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">120</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">SGRCHRT_DATA_ORIGIN</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">120</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SGRCHRT_VPDI_CODE</td>
-<td style="text-align: left;">VARCHAR2</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">SGRCHRT_GUID</td>
 <td style="text-align: left;">VARCHAR2</td>
 <td style="text-align: right;">144</td>
 <td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SGRCHRT_END_TERM_ETHOS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">END TERM ETHOS: Indicates the end term for cohort for Ethos.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SGRCHRT_END_TERM_ETHOS</td>
@@ -340,7 +358,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="subject-area" class="level2">
 <h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
-<p><strong>SpecialPrograms</strong></p>
+<p>Special Populations</p>
 <hr>
 <p><a href="../index.html">← Back to Table Index</a></p>
 
