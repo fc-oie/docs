@@ -1,37 +1,66 @@
-# Ignore everything
+# ==================================================
+# Ignore everything by default
+# ==================================================
 **
 
-# --- Allow folders to be traversed ---
+# ==================================================
+# Allow directory traversal
+# ==================================================
 !*/
 
-# --- Always keep key files ---
-!**/README.md
-!**/index.html
+# ==================================================
+# ALWAYS KEEP RENDERED SITE OUTPUT
+# ==================================================
+!_site/**
+!docs/**
+!docs/datadictionary/**
+
+# ==================================================
+# Keep key top-level files
+# ==================================================
 !.gitignore
+!README.md
+!_quarto.yml
+!index.qmd
+!styles.scss
 
-# --- Keep knitted outputs and report-like documents ---
+# ==================================================
+# Keep source content
+# ==================================================
+!data/**
+!tables/**
+!template/**
+!scripts/**
+
+# ==================================================
+# Keep rendered web assets (safety net)
+# ==================================================
 !**/*.html
-!**/*.pdf
-!**/*.docx
-
-# --- Keep images and style files used in reports ---
+!**/*.css
+!**/*.js
+!**/*.json
+!**/*.map
+!**/*.svg
 !**/*.png
 !**/*.jpg
 !**/*.jpeg
-!**/*.svg
-!**/*.css
-!**/*.js
+!**/*.woff
+!**/*.woff2
+!**/*.ttf
+!**/*.wasm
 !**/*.yml
 
-# --- Ignore cache and temporary render files ---
+# ==================================================
+# Ignore Quarto / R / OS junk
+# ==================================================
+.quarto/
+**/*.knit.md
+**/*.utf8.md
 **/*_cache/
 **/cache/
-**/*.utf8.md
-**/*.knit.md
 **/.Rhistory
 **/.RData
 **/.Rproj.user/
 **/.Ruserdata
 **/.DS_Store
 **/Thumbs.db
-
