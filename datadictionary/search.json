@@ -238,7 +238,7 @@
     "href": "index.html#browse-tables-by-subject-area",
     "title": "Fullerton College Banner Data Dictionary",
     "section": "Browse Tables by Subject Area",
-    "text": "Browse Tables by Subject Area\n\n\n\n\n\nSubject Area\nTables\n\n\n\n\nAcademic Progress\nSVRASMTSVREDPLSVRORNT\n\n\nDemographics\nGORPRACGORRACESPBPERSSPRIDENSVBSGPDSVBSXLO\n\n\nEnrollment\nSV_STUDENT_CURRENT_COURSESSV_TERM_SECTION_FTESZWACH1SZWACH2\n\n\nFinancial Aid\nRFRBASERORSTATRPRATRM\n\n\nLookups\nGTVDICD\n\n\nModality & Scheduling\nSCBCRSESSBSECTSSRMEETSTVDEPTSTVDIVS\n\n\nSpecial Populations\nSGBEOPSSGBSTDNSGRCHRTSGRSPRTSVBSFYSSVBSUST\n\n\nVeterans\nSGRVETNSTVVETC\n\n\n\n\n\n\nIf there are any edits, please let Vinnie know at vwu@fullcoll.edu. This can include adding additional Banner tables, changing the tags, adding comments, etc.\nAuthor: Vinnie Wu\nLast updated on: January 20, 2026",
+    "text": "Browse Tables by Subject Area\n\n\n\n\n\nSubject Area\nTables\n\n\n\n\nAcademic Progress\nSVRASMTSVREDPLSVRORNT\n\n\nDemographics\nGORPRACGORRACESPBPERSSPRIDENSVBSGPDSVBSXLO\n\n\nEnrollment\nSV_STUDENT_CURRENT_COURSESSV_TERM_SECTION_FTESZWACH1SZWACH2\n\n\nFinancial Aid\nRFRBASERORSTATRPRATRM\n\n\nLookups\nGTVDICD\n\n\nModality & Scheduling\nSCBCRSESSBSECTSSRMEETSTVDEPTSTVDIVS\n\n\nSpecial Populations\nSGBEOPSSGBSTDNSGRCHRTSGRSPRTSVBSFYSSVBSUST\n\n\nVeterans\nSGRVETNSTVVETC\n\n\n\n\n\n\nIf there are any edits, please let Vinnie know at vwu@fullcoll.edu. This can include adding additional Banner tables, changing the tags, adding comments, etc.",
     "crumbs": [
       "Fullerton College Banner Data Dictionary"
     ]
