@@ -1,0 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+  const searchInput = document.querySelector(".quarto-search input");
+  if (!searchInput) return;
+
+  searchInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      const q = encodeURIComponent(searchInput.value.trim());
+      if (q) {
+        window.location.href = "search.html?q=" + q;
+      }
+    }
+  });
+
+});
