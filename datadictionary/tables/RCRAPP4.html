@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rcrapp4 – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rcrapp4" id="toc-rcrapp4" class="nav-link active" data-scroll-target="#rcrapp4">RCRAPP4</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rcrapp4" class="level1">
+<h1>RCRAPP4</h1>
+<p>Below are the column names for <strong>RCRAPP4</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RCRAPP4</caption>
+<colgroup>
+<col style="width: 14%">
+<col style="width: 4%">
+<col style="width: 5%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year to be associated with information in this record. EXAMPLES: 9091, 9192, 9293, etc.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">INTERFACE SOURCE CODE: A code from the Interface Source Table indicating the source and format of the application record. EXAMPLES: CSS, EDE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEQUENCE NUMBER: The number to uniquely identify the application if multiple applications have been stored from the same processor/source.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_REC_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECORD TYPE; The record type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_MDE_ID_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CSS ID NUMBER: Unique identification assigned to the student by the PROFILE system.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_CTRL_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">CONTROL NUMBER: The control number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_TAPE_RPT_EXTRCT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">TAPE REPORT EXTRACT DATE: The date of the tape report extract.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_INST_RPT_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTION REPORT TYPE: The insitiution report type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_SECT_R_WRITTEN_EXPLAIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COLUMN NO LONGER USED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_SECT_S_INST_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COLUMN NO LONGER USED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_ST_SPECIFIC_INFO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: left;">COLUMN NO LONGER USED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_OUT_ST_TUIT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OUT OF STAT TUITION: Calculated out of state tuition for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_BUDG_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">BUDGET NAME: Calculated budget name for the primary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_BUDG_DUR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET DURATION: Calculated budget duration for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_TUIT_FEE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TUITION AND FEES: Calculated tuition and fees for the primary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_BOOKS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BOOK EXPENSE: Calculated book expense for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_LIVING_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LIVING EXPENSE: Calculated living expense for the primary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_TOT_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL EXPENSE: Calculated total expense for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL CONTRIBUTION: Calculated total contribution for the primary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_TOT_PAR_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL PARENT CONTRIBUTION: The total parent contribution for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: The total family contribution for the primary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_TFC_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION OFFICIAL ESTIMATE: The total family contribution official estimate for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_EST_FA_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED FINANCIAL AID NEED: The estimated financial aid need for the primary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_EST_PELL_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD: The estimated Pell award for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_EST_ST_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED STATE AWARD: The estimated state award for the primary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_2_BUDG_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">BUDGET NAME: Calculated budget name for the secondary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_BUDG_DUR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET DURATION: Calculated budget duration for the secondary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_2_TUIT_FEE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TUITION AND FEES: Calculated tuition and fees for the secondary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_BOOKS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BOOK EXPENSE: Calculated book expense for the secondary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_2_LIVING_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LIVING EXPENSE: Calculated living expense for the secondary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_TOT_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL EXPENSE: Calculated total expense for the secondary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_2_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL CONTRIBUTION: Calculated total contribution for the secondary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_TOT_PAR_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL PARENT CONTRIBUTION: The total parent contribution for the secondary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_2_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: The total family contribution for the secondary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_TFC_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION OFFICIAL ESTIMATE: The total family contribution official estimate for the secondary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_2_EST_FA_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED FINANCIAL AID NEED: The estimated financial aid need for the secondary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_EST_PELL_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD: The estimated Pell award for the secondary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_2_EST_ST_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED STATE AWARD: The estimated state award for the secondary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_3_BUDG_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">BUDGET NAME: Calculated budget name for the third institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_BUDG_DUR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET DURATION: Calculated budget duration for the third institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_3_TUIT_FEE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TUITION AND FEES: Calculated tuition and fees for the third institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_BOOKS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BOOK EXPENSE: Calculated book expense for the third institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_3_LIVING_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LIVING EXPENSE: Calculated living expense for the third institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_TOT_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL EXPENSE: Calculated total expense for the third institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_3_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL CONTRIBUTION: Calculated total contribution for the third institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_TOT_PAR_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL PARENT CONTRIBUTION: The calculated total parent contribution for the third institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_3_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: The calculated total family contribution for the third institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_TFC_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION OFFICIAL ESTIMATE: The calculated total family contribution official estimate for the third institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_3_EST_FA_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED FINANCIAL AID NEED: The calculated estimated financial aid need for the third institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_EST_PELL_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD: The calculated estimated Pell award for the third institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_3_EST_ST_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED STATE AWARD: The calculated estimated state award for the third institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_DEPEND_CARE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DEPENDENCY CARE: The calculated dependency care for the primary institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_DEPEND_CARE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DEPENDENCY CARE: The calculated dependency care for the secondary institution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_DEPEND_CARE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DEPENDENCY CARE: The calculated dependency care for the third institution calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OFFICIAL ESTIMATE CONTRIBUTION: The calculated official estimated contribution for the primary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_1_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FOR STUDENT: The calculated parents’ contribution for the student under EFM.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The calculated analysis type for the student’s contribution under EFM</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OFFICIAL ESTIMATE CONTRIBUTION: The calculated official estimated contribution for the secondary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_2_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FOR STUDENT: The calculated parents’ contribution for the student under base IM.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The calculated analysis type for the student’s contribution under base IM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_P_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT OFFICIAL ESTIMATE CONTRIBUTION: The calculated parents’ official estimated contribution for the primary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_1_P_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CONTRIBUTION FOR STUDENT: The calculated parents’ contribution for the student under EFM.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_P_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The calculated analysis type for the parents’ contribution under EFM</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_P_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT OFFICIAL ESTIMATE CONTRIBUTION: The calculated parents’ official estimated contribution for the secondary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_2_P_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CONTRIBUTION FOR STUDENT: The calculated parents’ contribution for the student under base IM.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_P_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The calculated analysis type for the parents’ contribution under base IM</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: The calculated total family contribution for the primary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_1_TFC_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION OFFICIAL ESTIMATE: The calculated total family contribution official estimate for the primary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_2_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: The calculated total family contribution for the secondary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_TFC_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION OFFICIAL ESTIMATE: The calculated total family contribution official estimate for the secondary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_PELL_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL OFFICIAL ESTIMATE CONTRIBUTION: The calculated PELL official estimated contribution for the primary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_1_PELL_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL PGI: The calculated PELL PGI for the primary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_2_PELL_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL OFFICIAL ESTIMATE CONTRIBUTION: The calculated PELL official estimated contribution for the secondary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_PELL_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL PGI: The calculated PELL PGI for the secondary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_IM_CTRB_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM CONTRIBUTION FOR STUDENT: The calculated IM contribution for student for the primary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_1_IM_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM ANALYSIS TYPE: The calculatied analysis type for the primary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_2_IM_CTRB_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM CONTRIBUTION FOR STUDENT: The calculated IM contribution for student for the secondary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_IM_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM ANALYSIS TYPE: The calculatied analysis type for the secondary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_P_IM_CTRB_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM CONTRIBUTION FOR STUDENT: The parents’ calculated IM contribution for student for the primary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_1_P_IM_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT IM ANALYSIS TYPE: The parents’ calculatied analysis type for the primary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_2_P_IM_CTRB_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM CONTRIBUTION FOR STUDENT: The parents’ calculated IM contribution for student for the secondary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_2_P_IM_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT IM ANALYSIS TYPE: The parents’ calculatied analysis type for the secondary need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_NA_1_IM_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM TOTAL FAMILY CONTRIBUTION: The calculated IM total family contribution for the primary need analysis calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_FISAP_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FISAP INCOME: The FISAP Income for the need analysis calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_RECORD_MARK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECORD MARK: The record mark.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_COLL_SPECIFIC_INFO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">392</td>
+<td style="text-align: left;">ACT COLLEGE SPECIFIC INFORMATION: Student responses to the College Questions on the College Questions Supplement. (ACT only)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_ADJ_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED EFFECTIVE FAMILY CONTRIBUTION: Indicates adjustment for Pell Grant award funding was made by the financial aid administrator.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_EFC_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TYPE OF EFFECTIVE FAMILY CONTRIBUTION: Indicates the EFC that will appear on the Pell Grant Payment Voucher.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_ESAR_USER_DEF_FIELDS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">USER DEFINED FIELDS: Contains the user defined fields.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_1_ASSUM_HOUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED HOUSING STATUS: Contains the assumed housing status for budget number 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_2_ASSUM_HOUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED HOUSING STATUS: Contains the assumed housing status for budget number 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_3_ASSUM_HOUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED HOUSING STATUS: Contains the assumed housing status for budget number 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_4_ASSUM_HOUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED HOUSING STATUS: Contains the assumed housing status for budget number 4,that will be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_4_BUDG_DUR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET DURATION: Contains the duration of budget number 4 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_4_BUDG_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">BUDGET NAME: Contains the name of budget number 4 used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_4_EST_FA_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED FINANCIAL AID NEED: Contains the estimated Financial Aid Need for budget number 4 that will used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_4_EST_PELL_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD: Contains the estimated pell award for budget number 4 thatwill be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_4_LIVING_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LIVING EXPENSES: Contains the living expenses for budget number 4 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_4_TOT_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL EXPENSES: Contains the total expenses for budget number 4 that will be by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_4_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL CONTRIBUTION: Contains the total contribution for budget number 4 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_4_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: Contains the total family contribution for budget number 4 that will be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_4_TOT_PAR_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL PARENT CONTRIBUTION: Contains the total contribution from the parents for budget number 4 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_4_TUIT_FEE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TUITION FEE: Contains the tuition fee for budget number 4 that will be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_4_UNASSESS_VA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COLUMN NO LONGER USED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_5_ASSUM_HOUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED HOUSING STATUS: Contains the assumed housing status for budget number 5.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_5_BUDG_DUR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET DURATION: Contains the duration of budget number 5 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_5_BUDG_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">BUDGET NAME: Contains the name of budget number 5.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_5_EST_FA_NEED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED FINANCIAL AID NEED: Contains the estimated financial aid need for budget number 5.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_5_EST_PELL_AWRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD: Contains the estimated pell award for budget number 5 thatwill be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_5_LIVING_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LIVING EXPENSES: Contains the living expenses for budget number 5 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_5_TOT_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL EXPENSES: Contains the total expenses for budget number 5 that will be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_5_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL CONTRIBUTION: Contains the total contribution for budget number 5 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_5_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: Contains the total contribution from a family for budget number 5 that will be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_5_TOT_PAR_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL PARENT CONTRIBUTION: Contains the total contribution from the parents for budget number 5 that will be used by the ACT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_5_TUIT_FEE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TUITION FEE: Contains the tuition fee for budget number 5 that will be used by the ACT.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_INST_5_UNASSESS_VA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COLUMN NO LONGER USED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C2_INST_1_EST_PELL_AWD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD FOR BUDGET 1: Contains the estimated pell award for budget number 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C2_INST_1_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION FOR BUDGET 1: Contains the total family contribution for budget number 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C2_INST_2_EST_PELL_AWD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD FOR BUDGET 2: Contains the estimated pell award for budget number 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C2_INST_2_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION FOR BUDGET 2: Contains the total family contribution for budget number 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C2_INST_3_EST_PELL_AWD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD FOR BUDGET 3: Contains the estimated pell award for budget number 3.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C2_INST_3_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION FOR BUDGET 3: Contains the total family contribution for budget number 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C2_INST_4_EST_PELL_AWD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD FOR BUDGET 4: Contains the estimated pell award for budget number 4.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C2_INST_4_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION FOR BUDGET 4: Contains the total family contribution for budget number 4.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C2_INST_5_EST_PELL_AWD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ESTIMATED PELL AWARD FOR BUDGET 5: Contains the estimated pell award for budget number 5.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C2_INST_5_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION FOR BUDGET 5: Contains the total family contribution for budget number 5.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PELL_1_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PRIMARY EFFECTIVE FAMILY CONTRIBUTION: Contains the primary adjusted total contribution from a family.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PELL_2_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SECONDARY EFFECTIVE FAMILY CONTRIBUTION: Contains the secondary adjusted total contribution from a family.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_S_IV_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S TITLE IV INCOME EXCLUSIONS: Contains the student’s Title IV Income Exclusions such as taxable financial aid and child support paid</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_P_IV_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S TITLE IV INCOME EXCLUSIONS: Parent’s Title IV income exclusions such as taxable financial aid and child support paid</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_CURRENT_PLUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CURRENT PLUS LOAN: This field indicates whether the applicant has a current Federal Plus loan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_CURRENT_CONSOL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CURRENT CONSOLIDATED LOAN: This field indicates wheher the applicant has a current Federal Consolidated loan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_WORK_STUDY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INTERESTED IN WORK STUDY: This field indicates that a student is interested in receiving work-study assistance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LOAN_INT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INTERESTED IN STUDENT LOANS: This field indicates that a student is interested in receiving student loans</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PLUS_INT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INTERESTED IN PLUS LOAN: This field indicates that a parent is interested in receiving a parent PLUS loan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_S_DIV_INT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S DIVIDEND AND INTEREST INCOME: This field holds the amount of the student’s dividend and interest income received</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_S_FARM_VAL_FAF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S FARM VALUE: The current value of the student’s farm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_S_FARM_DBT_FAF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S FARM DEBT: The current debt against the student’s farm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_P_FARM_VAL_FAF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ FARM VALUE: The current value of the parents’ farm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_P_FARM_DBT_FAF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ FARM DEBT: The current debt against the parents’ farm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_VERIF_NUM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">DHS VERIFICATION NUMBER: In Aid Year 2004-2005, INS (Immigration and Naturalization Services) was changed to DHS (Department of Homeland Security).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_ALT_OPT_TUIT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ELEMENTARY/SECONDARY TUITION ALLOWANCE: Indicates whether elementary or secondary tuition was included as an allowance in IM computations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_MSG_31</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 31: A value of ‘1’ indicates F.78 and C30A-I differ by $100 or more</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_MSG_72</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 72: A value of ‘1’ indicates Federal student AGI reduced by F.68</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_OLDEST_LOAN_DATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">OLDEST LOAN DATE: This contains the date (MMDDYY) of the student’s oldest outstanding loan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_NSLDS_MATCH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NSLDS MATCH: The results of the student match against the National Student Loan Data System database</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_BAL_ON_SLS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BALANCE ON SLS: The student’s balance on SLS loans.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_NA_1_IM_PC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates, with a F value that the students FM PC is higher than the IM PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_IRA_KEOGH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S IRA PAYMENTS: Amount of student’s tax-deferred IRA contributions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_EXP_PAR_TUIT_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PRIVATE TUITION PAID: The amount of private elementary/secondary tuition expected to be paid by the parents during the coming year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_EXP_PAR_NO_CHILD_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER OF CHILDREN TUITION PAID: The number of children for which private elementary/secondary tuition is expected to be paid by the parents during the coming year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_HME_YR_PURCH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HOME PURCHASE YEAR: The reported debt of the parents’ primary place of residence.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_HME_PURCH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HOME PURCHASE PRICE: The reported purchase price of the parents’ primary place of residence.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_VISA_CLASS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">VISA CLASSIFICATION: This field indicates what a students VISA classification is, see CSS tape layout for valid values.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_INST_1_OTH_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OTHER CONTRIBUTION FOR BUDGET 1: Contains the other contribution to be used with budget number 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_1_INC_ADJ</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM INCOME ADJUSTMENT: The amount of the income adjustment used in the student FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_1_OTH_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM OTHER INCOME ALLOWANCE: The amount of the other income allowance (override) used in the student FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_1_IRA_KEOGH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM IRA/KEOGH AMOUNT: Reserved for future use.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_1_TRUST_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM TRUST ACCOUNT VALUE: Reserved for future use.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_1_OTH_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM OTHER ASSET: The amount of the other asset (override) used in the student FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_1_OTH_ASSET_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM OTHER ASSET ALLOWANCE: The amount of the other asset allowance (override) used in the student FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_2_INC_ADJ</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM INCOME ADJUSTMENT: The amount of the income adjustment used in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_2_OTH_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM OTHER INCOME ALLOWANCE: The amount of the other income allowance (override) used in the student IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_2_IRA_KEOGH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM IRA/KEOGH AMOUNT: The amount of the student IRA/KEOGH account used in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_2_TRUST_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM TRUST ACCOUNT VALUE: The amount of the student trust account used in the student IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_2_OTH_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM OTHER ASSET: The amount of the other asset (override) used in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_2_OTH_ASSET_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM OTHER ASSET ALLOWANCE: The amount of the other asset allowance (override) used in the student IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_PAR_1_INC_ADJ</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM INCOME ADJUSTMENT: The amount of the income adjustment used in the parent FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_PAR_1_OTH_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM OTHER INCOME ALLOWANCE: The amount of the other income allowance (override) used in the parent FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_PAR_1_OTH_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM OTHER ASSET: The amount of the other asset (override) used in the parent FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_PAR_1_OTH_ASSET_ALLW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM OTHER ASSET ALLOWANCE: The amount of the other asset allowance (override) used in the parent FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_PAR_2_INC_ADJ</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM INCOME ADJUSTMENT: The amount of the income adjustment used in the parent IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_PAR_2_OTH_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM OTHER INCOME ALLOWANCE: The amount of the other income allowance (override) used in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_C_PAR_2_OTH_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM OTHER ASSET: The amount of the other asset (override) used in the parent IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_C_PAR_2_OTH_ASSET_ALLW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM OTHER ASSET ALLOWANCE: The amount of the other asset allowance (override) used in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_TYPE_DATA_AVAIL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TYPE OF DATA AVAILABLE: Indicates the type of data available for the FM and/or IM calculations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_IM_PAR_DATA_AVAIL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT DATA AVAILABLE FOR THE IM CALCULATION: Indicates whether parent data was available for the IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_FM_PAR_DATA_AVAIL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT DATA AVAILABLE FOR THE FM CALCULATION: Indicates whether parent data was available for the FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_IM_BUDG_DUR_FOR_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM BUDGET DURATION: The budget duration used for the IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_STATE_FOR_TAXES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">STUDENT STATE FOR TAXES: The state used for calculation of the student state and local taxes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR_STATE_FOR_TAXES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PARENT STATE FOR TAXES: The state used for calculation of the parent state and local taxes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_FORMULA_FOR_CALC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FORMULA FOR CALCULATION: The formula used for the FM calculation prior to the 2009-2010 aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_TAX_FILER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT TAX FILER: Indicates whether the student was considered to be a tax filer for calculation purposes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_TAX_FILER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT TAX FILER: Indicates whether the parents were considered to be tax filers for calculation purposes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_TYPE_FM_CALC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TYPE OF FM CALCULATION: Indicates whether the calculation was an (O)riginal or a (R)ecalculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_DEP_CARE_AND_MED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT DEPENDENT CARE AND MEDICAL SPENDING ACCOUNTS: Contains the amounts withheld from parent wages for dependent care and medical spending accounts.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_S_EIC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT EIC: The student’s EIC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_SSA_CITIZEN_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SSA CITIZENSHIP INDICATOR: The student’s Social Security Administration’s citizenship indicator.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_SAR_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TAPE LOAD SAR EFC: This field identifies what the SAR EFC was for a person when they were added in dataload.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_HS_GED_RCVD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HIGH SCHOOL DIPLOMA/GED RECEIVED: This field indicates if the person has received a high school diploma/GED.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_FISAP_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FISAP TOTAL INCOME: This field indicates the person’s total FISAP income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_EMAIL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">128</td>
+<td style="text-align: left;">E-MAIL ADDRESS: Student’s Email Address</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_NSLDS_TRAN_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NSLDS TRANSACTION NUMBER: This field indicates the NSLDS transaction number associated with the Need Analysis data for this applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_DRIVERS_LIC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DRIVERS LICENSE INDICATOR: This field indicates whether the student has a driver’s license.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LEGAL_RES_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LEGAL RESIDENT INDICATOR: This field indicates whether the student was a legal resident before January 1, YYYY.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_LEGAL_RES_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT LEGAL RESIDENT INDICATOR: This field indicates whether the parent was a legal resident before January 1, YYYY.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_TX_RET_FILED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TAX RETURN FILED INDICATOR: This field indicates whether the student has already filed, will file or will not file a tax return.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_TX_RET_FILED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT TAX RETURN FILED INDICATOR: This field indicates whether the parent has already filed, will file or will not file a tax return.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_1040A_ELIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">1040A ELIGIBILITY INDICATOR: This field indicates whether the student is eligible to file a 1040A or 1040EZ tax form.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_1040A_ELIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT 1040A ELIGIBILITY INDICATOR: This field indicates whether the parent is eligible to file a 1040A or 1040EZ tax form.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_INV_NET_WORTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INVESTMENT NET WORTH: This field indicates the student’s investment net worth.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_INV_NET_WORTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT INVESTMENT NET WORTH: This field indicates the parent’s investment net worth.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_BUS_NET_WORTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUSINESS NET WORTH: This field indicates the student’s business net worth.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_BUS_NET_WORTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT BUSINESS NET WORTH: This field indicates the parent’s business net worth.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_FARM_NET_WORTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FARM NET WORTH: This field indicates the student’s farm net worth.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_FARM_NET_WORTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FARM NET WORTH: This field indicates the parent’s farm net worth.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_DEATH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DEATH DATE: This field indicates the date of death associated with the Social Security Number on this application as reported to the Social Security Administration.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_VA_MATCH_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VA MATCH FLAG: This field indicates the value of the Veteran’s Administration federal database match flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_FISAP_2_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FISAP SECONDARY TOTAL INCOME: This field indicates the person’s secondary total FISAP income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_DRUG_OFFENSE_CONVIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DRUG OFFENSE CONVICTION: Drug Offense Conviction Question.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_FATH_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">PARENT 1 LAST NAME: Father’s/Mother’s/Stepparent’s Last Name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_MOTH_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">PARENT 2 LAST NAME: Father’s/Mother’s/Stepparent’s Last Name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_FATH_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">PARENT 1 SOCIAL SECURITY NUMBER: Father’s/Mother’s/Stepparent’s Social Security Number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_MOTH_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">PARENT 2 SOCIAL SECURITY NUMBER: Father’s/Mother’s/Stepparent’s Social Security Number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_SUB_VERIF_SELECTED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SUBSEQUENT RECORD SELECTED FOR VERIFICATION: Subsequent Record Selected For Verification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_P_RES_DATE_MO_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">RESIDENT SINCE DATE: Start date of Parent’s Residency in State.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_S_RES_DATE_MO_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">RESIDENT SINCE DATE: Start date of Student’s Residency in State.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PRISONER_MATCH_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PRISONER MATCH: Prisoner Match.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_HAVE_CHILDREN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HAVE CHILDRENYOU SUPPORT: Do you have children who receive more than half of their support from you.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_WORKSHEET_C</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S WORKSHEET C TOTAL: Parent’s total amount from Worksheet C.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_WORKSHEET_C</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S/SPOUSE’S WORKSHEET C TOTAL: Student and spouse total amount from Worksheet C.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_SOURCE_CORRECTION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOURCE OF CORRECTION: The source of the correction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_EFC_CHANGE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EFC CHANGE FLAG: The EFC Change flag indicates if the EFC has increased or decreased.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_DUP_SSN_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DUPLICATE SSN INDICATOR: The duplicate SSN indicator identifies whether more than one person is using the same SSN.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_EARLY_ADM_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EARLY ADMISSION FLAG: Used to indicate a student requesting early admission.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_SEC_INS_MATCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECONDARY DHS MATCH FLAG: Secondary DHS Match Flag. This field holds the DHS verification number 2004-2005 changed INS to DHS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_WORKSHEET_A</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S WORKSHEET A TOTAL: Student’s Worksheet A untaxed income total.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_WORKSHEET_A</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ WORKSHEET A TOTAL: Parents’ Worksheet A untaxed income total.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_WORKSHEET_B</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S WORKSHEET B TOTAL: Student’s Worksheet B untaxed income total.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_WORKSHEET_B</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ WORKSHEET B TOTAL: Parents’ Worksheet B untaxed income total.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_SS_MATCH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SELECTIVE SERVICE MATCH FLAG: Results from the Selective Service match.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_SS_REG_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SELECTIVE SERVICE REGISTRATION FLAG: Results from the student’s request to be registered with the Selective Service.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_FATH_FIRST_NAME_INI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: left;">PARENT 1 FIRST NAME: Father’s/Mother’s/Stepparent’s First Name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_FATH_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PARENT 1 DATE OF BIRTH: Father’s/Mother’s/Stepparent’s Date of Birth.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_MOTH_FIRST_NAME_INI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: left;">PARENT 2 FIRST NAME: Father’s/Mother’s/Stepparent’s First Name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_MOTH_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PARENT 2 DATE OF BIRTH: Father’s/Mother’s/Stepparent’s Date of Birth.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_P_EMAIL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">128</td>
+<td style="text-align: left;">PARENT’S EMAIL ADDRESS: Parent’s Email Address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_ADDRESS_CHG_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDRESS ONLY CHANGE FLAG: Address Only Change Flag</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PUSH_ISIR_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FPS PUSHED ISIR FLAG: FPS Pushed ISIR Flag. Prior to 2024-2025 was CPS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_SAR_C_CHANGE_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SAR C CHANGE FLAG: SAR C Change Flag</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_CUSTODIAL_PARENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">BIOLOGICAL ADOPTIVE PARENT: Biological Adoptive Parent used for IM only.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_CUST_PAR_BASE_PCT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM CUSTODIAL PARENT PERCENT OF INCOME: Custodial parent’s percentage of income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR_BASE_CTRB_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM CUSTODIAL PC FROM INCOME: Custodial parent’s contribution from income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_BASE_CTRB_ASSETS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM CUSTODIAL PC FROM ASSETS: Custodial parent’s contribution from assets.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR_BASE_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM CUSTODIAL PARENT TOTAL CONTRIBUTION: Custodial parent’s total contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID that created or last updated the record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date the record was created or last updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_FEE_WAIVER_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PROFILE FEE WAIVER INDICATOR: Indicates whether or not this applicant used a Fee Waiver.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_WRK_STDY_LOANS_INT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INTEREST IN WORK STUDY OR STUDENT LOANS: Indicates whether or not the applicant is interested in work study or student loans.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_AP_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADVANCED PLACEMENT PROGRAM FLAG: Indicates whether the student has taken and passed 2 or more AP classes with a test grade of 3 or higher.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR1_OCCUPATION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">PARENT 1 OCCUPATION: The occupation of parent 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR1_EMPLOYER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">PARENT 1 EMPLOYER: The employer of parent 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR2_OCCUPATION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">PARENT 2 OCCUPATION: The occupation of parent 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR2_EMPLOYER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">PARENT 2 EMPLOYER: The employer of parent 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_ADOPTED_AFTER_13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT ADOPTED AFTER 13: Indicates whether student was adopted after age 13.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_HOMELESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT HOMELESS: Indicates whether student is homeless.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_COMBAT_PAY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT COMBAT PAY: Amount of combat pay that the student received.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_NUM_BUSINESSES</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT NUMBER OF BUSINESSES: The number of businesses that the parents own.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR_NUM_FARMS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT NUMBER OF FARMS: The number of farms that the parents own.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_COMBAT_PAY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT COMBAT PAY: Amount of combat pay that the parent received.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_IM_FORMULA_FOR_CALC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM FORMULA CALCULATION: Formula used for the IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_EFM_FORMULA_FOR_CALC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EFM FORMULA CALCULATION: Formula used for the EFM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_FM_FORMULA_FOR_CALC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FM FORMULA CALCULATION: Formula used for the FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PARENT_TYPE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">PARENT TYPE: The type of parent providing information on the PROFILE and assigned to the father position.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PARENT_TYPE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">PARENT TYPE: The type of parent providing information on the PROFILE and assigned to the mother position.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_DOD_MATCH_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">DOD MATCH FLAG: Indicates whether the applicant’s parent was a member of the armed forces who died as a result of service in Iraq or Afghanistan after 09/11/2001.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_DOD_PAR_DEATH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DOD PARENT’S DATE OF DEATH: The date the parent of the applicant died according to Department of Defense records.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_HIGH_SCHOOL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">HIGH SCHOOL NAME: The name of the high school attended by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_HIGH_SCHOOL_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">HIGH SCHOOL CITY: The city in which the student attended high school.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_STAT_CODE_HIGH_SCH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">HIGH SCHOOL STATE: The state in which the student attended high school.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_HIGH_SCHOOL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">HIGH SCHOOL CODE: The code for the high school attended by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_HIGH_SCHOOL_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">HIGH SCHOOL FLAG: Indicates that the reported high school was not found in the file of valid high schools.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_P_ASSET_THRESH_EXCD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT ASSET THRESHOLD EXCEEDED: The parents’ asset threshold has been exceeded.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_S_ASSET_THRESH_EXCD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT ASSET THRESHOLD EXCEEDED: The student’s asset threshold has been exceeded.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR_FSA_HEALTH_CARE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S FLEXIBLE SPENDING ACCOUNT HEALTHCARE CONTRIBUTION: The parents’ contribution to a flexible spending account for health care.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_DEPENDENT_CARE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S FLEXIBLE SPENDING ACCOUNT DEPENDENT CARE CONTRIBUTION: The parents’ contribution to a flexible spending account for dependent care.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR_HEALTH_SAV_ACCOUNT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S HEALTH SAVINGS ACCOUNT CONTRIBUTION: The parents’ contribution to a health savings account.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR_HSA_PRE_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS HEALTH SAVINGS ACCOUNT PRE-TAX CONTRIBUTION: The amount withheld from the parent’s pre-tax wages for a Heath Savings Account.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_CSS_LIFE_ID_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">CSS LIFETIME ID: A unique lifetime ID assigned to the student’s record by the PROFILE system.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR1_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT 1 FIRST NAME: Parent 1’s first name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR1_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT 1 LAST NAME: Parent 1’s last name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR1_SELF_EMPLOYED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT 1 SELF EMPLOYED: Indicates that Parent 1 is self-employed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR1_UNEMPLOYED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT 1 UNEMPLOYED: Indicates that Parent 1 is unemployed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR2_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT 2 FIRST NAME: Parent 2’s first name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR2_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT 2 LAST NAME: Parent 2’s last name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR2_SELF_EMPLOYED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT 2 SELF EMPLOYED: Indicates that Parent 2 is self-employed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR2_UNEMPLOYED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT 2 UNEMPLOYED: Indicates that Parent 2 is unemployed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE1_PARENT_LAST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT LAST NAME: Parent 1 last name in Parent grid.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE2_PARENT_LAST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT LAST NAME: Parent 2 last name in Parent grid.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE3_PARENT_LAST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT LAST NAME: Parent 3 last name in Parent grid.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE4_PARENT_LAST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT LAST NAME: Parent 4 last name in Parent grid.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE1_PARENT_FIRST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT FIRST NAME: Parent 1 first name in Parent grid.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE2_PARENT_FIRST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT FIRST NAME: Parent 2 first name in Parent grid.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE3_PARENT_FIRST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT FIRST NAME: Parent 3 first name in Parent grid.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE4_PARENT_FIRST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PARENT FIRST NAME: Parent 4 first name in Parent grid.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE1_PAR_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT RELATIONSHIP: The relationship type of Parent 1 as reported on the PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE2_PAR_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT RELATIONSHIP: The relationship type of Parent 2 as reported on the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE3_PAR_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT RELATIONSHIP: The relationship type of Parent 3 as reported on the PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE4_PAR_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT RELATIONSHIP: The relationship type of Parent 4 as reported on the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE1_PAR_DECEASED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT DECEASED: Indicates whether Parent 1 is deceased.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE2_PAR_DECEASED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT DECEASED: Indicates whether Parent 2 is deceased.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_LINE3_PAR_DECEASED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT DECEASED: Indicates whether Parent 3 is deceased.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_LINE4_PAR_DECEASED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT DECEASED: Indicates whether Parent 4 is deceased.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_PAR1_VET</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT 1 VETERAN INDICATOR: Indicates if Parent 1 is a veteran of the US military.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR2_VET</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT 2 VETERAN INDICATOR: Indicates if Parent 2 is a veteran of the US military.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP4_FILED_SCHED_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT FILED SCHEDULE 1: Indicates whether the student has filed a schedule 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP4_PAR_FILED_SCHED_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT FILED SCHEDULE 1: Indicates whether the parent has filed a schedule 1.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

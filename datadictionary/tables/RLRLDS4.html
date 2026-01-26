@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rlrlds4 – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rlrlds4" id="toc-rlrlds4" class="nav-link active" data-scroll-target="#rlrlds4">RLRLDS4</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rlrlds4" class="level1">
+<h1>RLRLDS4</h1>
+<p>Below are the column names for <strong>RLRLDS4</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RLRLDS4</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_LOG_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LOG NUMBER: The system generated number for this logging entry.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ID_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ID NUMBER: The id number of this logging entry. 1 is BEFORE image of change. 2 is AFTER image of change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year associated with information in this record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">INTERFACE DATA CODE: Indicates the source of the data contained in this NSLDS record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEQUENCE NUMBER: The number which uniquely identifies the set of NSLDS records if multiple sets have been stored from the same processor or source.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_CURR_REC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CURRENT RECORD INDICATOR: Indicates if this set of NSLDS records has been flagged as the current set for processing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_CREATOR_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">CREATOR ID: The ID of the user who created the record in the database.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The logon ID of the user who entered or last updated the record in this table.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_CREATE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CREATED DATE: The date that this NSLDS record was created in the database.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information for this record in the table was entered or last updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_NSLDS_DB_RESULT_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NSLDS DATABASE RESULTS FLAG: Results from NSLDS match for applicants meeting matching criteria.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_SUB_OUT_PRIN_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE SUBSIDIZED PRINCIPAL BALANCE: The total outstanding principal balance for subsidized loan types, including the calculated share of a Consolidation Loan that is considered subsidized.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_UNSUB_OUT_PRIN_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE UNSUBSIDIZED PRINCIPAL BALANCE: The total outstanding principal balance for unsubsidized loan types, including the calculated share of a Consolidation Loan that is considered unsubsidized.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_SUB_OUT_PRIN_BAL_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NSLDS UNALLOCATED CONSOLIDATED OUTSTANDING PRINCIPAL BALANCE: NSLDS Unallocated Consolidated Outstanding Principal Balance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_PERK_CUMULATIVE_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PERKINS PRINCIPAL BALANCE: The total outstanding principal balance of Perkins loans.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_PERK_CURRENT_YR_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PERKINS CURRENT YEAR AMOUNT: The current award year disbursement amount of Perkins loans.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_PERK_1ST_DISB_FLAG_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_PERK_1ST_DISB_FLAG_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_PERK_EXP_LOAN_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_PELL_OVER_PAY_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL OVERPAYMENT FLAG: Indicates if a student has a Pell overpayment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_SEOG_OVER_PAY_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NSLDS FSEOG OVERPAYMENT FLAG: Indicates if a student has an FSEOG overpayment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_PERK_DEFAULT_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ACT_BANKRUPT_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACTIVE BANKRUPTCY FLAG: Indicates one or more active loans currently in bankruptcy.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_PROC_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PROCESS DATE: The date on which NSLDS processed this student record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_MATCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MATCH INDICATOR: Indicates that NSLDS is in default or refund status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_SUB_PEND_DISB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PENDING SUBSIDIZED DISBURSEMENTS: Aggregate subsidized pending disbursements reported to NSLDS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_UNSUB_PEND_DISB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE UNSUBSIDIZED PENDING DISBURSEMENTS: The pending disbursements for unsubsidized loan types.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_CONSOL_PEND_DISB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PENDING CONSOLIDATED DISBURSEMENTS: Aggregate consolidated pending disbursements reported to NSLDS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_SUB_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE SUBSIDIZED TOTAL: Aggregate total subsidized disbursements reported to NSLDS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_UNSUB_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE UNSUBSIDIZED TOTAL: The total of the aggregate unsubsidized outstanding principal balance plus the aggregate unsubsidized pending disbursement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_CONSOL_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NSLDS UNALLOCATED CONSOLIDATED TOTAL: NSLDS Unallocated Consolidated Total</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_TRAN_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">TRANSACTION NUMBER: NSLDS transaction number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_PELL_OVER_PAY_CONTACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">NSLDS PELL OVERPAYMENT CONTACT: This field indicates the school code where the student’s PELL overpayment occurred.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_SEOG_OVER_PAY_CONTACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">NSLDS FSEOG OVERPAYMENT CONTACT: This field indicates the school code or region code where the student’s FSEOG overpayment occurred.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_PERK_OVER_PAY_CONTACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">NSLDS PERK OVERPAYMENT CONTACT: This field indicates the school code where the student’s PERK overpayment occurred.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_PERK_OVER_PAY_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PERKINS OVERPAYMENT FLAG: This field indicates whether Perkins was overpaid or if satisfactory repayment has occurred.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_DEFAULTED_LOAN_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEFAULTED LOAN FLAG: This field indicates if the student has any loans in default.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_DISCHARG_LOAN_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DISCHARGED LOAN FLAG: This field indicates if the student has any loans that have been discharged.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_LOAN_SAT_REPAY_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOAN SATISFACTORY REPAYMENT FLAG: This field indicates if the student has made satisfactory arrangements to repay the loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_DEF_LOAN_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEFAULTED LOAN CHANGE FLAG: This field indicates if there has been a change to the defaulted loan flag since the previous transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_DISCHARG_LOAN_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DISCHARGED LOAN CHANGE FLAG: This field indicates if there has been a change to the discharged loan flag since the previous transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_LOAN_SAT_REPAY_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOAN SATISFACTORY REPAYMENT CHANGE FLAG: This field indicates if there has been a change to the satisfactory repayment flag since the previous transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ACT_BANKRUPT_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACTIVE BANKRUPTCY CHANGE FLAG: This field indicates if there has been a change to the active bankruptcy flag since the previous transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_OVER_PAY_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OVERPAYMENTS CHANGE FLAG: This field indicates if there has been a change to any of the overpayment flags since the previous transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AGGREGATE LOAN CHANGE FLAG: This field indicates if there has been a change to the aggregate loan amounts since the previous transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_PERK_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PERKINS LOAN CHANGE FLAG: This field indicates if there has been a change to the Perkins loan data since the previous transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_PELL_PMT_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL PAYMENT CHANGE FLAG: This field indicates if there has been a change to the Pell Payment data since the previous transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_ADDL_PELL_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDITIONAL PELL FLAG: This field indicates if the student has additional Pell records beyond what has been included on the ISIR.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ADDL_LOANS_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDITIONAL LOANS FLAG: This field indicates if the student has additional loans beyond what has been included on the ISIR.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_COMB_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NSLDS AGGREGATE COMBINED TOTAL: NSLDS Aggregate Combined Total.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_COMB_PEND_DISB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NSLDS AGGREGATE COMBINED PENDING DISBURSEMENT: NSLDS Aggregate Combined Pending Disbursement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_COMB_PRIN_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NSLDS AGGREGATE COMBINED PRINCIPLE BALANCE: NSLDS Aggregate Combined Principle Balance.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_POST_SCREEN_RSN_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NSLDS POST-SCREENING REASON CODE: NSLDS Post-Screening Reason Code; The student’s eligibility has changed since the initial screening.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_DL_MPN_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DIRECT LOAN MASTER PROMISSORY NOTE FLAG: Direct Loan Master Promissory Note Flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_FFEL_MPN_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FFEL MASTER PROMISSORY NOTE FLAG: FFEL Master Promissory Note Flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_FFEL_LEND_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">FFEL LENDER CODE: FFEL Lender Code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_LOAN_CHG_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOAN CHANGE FLAG: Indicates that information about 1 or more loans changed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_CURRENT_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">CURRENT SSN: The current Social Security Number from NSLDS for the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_CURRENT_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">CURRENT FIRST NAME: The current first name from NSLDS for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_CURRENT_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: left;">CURRENT LAST NAME: The current last name from NSLDS for the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_CURRENT_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CURRENT BIRTH DATE: The current date of birth from NSLDS for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_DL_PLUS_MPN_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DIRECT LOAN PARENT PLUS MASTER PROMISSORY NOTE FLAG: Direct Loan Parent PLUS Master Promissory Note flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_POST_SCREEN_RSN_CDE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NSLDS POST-SCREENING REASON CODE 2: The second NSLDS Post-Screening Reason Code. The student’s eligibility has changed since the initial screening.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_POST_SCREEN_RSN_CDE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NSLDS POST-SCREENING REASON CODE 3: The third NSLDS Post-Screening Reason Code. The student’s eligibility has changed since the initial screening.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_OVER_LIMIT_SUB</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SUBSIDIZED LOAN LIMIT IND: Subsidized Loan Limit Indicator. Undergraduate level beginning January 2008.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_OVER_LIMIT_COMB</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COMBINED LOAN LIMIT IND: Combined Loan Limit Indicator. Undergraduate level beginning January 2008.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_FFEL_CONS_PRIN_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE FFEL CONSOLIDATED PRINCIPAL BALANCE: Aggregate outstanding principal balance for FFEL consolidation loans including subsidized, unsubsidized, Perkins, PLUS, and any amount considered unallocated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_PLUS_OUT_PRIN_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE PARENT PLUS OUTSTANDING BALANCE: Aggregate outstanding principal balance for Parent PLUS loan types.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_FFEL_CONS_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE FFEL CONSOLIDATED TOTAL: Aggregate total for FFEL consolidation loans including subsidized, unsubsidized, Perkins, PLUS, and any amount considered unallocated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_PLUS_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE PARENT PLUS TOTAL: Loan total for Parent PLUS loan types.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ACG_PMT_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACG PAYMENT CHANGE FLAG: Indicates a change in the NSLDS ACG payment data since the previous transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_SMART_PMT_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SMART PAYMENT CHANGE FLAG: Indicates a change in the NSLDS SMART Grant payment data since the previous transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ADDL_ACG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDITIONAL ACG FLAG: Indicates additional NSLDS ACG records were received.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_ADDL_SMART_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDITIONAL SMART FLAG: Indicates an additional NSLDS SMART Grant records were received.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_DL_GR_PLUS_MPN_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DIRECT LOAN GRADUATE PLUS MASTER PROM NOTE FLAG: Indicates the status of the Master Promissory Note for the graduate student who has borrowed a PLUS loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_ACG_OVER_PAY_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACG OVERPAYMENT FLAG: Indicates an NSLDS ACG overpayment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ACG_OVER_PAY_CONTACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">ACG OVERPAYMENT CONTACT: Indicates the school code or region code of school reporting an NSLDS ACG overpayment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_SMART_OVER_PAY_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SMART OVERPAYMENT FLAG: Indicates an NSLDS SMART Grant overpayment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_SMART_OVER_PAY_CONTACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">SMART OVERPAYMENT CONTACT: Indicates the school code or region code of school reporting NSLDS SMART Grant overpayment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_FRAUD_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FRAUD FLAG: Indicates fraud on one or more loans or overpayments.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_GR_PLUS_PRIN_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE GRAD PLUS OUTSTANDING BALANCE: Aggregate outstanding principal balance for Graduate/Professional PLUS loan types.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_GR_PLUS_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE GRAD PLUS TOTAL: Loan total for Graduate/Professional PLUS loan types.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_FRAUD_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FRAUD CHANGE FLAG: Indicates if there has been a change to the fraud flag since the previous transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_GR_AGT_OVER_LIMIT_SUB</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GRADUATE SUBSIDIZED LOAN LIMIT FLAG: Graduate subsidized loan limit flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_GR_AGT_OVER_LIMIT_COMB</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GRADUATE COMBINED LOAN LIMIT FLAG: Graduate combined loan limit flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_TEACH_OVER_PAY_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TEACH GRANT OVERPAYMENT FLAG: Indicates if the student has an overpayment for a TEACH Grant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_TEACH_OVER_PAY_CONTACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">TEACH GRANT OVERPAYMENT CONTACT: Contact information for TEACH Grant overpayment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_TEACH_LOAN_CONV_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TEACH GRANT LOAN CONVERSION FLAG: Indicates if this student has TEACH Grants that were converted to a loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_TEACH_LN_PRIN_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE TEACH LOAN PRINCIPAL BALANCE: Aggregate principal balance of the TEACH loans.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_TEACH_LOAN_TOTAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TEACH LOAN TOTAL: The total of all TEACH loans.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_TEACH_UG_DISB_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE TEACH GRANT UNDERGRAD DISBURSEMENT AMOUNT: Aggregate amount of TEACH Grant received as an undergraduate student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_TEACH_GR_DISB_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGGREGATE TEACH GRANT GRADUATE DISBURSEMENT AMOUNT: Aggregate amount of TEACH Grant received as a graduate student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_TEACH_LN_CONV_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TEACH GRANT LOAN CONVERSION CHANGE FLAG: Indicates if there has been a change to the TEACH loan conversion flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_TEACH_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TEACH GRANT CHANGE FLAG: Indicates a change in the TEACH Grant payment data since the previous transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_ADDL_TEACH_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDITIONAL TEACH FLAG: Indicates additional NSLDS TEACH records were received.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_UG_PERCENT_ELIG_USED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TEACH UNDERGRADUATE PERCENT ELIGIBILITY USED: Percent of TEACH Grant used at the undergraduate level.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_UG_REMAINING_AMOUNT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TEACH UNDERGRADUATE REMAINING AMOUNT: Remaining amount of TEACH Grant at the undergraduate level.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_GR_PERCENT_ELIG_USED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TEACH GRADUATE PERCENT ELIGIBILITY USED: Percent of TEACH Grant used at the graduate level.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_GR_REMAINING_AMOUNT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TEACH GRADUATE REMAINING AMOUNT: Remaining amount of TEACH Grant at the graduate level.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_AGT_TCH_GRANT_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TEACH GRANT AGGREGATE CHANGE FLAG: Indicates a change to the TEACH Grant aggregate amount.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_AGT_TCH_LOAN_CHG_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TEACH LOAN AGGREGATE CHANGE FLAG: Indicates a change to the TEACH Loan aggregate amount.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RLRLDS4_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RLRLDS4_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

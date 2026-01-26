@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rebpayv – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rebpayv" id="toc-rebpayv" class="nav-link active" data-scroll-target="#rebpayv">REBPAYV</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rebpayv" class="level1">
+<h1>REBPAYV</h1>
+<p>Below are the column names for <strong>REBPAYV</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for REBPAYV</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 82%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year associated with the information in this record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: Internal system-generated student identification number for the student in this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information in this record was entered or last updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_CAMP_PELL_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">CAMPUS PELL ID: Pell ID of the campus the student is attending. Can be different from Institution Pell ID if a branch campus or multicampus institution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_INST_PELL_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">INSTITUTION PELL ID: Pell ID for the institution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACAD_CAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACADEMIC CALENDAR: The federally defined value that identifies the academic calendar which applies to the student’s educational program.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_DATE_SENT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DATE THE ORIGINATION RECORD WAS SENT: Date the Origination record was extracted to be sent to COD for processing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ATTEND_COST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COST OF ATTENDANCE: The cost of attendance for Pell. This must follow the COA guidelines defined by the Federal Pell Grant Payment regulations.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ENROLL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT’S ENROLLMENT STATUS: The student’s expected enrollment status for the entire award year. The status ‘5’ ‘Other’ is used when the student’s enrollment is mixed or the student attends more than the number of terms in a full academic year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EXPECT_HRS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED HOURS TO COMPLETE THIS SCHOOL YEAR: Total number of credit/clock hours the institution expects the student to complete during the current Pell Grant award year. Valid values depend on Payment Methodology and Academic Calendar.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_HRS_IN_YR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HOURS IN PROGRAM’S DEFINITION OF ACADEMIC YEAR: Total number of credit or clock hours in the institution’s definition of a full academic year for the program of study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_AMT_PAID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AMOUNT PAID STUDENT: Year to date amount paid as reported on the Pell Disbursement acknowledgement record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_AMT_DUE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AMOUNT DUE STUDENT: Amount of award for student’s entire school year. Cannot exceed Total Pell Grant full time award for the year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_NBR_MTHS_PAY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER OF PAYMENT PERIODS IN THE STUDENT’S SCHOOL YEAR: The number of terms or payment periods in the student’s school year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_INST_XREF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">ORIGINATION CROSS REFERENCE: An optional field that allows for the cross-reference of the Pell ID to the ID used in Banner to identify a student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_SECONDARY_PGI_USED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECONDARY EFC USED INDICATOR: Indicates whether a secondary EFC was sent to COD for processing to determine the award amount to be used for the Pell Grant. If blank, secondary EFC not used.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL EXPECTED FAMILY CONTRIBUTION: The student’s EFC that will be reported on the Pell Origination record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_PRISON_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PRISON INDICATOR: Indicates that a student is incarcerated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_VER_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VERIFICATION STATUS CODE: Indicates what the student verification status code is at the time the Pell Origination is created.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_SAR_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">SAR ID SSN: Part of SAR Record ID, student’s Social Security Number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_SAR_INIT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">SAR ID INITIALS: Part of SAR Record ID, first two letters of student’s last name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_SAR_TRAN_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">SAR ID TRANSACTION NO: Part of SAR Record ID, Transaction Number on payment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_PAYMENT_METHOD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PAYMENT METHOD: Indicates what student Payment Methodology is at the time Pell Origination is created.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EXPECT_WKS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">WEEKS ENROLLED: Indicates the number of weeks the student is enrolled in a year at the time Pell Origination is created.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_WKS_IN_YR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">WEEKS IN PROGRAM: Indicates the number of weeks of instruction in the program year at the time Pell Origination is created.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ENROLLMENT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ENROLLMENT DATE: Date that student is first enrolled in eligible program for the aid year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_01</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 1: Estimated Disbursement Date 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_02</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 2: Estimated Disbursement Date 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_03</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 3: Estimated Disbursement Date 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_04</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 4: Estimated Disbursement Date 4.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_05</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 5: Estimated Disbursement Date 5.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_06</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 6: Estimated Disbursement Date 6.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_07</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 7: Estimated Disbursement Date 7.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_08</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 8: Estimated Disbursement Date 8.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_09</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 9: Estimated Disbursement Date 9.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_10</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 10: Estimated Disbursement Date 10.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_11</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 11: Estimated Disbursement Date 11.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_12</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 12: Estimated Disbursement Date 12.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_13</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 13: Estimated Disbursement Date 13.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_14</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 14: Estimated Disbursement Date 14.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EST_DISB_DATE_15</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ESTIMATED DISBURSEMENT DATE 15: Estimated Disbursement Date 15.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_LOW_COST_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOW COST CODE: No longer used after the 2007-2008 aid year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ORIG_BATCH_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">PELL ORIGINATION BATCH NUMBER: The batch number associated with the Pell Origination Record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ORIG_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">ORIGINATION ID: The Origination ID from the Pell Origination process used to match data from the Origination to Acknowledgement and Disbursement Records.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_STATUS_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACTION CODE: The response from (action taken by) the Department of Education for this Pell Origination record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_NBR_MTHS_PAY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED NUMBER OF PAYMENTS: Accepted number of payment periods in the student’s school year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_AMT_DUE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED PELL AWARD AMOUNT: The Pell award amount due the student, accepted by the Department of Education for the entire school year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_01</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 1: Estimated disbursement date 1 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_02</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 2: Estimated disbursement date 2 accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_03</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 3: Estimated disbursement date 3 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_04</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 4: Estimated disbursement date 4 accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_05</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 5: Estimated disbursement date 5 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_06</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 6: Estimated disbursement date 6 accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_07</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 7: Estimated disbursement date 7 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_08</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 8: Estimated disbursement date 8 accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_09</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 9: Estimated disbursement date 9 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_10</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 10: Estimated disbursement date 10 accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_11</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 11: Estimated disbursement date 11 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_12</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 12: Estimated disbursement date 12 accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_13</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 13: Estimated disbursement date 13 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_14</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 14: Estimated disbursement date 14 accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EST_DISB_DATE_15</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ESTIMATED DISBURSEMENT DATE 15: Estimated disbursement date 15 accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_ENROLLMENT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED ENROLLMENT DATE: The date accepted by the Department of Education as the date that the student is first enrolled in an eligible program for the aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_LOW_COST_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED LOW COST CODE: Accepted value of flag to identify tuition ranges when the annual tuition is less than a set amount.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_VER_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED VERIFICATION STATUS: The value accepted by the Department of Education for the status of verification of applicant data by the school.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_PRISON_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED PRISON INDICATOR: The value accepted by the Department of Education for the Incarcerated Federal Pell Recipient Code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_SAR_TRAN_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ACCEPTED SAR TRANSACTION NUMBER: The value accepted by the Department of Education of the SAR transaction number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED PELL EFC: The value of Pell Expected Family Contribution accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_SEC_PGI_USED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED SECONDARY EFC USED CODE: The value of Secondary Expected Family Contribution Code accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_ACAD_CAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED ACADEMIC CALENDAR: Academic calendar accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_PAYMENT_METHOD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED PAYMENT METHODOLOGY: Payment methodology used to calculate the student’s Federal Pell Grant, as accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_ATTEND_COST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED ATTENDANCE COST: Cost of Attendance accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_ENROLL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED ENROLLMENT STATUS: Enrollment status of the student accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EXPECT_WKS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED EXPECTED WEEKS: The weeks of instructional time in which the student is expected to be enrolled, accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_WKS_IN_YR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED WEEKS IN YEAR: The number of weeks of instructional time in the program’s academic year, accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_EXPECT_HRS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED EXPECTED HOURS: The number of credit hours or clock hours in all pay periods expected to complete this school year, accepted by the Department of Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_HRS_IN_YR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED HOURS IN YEAR: The number of credit hours or clock hours of instructional time in the program’s academic year, accepted by the Department of Education.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_SCH_PELL_GRANT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED SCHEDULED PELL GRANT AMOUNT: The scheduled amount of Pell Grant for a full time student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_PREV_ACPT_SAR_TRAN_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PREVIOUSLY ACCEPTED SAR TRAN NUMBER: The Transaction Number that was previously accepted and currently stored by COD for this student. This field will only be populated for rejected originations. It will be blank if Origination was not rejected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_PREV_ACPT_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PREVIOUSLY ACCEPTED EFC: The EFC that was previously accepted and currently stored by COD for this student. This field will only be populated for rejected originations. It will be blank if Origination was not rejected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_PREV_ACPT_SEC_EFC_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PREVIOUSLY ACCEPTED SECONDARY EFC CODE: Secondary EFC Code that was previously accepted and currently stored by COD for this student. It will be blank if Secondary EFC was not used or if Origination is not rejected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_PREV_ACPT_ATTEND_COST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PREVIOUSLY ACCEPTED ATTENDANCE COST: Cost of Attendance previously accepted and currently stored by COD for this student. It will be blank if Origination was not rejected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_01</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 1: Origination Edit/Reject code 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_02</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 2: Origination Edit/Reject code 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_03</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 3: Origination Edit/Reject code 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_04</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 4: Origination Edit/Reject code 4.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_05</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 5: Origination Edit/Reject code 5.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_06</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 6: Origination Edit/Reject code 6.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_07</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 7: Origination Edit/Reject code 7.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_08</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 8: Origination Edit/Reject code 8.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_09</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 9: Origination Edit/Reject code 9.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 10: Origination Edit/Reject code 10.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 11: Origination Edit/Reject code 11.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 12: Origination Edit/Reject code 12.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 13: Origination Edit/Reject code 13.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 14: Origination Edit/Reject code 14.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 15: Origination Edit/Reject code 15.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 16: Origination Edit/Reject code 16.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 17: Origination Edit/Reject code 17.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 18: Origination Edit/Reject code 18.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 19: Origination Edit/Reject code 19.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 20: Origination Edit/Reject code 20.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 21: Origination Edit/Reject code 21.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 22: Origination Edit/Reject code 22.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 23: Origination Edit/Reject code 23.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 24: Origination Edit/Reject code 24.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_REJ_25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EDIT/REJECT CODE 25: Origination Edit/Reject code 25.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_SHARED_SAR_ID_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SHARED SAR ID FLAG: Indicates that this student shares a SAR ID with another student, and requires correction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_VERIF_W_STATUS_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VERIFICATION W STATUS FLAG: Indicates that this student has a verification W (Without Documentation) status, and requires correction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_CONCUR_ENROLL_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONCURRENT ENROLLMENT FLAG: Indicates that this student has concurrent enrollment, and may require correction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_POTENTIAL_OVERPMT_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">POTENTIAL OVERPAYMENT FLAG: Indicates that this student has a potential overpayment, and may require correction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL ORIGINATION RECORD LOCK INDICATOR: Indicates that the Origination record should not be processed through the delete/replace logic when creating updated Origination records.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_LOW_TUITION_COST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LOW TUITION AND FEES COST FOR PELL: No longer used after the 2007-2008 aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_INT_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INSTITUTION INTERNAL SEQUENCE NUMBER: An internally generated sequence number which will allow the school to track the version of the origination record COD has on file.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_INT_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCEPTED INSTITUTION INTERNAL SEQUENCE NUMBER: An internally generated sequence number which will allow the school to track the version of the origination record COD has on file, as acknowledged by COD.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_CURRENT_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">STUDENT’S CURRENT SSN: The student’s current social security number for this CPS transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_CURRENT_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">STUDENT’S CURRENT DATE OF BIRTH: The student’s date of birth for this CPS transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_CURRENT_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">STUDENT’S CURRENT LAST NAME: The student’s last name for this CPS transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_CURRENT_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">STUDENT’S CURRENT FIRST NAME: The student’s first name for this CPS transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_CURRENT_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">STUDENT CURRENT MIDDLE NAME: The middle name of the student for this CPS transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_NEG_PENDING_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NEGATIVE PENDING AMOUNT: The negative disbursement amount pending as determined by Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_SEC_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SECONDARY EFC: The secondary EFC calculated by CPS for this transaction, if any, as reported by Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_CURRENT_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">ACCEPTED CURRENT SSN: The student’s current social security number for this CPS transaction, as reported by Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCEPTED DATE OF BIRTH: The student’s date of birth for this CPS transaction, as reported by Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">ACCEPTED LAST NAME: The student’s last name for this CPS transaction, as reported by Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ACPT_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">ACCEPTED FIRST NAME: The student’s first name for this CPS transaction, as reported by Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">ACCEPTED MIDDLE NAME: The middle name of the student for this CPS transaction, as reported by Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_DOCUMENT_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">COD DOCUMENT ID FOR PELL AWARD RECORD: The document identification number associated with the student’s Pell award record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The logon ID of the user who entered or last updated the record in this table.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_FIELD_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">Pell Origination Response Edit Field 1: The field (XML tag) associated with edit 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_VALUE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">Pell Origination Response Edit Value 1: The new value applied to the Response Edit Field 1 if a correction is applied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_FIELD_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">Pell Origination Response Edit Field 2: The field (XML tag) associated with edit 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_VALUE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">Pell Origination Response Edit Value 2: The new value applied to the Response Edit Field 2 if a correction is applied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_FIELD_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">Pell Origination Response Edit Field 3: The field (XML tag) associated with edit 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_VALUE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">Pell Origination Response Edit Value 3: The new value applied to the Response Edit Field 3 if a correction is applied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_FIELD_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">Pell Origination Response Edit Field 4: The field (XML tag) associated with edit 4.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_VALUE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">Pell Origination Response Edit Value 4: The new value applied to the Response Edit Field 4 if a correction is applied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_EDIT_FIELD_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">Pell Origination Response Edit Field 5: The field (XML tag) associated with edit 5.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_EDIT_VALUE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">Pell Origination Response Edit Value 5: The new value applied to the Response Edit Field 5 if a correction is applied.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_PERCENT_ELIG_USED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ELIGIBILITY USED BY SCHEDULED AWARD: The percentage of the student’s eligibility used by the institution for the scheduled award for the aid year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_ADDL_ELIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL ADDITIONAL ELIGIBILITY INDICATOR: Indicates if the origination reflects additional funds due to Year Round Pell eligibility.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_ADDL_ELIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCEPTED PELL ADDITIONAL ELIGIBILITY INDICATOR: Additional Eligibility Indicator as accepted by Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_PELL_LEU</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL LIFETIME ELIGIBILITY USED: The lifetime eligibility used for Pell grants.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">REBPAYV_CURRENT_SUFFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">STUDENT CURRENT SUFFIX: The suffix of the student for this CPS Transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">REBPAYV_ACPT_SUFFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">ACCEPTED SUFFIX: The suffix of the student for this CPS transaction, as reported by Pell.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

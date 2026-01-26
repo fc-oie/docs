@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>gotdwks – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#gotdwks" id="toc-gotdwks" class="nav-link active" data-scroll-target="#gotdwks">GOTDWKS</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="gotdwks" class="level1">
+<h1>GOTDWKS</h1>
+<p>Below are the column names for <strong>GOTDWKS</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for GOTDWKS</caption>
+<colgroup>
+<col style="width: 17%">
+<col style="width: 7%">
+<col style="width: 9%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_SESSION_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SESSION ID: The current session id.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_ROW_NUMBER</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ROW NUMBER: Spreadsheet Row number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_WORKBOOK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">WORKBOOK: Name of the workbook.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_WORKSHEET</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">WORKSHEET: Name of the worksheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 1: 1st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 2: 2nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 3: 3rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 4: 4th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 5: 5th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 6: 6th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 7: 7th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 8: 8th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 9: 9th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 10: 10th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 11: 11th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 12: 12th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 13: 13th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 14: 14th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 15: 15th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 16: 16th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 17: 17th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 18: 18th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 19: 19th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 20: 20th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 21: 21st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 22: 22nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 23: 23rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 24: 24th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 25: 25th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 26: 26th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 27: 27th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 28: 28th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 29: 29th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 30: 30th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_31</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 31: 31st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_32</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 32: 32nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_33</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 33: 33rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_34</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 34: 34th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_35</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 35: 35th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_36</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 36: 36th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_37</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 37: 37th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_38</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 38: 38th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_39</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 39: 39th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_40</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 40: 40th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_41</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 41: 41st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_42</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 42: 42nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_43</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 43: 43rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_44</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 44: 44th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_45</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 45: 45th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_46</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 46: 46th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_47</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 47: 47th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_48</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 48: 48th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_49</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 49: 49th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_50</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 50: 50th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_51</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 51: 51st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_52</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 52: 52nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_53</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 53: 53rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_54</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 54: 54th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_55</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 55: 55th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_56</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 56: 56th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_57</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 57: 57th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_58</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 58: 58th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_59</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 59: 59th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_60</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 60: 60th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_61</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 61: 61st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_62</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 62: 62nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_63</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 63: 63rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_64</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 64: 64th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_65</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 65: 65th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_66</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 66: 66th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_67</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 67: 67th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_68</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 68: 68th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_69</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 69: 69th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_70</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 70: 70th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_71</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 71: 71st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_72</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 72: 72nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_73</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 73: 73rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_74</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 74: 74th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_75</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 75: 75th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_76</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 76: 76th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_77</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 77: 77th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_78</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 78: 78th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_79</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 79: 79th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_80</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 80: 80th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_81</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 81: 81st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_82</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 82: 82nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_83</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 83: 83rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_84</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 84: 84th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_85</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 85: 85th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_86</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 86: 86th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_87</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 87: 87th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_88</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 88: 88th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_89</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 89: 89th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_90</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 90: 90th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_91</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 91: 91st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_92</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 92: 92nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_93</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 93: 93rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_94</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 94: 94th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_95</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 95: 95th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_96</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 96: 96th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_97</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 97: 97th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_98</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 98: 98th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_99</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 99: 99th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_100</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 100: 100th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_101</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 101: 101st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_102</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 102: 102nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_103</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 103: 103rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_104</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 104: 104th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_105</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 105: 105th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_106</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 106: 106th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_107</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 107: 107th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_108</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 108: 108th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_109</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 109: 109th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_110</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 110: 110th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_111</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 111: 111th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_112</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 112: 112th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_113</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 113: 113th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_114</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 114: 114th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_115</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 115: 115th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_116</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 116: 116th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_117</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 117: 117th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_118</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 118: 118th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_119</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 119: 119th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_120</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 120: 120th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_121</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 121: 121st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_122</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 122: 122nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_123</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 123: 123rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_124</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 124: 124th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_125</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 125: 125th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_126</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 126: 126th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_127</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 127: 127th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_128</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 128: 128th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_129</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 129: 129th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_130</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 130: 130th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_131</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 131: 131st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_132</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 132: 132nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_133</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 133: 133rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_134</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 134: 134th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_135</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 135: 135th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_136</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 136: 136th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_137</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 137: 137th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_138</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 138: 138th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_139</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 139: 139th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_140</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 140: 140th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_141</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 141: 141st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_142</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 142: 142nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_143</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 143: 143rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_144</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 144: 144th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_145</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 145: 145th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_146</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 146: 146th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_147</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 147: 147th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_148</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 148: 148th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_149</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 149: 149th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_150</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 150: 150th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_151</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 151: 151st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_152</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 152: 152nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_153</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 153: 153rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_154</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 154: 154th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_155</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 155: 155th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_156</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 156: 156th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_157</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 157: 157th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_158</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 158: 158th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_159</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 159: 159th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_160</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 160: 160th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_161</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 161: 161st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_162</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 162: 162nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_163</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 163: 163rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_164</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 164: 164th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_165</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 165: 165th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_166</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 166: 166th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_167</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 167: 167th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_168</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 168: 168th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_169</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 169: 169th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_170</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 170: 170th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_171</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 171: 171st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_172</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 172: 172nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_173</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 173: 173rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_174</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 174: 174th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_175</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 175: 175th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_176</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 176: 176th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_177</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 177: 177th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_178</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 178: 178th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_179</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 179: 179th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_180</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 180: 180th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_181</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 181: 181st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_182</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 182: 182nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_183</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 183: 183rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_184</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 184: 184th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_185</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 185: 185th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_186</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 186: 186th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_187</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 187: 187th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_188</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 188: 188th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_189</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 189: 189th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_190</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 190: 190th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_191</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 191: 191st Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_192</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 192: 192nd Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_193</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 193: 193rd Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_194</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 194: 194th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_195</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 195: 195th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_196</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 196: 196th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_197</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 197: 197th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_198</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 198: 198th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_COL_199</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 199: 199th Column of the spreadsheet.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_COL_200</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: left;">Column 200: 200th Column of the spreadsheet.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GOTDWKS_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information in this record was entered or last updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GOTDWKS_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

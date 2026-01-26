@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>skrctaf – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#skrctaf" id="toc-skrctaf" class="nav-link active" data-scroll-target="#skrctaf">SKRCTAF</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="skrctaf" class="level1">
+<h1>SKRCTAF</h1>
+<p>Below are the column names for <strong>SKRCTAF</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SKRCTAF</caption>
+<colgroup>
+<col style="width: 13%">
+<col style="width: 4%">
+<col style="width: 5%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_APPLICATION_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CAS APPLICATION UNIQUE IDENTIFIER: This field holds the unique identifier for the Confirmation of Acceptance for Studies Application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_TRANS_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">TRANSACTION TYPE: Transaction Type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT UNIQUE IDENTIFIER: This field holds the internal identifier for the learner.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_SEQNO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEQUENCE NUMBER: Sequence Number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_CAS_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">STUDENT CAS NUMBER: This field holds the Confirmation of Acceptance for Studies number assigned by the UKBA to the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_CAS_EXP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CAS NUMBER EXPIRATION DATE: This field holds the date the CAS number will expire.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_CAS_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">STATUS OF CAS NUMBER: This field holds the current status of the CAS NUMBER on the UKBA SMS system.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_CAS_LSTCHG_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CAS NUMBER LAST CHANGE DATE: This field holds the date the CAS number status was last changed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_PROGRAM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">PROGRAM: program of the curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_TERM_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">TERM CODE: Term code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_USER_DEFINED_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER DEFINED STATUS: The field holds the status value, defined by the user, that has been assigned to this cas application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_NO_CAS_APP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NO CAS APPLICATION INDICATOR: This Y/N field indicates whether a Confirmation of Acceptance for Studies application should not be sent to the UKBA for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_CRSE_REQ_ATAS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COURSE REQUIRES ATAS INDICATOR: This field indicates whether the student will require an ATAS certificate to study the program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_VISA_START_DT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">VISA START DATE: This field value overrides the student program start date as the date the Visa should commence.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_EXP_CRS_END_DT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">EXPECTED COURSE END DATE: This field holds the date the student is expected to complete the program of study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_LATST_ACC_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">LATST ACC DATE: The field holds the date of the latest acceptance of a course.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_SPON_ACCOM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SPONSOR PROVIDES ACCOMMODATION INDICATOR: This Y/N field indicates whether the Sponsor provides accommodation for the student on this program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_CRSE_FEE_INC_ACCOM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COURSE FEE INCLUDES ACCOMMODATION COSTS INDICATOR: This Y/N field indicates whether the cost of accommodation is included in the program fee value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_CRSE_FEE_FYO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FEES FIRST YEAR ONLY: This field holds the program fee and optionally accommodation fee amount for the first year of the students program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_CRSE_FEE_PTD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FEES PAID TO DATE: This field holds the fee amount paid by the student up to the current date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_ACCOM_FEE_FYO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCOMMODATION FEES FIRST YEAR ONLY: This field holds the accommodation fee amount for the first year of the students program where it is not included in the course fee field.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_ACCOM_FEE_PTD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACCOMMODATION FEES PAID TO DATE: This field holds the accommodation fee amount paid by the student up to the current date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_VISA_LETR_SENT_DT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">VISA LETTER SENT DATE: The field holds the date that a visa letter or email was sent to the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_DOC_OFFR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">DOCUMENTS SUPPORTING OFFER NOTES: This field holds the details of the documents provided by the student to obtain the offer of a place on the program.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_CRSE_FEE_COM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">FEE COMMENTS: This field holds user comments on the values recorded in the program fee columns.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_MANUAL_UPD_COM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">MANUAL UPDATE COMMENTS: This field holds comments on manual updates made to the UKBA SMS system for this student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_SELT_REQ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">SELT REQUIRED: Define whether SELT is required for this student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_SELT_REA_NOT_REQ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">REASON FOR SELT NOT REQUIRED: Define why a SELT qualification is not required.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_SELT_LVL_ATT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">LEVEL OF SELT ATTAINED: Define the level of English language attained by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_SELT_LVL_SPEAK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SELT SPEAKING LEVEL ATTAINED: Define the level attained in the speaking facet of the SELT training.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_SELT_LVL_LIST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SELT LISTENING LEVEL ATTAINED: Define the level attained in the listening facet of the SELT training.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_SELT_LVL_READ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SELT READING LEVEL ATTAINED: Define the level attained in the reading facet of the SELT training.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_SELT_LVL_WRITE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SELT WRITING LEVEL ATTAINED: Define the level attained in the writing facet of the SELT training.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_SELT_TEST_PROV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">SELT TEST RECEIVED PLACE: Defines where the student received the test to obtain the qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_PREV_UK_STU</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">PREV UK STU: Has the applicant previously been student resident in the UK?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_PREV_CRS_LVL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">PREV CRS LVL: Academic level of the previous program undertaken by the applicant</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_PREV_CURR_LVL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PREV CURR LVL: Defines whether the current program being undertaken is Higher, Lower or the Same level as the previous program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_CURR_CRS_JUST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">CURR CRS JUST: Give reason why applicant is not progressing on an upward training path.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_SELT_TEST_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">SELT TEST DATE: SELT test date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_EXP_ENL_END_DT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">EXPECTED ENROLMENT END DATE: This field holds the last date by which the student is expected to have completed enrolment for the program.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_NS_NOTES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">NO SHOW NOTES: This field holds notes entered by the user when the student does not enrol by the expected date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_MISCON_REP_COM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">COMMENTS ON MISSED CONTACTS REPORTING: This field holds comments on the reporting of missed contacts to the UKBA via the SMS portal.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_MISCON_REP_NUM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER OF REPORTED MISSED CONTACTS: This field holds the number of missed contacts that have been reported to the UKBA via the SMS portal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_MISCON_SNA_NUM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MISCON SNA NUM: Total number of missed contacts identified by the last missed contact snapshot.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_MISCON_REP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DATE MISSED CONTACTS REPORTED: This field holds the date the missed contacts were reported to the UKBA via the SMS portal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_MISCON_REP_USER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER WHO REPORTED MISSED CONTACTS: This field holds the name of the user who reported the missed contacts to the UKBA via the SMS portal.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_REFUSAL_REASON</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">REFUSAL REASON: This field holds the reason for the refusal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_REFUSAL_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REFUSAL DATE: This field holds the date of the refusal.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_ENTRY_CLR_POST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">ENTRY CLEARANCE POST: This field holds the Entry Clearance Post.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_APPEAL_REQST_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">APPEAL REQUESTED INDICATOR: This Y/N field indicates whether an appeal has been requested.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_APPEAL_REQST_COM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">APPEAL REQUESTED COMMENT: The field holds the comment about the requested appeal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_APPEAL_SUCC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">APPEAL SUCCESSFUL INDICATOR: This Y/N field indicates whether the appeal has been successful.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_APPEAL_SUCC_COM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">APPEAL SUCCESSFUL COMMENT: The field holds the comment about the success of the appeal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_FURTHER_INFO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">FURTHER INFO: The field holds information on refunds, reapplication and follow-up comments.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_APP_HS_WRK_PLMT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">APP HS WRK PLMT: Applicant Has Work Placement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_WRK_PLMT_PERCENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">WRK PLMT PERCENT: Work placement percentage.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_WRK_PLMT_JUSTIF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">WRK PLMT JUSTIF: Work placement justification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: Date on which the record was created or last updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Unique identifier for each row in the table.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: The optimistic lock token for this record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_STUDY_ELIGIBILITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">STUDY ELIGIBILITY: Eligibility details to study as an International student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_STUDY_ELIGIBILITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">STUDY ELIGIBILITY DATE: Date submitted for proof of eligibility.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_GRAD_CAS_BATCH_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">GRADUATE CAS REPORT BATCH TYPE: Batch type for Graduate CAS report or file generated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_GRAD_CAS_BATCH_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">GRADUATE CAS REPORT BATCH NAME: The Batch Name for the Graduate CAS report was generated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_GRAD_CAS_BATCH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">GRADUATE CAS REPORT BATCH DATE: Date the Graduate CAS report was generated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_GRAD_CAS_UPLOAD_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">GRADUATE CAS REPORT UPLOAD DATE: Date the Graduate CAS report was uploaded to UKVI.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRCTAF_GRAD_RETURN_OVERRIDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GRADUATE RETURN OVERRIDE: Override rules to print CAS Number</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRCTAF_GRADUATE_NOTIFIED_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">GRADUATE NOTIFIED DATE: Graduate activity notified date.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

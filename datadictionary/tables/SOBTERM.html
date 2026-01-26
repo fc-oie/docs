@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>sobterm – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sobterm" id="toc-sobterm" class="nav-link active" data-scroll-target="#sobterm">SOBTERM</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="sobterm" class="level1">
+<h1>SOBTERM</h1>
+<p>Below are the column names for <strong>SOBTERM</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SOBTERM</caption>
+<colgroup>
+<col style="width: 9%">
+<col style="width: 3%">
+<col style="width: 3%">
+<col style="width: 83%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_TERM_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field identifies the term code associated with the entries on the Term Control Form (SOATERM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_CRN_ONEUP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">This field displays the last Course Reference Number (CRN) generated by the system.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_REG_ALLOWED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether on-line registration is allowed for the Key Block Term. Values are “Y”-allow registration or “N”-no on-line registration.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_READM_REQ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">This field indicates the re-admit term. If a student has not registered since this term, they must be re-admitted through admission.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_FEE_ASSESSMENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether fee assessment can be initiated on-line from the Registration From (SFAREGS). “Y”-allow on-line fee assessment, “N”-only batch fee assessment</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_FEE_ASSESSMNT_EFF_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field identifies the effective date associated with fees assessed on-line at registration. This date is associated with charges on the student Account Detail Record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DUPL_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates how duplicate course entries are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_LINK_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates how linked course sections are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_PREQ_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course pre-requisites are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_CORQ_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course and section co-requisites are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_TIME_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course section time conflicts are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_CAPC_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course section capacity is checked during on-line registration. Values are “F”-fatal error, “W”-warning, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_LEVL_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course level restrictions are checked during on-line registration. Values are “F”-fatal error, “W”-warning, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_COLL_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course or section college restrictions are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_MAJR_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course or section student major restrictions are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_CLAS_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course or section class restrictions are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_APPR_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether course section special approval indicators are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_MAXH_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether the student maximum hours are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_HOLD_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field indicates whether the person holds are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">This field indicates the last date the SOBTERM record was updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_HOLD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Registration Hold Password.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_REFUND_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Refund By Total Indicator.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_BYCRN_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Assess fees by CRN indicator.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_REPT_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Used to denote repeat severity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_RPTH_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Used to denote repeat hours severity.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_TEST_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Used to denote test score severity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_CAMP_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">The Campus Registration Restriction error severity code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_FEE_ASSESS_VR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Web Self Service and VR Fee Assessment Indicator.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_PRINT_BILL_VR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Self Service and VR Print Bill Indicator.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_TMST_CALC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Flag indicating whether time status calculations should occur automatically in designated forms on a term by term basis.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_INCL_ATTMPT_HRS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Include credit hours from in-progress courses (those still in registration and not yet rolled to history) when calculating student classification for registration purposes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_CRED_WEB_UPD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether student can change class option credit hours on the web or not</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_GMOD_WEB_UPD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether student can change class option grading mode on the web or not</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_LEVL_WEB_UPD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether student can change class option level on the web or not</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_CLOSECT_WEB_DISP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether the closed section should be displayed on the web or not</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_MAILER_WEB_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether to allow grades to be accessed on the Web for the term</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_SCHD_WEB_SEARCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether schedule type will be the search criteria in the web look up page</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_CAMP_WEB_SEARCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether campus will be the search criteria in the web look up page</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_SESS_WEB_SEARCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether session will be the search criteria in the web look up page</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_INSTR_WEB_SEARCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether instructor will be the search criteria in the web look up page</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_FACSCHD_WEB_DISP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Field used to control access to the Faculty Schedule Display page in the Faculty Web product</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_CLASLST_WEB_DISP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Field used to control access to the Class List Display page in the Faculty Web product</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_OVERAPP_WEB_UPD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Field used to control access to the Registration Approval/Overrides page in the Faculty Web product</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_ADD_DRP_WEB_UPD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Field used to control access to the Registration Add/Drop page in the Faculty Web product</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DEGREE_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates degree restriction checking (no checking, warning, fatal error) at registration time for the term</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_PROGRAM_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates program restriction checking (no checking, warning, fatal error) at registration time for the term</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_INPROGRESS_USAGE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether in-progress courses should fulfill prerequisite requirements for the term</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_GRADE_DETAIL_WEB_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Indicates whether to allow grade detail display via the Web for the term</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_MIDTERM_WEB_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Indicates whether to allow mid-term grade display via the web for the term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_PROFILE_SEND_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Flag to specify if info specific to the term should be passed to campus pipeline</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_CUTOFF_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Last date calculated charges are considered original</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_TIV_DATE_SOURCE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Source of Title IV default start and end date. T=Term; P=Part-of-Term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_INST_DSCPL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Check if the discipline check between instructor and course should be performed for the term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_WEB_CAPP_TERM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOBTERM_WEB_CAPP_TERM_IND : This field indicates whether the term code displayed in the key block is a valid term code to be used as the evaluation term form CAPP on the web compliance processing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_WEB_CAPP_CATLG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOBTERM_WEB_CAPP_CATLG_IND : This field indicates whether the term code displayed in the key block is a valid term code to be used as a catalog term for CAPP on the web processing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_ATTR_WEB_SEARCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOBTERM_ATTR_WEB_SEARCH_IND : This field indicates whether the term code displayed in the key block will allow attributes as a search criteria in Look-Up Classes to Add.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_LEVL_WEB_SEARCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether level will be the search criteria in the web look up page.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_INSM_WEB_SEARCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether instructional method will be the search criteria in the web look up page.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_LS_TITLE_WEBS_DISP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether the long section title should be displayed on the web or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_LS_DESC_WEBS_DISP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether the long section description should be displayed on the web or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DURATION_WEB_SRCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether duration will be the search criteria in the web look up page.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_LEVL_WEB_CATL_SRCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether level will be a search criterion in the web catalog look up page.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_STYP_WEB_CATL_SRCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether schedule type will be a search criterion in the web catalog look up page.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_COLL_WEB_CATL_SRCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether college will be a search criterion in the web catalog look up page.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DIV_WEB_CATL_SRCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether division will be a search criterion in the web catalog look up page.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_DEPT_WEB_CATL_SRCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether department will be a search criterion in the web catalog look up page.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_PROG_ATT_WEBC_SRCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether program attribute will be a search criterion in the web catalog look up page.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_LC_TITLE_WEBC_DISP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether the long course title should be displayed on the web catalog or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_LC_DESC_WEBC_DISP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether the long course description should be displayed on the web catalog or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_DYNAMIC_SCHED_TERM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicate whether this term should be displayed on the web select term pulldown or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA SOURCE: Source system that created or updated the row</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: User who inserted or last update the data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_ASSESS_SWAP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether to allow course/hours swapping in registration fee assessment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_ASSESS_REV_NRF_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether to allow the reversal of charges to detail codes having a category code other than TUI or FEE in registration fee assessment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_ASSESS_REG_GRACE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether to allow grace when dropping a course with the same amount of bill hours as a course added on the same initial day of a student’s registration.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_MINH_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">MINIMUM SEVERITY: This field indicates whether the student minimum hours are checked during on-line registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DEPT_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">DEPARTMENT SEVERITY: This field indicates whether section department restrictions are checked during registration. Values are “F”-fatal error, “W”-warning, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_ATTS_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">STUDENT ATTRIBUTE SEVERITY: This field indicates whether section student attribute restrictions are checked during registration. Values are “F”-fatal error, “W”-warning, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_CHRT_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">COHORT SEVERITY: This field indicates whether section cohort restrictions are checked during registration. Values are “F”-fatal error, “W”-warning, “N”-no check.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_REG_AUTH_ACTIVE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Registration Add Authorization Active: Yes/No flag. Turns on or off the Registration Add Authorization Code functionality for the term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DAYS_REQUIRED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Days Required: Indicates the number of days after the first day of class that authorization codes are required for registration adds (Only accesible if Registration Add Authorization Active is Yes).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_DAYS_REUSABLE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Days Reusable: Indicates the number of days a code can be used by the same student after it is first assigned (Only accesible if Registration Add Authorization Active is Yes).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_CALC_DROP_CDE_ACT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Self Service Calculate Drop Code: Yes/Null flag. Null - Use normal baseline functionality; Yes - Use the STU-32 functionality. Turns on or off the STU-32 Computed Drop Code/Fee Refund functionality for the term on the Self-Service Registration (Add or</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Drop Classes page).</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_EXEMP_ONLINE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">EXEMPTION ONLINE IND: This field indicates whether exemptions can be initiated on-line from the Registration Form (SFAREGS). Valid values are: Y-allow on-line exemptions to be applied; N-only batch transactions to be applied.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_EXEMPT_VR_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">EXEMPTION VR IND: Web Self-Service and VR F exemption indicator.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_REG_AUTH_CLOSED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">DISABLE AUTHORIZATION CODES BEFORE START DATE: Indicator (Y/N) where null = N. Defaults to null (N). Allows user to disable the -AUTH REQD (CALB 7.x format) message on the CLOSED messages before the start date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_MEXC_SEVERITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">MUTUAL EXCLUSION SEVERITY: This field indicates whether course mutual exclusion restrictions are checked during registration. Values are “F”-fatal error, “N”-no check.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_STUDY_PATH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">STUDY PATH: Indicator to require a study path for each registration.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_FUTURE_REPEAT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">FUTURE REPEAT INDICATOR: Indicator to count registrations from future terms in registration repeats processing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_SP_WEB_UPD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">STUDY PATH WEB UPDATE: Indicator to allow student to change class option study path on the web.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_SECTIONFEE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Indicator to control whether the study path sequence number for the CRN is stored in SFRFAUD and TBRACCD when the course has a study path assigned in registration and the charge is from a section fee.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_MEETING_TIME_SRC_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MEETING TIME SRC CODE: If Y then meeting time tables comes from Third Party.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_PLAN_TERM_OPEN_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PLAN TERM OPEN CODE: Code used to identify if the Term is open for Planning</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_SEC_ALLOWED_PLAN_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECTION ALLOWED PLAN CODE: Code used to identify if the section is allowed to be added to Plan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_MAX_PLANS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MAX PLANS: Numeric Field to allow Admin to set maximum number of plans allowed to be created by students</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DEG_AUDIT_PLAN_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEG AUDIT PLAN CODE: Code used to identify if Banner needs to fetch Plans from external Degree Audit System</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_PLAN_DA_REG_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PLAN DA REG CODE: Used to identify if Degree Audit Plans are allowed to display in Registration. Valid values are Y/N.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_PLAN_REG_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PLAN REG CODE: Code used to identify if Registration Plans are allowed to display in Registration. Valid values are Y/N.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_COND_ADD_DROP_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONDITIONAL ADD DROP CODE: Banner XE Registration code Y or N to allow conditional add drop selection</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_AUTO_DROP_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AUTO DROP CODE: (C)onfirm, (Y)es, (N)o, (I)gnore .</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_ADMIN_DROP_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADMIN DROP CODE: Y, N or I to process administrative drops on connected classes when student initiates registration.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_DROP_LAST_CLASS_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DROP LAST CLASS ALLOWED: Y or N to allow the student to drop all classes during self-service registration.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_FINAL_GRDE_PUB_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">FINAL GRDE PUB DATE: Final grade publication date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_DET_GRDE_PUB_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DET GRDE PUB DATE: Detailed grade publication date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_REAS_GRDE_PUB_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REAS GRDE PUB DATE: Reassessment grade publication date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_REAS_DET_GRD_PB_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REAS DET GRD PB DATE: Reassessment detail grade publication date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_REGISTRATION_MODEL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REGISTRATION MODEL CODE: The code of the registration model to use. Valid values are (S)tructured Registration, (P)rojections or Null; default value is null. This column is obsolete as of Registration 9.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_REGULAR_MODEL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REGULAR REGISTRATION MODEL INDICATOR: Y - regular registration allowed or N - regular registration not allowed, default Y, not null.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_STRUCTURED_MODEL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STRUCTURED REGISTRATION MODEL INDICATOR: Y - structured registration allowed or N - structured registration not allowed, default N, not null.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_PROJECTED_MODEL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PROJECTION REGISTRATION MODEL INDICATOR: Y - projection registration allowed or N - projection registration not allowed, default N, not null.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_ASSESS_ADM_CREDIT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADMINISTRATIVE CREDIT PROCESSING INDICATOR: Indicates if online credit processing should occur automatically when processing transactions in administrative pages.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SOBTERM_ASSESS_SS_CREDIT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SELF SERVICE CREDIT PROCESSING INDICATOR: Indicates if online credit processing should occur automatically when processing transactions in self service registration.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SOBTERM_CALC_DROP_ACT_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATED DROP ACTIVE CODE: Y - Calculated drop codes may be employed in registration. N or null- Calculated drop codes may not be employed in registration.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

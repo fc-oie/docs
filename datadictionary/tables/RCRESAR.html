@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rcresar – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rcresar" id="toc-rcresar" class="nav-link active" data-scroll-target="#rcresar">RCRESAR</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rcresar" class="level1">
+<h1>RCRESAR</h1>
+<p>Below are the column names for <strong>RCRESAR</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RCRESAR</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information in this record was entered or last updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_PELL_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_TRANS_MDE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_NAME_SSN_CHG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_PGI_AWARD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_RIT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_PGI_ADJ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_HOLD_STATUS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SYS_GEN_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_AGENCY_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_BATCH_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_TRAN_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_CITZ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_MRTL_STATUS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_BORN_BEFORE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_FAM_MEMB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_TAX_FILED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_EXP_TAX_FILED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_US_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_INC_TAX_PD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_EXP_TAX_PD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_SPS_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_SS_BENE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_AFDC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_CHILD_SUPP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_MED_DEN_EXP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_TUIT_PAID_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_NO_CHILD_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_GI_DEAB_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_GI_DEAB_MTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_VEAP_BEN_AMT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_VEAP_BEN_MTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_DISL_WRK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_EXP_INC_FR_WRK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_EXP_SPS_INC_WRK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_DISP_HME_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_HME_VAL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_HME_DBT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_RE_INV_VAL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_RE_INV_DBT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_BUS_FARM_VAL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_BUS_FARM_DBT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_INCL_FARM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_PAR_MRTL_STATUS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_PAR_FAM_MEMB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_PAR_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_PAR_TAX_FILED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_PAR_EXP_TX_FILED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_PAR_US_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_PAR_INC_TAX_PD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_PAR_EXP_TAX_PD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_FATH_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENT 1 INCOME FROM WORK: Assumed Father’s/Mother’s/Stepparent’s Income from Work.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_MOTH_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENT 2 INCOME FROM WORK: Assumed Father’s/Mother’s/Stepparent’s Income from Work.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_PAR_MED_DEN_EXP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_PAR_TUIT_PAID_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_PAR_NO_CHILD_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_PAR_DISL_WRK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_FATH_EXP_INC_WRK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_MOTH_EXP_INC_WRK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_PAR_DISP_HME_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_PAR_INCL_FARM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_01_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_02_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_03_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_04_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_05_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_06_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_07_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_08_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_10_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_11_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_12_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_01_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_02_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_03_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_04_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_05_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_06_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_07_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_08_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_10_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_11_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_12_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_01</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_02</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_03</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_04</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_05</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_06</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_07</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_08</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_09</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_10</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_11</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_12</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_13</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_14</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_15</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_16</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_17</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_18</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_COMM_CODE_19</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMM_CODE_20</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_EDE_INST_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ELECTRONIC APPLICATION ENTRY SOURCE CODE: The origin of the electronic application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_BAL_ON_ALL_STAF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_RECENT_STAF_BAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE: Institution ID is not authorized for participation in stage 0. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 2: Record not signed by applicant. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 3: Alpha value in numeric field. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 4: Numeric value in alpha field. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 5: Data field value out of specified range. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 6: Dependency override or special condition not submitted on Correction Application. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 7: FAA signature not submitted on dependency override. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 8: Blank or invalid encryption code. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 9: Destination point submitting Renewal Application was not requesting destination point. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_STAGE_0_REJ_CODE_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STAGE 0 REJECT CODE 10: Renewal application record is not on the renewal application data base. Y = rejected, blank = not rejected.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_MARRIED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT ASSUMED MARRIED: Indicates that the assumption is used to determine thata student is married.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_P_LIVE_ON_FARM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS ASSUMED LIVE ON FARM: Indicates that an assumption is used to determine whether the parents are living on a farm.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_BUS_DBT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT’S BUSINESS DEBT ASSUMED: Indicates that an assumption is used to determine the student’s business debt.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_BUS_VAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT’S BUSINESS VALUE ASSUMED: Indicates that an assumption is used to determine the student’s business value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_FARM_DBT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT’S FARM DEBT ASSUMED: Indicates that an assumption is used to determine the student’s farm debt.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_FARM_VAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT’S FARM VALUE ASSUMED: Indicates that an assumption is used to determine the student’s farm value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_LIVE_ON_FARM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT LIVE ON FARM ASSUMED: Indicates that an assumption is used to determine that a student is living on a farm.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_DUP_REQ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DUPLICATE REQUEST INDICATOR: Indicates that the record was sent to the institution as a result of a request for a duplicate ESAR</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_BAL_SLS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED BALANCE SLS: Value of P means student reported a negative value. CPS assumed same positive value</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_VERIF_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">VERIFICATION TYPE: Indicates the results of the verification edits on this transaction number. May be different from Verification Message on transactions above number 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_CORR_APPL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CORRECTION APPLIED: Indicates the transaction number to which the history correction was applied</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_EXP_IV_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED TITLE IV INCOME EXCLUSIONS: Student/parent expected Title IV income exclusions</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_IV_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT TITLE IV INCOME EXCLUSIONS: Represents the value assumed by the CPS for the student Title IV income exclusions</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_P_IV_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENT TITLE IV INCOME EXCLUSIONS: Represents the value assumed by the CPS for the parent Title IV income exclusions</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_EXP_IV_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED EXPECTED TITLE IV INCOME EXCLUSIONS: Represents the value assumed by the CPS for the expected student/parent Title IV income exclusions</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_PELL_ELGBL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL GRANT ELIGIBILITY FLAG: This field indicates applicants eligibility as of this transaction for a Federal Pell Grant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SUB_APP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SUBSEQUENT APPLICATION FLAG: This field indicates if subsequent application from applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_REC_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_FIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S U.S. TAX PAID: This field indicates the assumed amount of U.S. Tax paid by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_SS_BEN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S SSB: This field indicates the assumed amount of Social Security Benefits received by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_AFDC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S AFDC: This field indicates the assumed amount of AFDC benefits received by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_CHILD_SUPP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S CHILD SUPPORT: This field indicates the assumed amount of child support received by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S INVESTMENT VALUE: This field indicates the student’s assumed amount of investment value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_BUS_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S BUSINESS VALUE: This field indicates the student’s assumed amount of business value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_FARM_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S INVESTMENT FARM VALUE: This field indicates the student’s assumed investment farm value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_P_FIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENTS’ U.S. TAX PAID: This field indicates the parents’ assumed tax paid amount.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_EXP_FIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED EXPECTED INCOME TAX PAID: This field indicates the assumed expected tax to be paid.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_EARLY_ADM_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EARLY ADMISSION FLAG: This field indicates if the student has an early admission flag or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SAR_ACKNOWL_CD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">SAR ACKNOWLEDGEMENT CODES: This field indicates the SAR acknowledgement codes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_EIC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S EARNED INCOME CREDIT: This field indicates the assumed amount of earned income credit for the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_P_EIC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENTS’ EARNED INCOME CREDIT: This field indicates the assumed amount of earned income credit for the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_OTH_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S OTHER UNTAXED INCOME: This field indicates the assumed amount of other untaxed income for the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_P_OTH_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENTS’ OTHER UNTAXED INCOME: This field indicates the assumed amount of other untaxed income for the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_P_AFDC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENTS’ AFDC: This field indicates the assumed amount of AFDC received by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_P_CHILD_SUPPORT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENTS’ CHILD SUPPORT: This field indicates the assumed amount of child support the parents will receive.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_DEPENDANTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_BATCH_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">BATCH ID: This is the ID of the batch, assigned by the processor, from which this ESAR data was loaded into the system. Alphanumeric, replaces numeric batch number starting in 9697 aid year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_TRAN_RECEIPT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">TRANSACTION RECEIPT DATE: The date the FAFSA ISIR information was received at the CPS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_MDE_SITE_CD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">TRANSACTION SOURCE SITE CODE: The origin and site code for the transaction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_APPL_SRC_SITE_CD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">APPLICATION SOURCE SITE CODE: The Site Location for the initial paper or electronic application. 1 = Site 1, 2 = Site 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_RE_PROC_REA_CD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">REPROCESSED REASON CODE: The code for the reason the application was reprocessed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_P_SSB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT SOCIAL SECURITY BENEFITS: The assumed parents social security benefits.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 1: This field indicates the federal housing code associated with the student’s first federal college choice.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 2: This field indicates the federal housing code associated with the student’s second federal college choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 3: This field indicates the federal housing code associated with the student’s third federal college choice.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 4: This field indicates the federal housing code associated with the student’s fourth federal college choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 5: This field indicates the federal housing code associated with the student’s fifth federal college choice.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 6: This field indicates the federal housing code associated with the student’s sixth federal college choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ELEC_APP_VERSION_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ELECTRONIC APPLICATION VERSION NUMBER: This field indicates the version number of the student’s electronic application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ETI_DEST_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">ETI DESTINATION CODE: This field indicates the TGXXXXX number for the destination code of the transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_COMPUTE_BATCH_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COMPUTED BATCH NUMBER: This field indicates the computed batch number assigned by the Central Processor to this ISIR.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_PAID_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PAID EFC: This field indicates the EFC upon which the school based its payment, as reported to the Central Processor.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_EFC_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECONDARY EFC TYPE: This field indicates the type of the secondary Expected Family Contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_VA_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED VA STATUS: This field indicates the assumed veteran status of the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_DUP_PROCESSED_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DUPLICATE PROCESSED DATE: This field indicates the date upon which the duplicate ISIR record was processed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_CORR_FLAGS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">780</td>
+<td style="text-align: left;">CORRECTION FLAGS: This field indicates which fields in this ISIR have been changed. For example, a ‘1’ in position 3 would mean that ISIR Field Number 3 has changed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_HIGH_FLAGS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">780</td>
+<td style="text-align: left;">HIGHLIGHT FLAGS: This field indicates which fields in this ISIR should be printed with highlighting. For example, a ‘1’ in position 3 would mean that ISIR Field Number 3 should be highlighted when printed on an ISIR.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_FATH_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">ASSUMED PARENT 1 SOCIAL SECURITY NUMBER: Assumed Father’s/Mother’s/Stepparent’s Social Security Number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_INPUT_REC_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INPUT RECORD TYPE: Type of Input Record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_MOTH_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">ASSUMED PARENT 2 SOCIAL SECURITY NUMBER: Assumed Father’s/Mother’s/Stepparent’s Social Security Number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_HAVE_CHILDREN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED HAVE CHILDREN YOU SUPPORT: Assumed have children you support who receive more than half of their support from you.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_AUTO_ZERO_EFC_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AUTOMATIC ZERO EFC FLAG: EFC automatically set to zero based on income criteria.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SERIAL_NUMBER</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SERIAL NUMBER: Sequential position of ISIR in batch in which it is received</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_DEP_INDEP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEPENDENCY STATUS: The student’s dependency status. D = Dependent; I = Independent</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_GRADUATE_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GRADUATE FLAG: Indicates a graduate student based on responses to graduate questions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_PRI_EFC_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PRIMARY EFC TYPE: Identifies the formula typed used to calculate the primary EFC Valid values are 1 - 6.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_TI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC TI: Secondary Total Income</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_ATI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC ATI: Secondary Allowances Against Total Income</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_STX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC STX: Secondary State Tax Allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_EA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC EA: Secondary Employment Allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_IPA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC IPA: Secondary Income Protection Allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_AI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC AI: Secondary Available Income</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_CAI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC CAI: Secondary Contribution from Available Income</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_DNW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC DNW: Secondary Discretionary Net Worth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_NW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC NW: Secondary Net Worth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_APA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC APA: Secondary Asset Protection Allowances</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_PCA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC PCA: Secondary Parents’ Contribution from Assets</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_AAI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC AAI: Secondary Adjusted Available Income</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_TSC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC TSC: Secondary Total Student Contribution</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_TPC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC TPC: Secondary Total Parent Contribution</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_PC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC PC: Secondary Parents’ Contribution</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_STI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC STI: Secondary Students’ Total Income</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_SATI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC SATI: Secondary Student’s Allowance Against Total Income</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_SIC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC SIC: Secondary Student’s Dependent Income Contribution</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SEC_SDNW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SECSDNW: Secondary Student’s Discretionary Net Worth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SEC_SCA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEC SDNW: Secondary Student’s Contribution from Assets</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_WORKSHEET_C</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S WORKSHEET C TOTAL: Assumed Student’s Worksheet C Title IV Income Exclusions Total</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_P_WORKSHEET_C</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENTS’ WORKSHEET C TOTAL: Assumed Parents’ Worksheet C Title IV Income Exclusions Total</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_DATA_VERIFY_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">780</td>
+<td style="text-align: left;">FAFSA DATA VERIFY FLAG: Each flag byte corresponds to a specific SAR field and indicates fields corrected status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_EDE_ETI_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ISIR ELECTRONIC TRANSACTION INDICATOR (ETI): ISIR Electronic Transaction Indicator (ETI)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 1: Multi School Code Flag 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 2: Multi School Code Flag 2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 3: Multi School Code Flag 3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 4: Multi School Code Flag 4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 5: Multi School Code Flag 5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 6: Multi School Code Flag 6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_REJ_STATUS_CHANGE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECTED STATUS CHANGE FLAG: Rejected status change flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_VERIF_CHANGE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VERIFICATION SELECTION FLAG: Verification selection flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 7: Indicates the federal housing code associated with the student’s seventh federal college choice.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 8: Indicates the federal housing code associated with the student’s eighth federal college choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 9: Indicates the federal housing code associated with the student’s ninth federal college choice.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_FED_HOUS_CDE_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL HOUSING CODE 10: Indicates the federal housing code associated with the student’s tenth federal college choice.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 7: Multi School Code Flag 7.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 8: Multi School Code Flag 8.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 9: Multi School Code Flag 9.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_M_SCHOOL_FLAG_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MULTI SCHOOL CODE FLAG 10: Multi School Code Flag 10.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_SIGNATURE_REJ_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SIGNATURE REJECT EFC: Calculated EFC for record rejected due to missing signatures only. This is an unofficial EFC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SPEC_CIRCUM_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SPECIAL CIRCUMSTANCES FLAG: Indicates type of special circumstance performed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_S_ADDL_FINANCIAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED STUDENT’S ADDITIONAL FINANCIAL INFORMATION: Student’s assumed additional financial information total.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_P_ADDL_FINANCIAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ASSUMED PARENT’S ADDITIONAL FINANCIAL INFORMATION: Parent’s assumed additional financial information total.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_HOMELESS_SCHOOL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ASSUMED HOMELESS SCHOOL: The student is assumed to be homeless by the school.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_HOMELESS_HUD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ASSUMED HOMELESS HUD: The student is assumed to be homeless by the Department of Housing and Urban Development.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_AT_RISK_HOMELESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ASSUMED AT RISK OF HOMELESSNESS: The student is assumed to be at risk of homelessness.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_A_S_ASSET_THRESH_EXCD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED STUDENT ASSET THRESHOLD EXCEEDED: Indicates that an assumption is used to determine whether the student’s asset threshold has been exceeded.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_A_P_ASSET_THRESH_EXCD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED PARENT ASSET THRESHOLD EXCEEDED: Indicates that an assumption is used to determine whether the parents’ asset threshold has been exceeded.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_ALT_1_FC_09_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">9 MONTH PRIMARY EFC CALCULATION: The nine month primary EFC calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_ALT_2_FC_09_MTH_CALC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">9 MONTH SECONDARY EFC CALCULATION: The nine month secondary EFC calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRESAR_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRESAR_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

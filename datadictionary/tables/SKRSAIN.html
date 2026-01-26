@@ -1,0 +1,3032 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>skrsain – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#skrsain" id="toc-skrsain" class="nav-link active" data-scroll-target="#skrsain">SKRSAIN</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="skrsain" class="level1">
+<h1>SKRSAIN</h1>
+<p>Below are the column names for <strong>SKRSAIN</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SKRSAIN</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 81%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_APPLICANT_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">APPLICANT NO: Applicant Number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: Internal identification number of person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_USER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER: The Oracle ID of the user who changed the record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: Date and time that the record was created or updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The Oracle ID of the user who changed the record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_APP_SCHEME_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">APP SCHEME CODE: Application scheme code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_CAREDURATION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CARE DURATION: Code for time spent in care.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_LATEAPPLICATION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LATE APPLICATION: L - application received after on time deadline, else null.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_ADJUSTMENTSTATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADJUSTMENT STATUS: ADJUSTMENT STATUS: Adjustment status for this applicant; Null - not eligible for Adjustment, L - Eligible for Adjustment, R - Registered for Adjustment, E - Adjustment period has Expired, P - Placed in Adjustment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_ADJREGDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ADJUSTMENT REGISTERED DATE: Date or time this applicant registered for Adjustment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_ADJEXPDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ADJUSTMENT EXPIRY DATE: Date or time the Adjustment period ends for this applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PREU</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">PRE UNIVERSITY: Cambridge Pre-U; 1 - taking Pre-U Certificate; 2 - taking Pre-U Diploma.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_DIPLOMA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">DIPLOMA: 1 - taking Progression Diploma; 2 - taking Advanced Diploma; 3 - taking Extended Diploma.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PRL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">PRINCIPAL LEARNING INDICATOR: 1 - taking Principle Learning in its own right.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_DATEINTOTOPAZ</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DATE INTO TOPAZ: Date application loaded into UCAS Topaz database.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SPECIALNEEDS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">SPECIAL NEEDS: Any special needs required by the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_APPLICATIONYEAR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">APPLICATION YEAR: Application cycle applied for; eg. 2006 - cycle for year of entry 2006.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_DEPTHEALTHREG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">DEPT HEALTH REG: Department of health personal registration number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT14: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT15: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT16: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT17: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT18: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT19: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT20: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT21: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_LASTEDUCATION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">LAST EDUCATION: Last Educational Establishment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SBJAQ1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SUBJECT AQ1: Subject qualification aim 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SBJAQ2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SUBJECT AQ2: Subject qualification aim 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SBJAQ3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SUBJECT AQ3: Subject qualification aim 3.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SBJBID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SBJB ID: Subject Id.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SOC2000</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">STANDARD OCCUPATIONAL QUALIFICATION 2000: Occupational background.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SENT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">SENT DATE: Date Sent out.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CODED_CHANGE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CODED CHANGE DATE: Coded information change date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_FEELEVEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEE LEVEL: Fee level.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_EXAM_CHANGE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">EXAM CHANGE DATE: Exam details changed date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_KEYSKILLS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">KEY SKILLS: Key skills flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_AICE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AICE: Advanced International Certificate of Education flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_PREVOEQ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">CODE PREV OEQ: Previous Other Exam Qualifications.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CRIMINAL_CONV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CRIMINAL CONV: Criminal conviction.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_UK_ENTRY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">UK ENTRY DATE: UK entry date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_GTTR_ROUNDNO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GTTR ROUND NO: Graduate Teacher Training Registry current round number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_GTTR_PREVIOUSROUND</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GTTR PREVIOUS ROUND: Graduate Teacher Training Registry previous round number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_FIRMNOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FIRM NOW: Firm choice number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_INSURANCEREPLY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INSURANCE REPLY: Insurance reply.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_EXTRA_STATUS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXTRA STATUS: UCAS Extra status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_GTTR_CLEARING_STATUS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GTTR CLEARING STATUS: Graduate Teacher Training Registry clearing status.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_POCCEDUCHANGEDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">POCC EDU CHANGE DATE: Date of change of Parental Occupation details.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SOCIAL_CLASS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SOCIAL CLASS: Social Class.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_MATCHPREVIOUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MATCH PREVIOUS: Matched previous results.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_MATCHPREVIOUSDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">MATCH PREVIOUS DATE: Date previous results matched.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_MATCHWINTER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MATCH WINTER: Matched winter results.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_MATCHSUMMER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MATCH SUMMER: Matched summer results.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_IBDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INTERNATIONAL BACCALAUREATE DATE: International Baccalaureate moved date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_ILCDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">IRISH LEAVING CERTIFICATE DATE: Irish Leaving Certificate moved date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_AICEDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ADVANCED INTERNATIONAL CERTIFICATE OF EDUCATION DATE: Advanced International Certificate of Education moved date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_GCESQADATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">GCE SCOTTISH QUALIFICATIONS AGENCY DATE: GCE Scottish Qualifications Agency moved date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_VOCATIONAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">VOCATIONAL: Vocational flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_UCAS_APP_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">UCAS APP STATUS: UCAS application status.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CEF_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CLEARING ENTRY FORM NO: Clearing entry form number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PERSONALID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">PERSONAL ID: Unique Personal Identifier.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CAMPID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CAMP ID: Campus ID.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PREVINST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">PREV INST: Previous Institution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_REGBODY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">REG BODY: Regulatory Body.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_DHREGREF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">HEALTH DEPT REG REF: Department of Health Registration Reference.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_DHFUND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">HEALTH DEPT FUND: Department of Health Funding.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_NHSEMP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NATIONAL HEALTH SERVICE EMP: National Health Service Employer.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_GCEASN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GENERAL CERTIFICATE OF EDUCATION ASN: Number of General Certificate of Education AS Levels.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_GCEASTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">GENERAL CERTIFICATE OF EDUCATION AS TS: Tariff score for General Certificate of Education AS Levels.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_VCEASN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VICTORIAN CERTIFICATE OF EDUCATION ASN: Number of Victorian Certificate of Education AS Levels.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_VCEASTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">VICTORIAN CERTIFICATE OF EDUCATION AS TS: Tariff score for Victorian Certificate of Education AS Levels.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_GCEAN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GENERAL CERTIFICATE OF EDUCATION: Number of General Certificate of Education A Levels.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_GCEATS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">GCEA TS: Tariff Score for General Certificate of Education A Levels.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_VCEAN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VCE AN: Number of Victorian Certificate of Education A Levels.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_VCEATS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">VCE ATS: Tariff Score for Victorian Certificate of Education A Levels.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_KSQN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">KSQN: Number of Key Skills Qualifications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_KSQTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">KSQ TS: Tariff Score for Key Skills Qualifications.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_UKSAN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">UKS AN: Number of 1 unit Key Skills Award.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_UKSATS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">UKS ATS: Tariff Score for Unit key Skills Qualifications.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SAHN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SAHN: Number of Scottish Advanced Higher.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SAHTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">SAH TS: Tariff Score for Scottish Advanced Higher.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SHN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SHN: Number of Scottish Higher.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SHTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">SH TS: Tariff Score for Scottish Higher.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SI2N</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SI2N: Number of Scottish Intermediate 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SI2TS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">SI2 TS: Tariff Score for Scottish Intermediate 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSGCN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SSGCN: Number of Standard Grade.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSGCTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">SSGC TS: Tariff score for Standard Grade.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SCSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SCSN: Number of Scottish Core Skills.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SCSTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">SCS TS: Tariff score for Scottish Core Skills.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_AEAN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AEAN: Number of Advanced Extension Awards.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_AENTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">AEN TS: Tariff score for Advanced Extension Awards.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_TOTALTS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL TS: Total Tariff Score.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_CACHEN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CACHE NUMBER: Number of CACHE Qualifications.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CACHETS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CACHE TS: Tariff score for CACHE Qualifications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_BTECN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BUSINESS AND TECH EDUCATION COUNCIL NUM: Number of Business and Technology Education Council National.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_BTECTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">BUSINESS AND TECH EDUCATION COUNCIL TS: Tariff score for Business and Technology Education Council National.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_IBTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">INTERNATIONAL BACCALAUREATE TS: International Baccalaureate Number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_ILCTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">IRISH LEAVING CERTIFICATE TS: Tariff score for Irish Leaving Certificate.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_MDPATS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">MUSIC DRAMA PERFORMING ARTS TS: Tariff score for Music, Drama and Performing Arts.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_POSTCODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">POST CODE: Applicants address when the HESA return is submitted.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_WELSHLANGUAGE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">WELSH LANGUAGE: Indicates whether applicant would prefer communications from Welsh Higher Education Institutions in Welsh. Y - Yes, N - no preference.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_EMAILFLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EMAIL FLAG: Indicates whether applicant has opted to receive emails from UCAS. Y - emails acceptable, N - no emails.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_NOMAILFLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NO MAIL FLAG: Indicates whether applicant has opted not to receive marketing through the post. Y - no mail, N - mail.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SMSFLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SMS FLAG: Indicates whether applicant has opted to receive SMS from UCAS. Y - SMS, N - no SMS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_MANUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MANUAL: Indicates whether manual investigation of results is required. Y - Yes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_OQ1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">OTHER QUALIFICATIONS 1: Other qualifications. A - Cache, S - CFSP.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_OQ2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">OTHER QUALIFICATIONS 2: Other qualifications (Music). M - Music.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SUPPORTARRANGEMENTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SUPPORT ARRANGEMENTS: Information about student support arrangements as supplied by the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_CRIMRECBUREAU</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CRIM REC BUREAU: Indicates if applicant has agreed to check by Criminal Records Bureau. Y - Yes, N - No.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_EARLIESTSTARTDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">EARLIEST START DATE: Earliest date applicants to modular courses can start.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_UNAVAILABLE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">UNAVAILABLE: Dates when applicant is unavailable for interview.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_OCCHEALTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OCC HEALTH: Indicates if applicant has agreed to Occupational Health Check. Y - Yes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SECONDMENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECONDMENT: Indicates whether applicant will be placed on secondment. Y - Yes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_VISAREQUIRED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VISA REQUIRED: Indicates if applicant requires a student visa to study in the UK. Y - Yes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_BURSARY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BURSARY: Indicates if applicant is eligible for National Health Service bursary. Y - Yes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SELFFUNDING</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SELF FUNDING: Indicates if applicant is self funding. Y - Yes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_TRANSPARENT_CHOICE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TRANSPARENT CHOICE: Choices all Transparent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_MSTUFEE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CODE MAJOR SOURCE OF TUTION FEE: Major source of tuition fees.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT22: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT23: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT24: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT25: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT26: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT27: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT28: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT29: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT30: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT1: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT2: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT3: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT4: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT5: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT6: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT7: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT8: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT9: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT10: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT11: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT12: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT13: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT14: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT15: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT16: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT17: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT18: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT19: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT20: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT21: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT22: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT23: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT24: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT25: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT26: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT27: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT28: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSBJ29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT29: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSBJ30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION SUBJECT30: Awarding Body Linkage subject code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE1: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE2: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE3: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE4: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE5: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE6: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE7: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE8: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE9: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE10: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE11: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE12: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE13: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE14: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE15: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE16: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE17: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE18: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE19: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE20: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE21: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE22: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE23: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE24: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE25: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE26: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE27: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE28: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALTYPE29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE29: Qualification type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALTYPE30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUALIFICATION TYPE30: Qualification type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR1: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR2: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR3: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR4: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR5: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR6: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR7: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR8: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR9: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR10: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR11: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR12: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR13: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR14: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR15: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR16: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR17: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR18: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR19: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR20: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR21: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR22: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR23: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR24: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR25: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR26: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR27: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR28: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALYEAR29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR29: Year qualification was taken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALYEAR30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUALIFICATION YEAR30: Year qualification was taken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_ACCESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE ACCESS: Access Programmes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_ARTICLN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE ARTICULATIONN: Articulation code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_PARED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE PARENTAL EDUCATION: Parental Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_WELBACC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE WELSH Baccalaureate: Welsh Baccalaureate Advanced Diploma.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_NEWENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE NEW ENTRANT: New Entrant to Higher Education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_CARE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">CARE: Applicants reply to the question - Have you been in care?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PGCECLSS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PGCE CLSS: Previous Degree Class Description.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SBJPCT1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SUBJECT PCT1: Subject percentage 3 - defaults supplied, Single subject - 100, Balanced - 50 for each of 2 subjects Major - minor - 67 and 33, Triple - 34,33 and 33.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SBJPCT2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SUBJECT PCT2: Subject percentage 3 - defaults supplied, Single subject - 100, Balanced - 50 for each of 2 subjects Major - minor - 67 and 33, Triple - 34,33 and 33.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SBJPCT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SUBJECT PCT3: Subject percentage 3 - defaults supplied, Single subject - 100, Balanced - 50 for each of 2 subjects Major - minor - 67 and 33, Triple - 34,33 and 33.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE1: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE2: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE3: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE4: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE5: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE6: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE7: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE8: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE9: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE10: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE11: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE12: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE13: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE14: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE15: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE16: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE17: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE18: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE19: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE20: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE21: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE22: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE23: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE24: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE25: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE26: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE27: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE28: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALGRADE29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE29: Final grade reported for qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALGRADE30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">QUALIFICATION GRADE30: Final grade reported for qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT1: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT2: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT3: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT4: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT5: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT6: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT7: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT8: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT9: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT10: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT11: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUALSIT12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT12: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUALSIT13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUALIFICATION SIT13: Exam Sitting S - summer W - Winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_DIRECT_ENTRANT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DIRECT ENTRANT: Direct Entrant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_TERM_CODE_ENTRY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">TERM CODE ENTRY: Entry term code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_APPL_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">APPL NO: Application number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_UCASNUM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">UCAS NUM: The UCAS Number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_CIPC_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">CODE CIPC 1: The subject of previous degree.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_CIPC_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">CODE CIPC 2: Subject of previous degree 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_COMDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COMMENCEMENT DATE: Expected Commencement date of the program on this application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_PMOD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CODE PROGRAM MODE: Mode of the program.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_NATN_CODE_DOMICILE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NATION CODE DOMICILE: Unique code for a nation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_OCCP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">CODE OCCUPATION: Occupation Code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_QUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CODE QUALIFICATION: Educational Qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_CWD_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE COMPLETELY WITHDRAWN FLAG: The Completely Withdrawn Flag field on a UCAS *k record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_CWD_FLG_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COMPLETELY WITHDRAWN FLAG DATE: The date the Completely Withdrawn Flag flag was last changed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_UCAS_APP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">UCAS APP DATE: The date the applicant was first entered UCAS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_UCAS_RUN_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">UCAS RUN NO: UCAS run number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_FPAY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CODE FEE PAY: Fee payer code field from a UCAS *k record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SUMMER_A_LEVELS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SUMMER A LEVELS: The number of summer A levels the student is taking.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SUMMER_AS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SUMMER AS: The number of AS level exams the student is taking in the summer.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_HIGHERS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HIGHERS: The number of highers this student will sit.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CSYS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CERTIFICATE OF SIXTH YEAR STUDY: The number of Sixth Year Studies Certificate exams this student will sit.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_BTEC_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE BUSINESS AND TECH FLAG: The Business and Technology Education Council flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_HSC_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE HIGHER SEC CERT FLAG: The Higher Secondary Certificate flag.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_IRISH_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE IRISH FLAG: Irish leaving certificate flag.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_WINTER_A_LEVELS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">WINTER A LEVELS: The number of A levels the student is sitting this winter.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PREV_SUMMER</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PREV SUMMER: Number of A levels from the previous summer.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_OTHR_FLG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">960</td>
+<td style="text-align: left;">CODE OTHER FLG: Flag indicating other A or AS or higher exams.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_ACHIEVE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE ACHIEVE: Record of Achievement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_OEQ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">CODE OTHER EXAM QUALIFICATION: Other Examination Qualifications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_ROUTE_B</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE ROUTE B: A value of B indicates the student wants to take route B.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_LEAVE_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">LEAVE YR: Year of Leaving field (*H).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_LEA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CODE LOCAL EDUCATION AUTHORITY: Local Education Authority Code field (*H).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_RESCAT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE RES CATEGORY: Residential Category code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_DISA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CODE DISABILITY: Disability code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_EDATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">EARLIEST DATE: Earliest Start Date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_SBGI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">CODE SOURCE OR BACKGROUND INSTITUTION: Source or Background Institution code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_REGION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE REGION: A value of B indicates the student wants to take route B.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUAL_ENGL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">QUALIFICATION ENGL: Qualified in English.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QUAL_MATH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">QUALIFICATION MATH: Qualified in Maths.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUAL_SCIENCE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">QUALIFICATION SCIENCE: Qualified in Science.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_MQUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE MAJOR QUALIFICATION: Major Qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_5PNT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE 5 POINT: Qualification with 5 Points.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_FSERV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE FUTURE SERV: Future Service.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_FSET</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE FUTURE SET: Future Setting.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_PSERV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE PRESENT SERV: Present Service.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_PSET</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE PRESENT SET: Present Setting.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_CEMP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE CURRENT EMP: Current Employment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SOURCE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOURCE: Source.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_APPL_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">APPL DATE: Application Date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_FORM_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">FORM DATE: Form Date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_MTCH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE MATCH IND: Match Indicator.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_ACTIVE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">960</td>
+<td style="text-align: left;">ACTIVE IND: Active Indicator.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_ACCOM_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCOMMODATION STATUS: Accommodation status code. Indicates whether the applicant has requested accommodation details to be arranged.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_ACCOM_START_TERM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ACCOMMODATION START TERM: Initial term for which accommodation is required by an applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_ACCOM_END_TERM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ACCOMMODATION END TERM: Final term for which accommodation is required by an applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_ACCOM_APPL_RECEIVED</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCOMMODATION APPLICATION RECEIVED: Date when the accommodation form was received by the admissions office.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_ACCOM_FORM_SENT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACCOMMODATION FORM SENT: Date when the accommodation form was sent to the accommodations office.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_CLEAR_CODE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CLEAR CODE1: First user definable code for use in clearing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CLEAR_CODE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CLEAR CODE2: Second user definable code for use in clearing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_EAS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CODE ELECTRONIC APPL SYS: Electronic Application System Indicator.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_ED_QUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CODE EDUCATION QUAL: Educational Qualification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SOCIO_ECON_CLASS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOCIO ECONOMIC CLASS: Economical Class.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SUMMER_GCE_A_AS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SUMMER GENERAL CERTIFICATE OF EDUCATION A AS: Number of Summer General Certificate of Education A and General Certificate of Education AS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SUMMER_VCE_A_AS_DBL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SUMMER VICTORIAN CERTIFICATE OF EDUCATION A AS DBL: No of Summer Victorian Certificate of Education A,AS plus Double.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SQA_APPLICANT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SCOTTISH QUALIFICATIONS AGENCY APPLICANT: Scottish Qualifications Agency Applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PREVIOUS_SUMMER_A</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PREVIOUS SUMMER A: Number of A levels from the previous summer.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PREVIOUS_AS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PREVIOUS AS: Number of Previous AS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_EXPECTEDQUALENT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">EXPECTED QUALIFICATION ENTITLED3: HESA code for highest expected qualification level as stated by applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_HIGHESTEXPECTQUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HIGHEST EXPECT QUALIFICATION: Highest level of qualification expected; B - Below degree level qualifications, D - Degree level or above qualifications, N - No formal qualifications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_ATTAINEDQUALENT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ATTAINED QUALIFICATION ENTITLED3: HESA code for highest attained qualification level as stated by applicant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_QUALENT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CODE QUALIFICATION ENTITLED3: Highest qualification - calculated from exam results and other educational qualifications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_RETURNEDMAIL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">RETURNED MAIL: Returned mail indicator; Y - correspondence has been returned, N - no correspondence returned.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_INST1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CODE INSTITUTION1: Institution Specific code 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_INST2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CODE INSTITUTION2: Institution Specific code 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_INST3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CODE INSTITUTION3: Institution Specific code 3.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_INST4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CODE INSTITUTION4: Institution Specific code 4.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_SSDT_CODE_INST5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CODE INSTITUTION5: Institution Specific code 5.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_INSTDATE1</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INSTITUTION DATE1: Institution Specific date 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_INSTDATE2</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INSTITUTION DATE2: Institution Specific date 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_INSTDATE3</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INSTITUTION DATE3: Institution Specific date 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_INSTDATE4</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INSTITUTION DATE4: Institution Specific date 4.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_INSTDATE5</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INSTITUTION DATE5: Institution Specific date 5.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_INSTTEXT1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">INSTITUTION TEXT1: Institution Specific text 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_INSTTEXT2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">INSTITUTION TEXT2: Institution Specific text 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_INSTTEXT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">INSTITUTION TEXT3: Institution Specific text 3.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_INSTTEXT4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">INSTITUTION TEXT4: Institution Specific text 4.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_INSTTEXT5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">INSTITUTION TEXT5: Institution Specific text 5.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PREVIOUSAPPNO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">PREVIOUS APP NO: Previous Application Number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_CANCELLED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CANCELLED: Y - Cancelled.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QUESTIONSFLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">QUESTIONS FLAG: Returns true if the applicant has been asked to fill in their Nursing and Midwifery Council Pin or national insurance number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_AGREEDTOTDAMATCH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AGREED TO TDA MATCH: Y - Applicant has agreed to match the progress of the application against the TDA database.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PREVIOUSAPPLIEDINSTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">PREVIOUS APPLIED INSTITUTIONS: Previous Applied Institutions.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_POLAR2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">POLAR2: Polar2 score.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_LIVEDWORKEDEU</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LIVED WORKED EU: Has the applicant lived or worked in the European Union (excluding UK), European Economic Area or Switzerland?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PARENTSPOUSEEUNAT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT SPOUSE EU NAT: Are the applicants parents or step parents or spouse or civil partner an European Union (excluding UK), European Economic Area or Swiss national?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_QTSTESTREG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Qualified Teacher Status TEST REG: Registered for Qualified Teacher Status Test.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_QTSTESTREGNUM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Qualified Teacher Status TEST REG NUM: Qualified Teacher Status Test Registration Number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_LITERACYTESTDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">LITERACY TEST DATE: Literacy Test Date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_NUMERACYTESTDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">NUMERACY TEST DATE: Numeracy Test Date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_DEGREETYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">DEGREE TYPE: Degree Type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_POLAR3</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">POLAR3: Polar3 score for the postcode of applicant home address (or correspondence address if no home address).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SMDINDEX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SCOTTISH MULTIPLE DERIVATION INDEX: Scottish index of Multiple Deprivation score for the postcode of applicant home address (or correspondence address if no home address).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_WCF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">WELSH COMMUNITIES FIRST: Welsh Communities First score for the postcode of applicant home address (or correspondence address if no home address).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_GTTRHIGHEXPQUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">GRADUAE TEACHER TRAINING REGISTRY HIGH EXPECTED QUAL: Applicants highest expected qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_POC2010</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">PARENTAL OCCUPATION CODE 2010: Parental Occupation Code 2010.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SEC2010</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOCIO ECONOMIC CLASS 2010: Socio Economic Class 2010.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_GENDERID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">GENDER ID: Gender identity.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SEXORT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">SEX ORIENTATION: Sexual orientation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_RELG_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">RELIGION CODE: Religious affiliation associated with person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_POLAR4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">POLAR4: POLAR4 young participation quintile for the postcode of applicants home address (or correspondence address if no home address).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PARENTAL_OCCU_2020</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">PARENTAL OCCUPATION 2020: Parental Occupation value 2020.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_SOCIO_ECONOMIC_2020</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SOCIO ECONOMIC 2020: Socio Economic Class value 2020.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the row.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_APPL_SETTLED_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">APPLICANT SETTLED STATUS: Data collected from applicants to establish if they have settled or pre-settled status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_NO_VISA_REASON_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">NO VISA REASON CDE: Visa reason code when No is selected for studentVisaRequired field.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_NO_VISA_REASON_OTHER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">NO VISA REASON OTHER: Visa reason code when Other is selected for noVisaReasonCode field.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PRE_SETTLED_EXP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PRE SETTLED EXPIRY DATE: This is the date the applicant declared the visa will expire.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PREV_STUDY_START_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PREVIOUS STUDY START DATE: The study start date when the applicant has answered Yes to studentVisaStudyFlag field.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_PREV_STUDY_LEVEL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">PREVIOUS STUDY LEVEL CDE: The study level code when the applicant has answered Yes to studentVisaStudyFlag field.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_PREV_STUDY_END_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PREVIOUS STUDY END DATE: The study end date when the applicant has answered Yes to studentVisaStudyFlag field.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_VISA_START_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">VISA START DATE: The start date of the visa for applicants where visaOrImmigrationStatusCode is applicable.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_VISA_IMMIGRATION_STAT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">VISA OR IMMIGRATION STATUS CDE: The code for the visa or immigration status when the applicant is non UK/Irish.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_VISA_STATUS_OTHER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">VISA STATUS OTHER: Other visa or immigration status provided by the applicant when the other option is selected in visaOrImmigrationStatusCode field.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_VISA_END_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">VISA END DATE: The end date of the visa for applicants where visaOrImmigrationStatusCode is applicable.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_STUDENT_VISA_REQ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT VISA REQUIRED INDICATOR: Student visa required indicator. Valid values are Y or N.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_STUDENT_VISA_STUDY_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT VISA STUDY INDICATOR: Has the applicant studied on student VISA in UK before? Valid values are Y or N.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKRSAIN_NO_VISA_REASON_OTHER_U</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">NO VISA REASON OTHER UNICODE DATA: Unicode visa reason code when Other is selected for noVisaReasonCode field.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKRSAIN_VISA_STATUS_OTHER_U</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">VISA STATUS OTHER UNICODE DATA: Unicode other visa or immigration status provided by the applicant when the other option is selected in visaOrImmigrationStatusCode field.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

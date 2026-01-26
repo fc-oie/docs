@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>shrtprt – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#shrtprt" id="toc-shrtprt" class="nav-link active" data-scroll-target="#shrtprt">SHRTPRT</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="shrtprt" class="level1">
+<h1>SHRTPRT</h1>
+<p>Below are the column names for <strong>SHRTPRT</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SHRTPRT</caption>
+<colgroup>
+<col style="width: 15%">
+<col style="width: 4%">
+<col style="width: 5%">
+<col style="width: 74%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_TPRT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Transcript verification request code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_QUAL_PAPERS_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print qualifying papers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_QUAL_PAPERS_TEXT_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print qualifying papers text</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DETAIL_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print detail</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_ACAD_STANDING</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print academic standing</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DEANS_LIST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print deans list</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_STUDENT_ADDR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print student address</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_ISSUE_ADDR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print issued to address</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CURR_STUDENT_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print current student type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_BIRTH_DATE_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print student birth date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_HS_INFO_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print high school information</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_TERM_ADMIT_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print term student was admitted</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_TERM_MATRIC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MATRIC TERM PRINT: Option to print term student was matriculated admitted for learner .</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_CURR_COLL_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COLLEGE PRINT: Option to print learner primary curriculum college.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CURR_MAJOR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MAJOR PRINT: Option to print the learner primary curriculum major of the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_CURR_MINOR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MINOR PRINT: Option to print the learner primary curriculum minor of the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_DEGR_MAJOR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR MAJOR PRINT: Option to print the outcome primary curriculum major of the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DEGR_MINOR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR MINOR PRINT: Option to print the outcome primary curriculum minor of the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_ACAD_EVENT_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print the academic events of the student</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_STD_COLL_BY_TERM_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COLLEGE TERM PRINT: Option to print primary learner curriculum college by term.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_STD_MAJR_BY_TERM_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MAJOR TERM PRINT: Option to print the learner primary curriculum major by term.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_STD_TYPE_BY_TERM_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print the student type by term</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_COURSE_COMMENT_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print course comments</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_TERM_COMMENTS_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print term comments</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_LEVEL_COMMENT_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print level comments</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_INST_TOTALS_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print institutional totals</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_TRNS_TOTALS_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print transfer totals</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_OVERALL_TOTALS_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print overall totals</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_GPA_STATISTICS_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print GPA statistics</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_CEU_HRS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print CEU hours.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CEU_DATES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print CEU dates.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_CEU_CONT_HRS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print CEU hours.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_TPRT_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print transcript type code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Date of most recent activity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CAMP_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option to print campus of institution courses.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DGPA_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option of printing the degree gpa or not</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_DEGR_MAJR2_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR MAJOR PRINT: Option to printing the secondary outcome curriculum major.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DECISION_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicator used to denote whethor or not transcript event decision field should print on transcript.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_COMMITTEE_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicator used to denote whethor or not committee data should print on transcript.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_GRADE_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicator used to denote whethor or not transcript event grade field should print on transcript.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_HOLD_GRDE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Transcript Rules Request Type Table indicator field for holding grades until after end of term processing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_HOLD_DEGR_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Transcript Rules Request Type Table indicator field for holding grades until after degree processing.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_ALLOW_EDI_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Transcript Rules Request Type Table code indicator field for allowing EDI transcripts.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_LETR_CODE_CONFIRMED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">Transcript Rules Request Type Table confirmation letter code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_DISPLAY_REGDATES_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Registration date print indicator: This field controls the printing of registration start and end dates for OLR sections on the transcript.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DISPLAY_LONGTITLE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Long Course title print indicator: This field controls the printing of Long Course title on the transcripts.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_ID_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PRINT ID: Print the Banner ID.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_ID_LABEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">ID LABEL: The label that prefixes the Banner ID value</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SSN_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PRINT SSN: Print the Banner SSN.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SSN_MASK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">SSN MASK: The format mask, enter X to preserve the value and * to print a conceal character in place of the real value</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SSN_LABEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">SSN LABEL: The label that prefixes the SSN value</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_BIRTH_DATE_MASK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">BIRTH DATE MASK: The format mask for the birth date. For example, enter DD-MON to print just the day and month.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_TPRT_DESC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TPRT DESC: Option to print the transcript type description at the top of the document.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: User who last updated the transcript type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONC PRINT: Print concentrations attached to the base for the learners primary curriculum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_LFST_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OTHER LFST PRINT: Print other types of fields of studies for the learner primary curriculum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_DEGREE_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGREE PRINT: Print the learners primary curriculum degree.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_CURR_CAMP_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CURR CAMP PRINT: Print the learners primary curriculum campus.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CURR_LABEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">CURRENT LABEL: The label that will print before the learner primary curriculum. The default will be what currently prints, Current Program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_PROGRAM_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PROGRAM PRINT: Print the program description from the learner primary curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_MAJCONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MAJOR CONC PRINT: Print concentrations attached to majors for the learners primary curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SEC_DEGREE_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR PRINT: Print the learner secondary curriculum degree.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SEC_COLL_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD COLLEGE PRINT: Print the learner secondary curriculum college.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SEC_MAJOR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD MAJOR PRINT: Pint the majors for the learner secondary curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SEC_MINOR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD MINOR PRINT Print the minors for the learner secondary curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SEC_CONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD CONC PRINT: Print the concentrations for the learner secondary curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SEC_LFST_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD OTHER LFST PRINT: Print the other field of study types for the learner secondary curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SEC_CURR_LABEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SECD LABEL: The label that will print before the learner secondary curricula. The default will be Secondary.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SEC_CAMP_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD CAMPUS PRINT: Print the learner secondary curriculum campus after the college.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SEC_PROGRAM_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD PROGRAM PRINT: Print the program description from the learner secondary curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SEC_MAJCONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD MAJOR CONC PRINT: Print concentrations attached to majors for the learner secondary curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DEGR_COLL_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR COLLEGE PRINT: Print the college of the primary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_DEGR_CONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR CONC PRINT: Print concentrations for the primary outcome curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DEGR_LFST_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR OTHER LFST PRINT: Print the other field of study types for the primary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_DEGR_CURR_LABEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">DEGR LABEL: The label that will print before the primary outcome curriculum for the outcome. The default will be what currently prints, Primary Degree.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DEGR_CAMP_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR CAMPUS PRINT: Print the campus for the primary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_DEGR_PROGRAM_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR PROGRAM PRINT: Print the program description from the primary outcome curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DEGR_MAJCONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGR MAJOR CONC PRINT: Print concentrations attached to majors for the primary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SECDEGR_COLL_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR COLLEGE PRINT: Print the college of the secondary outcome curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SECDEGR_MINR_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR MINOR PRINT: Print minors for the secondary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SECDEGR_CONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR CONC PRINT: Print concentrations for the secondary outcome curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SECDEGR_LFST_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR OTHER LFST PRINT: Print other fields of study types for the secondary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SECDEGR_CURR_LABEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SECD DEGR LABEL: The label that will print before the secondary outcome curriculum. The default will be Secondary.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SECDEGR_CAMP_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR CAMPUS PRINT: Print the campus for the secondary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_SECDEGR_PROGRAM_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR PROGRAM PRINT: Print the program description from the secondary outcome curriculum.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SECDEGR_MAJCONC_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SECD DEGR MAJ CONC PRINT: Print concentrations attached to majors for the secondary outcome curriculum.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_LAST_ACAD_STD_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LAST ACADEMIC STANDING PRINT: Print the academic standing in the last term reported on the transcript.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_AWARD_LABEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">AWARD LABEL: Label above degree awarded section on the transcript. Default is Awarded.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CURRENT_NAME_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PRINT CURRENT NAME: Print the current name after the transcript hierarchy name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_XML_SCORE_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option of printing test scores.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_XML_IMN_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option of printing immunization data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_XML_CLG_TRANS_UDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option of printing College Transcript UDE data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_XML_STUDENT_UDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option of printing Student UDE data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_XML_ACAD_REC_UDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option of printing Academic Record UDE data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_XML_COURSE_UDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Option of printing Course UDE data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_PRT_SCP_GPA_STATS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Option to print SCP GPA statistics.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_CONT_PAGINATION_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONTIN PAGINATION PRINT: Pagination style. Check for Continuous, uncheck for level specific.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_STUDYPATH_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDYPATH CODE: Y - Study Path is enabled in the report. N or null - Study Path is disabled for the report.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_GRDE_ABBREV_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GRADE CODE ABBREVIATION PRINT: Option to print grade code abbreviation in place of grade code on transcripts. Default value is N.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SHRTPRT_WATERMARK_PRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">WATERMARK PRINT: Option to print an unofficial watermark in student unofficial transcripts. Default value is N.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SHRTPRT_EXPD_CRSE_WDTH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EXPANDED COURSE WIDTH INDICATOR: Option to print the Course and Course Title in the expanded or condensed format.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

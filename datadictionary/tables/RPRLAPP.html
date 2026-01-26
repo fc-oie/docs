@@ -1,0 +1,2576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rprlapp – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rprlapp" id="toc-rprlapp" class="nav-link active" data-scroll-target="#rprlapp">RPRLAPP</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rprlapp" class="level1">
+<h1>RPRLAPP</h1>
+<p>Below are the column names for <strong>RPRLAPP</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RPRLAPP</caption>
+<colgroup>
+<col style="width: 8%">
+<col style="width: 2%">
+<col style="width: 3%">
+<col style="width: 86%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: Internal system student identification number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_FUND_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">FUND CODE: The fund code associated with the loan application. Once the loan application is established, the fund code cannot be changed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_APPL_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">APPLICATION NUMBER: This system assigned number is assigned when the application is added. This number cannot be maintained by the user.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year to be associated with the information in this record. Examples: 9091, 9192, 9293, etc. This code cannot be changed once the loan has been certified.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_SYS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SYSTEM INDICATOR: This field indicates how the loan application was added either by the system or manually.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LOAN_PERIOD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">LOAN PERIOD: The period for which the loan covers.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LNST_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">LOAN STATUS CODE: The code used to identify the current status of the loan in processing.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_RECEIVE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">RECEIVED DATE: The date that the loan application was received. If not entered the system date will default.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_REQUEST_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REQUEST AMOUNT: The amount of loan that the applicant requests. This amount cannot be negative or zero.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information in this record was entered or last updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CITZ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CITIZENSHIP INDICATOR: This indicator defines the citizenship of the applicant as reported on the students Need Analysis document.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">INTERFACE CODE: The code identifying the original source of this application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LENDER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">LENDER ID: The lender code associated with the lending institution making the particular loan. If not entered, the Lender ID will default from RPBLOPT. The Lender ID cannot be changed once the loan has been certified.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_FEE_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LOAN FEE PERCENT: This field identifies the percentage of the loan that will be subtracted from the loan proceeds because of origination fees, etc. If the fee percent is not entered it will default from RFRASPC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_RECOMMEND_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">RECOMMENDED AMOUNT: The packaged loan recommendation from the students award record. This will default from the student’s offered amount. If the fund has not been packaged for the aid year, the amount recommended will be blank.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PROCESS_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PROCESS DATE: The date the loan application was processed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_MAX_ELIG_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MAXIMUM ELIGIBLE AMOUNT: This field identifies the maximum loan amount that the student is eligible for. (The processed amount.)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EXPECT_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED AMOUNT: This field identifies the amount of the loan that the student is expected to receive. It is the lower of either the Maximum Eligible Amount or the Requested Amount.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CERT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CERTIFICATION DATE: The date that the loan application was certified.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_SUB_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">SUBMISSION DATE: This optional field maintains the date in which the loan was submitted.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_APPROVE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">APPROVE DATE: This field maintains the date that the loan was approved by the approving agency.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_APPROVE_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">APPROVE AMOUNT: This field maintains the loan amount that was approved by the approving agency.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CSS_ID_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CSS IDENTIFICATION NUMBER: This field carries the applicants unique CSS document identification number for use in loan transmissions to processing agencies.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">SOCIAL SECURITY NUMBER: This field shows the student’s social security number as reported on the applicant’s need analysis document.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">BIRTH DATE: This field maintains the applicants birth date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_STAT_CODE_RES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">STATE CODE RESIDENCE: This field indicates the state abbreviation of the state in which the applicant is a resident.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_START_RES_MTH_YR</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">START RESIDENCE MONTH/YEAR: This field identifies the start month and year of the student’s residence.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ALIEN_REG_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">ALIEN REGISTRATION NUMBER: This field identifies the student alien registration number if applicable.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DRIVER_LIC_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">DRIVERS LICENSE NUMBER: This field shows the applicant’s driver’s license number as reported on the applicant’s Need Analysis document.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_STAT_CODE_LIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">STATE CODE LICENSE: This field identifies the state code abbreviation of the state in which the student holds a drivers license.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_IN_DEFAULT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IN DEFAULT: This field identifies whether the student is in default on a Title IV loan as reported in the student’s need analysis record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_OWES_REFUND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OWES REFUND: This field indicates whether the student owes a refund on a federal Title IV grant as reported in the student’s need analysis record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_BAL_ON_ALL_STAF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BALANCE ON ALL STAFFORDS: This field shows the applicants balance on all Stafford Loans according to the students reported information on their Need Analysis document.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_RECENT_STAF_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">RECENT STAFFORD BALANCE: This field indicates the balance on the most recent Stafford loan outstanding.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_RECENT_STAF_INT_RATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECENT STAFFORD INTEREST RATE: This field indicates the interest rate on the most recent Stafford loan outstanding.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_RECENT_STAF_CLASS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECENT STAFFORD CLASS: This field identifies the students class level on the most recent Stafford Loan outstanding.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ADJUST_BUDGET_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NO LONGER USED.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ADJUST_TOTAL_AID_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUST TOTAL AID AMOUNT: This field allows the user to adjust the total aid amount from what the system calculated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ADJUST_TFC_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED TFC AMOUNT: This field gives the user the capability to adjust the TFC amount as the system calculated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ADJUST_MAX_ELIG_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MAXIMUM ELIGIBLE AMOUNT: This field gives the user the capability to adjust the eligible amount of the loan if different from what the system calculated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ADJUST_AGI_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED AGI AMOUNT: This field gives the user the option to use an adjusted figure different from what the system calculated for the AGI.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_LOAN_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">A system generated field constructed from SSN,loan type,loan year,FDSLP school code,loan seq.number and prom note transaction number.Created when loan origination records are created.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">A system generated sequence number to designate direct loan applications.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This field is the origination status code, typically system maintained for direct loan applications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_SENT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DATE SENT: The date that a Direct Loan origination record was sent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">The last name of the borrower of a direct loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">The first name of the borrower of a direct loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">MIDDLE NAME: The middle name of the borrower of a direct loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">The address of the borrower of a direct loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">The city in the address of the borrower of a direct loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_STATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">The state in the address of the borrower of a direct loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">The zip code in the address of the borrower of a direct loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PHONE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">The phone number of the borrower of a direct loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EXP_GRAD_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Program competion date of a student in a direct loan application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_YR_IN_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">YEAR IN COLLEGE: For years prior to and including 2000-2001, valid values are 1-7. Starting in 2001-2002, valid values are 0-7.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">The social security number of the parent when a direct loan is of a parent type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">The last name of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">The first name of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">The middle initial of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">The address of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">The city of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_STATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">The state of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">The zip code of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_PHONE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">The phone number of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_DRIVER_LIC_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">The driver license number of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_STAT_CODE_LIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">The state license code of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">The birth date of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_CITZ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">The citizen indicator of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_ALIEN_REG_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">The alien registration of the parent when a direct loan is of a parent type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_IN_DEFAULT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates whether the borrower of a direct loan is in default or owes a refund on a grant</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">The user id of the user updating a direct loan application for this student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CANCEL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CANCELED/INACTIVATED INDICATOR: Indicates whether a direct loan was canceled/inactivated for this student. Valid values are ‘Y’, ‘N’ or blank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CANCEL_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CANCELED/INACTIVATED DATE: The date a direct loan cancel/inactive indicator changed for this student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CREDIT_CHECK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Indicates the status of the PLUS loan credit check on the parent. Valid values are A,N,C,E and D</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CREDIT_CHECK_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">The date a date a credit check was performed for a direct loan for this student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_BATCH_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">BATCH ID: The batch number for the file submitted for this loan record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LOCAL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">LOCAL ADDRESS: Student’s local street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LOCAL_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">LOCAL CITY: Student’s local city.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LOCAL_STAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">LOCAL STATE: Student’s local state.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LOCAL_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">LOCAL ZIP: Student’s local zip code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">PARENT LOCAL ADDRESS: Parent’s local street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">PARENT LOCAL CITY: Parent’s local city.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_STAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PARENT LOCAL STATE: Parent’s local state.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">PARENT LOCAL ZIP: Parent’s local zip code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_HOLD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOLD INDICATOR: Indicates that the loan has been placed on hold.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CONF_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CONFIRMATION DATE: The date the borrower confirmation was recieved.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PLUS_TO_STUDENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PLUS TO STUDENT: Indicates if the PLUS refund is to be refunded to the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_GRADE_LEVEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This is student’s grade level code for loan application record used by Fin Aid Transcript print process when no certification records associated with the loan application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ENROLL_START_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ENROLLMENT START DATE: The student’s enrollment start date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_MODEL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MODEL CODE: Indicates if the student is (I)ndependent or (D)ependent.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CREATE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CREATE DATE: The date the loan application was created. For DL loans initialized by the loan origination batch process.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_REJECT_CODE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 1: The first reconciliation reject code sent from LOC / COD for this loan disbursement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_REJECT_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 2: The second reconciliation reject code sent from LOC / COD for this loan disbursement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_REJECT_CODE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 3: The third reconciliation reject code sent from LOC / COD for this loan disbursement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_RETURN_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">RETURN PIDM: The internal pidm for the Agency/Lender to whom unused funds are to be returned.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LENDER_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LENDER PIDM: The internal pidm for the Lender which issued the loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_GUAR_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GUARANTOR PIDM: The internal pidm for the Guarantee Agency which guaranteed the loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_LOAN_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">EL LOAN ID: The Loan ID used by Electronic Loan processing (CommonLine).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EL SEQUENCE NUMBER: The Sequence Number used by Electronic Loan processing (CommonLine) to further identify the loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EL STATUS: The Status of a loan processed via Electronic Loan processing (CommonLine).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_DATE_SENT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">EL DATE SENT: The date the loan was sent to the loan servicer (CommonLine).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_PROCESS_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">EL PROCESS TYPE: The type of processing for loan (GP - Guarantee and Print, PG - Print and Guarantee, GO - Guarantee only, PO - Print only, RP - Reprint, CR - Certification request, CO - Credit Only, CP - Credit and Print)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_RECORD_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EL RECORD TYPE: The type of record for CommonLine processing</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EFT_AUTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EFT AUTHORIZATION: Indicates whether this loan has been authorized for Electronic processing</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PN_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PN SIGNED DATE: Indicates the date the borrower signed the promissory note for the loan</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_REF_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REFERENCES INDICATOR: Indicates that the borrower has supplied the necessary references for the loan</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_REJECT_CODE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 4: The fourth reconciliation reject code sent from LOC / COD for this loan disbursement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_REJECT_CODE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE5: The fifth reconciliation reject code sent from LOC / COD for this loan disbursement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_RECON_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOAN RECONCILIATION STATUS: The overall reconciliation status from the servicer(Loan Origination Center) for this loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_RECON_REJECT_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 1: The first reconciliation reject code sent from the servicer(Loan Origination Center) for this loan disbursement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_RECON_REJECT_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 2: The second reconciliation reject code sent from the servicer(Loan Origination Center) for this loan disbursement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_RECON_REJECT_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 3: The third reconciliation reject code sent from the servicer(Loan Origination Center) for this loan disbursement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_RECON_REJECT_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 4: The fourth reconciliation reject code sent from the servicer(Loan Origination Center) for this loan disbursement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_RECON_REJECT_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">LOAN RECONCILIATION REJECT CODE 5: The fifth reconciliation reject code sent from the servicer(Loan Origination Center) for this loan disbursement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LOC_TOT_NET_LOAN_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LOAN ORIGINATION CENTER TOTAL NET LOAN AMOUNT: The total net loan amount which the servicer(Loan Origination Center) has currently booked for this loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_XREF_LOAN_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">CROSS REFERENCE LOAN ID: This indicates the ID of the loan with which this loan was combined when producing an electronic loan extract file or Direct Loan Promissory Note.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DEFER_REQ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEFERMENT REQUEST: A Y indicates that the borrower has requested immediate deferment of principal payments on the new loan and all outstanding Stafford and Plus loans while enrolled in school.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CAPITALIZE_INT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CAPITALIZE INTEREST: A Y indicates that the borrower wants to capitalize interest on the unsubsidized Stafford or PLUS loan while enrolled and when in grace or deferment periods.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_FORMER_HEAL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HEALTH PROFESSION PROGRAMS AMOUNT INDICATOR: Indicates whether this student qualifies for additional Stafford Unsubsidized loans up to the HPPA limits.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_APP_VER_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">APPLICATION VERSION NUMBER: This field indicates which version of the CommonLine Application file has been sent once the loan application has been extracted.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_APP_PHASE_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">APPLICATION PHASE CODE: This field indicates the current processing phase for the application or loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_NATN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NATION CODE: This field indicates the code for the nation/country associated with the address of the borrower.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LOCAL_NATN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NATION CODE: This field indicates the code for the nation/country associated with the local address of the borrower.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_NATN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NATION CODE: This field indicates the code for the nation/country associated with the address of the parent of the borrower when the loan is of a parent type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_NATN_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NATION CODE: This field indicates the code for the nation/country associated with the local address of the parent of the borrower when the loan is of a parent type.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_STAT_CODE_RES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">PARENT STATE CODE RESIDENCE: This field indicates the 2-letter abbreviation of the state in which the parent of the applicant is a legal resident.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ADDL_STFD_ELIG_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADDITIONAL STAFFORD ELIGIBILITY INDICATOR: This field indicates that this dependent student is eligible for an additional unsubsidized loan amount.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_MPN_STATUS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MPN STATUS INDICATOR: This field indicates the status of the borrower’s MPN.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ACAD_YR_START_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACADEMIC YEAR START DATE: This field indicates the date on which the student’s academic year starts at the institution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ACAD_YR_END_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACADEMIC YEAR END DATE: This field indicates the date on which the student’s academic year ends at the institution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PN_DELIVERY_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PROMISSORY NOTE DELIVERY CODE: A one character code indicating the preferred method of delivering the promissory note to the borrower.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_FED_APP_FORM_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEDERAL APPLICATION FORM CODE: A one character code indicating the version of the application and promissory note to be used by the borrower.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_SERIAL_LOAN_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SERIAL LOAN CODE: A one character code used to indicate how the school intends to use the Master Promissory Note.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_MPN_CONF_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MASTER PROMISSORY NOTE CONFIRMATION CODE: A one character code used to indicate if a service provider can confirm that a valid Master Promissory Note exists at the time of certification.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_BORROWER_CONF_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BORROWER CONFIRMATION CODE: A one character code indicating if the service provider has received borrower confirmation of the loan request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ADDR_LINE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">STREET ADDRESS LINE 2: Second line of student’s permanent street address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_ADDR_LINE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">PARENT STREET ADDRESS LINE 2: Second line of parent’s permanent street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LOCAL_ADDR_LINE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">LOCAL STREET ADDRESS LINE 2: Second line of student’s local street address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_ADDR_LINE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">PARENT LOCAL STREET ADDRESS LINE 2: Second line of parent’s local street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DISC_PRINT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DISCLOSURE STATEMENT PRINT INDICATOR: This field indicates who should print the Disclosure Statement; COD (Y) or the school (blank).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DISC_NEED_PRINT_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DISCLOSURE STATEMENT NEEDS PRINTING FLAG: This field indicates that a new or revised Disclosure Statement needs to be printed for this loan record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DISC_PRINT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DISCLOSURE STATEMENT PRINT DATE: This field contains the last date that a Disclosure Statement was printed for this loan by the school.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_MPN_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">MASTER PROMISSORY NOTE ID: The ID printed on the Master Promissory Note associated with this loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_MPN_BATCH_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">MPN BATCH ID: The Batch ID used to report the Master Promissory Note status and ID.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ALT_LOAN_SB_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ALTERNATIVE LOAN STUDENT/BORROWER INDICATOR: A one character code to indicate if the alternative loan borrower is also the student indicated on the loan application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ALT_LOAN_PROG_TYPE_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ALTERNATIVE LOAN PROGRAM TYPE CODE: A three-character code assigned by NCHELP indicating the specific category of alternative loan. This is required for all processes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ALT_BOR_LOAN_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ALTERNATIVE BOROWER LOAN DEBT: The total amount of outstanding education debt (undergrad. and graduate) for the alternative loan borrower prior to the application. The amount includes all fed. and alternative loans including Fed. Consolidation loans.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_STAF_LOAN_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STAFFORD LOAN AMOUNT: The borrower’s total Federal Stafford Loan Debt prior to the loan period and should include the Federal Stafford Loan portion of the borrower’s Federal Consolidation Loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_SLS_LOAN_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SLS LOAN DEBT: The borrower’s total Federal SLS Loan Debt prior to the loan period and should include the Federal SLS Loan portion of the borrower’s Federal Consolidation Loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_HEAL_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HEAL DEBT: The borrower’s total HEAL Loan debt prior to the loan period.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PERKINS_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PERKINS DEBT: The borrower’s total Perkins Loan debt prior to the loan period.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_OTHER_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OTHER DEBT: The borrower’s total other student educational loan debt prior to the requested loan period.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_OTH_LOANS_PERIOD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OTHER LOANS FOR THE PERIOD: The borrower’s total other student educational loan debt for the requested loan period.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CRED_DIF_NM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CREDIT IN DIFFERENT NAME CODE: A 1-character code indicating if the borrower has been granted credit under a different name. Valid Values are: ’Y’es ,’N’o, and Blank which equals No.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">COSIGNER 1 LAST NAME: The last name of the cosigner.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">COSIGNER1 FIRST NAME: The first name of the cosigner.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">COSIGNER 1 MIDDLE INITIAL: The middle initial of the cosigner.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">COSIGNER 1 SSN: The Social Security Number of the cosigner.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_CITZ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 1 CITIZENSHIP CODE: A 1-digit code indicating the first cosigner’s citizenship status.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_ADDR_LINE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">COSIGNER 1 ADDRESS LINE 1: The first line of the first cosigner’s last known address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_ADDR_LINE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">COSIGNER 1 ADDRESS LINE 2: The second line of the first cosigner’s last known address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">COSIGNER 1 CITY: The city of the cosigner’s last know address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_STAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">COSIGNER 1 STATE: The 2-character state abbreviation of the first cosigner’s last known address. FC should be used for Foreign Country.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">COSIGNER 1 ZIP CODE: The 5-digit zip code of the cosigner’s last known address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_FOR_POST_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">COSIGNER 1 FOREIGN POSTAL CODE: A 14-character field indicating the foreign postal code of the first cosigner’s last known address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_PHONE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">COSIGNER 1 PHONE NUMBER: The first cosigner’s last known telephone home number. Includes the area code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_SIGNED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 1 SIGNATURE INDICATOR: A 1-character code indicating if the signature of the first cosigner is present. Valid Values: ’Y’es, signature is present, ’N’o, signature not present, or Blank, which equals No.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">COSIGNER 2 LAST NAME: The last name of the second cosigner.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">COSIGNER 2 FIRST NAME: The first name of the second cosigner.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">COSIGNER 2 MIDDLE INITIAL: The middle initial of the second cosigner.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">COSIGNER 2 SSN: The Social Security Number of the second cosigner.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_CITZ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 2 CITIZENSHIP INDICATOR: A 1-digit code indicating the second cosigner’s citizenship status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_ADDR_LINE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">COSIGNER 2 ADDRESS LINE 1: The first line of the second cosigner’s last known address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_ADDR_LINE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">COSIGNER 2 ADDRESS LINE 2: The second line of the second cosigner’s last known address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">COSIGNER 2 City: The city of the second cosigner’s last know address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_STAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">COSIGNER 2 STATE: The 2-character state abbreviation of the second cosigner’s last known address. FC should be use for Foreign Country.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_ZIP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">COSIGNER 2 ZIP CODE: The 5-digit zip code of the second cosigner’s last known address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_FOR_POST_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">COSIGNER 2 FOREIGN POSTAL CODE: A 14-character field indicating the foreign postal code of the second cosigner’s last known address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_PHONE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">COSIGNER 2 PHONE NUMBER: The second cosigner’s last known telephone home number. Includes the area code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_SIGNED_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 2 SIGNATURE INDICATOR: A 1-character code indicating if the signature of the second cosigner is present. Valid Values: ’Y’es, signature is present, ’N’o, signature not present, or Blank, which equals No.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_BOR_GROSS_YR_SAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BORROWER ANNUAL INCOME: The total income earned by the borrower from his or her primary employment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_BOR_OTH_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BORROWER OTHER INCOME: The total income earned by the borrower from a source other than his or her primary employment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_GROSS_YR_SAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 1 GROSS YEARLY SALARY: The total income earned by cosigner 1 from his or her primary employment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_OTH_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 1 OTHER INCOME: The total income earned by cosigner 1 from a source other than his or her primary employment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_GROSS_YR_SAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 GROSS YEARLY SALARY: The total income earned by cosigner 2 from his or her primary employment.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_OTH_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 OTHER INCOME: The total income earned by cosigner 2 from a source other than his or her primary employment.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_STU_MAJOR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">STUDENT’S MAJOR: The student’s major field of study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COSIGNER 1 DATE OF BIRTH: The first cosigner’s date of birth.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_STAT_CODE_LIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">COSIGNER 1 DL STATE: The 2-character abbreviation for the state that issued the first cosigner’s driver’s license.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_DRIVER_LIC_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">COSIGNER 1 DL NUMBER: The first cosigner’s driver’s license number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COSIGNER 2 DATE OF BIRTH: The second cosigner’s date of birth.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_STAT_CODE_LIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">COSIGNER 2 DL STATE: The 2-character abbreviation for the state that issued the second cosigner’s driver’s license.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_DRIVER_LIC_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">COSIGNER 2 DL NUMBER: The second cosigner’s driver’s license number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_RELATION_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 1 RELATIONSHIP TO STUDENT: The first cosigner’s relationship to the student. Valid values: E=Employer, F=Friend, G=Guardian, O=Other, P=Parent, R=Relative, S=Sibling, or Blank.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_SUFFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">COSIGNER 1 NAME SUFFIX: A 3-character field that identifies the suffix of the first cosigner’s name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_YR_ADDRESS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 1 YEARS AT ADDRESS: A 2-digit field that indicates the number of years the first cosigner has been at his/her address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_RELATION_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 2 RELATIONSHIP TO STUDENT: The second cosigner’s relationship to the student. Valid values: E=Employer, F=Friend, G=Guardian, O=Other, P=Parent, R=Relative, S=Sibling, or Blank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_SUFFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">COSIGNER SUFFIX: A 3-character field that identifies the suffix of the second cosigner’s name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_YR_ADDRESS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 YEARS AT ADDRESS: A 2-digit field that indicates the number of years the second cosigner has been at his/her address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_INT_RATE_OPT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INTEREST RATE OPTION CODE: A 1-character field that indicates the type of interest rate associated with the loan. Valid values: F=Fixed or V=Variable</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_REPAY_OPT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REPAYMENT OPTION CODE: A 1-character field that indicates the type of repayment option requested by the borrower. Valid values: D=Deferment, I=Interest Only, or P=Principal and interest</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LOCAL_PHONE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">LOCAL PHONE: The local telephone number for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_STU_EMAIL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">512</td>
+<td style="text-align: left;">EMAIL ADDRESS: Student’s email address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_REBATE_PERCENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REBATE FEE PERCENT: Rebate fee percent.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_PREDISB_RECIP_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PREDISBURSEMENT RECIPIENT PIDM:The pidm associated with the lender or servicer for pre-disbursement change records. Pre-disbursement changes for this loan application will be sent to this recipient.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_POSTDISB_RECIP_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">POSTDISBURSEMENT RECIPIENT PIDM: The pidm associated with the lender or servicer for post-disbursement change records. Post-disbursement changes will be sent to this recipient.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_REALLOCATE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SUB/UNSUB REALLOCATION INDICATOR: Indicates the Subsidized and Unsubsidized loan amounts are being reallocated. Valid values: Y = yes, Null = no.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_ERROR_CODE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ELECTRONIC LOAN ERROR CODE 1: The first error code for this Electronic loan application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_ERROR_CODE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ELECTRONIC LOAN ERROR CODE 2: The second error code for this Electronic loan application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_ERROR_CODE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ELECTRONIC LOAN ERROR CODE 3: The third error code for this Electronic loan application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_ERROR_CODE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ELECTRONIC LOAN ERROR CODE 4: The fourth error code for this Electronic loan application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_ERROR_CODE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ELECTRONIC LOAN ERROR CODE 5: The fifth error code for this Electronic loan application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_BOOK_BATCH_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">BOOKING BATCH NUMBER: Displays the disbursement batch number associated with the Booking of the loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_BOOK_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">BOOKING DATE: Displays the date from the batch associated with the Booking of the loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_RESP_GUAR_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">EL GUARANTOR STATUS: The loan status reported by the guarantor from the CommonLine Application Response File.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_RESP_LENDER_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">EL LENDER STATUS: The loan status reported by the lender-servicer from the CommonLine Application Response File.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_RESP_PN_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">EL PROMISSORY NOTE STATUS: The promissory note status reported from the CommonLine Application Response File.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_RESP_CREDIT_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">EL CREDIT STATUS: The credit status reported from the CommonLine Application Response File</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_REINSTATE_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EL REINSTATEMENT AMOUNT: The amount of previously cancelled pre- or post-disbursement changes that are available for reinstatement. This amount is uploaded from the Response File as a result of a Change Transaction.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_GUAR_USE_ONLY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: left;">EL GUARANTOR USE ONLY FIELD: A field reserved for guarantor information that must be maintained at the loan level.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_LENDER_USE_ONLY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">EL LENDER USE ONLY FIELD: A field reserved for lender information that must be maintained at the loan level.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_BOR_EPNOTE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EL BORROWER ELECTRONIC PROM NOTE: Indicator that the borrower for the loan has completed an Electronic Promissory Note for CommonLine processing. Valid values are Y and null.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_STU_CERT_ESIGN_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EL STUDENT CERTIFICATION ELECTRONIC SIGNATURE IND: Indicates that the PLUS/Alternative student electronically signed the Student certification and authorization of the promissory note. Valid values are Y and null.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_BOR_CREDIT_AUTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EL BORROWER CREDIT AUTHORIZATION: A one-character code indicating the school has obtained the borrower’s authorization for an Alternative loan to perform a credit check. Valid values are Y, N, and null.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_HOUSE_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT HOUSING PAYMENT: The total monthly housing payment paid by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CC_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT CREDIT CARD PAYMENT: The total monthly credit card payment paid by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CAR_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT CAR PAYMENT: The total monthly car payment paid by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ED_LOAN_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT EDUCATIONAL LOAN PAYMENT: The total monthly educational loan payment paid by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_OTH_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT OTHER DEBT PAYMENT: The total monthly payment for other debts paid by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_HOUSE_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 1 HOUSING PAYMENT: The total monthly housing payment paid by cosigner 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_CC_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 1 CREDIT CARD PAYMENT: The total monthly credit card payment paid by cosigner 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_CAR_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER1 CAR PAYMENT: The total monthly car payment paid by cosigner 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_ED_LOAN_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 1 EDUCATIONAL LOAN PAYMENT: The total monthly educational loan payment paid by cosigner 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_OTH_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 1 OTHER DEBT PAYMENT: The total monthly payment for other debts paid by cosigner 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_CREDIT_AUTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 1 CREDIT AUTHORIZATION: A one-character code indicating the school has obtained cosigner 1’s authorization to perform a credit check. Valid values are Y, N, and null.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_HOUSE_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 HOUSING PAYMENT: The total monthly housing payment paid by cosigner 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_CC_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 CREDIT CARD PAYMENT: The total monthly credit card payment paid by cosigner 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_CAR_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 CAR PAYMENT: The total monthly car payment paid by cosigner 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_ED_LOAN_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 EDUCATIONAL LOAN PAYMENT: The total monthly educational loan payment paid by cosigner 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_OTH_PMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COSIGNER 2 OTHER DEBT PAYMENT: The total monthly payment for other debts paid by cosigner 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_CREDIT_AUTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COSIGNER 2 CREDIT AUTHORIZATION: A one-character code indicating the school has obtained cosigner 2’s authorization to perform a credit check. Valid values are Y, N, and null.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_COSIGN1_EPNOTE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EL COSIGNER 1 ELECTRONIC PROM NOTE: Indicator that the cosigner 1 for this Alternative loan has completed an Electronic Promissory Note for CommonLine processing. Valid values are Y and null.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_EL_COSIGN2_EPNOTE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EL COSIGNER 2 ELECTRONIC PROM NOTE: Indicator that the cosigner 2 for this Alternative loan has completed an Electronic Promissory Note for CommonLine processing. Valid values are Y and null.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_SAR_TRAN_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">SAR TRANSACTION NUMBER: The eligible SAR transaction number that was reported with the Direct Loan origination record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DOCUMENT_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">COD DOCUMENT ID FOR THE DIRECT LOAN AWARD RECORD: The document identification number associated with the student’s direct loan award record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_BOOK_DOCUMENT_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">COD DOCUMENT ID FOR THE BOOKING NOTIFICATION RECORD: The document identification number associated with notification from COD of the student’s loan being booked.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_MPN_DOCUMENT_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">COD DOCUMENT ID FOR THE MASTER PROM NOTE RECORD: The document identification number associated with notification from COD of the student’s MPN status.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_ENDORSER_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ENDORSER AMOUNT: The loan amount signed for by the endorser on the Endorser Addendum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_MPN_REPRINT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MPN REPRINTING REQUESTED: The value in this field will be submitted via a Change Request to have COD reprint and mail the MPN; or to allow the school to reprint the MPN.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_EL_PLUS_REQ_AMT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PLUS REQUESTED AMOUNT INDICATOR: Indicator that the school has collected the Federal Plus requested amount for this loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ESIGN_SOURCE_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">E-SIGNATURE SOURCE TYPE CODE: Code that includes the type of organization that captured the electronic signature and the organization’s OPE ID or NCHELP assigned ID</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_SERV_FED_APP_FORM_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SERVICER FEDERAL APPLICATION FORM CODE: A one character code indicating the version of the application and promissory note processed by the lender/servicer for this loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PLUS_BORROWER_ID_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PLUS BORROWER IDENTIFIER NUMBER: The PLUS borrower identifier number for this loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: The latest source for the data contained in this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_MPN_EXP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">MPN Expiration Date: The date this MPN expired.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_MPN_EXP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MPN Expiration Reason Code: The Reason Code for why the MPN expired.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_MPN_EXP_DESC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">280</td>
+<td style="text-align: left;">MPN Expiration Reason Description: The Reason Description for why the MPN expired.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_EDIT_FIELD_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">DL Disbursement Response Edit Field 1: The field (XML tag) associated with edit 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_EDIT_FIELD_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">DL Disbursement Response Edit Field 2: The field (XML tag) associated with edit 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_EDIT_FIELD_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">DL Disbursement Response Edit Field 3: The field (XML tag) associated with edit 3.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DL_EDIT_FIELD_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">DL Disbursement Response Edit Field 4: The field (XML tag) associated with edit 4.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_DL_EDIT_FIELD_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">DL Disbursement Response Edit Field 5: The field (XML tag) associated with edit 5.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_BORROWER_EMAIL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">512</td>
+<td style="text-align: left;">BORROWER’S E-MAIL ADDRESS: The borrower’s e-mail address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_SCHOOL_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SCHOOL CODE: The Department of Education’s school code to be used for loan processing for a specific campus.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LOAN_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOAN TYPE: The loan type for the record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PREP_OR_TEACH_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PREPARATORY OR TEACHER CERTIFICATION COURSEWORK INDICATOR: Indicates if specific loan limits should be applied due to enrollment in preparatory coursework required prior to enrolling in an undergraduate degree or certificate program or a graduate or pro</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fessional program, or due to coursework necessary for teacher certification.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CREDIT_DOCUMENT_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">CREDIT STATUS DOCUMENT ID: The Document ID in which the credit check status was received.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_SURNAME_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">SURNAME PREFIX: Name tag preceding the borrower’s last name or surname. (Van, Von, Mac. etc.)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ADDR_LINE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE3: Third line of the student’s permanent street address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_ADDR_LINE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the student’s permanent street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_HOUSE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HOUSE NUMBER: Student’s building or lot number on a street or in an area.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CTRY_CODE_PHONE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TELEPHONE COUNTRY CODE: Student’s telephone code designating the region or country.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LOCAL_ADDR_LINE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE3: Third line of the student’s local street address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LOCAL_ADDR_LINE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the student’s local street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LOCAL_HOUSE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HOUSE NUMBER: Student’s local building or lot number on a street or in an area.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CTRY_CODE_LOCAL_PHONE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TELEPHONE COUNTRY CODE: Student’s local telephone code designating the region or country.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_SURNAME_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">SURNAME PREFIX: Name tag preceding the parent’s last name or surname. (Van, Von, Mac. etc.)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_ADDR_LINE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE3: Third line of the parent’s permanent street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_ADDR_LINE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the parent’s permanent street address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_HOUSE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HOUSE NUMBER: Parent’s permanent building or lot number on a street or in an area.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CTRY_CODE_PAR_PHONE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TELEPHONE COUNTRY CODE: Parent’s telephone code designating the region or country.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_ADDR_LINE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE3: Third line of the parent’s local street address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_ADDR_LINE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the parent’s local street address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PAR_LOCAL_HOUSE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HOUSE NUMBER: Parent’s local building or lot number on a street or in an area.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_SURNAME_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">SURNAME PREFIX: Name tag preceding the first cosigner’s last name or surname. (Van, Von, Mac. etc.)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_ADDR_LINE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE3: Third line of the first cosigner’s last known address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN1_ADDR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the first cosigner’s last known address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_HOUSE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HOUSE NUMBER: First cosigner’s building or lot number on a street or in an area.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CTRY_CODE_COSIG1_PHONE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TELEPHONE COUNTRY CODE: First cosigner’s telephone code designating the region or country.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_SURNAME_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">SURNAME PREFIX: Name tag preceding the second cosigner’s last name or surname. (Van, Von, Mac. etc.)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_ADDR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the second cosigner’s last known address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_HOUSE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HOUSE NUMBER: Second cosigner’s building or lot number on a street or in an area.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CTRY_CODE_COSIG2_PHONE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TELEPHONE COUNTRY CODE: Second cosigner’s telephone code designating the region or country.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN1_ADDR_LINE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the first cosigner’s last known address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_COSIGN2_ADDR_LINE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE3: Third line of the second cosigner’s last known address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_COSIGN2_ADDR_LINE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS LINE4: Fourth line of the second cosigner’s last known address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_APP_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">APPLICATION ID: The application ID associated with this loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_MAX_LOAN_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">MAXIMUM LOAN INDICATOR: Indicates if the borrower has requested the maximum possible loan amount.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_APP_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">APPLICATION COMPLETE DATE: The date the loan application was completed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_DEFERMENT_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">DEFERMENT OPTION: Indicates if the applicant has chosen to defer payments.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ORIG_CREDIT_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ORIGINAL CREDIT STATUS: Original credit status for this loan application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CREDIT_CHECK_EXP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CREDIT CHECK EXPIRATION DATE: Date the credit check status expires.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_APP_LOAN_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">APPLICATION LOAN AMOUNT: Loan amount requested for this application if the maximum loan amount was not requested.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CR_APPEAL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CREDIT APPEAL STATUS: Status of a credit check appeal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_CR_OVERRIDE_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CREDIT OVERRIDE CODE: Indicates if a denied credit status has been overridden.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_CR_ACTION_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">CREDIT ACTION OPTION: Indicates the action the borrower wishes to take when the credit status is denied.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_PROGRAM_OF_STUDY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">PROGRAM OF STUDY: Program of study attributed to the origination record. Only valid for foreign schools processing Direct Loan funds.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PLUS_APP_REASON</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">PLUS APPLICATION SUBMISSION REASON: The reason the PLUS Application was submitted.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_UNKNOWN_LOAN_AMT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">UNKNOWN LOAN AMOUNT: Indicates the borrower does not know the loan amount for the PLUS Application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_PREVIOUS_APP_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PREVIOUS APPLICATION ID: The previously submitted PLUS Application ID.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_REQ_AWARD_START_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REQUESTED AWARD START DATE: The start date for which the borrower is requesting the PLUS loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_REQ_AWARD_END_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REQUESTED AWARD END DATE: The end date for which the borrower is requesting the PLUS loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_ENTRANCE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ENTRANCE COUNSELING COMPLETE IND: Indicates the borrower has completed entrance counseling for this loan type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_SCHOOL_CR_BALANCE_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SCHOOL CREDIT BALANCE OPTION: Indicates if the PLUS borrower has indicated that loan funds can be applied to non-institutional charges.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_GRAD_STU_ELIG_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GRADUATE STUDENT ELIGIBILITY OVERRIDE: The override code used to indicate that a graduate student is eligible for a subsidized loan.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_LPRD_START_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">LOAN PERIOD START DATE: The start date of the loan period.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_LPRD_END_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">LOAN PERIOD END DATE: The end date of the loan period.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_SPGM_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT PROGRAM INFORMATION SEQUENCE NUMBER: Sequence of the program information record used on this origination.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_SPGM_LOCK_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT PROGRAM INFORMATION LOCK: Indicates if the student program information sequence is locked for the loan origination record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RPRLAPP_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RPRLAPP_SUFFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">SUFFIX: The suffix of the student.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

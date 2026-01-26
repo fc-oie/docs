@@ -1,0 +1,2564 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rcrtmp5 – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rcrtmp5" id="toc-rcrtmp5" class="nav-link active" data-scroll-target="#rcrtmp5">RCRTMP5</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rcrtmp5" class="level1">
+<h1>RCRTMP5</h1>
+<p>Below are the column names for <strong>RCRTMP5</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RCRTMP5</caption>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year to be associated with information in this record. EXAMPLES: 9091, 9192, 9293, etc.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">INTERFACE SOURCE CODE: A code from the Interface Source Table indicating the source and format of the application record. EXAMPLES: CSS, EDE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEQUENCE NUMBER: The number to uniquely identify the application if multiple applications have been stored from the same processor/source.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CREATOR_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">APPLICATION CREATOR ID: The ID of the person who created this application record on the database.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CREATE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">APPLICATION CREATED DATE: The date that this application record was created on the database.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information in this record was entered or last updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_REGIS_RCPT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REGISTRATION RECEIPT DATE: The date that CSS received the PROFILE registration form.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_REGIS_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REGISTRATION TYPE: Indicates the type (student or institutional) of registration.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_APPLIC_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">APPLICATION TYPE: Indicates the type (regular or renewal) of application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ELEC_EXTRACT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ELECTRONIC EXTRACT DATE: The date that the data was extracted for electronic transmission.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ADDL_SCHL_REQ_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ADDITIONAL SCHOOL REQUEST DATE: The date when CSS received the additional school request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_FIN_AID_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">FINANCIAL AID STATUS: The student financial aid status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CITZ_COUNTRY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">CITIZENSHIP COUNTRY: The student country of citizenship.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ITEM_DEDUCTNS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ITEMIZED DEDUCTIONS: The itemized deductions reported by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_EIC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EARNED INCOME CREDIT: The earned income credit reported by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_TAX_STU_AID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TAXABLE STUDENT AID: Earnings from Federal Work-Study or other need-based work programs plus any grant and scholarship aid reported on the student U.S. Income tax return.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_IRA_KEOGH_ACCT_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">RETIREMENT ASSETS: The reported value of the retirement assets for the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_TRUST_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TRUST AMOUNT: The total value ofall trust accounts for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_TRUST_AVAIL_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TRUST AVAILABILITY: Indicates whether any trust income or part of the trust principal is currently available to the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_TRUST_ESTAB_BY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">WHO ESTABLISHED THE TRUST: Indicates who established the trust for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_EXP_GRANT_SCHLRSHP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED GRANTS/SCHOLARSHIPS: The total amount of grants, scholarships, fellowships, etc. expected from other than the colleges or universities to which the student is applying.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EXP_TUIT_BENE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED TUITION BENEFITS: The total tuition benefits that the student expects to receive from parents and/or the student or spouse employer.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_EXP_PAR_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED PARENT CONTRIBUTION: The amount of contribution expected from the parents of the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EXP_OTH_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED OTHER CONTRIBUTION: The total contribution expected by the student from other relatives, parents of the spouse, and all other sources.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_PRNT_IN_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS IN COLLEGE: Indicates how many parents will be in college at least half-time during the school year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_NTRL_SEP_DIV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NATURAL/ADOPTIVE PARENT MARITAL STATUS: Indicates whether the natural or adoptive parents of the student are separated or divorced.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_ED_LN_RPAY_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT EDUCATIONAL LOANS REPAYMENT: The amount that the parents are spending for repayment of educational loans during the current year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EXP_PAR_CHILD_SUPP_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED PARENT CHILD SUPPORT PAID: The expected child support paid to be paid by the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_EXP_PAR_ED_LN_RPAY_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED PARENT EDUCATIONAL LOANS REPAYMENT: The expected amount that the parents will be spending for repayment of educational loans.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EXP_PAR_MED_DEN_EXPN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED PARENT MED/DENTAL EXPENSES: The amount that the parents expect to spend on medical and dental expenses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OWN_BUS_FARM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS OWN A BUSINESS OR FARM: Indicates whether the parents own all or part of a business or farm.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_OTH_RE_YR_PURCH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">YEAR PARENTS PURCHASED OTHER REAL ESTATE: The year (YY) when the parents purchased other real estate.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OTH_RE_PURCH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT OTHER REAL ESTATE PRICE: The amount that the parents paid for other real estate.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_PRYR_AGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT PRIOR YEAR AGI: The amount of AGI reported by the parents on their prior year federal tax return.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_PRYR_US_TAX_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT PRIOR YEAR US TAXES PAID: The amount of federal income tax reported by the parents on their prior year federal tax return.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_PRYR_ITEM_DEDUCTNS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT PRIOR YEAR ITEMIZED DEDUCTIONS: The amount of itemized deductions reported by the parents on their prior year federal tax return.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_PRYR_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT PRIOR YEAR UNTAXED INCOME: The amount of untaxed income received by the parents during the prior year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_ITEM_DEDUCTNS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT ITEMIZED DEDUCTIONS: The itemized deductions reported by the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_COLL_CDE_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 9: The ninth college/program code listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_HOUS_CDE_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 9: The housing code for the school listed ninth on the application indicating the student expected place of residence at school.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_COLL_CDE_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 10: The tenth college/program code listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_HOUS_CDE_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 10: The housing code for the school listed tenth on the application indicating the student expected place of residence at school.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ADDL_COLL_CDE_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 9: The ninth school code if more than ten school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ADDL_COLL_CDE_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 10: The tenth school code if more than ten school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_SIGNED_CERTIFIED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CERTIFIED SIGNATURE: The student signature of certification is present.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_ALT_HME_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OPTION PARENT HOME DEBT: The parent home debt that was used during the IM calculation of home value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_ALT_AAI_RATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT ALTERNATE AAI RATE: Indicates whether the alternate AAI rate table was used during the parent IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ALT_IRA_KEOGH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IRA/KEOGH OPTION: The institutional option for calculation of IRA/KEOGH assets was used during the student IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ALT_AI_RATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AI RATE OPTION: Indicates whether the institutional option for AI rate was used during the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_S_ALT_OPT_HME_VAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOME VALUE OPTION: The option for calculating home value was used during the student IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ALT_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OPTION HOME VALUE: The home value calculated during the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ALT_HME_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OPTION HOME DEBT: The home debt used during the IM calculation of the student home value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ALT_SUM_AY_INC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OPTION FOR SUMMER/ACADEMIC YEAR INCOME: The institutional option regarding student summer/academic year income was used during the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_C_2_CTRB_ADJ_1_8_MTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OPTIONAL IM 1-8 MONTHADJUSTMENT: Reserved for future use.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_C_2_CTRB_ADJ_OVR_9_MTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OPTIONAL IM OVER-9 MONTH ADJUSTMENT: Reserved for future use.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 6 INDICATOR: Indicates whether CSS Message 6 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 7 INDICATOR: Indicates whether CSS Message 7 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 8 INDICATOR: Indicates whether CSS Message 8 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 9 INDICATOR: Indicates whether CSS Message 9 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 10 INDICATOR: Indicates whether CSS Message 10 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 20 INDICATOR: Indicates whether CSS Message 20 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 25 INDICATOR: Indicates whether CSS Message 25 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_34</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 34 INDICATOR: Indicates whether CSS Message 34 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_35</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 35 INDICATOR: Indicates whether CSS Message 35 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_36</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 36 INDICATOR: Indicates whether CSS Message 36 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_37</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 37 INDICATOR: Indicates whether CSS Message 37 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_38</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 38 INDICATOR: Indicates whether CSS Message 38 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_45</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 45 INDICATOR: Indicates whether CSS Message 45 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_55</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 55 INDICATOR: Indicates whether CSS Message 55 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_56</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 56 INDICATOR: Indicates whether CSS Message 56 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_57</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 57 INDICATOR: Indicates whether CSS Message 57 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_58</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 58 INDICATOR: Indicates whether CSS Message 58 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_59</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 59 INDICATOR: Indicates whether CSS Message 59 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_60</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 60 INDICATOR: Indicates whether CSS Message 60 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_73</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 73 INDICATOR: Indicates whether CSS Message 73 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_FAM_MEMB</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">MATRIX NUMBER IN FAMILY: Independent student number of family members, derived from the family member matrix, when the derived value differs from the reported value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_NUM_IN_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MATRIX NUMBER IN COLLEGE: Independent student number in college, derived from the family member matrix, when the derived value differs from the reported value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NEGATIVE AVAILABLE INCOME: The IM available income for the student, when the calculated value is negative.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_US_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REPORTED US TAXES: The reported US tax amount when calculated taxes were used in the student FM and IM computations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_CALC_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CALCULATED HOME EQUITY: The student IM home equity, calculated using the housing multiplier when the reported value was blank.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_MULT_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MULTIPLIER HOME VALUE: The student IM home value, calculated using the housing multiplier.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_MULT_HME_EQTY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MULTIPLIER HOME EQUITY: The student IM home equity, calculated using the housing multiplier.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_XPCT_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PERCENTAGE HOME VALUE: The student calculated IM home value, calculated at 3%, when the reported value shows an increase of less than 3% per year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_XPCT_HME_EQTY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PERCENTAGE HOME EQUITY: The student calculated IM home equity, calculated at 3%, when the reported value shows an increase of less than 3% per year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_CAP_HME_EQTY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CAP HOME EQUITY: The student calculated IM home equity, using the value cap.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_FAM_MEMB</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">MATRIX PARENT NUMBER IN FAMILY: Parent number of family members, derived from the family member matrix, when the derived value differs from the reported value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_NUM_IN_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MATRIX PARENT NUMBER IN COLLEGE: Parent number in college, derived from the family member matrix, when the derived value differs from the reported value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_AGI_DIFF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT DERIVED AGI: The parent derived AGI, when the derived value and the reported value differ by $1000 or more.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_US_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT REPORTED US TAXES: The parent reported US tax amount when calculated taxes were used in the parent FM and IM computations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_CALC_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CALCULATED HOME EQUITY: The parent IM home equity, calculated using the housing multiplier when the reported value was blank.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_MULT_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT MULTIPLIER HOME VALUE: The parent IM home value, calculated using the housing multiplier.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_MULT_HME_EQTY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT MULTIPLIER HOME EQUITY: The parent IM home equity, calculated using the housing multiplier.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_XPCT_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT PERCENTAGE HOME VALUE: The parent calculated IM home value, calculated at 3%, when the reported value shows an increase of less than 3% per year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_XPCT_HME_EQTY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT PERCENTAGE HOME EQUITY: The parents calculated IM home equity, calculated at 3%, when the reported value shows an increase of less than 3% per year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_PAR_CAP_HME_EQTY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CAP HOME EQUITY: The parent calculated IM home equity, using the value cap.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 1: The first IM assumption returned by INAS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 2: The second IM assumption returned by INAS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 3: The third IM assumption returned by INAS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 4: The fourth IM assumption returned by INAS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 5: The fifth IM assumption returned by INAS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 6: The sixth IM assumption returned by INAS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 7: The seventh IM assumption returned by INAS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 8: The eighth IM assumption returned by INAS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 9: The ninth IM assumption returned by INAS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ASSUMPT_PROF_MSG_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">INAS IM ASSUMPTION 10: The tenth IM assumption returned by INAS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_BUS_DEPRECIATION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUSINESS DEPRECIATION: The value of business depreciations claimed by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_DEPRECIATION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT BUSINESS DEPRECIATION: The value of business depreciations claimed by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_BUS_IN_HOME_MISC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUSINESS IN THE HOME: The value associated with a business in the home and other miscellaneous expenses claimed by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_IN_HOME_MISC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT BUSINESS IN THE HOME: The value associated with a business in the home and other miscellaneous expenses claimed by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_RENT_DEPRECIATION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">RENTAL DEPRECIATION: The value of rental depreciation claimed by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_RENT_DEPRECIATION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT RENTAL DEPRECIATION: The value of rental depreciation claimed by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_OTH_ADDBACK_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OTHER ADDBACK 1: The value associated with the first additional addback category for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OTH_ADDBACK_1</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT OTHER ADDBACK 1: The value associated with the first additional addback category for the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_OTH_ADDBACK_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OTHER ADDBACK 2: The value associated with the second additional addback category for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OTH_ADDBACK_2</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT OTHER ADDBACK 2: The value associated with the second additional addback category for the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_CUST_NONCUST_PARENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CUSTODIAL/NONCUSTODIAL PARENT: Indicates whether the associated IM record (custodial or non-custodial) contains parental data for the Father or for the Mother.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PC_NON_CUST_PAR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FROM NON-CUSTODIAL PARENT: The reported contribution for the non-custodial parent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE2_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LINE 2 AGE: The age of the person listed second on the family member matrix.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE3_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LINE 3 AGE: The age of the person listed third on the family member matrix.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE4_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LINE 4 AGE: The age of the person listed fourth on the family member matrix.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE5_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LINE 5 AGE: The age of the person listed fifth on the family member matrix.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE6_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LINE 6 AGE: The age of the person listed sixth on the family member matrix.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE7_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LINE 7 AGE: The age of the person listed seventh on the family member matrix.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE8_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LINE 8 AGE: The age of the person listed eighth on the family member matrix.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE2_SCHL_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 2 SCHOOL TYPE: The type of school attended by the person listed second on the family member matrix.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE3_SCHL_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 3 SCHOOL TYPE: The type of school attended by the person listed third on the family member matrix.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE4_SCHL_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 4 SCHOOL TYPE: The type of school attended by the person listed fourth on the family member matrix.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE5_SCHL_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 5 SCHOOL TYPE: The type of school attended by the person listed fifth on the family member matrix.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE6_SCHL_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 6 SCHOOL TYPE: The type of school attended by the person listed sixth on the family member matrix.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE7_SCHL_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 7 SCHOOL TYPE: The type of school attended by the person listed seventh on the family member matrix.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE8_SCHL_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 8 SCHOOL TYPE: The type of school attended by the person listed eighth on the family member matrix.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_FOREIGN_ADDR_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FOREIGN ADDRESS INDICATOR: This field is used to indicate that the student lives outside the U.S.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_FOREIGN_POSTAL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">FOREIGN POSTAL CODE: This field is used to identify the foreign postal code for students that live outside the U.S.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_COUNTRY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">FOREIGN COUNTRY: This field is used to identify the country for students that live outside the U.S.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_SIBLING_ASSETS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ASSETS IN OTHER CHILD NAME: This field is used to identify the amount of parents’ assets held in the name of a student’s siblings</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_HOPE_LL_CREDIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT HOPE AND LL CREDITS: Hope and Lifetime Learning tax credits as reported on student’s tax return.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_HOPE_LL_CREDIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT HOPE AND LL CREDITS: Hope and Lifetime Learning tax credits as reported on parent’s tax return.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_YR_SEP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">PARENT SEPARATION YEAR: Year of parents’ separation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_YR_DIV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">PARENT DIVORCE YEAR: Year of parents’ divorce.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ONLINE_SIG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT ONLINE SIGNATURE: 1 = Student completed online version of PROFILE and the signature is electronic, or blank.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_HOPE_LL_CREDIT_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT HOPE AND LL CREDIT OPTION: 1 = Institutional option for student’s Hope/LL tax credit used in calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_HOPE_LL_CREDIT_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT HOPE AND LL CREDIT OPTION: 1 = Institutional option for parent’s Hope/LL tax credit used in calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_AESA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT ANNUAL EDUCATION SAVINGS ALLOWANCE NUMBER OF CHILDREN: Number of children used in calculation of Student’s Annual Education Savings Allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_AESA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT ANNUAL EDUCATION SAVINGS ALLOWANCE NUMBER OF CHILDREN: Number of children used in calculation of Parents’ Annual Education Savings Allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CESA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">STUDENT CUMULATIVE EDUCATION SAVING ALLOWANCE: Sum of the ages of children used in calculation of Student’s Cumulative Education Savings Allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_CESA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PARENT CUMULATIVE EDUCATION SAVING ALLOWANCE: Sum of the ages of children used in calculation of Parents’ Cumulative Education Savings Allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 13: 1=Student left age of at least one child blank. Assumed age used in CESA. Blank=No Message</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 27: 1=CSS suggests review of student’s reported Hope/LL Credits. Blank=No Message</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_51</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 51: 1=Parents left age of at least one child blank. Assumed age from CESA. Blank=No Message</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_64</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 64: 1=CSS suggests review of parent’s reported Hope/LL Credits. Blank=No Message</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ANNUAL_ED_SAVINGS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AMOUNT OF STUDENT ANNUAL EDUCATION SAVING ALLOWANCE: Amount of student’s Annual Education Savings Allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_ANNUAL_ED_SAVINGS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AMOUNT OF PARENT ANNUAL EDUCATION SAVING ALLOWANCE: Amount of parents’ Annual Education Savings Allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CUM_ED_SAVINGS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AMOUNT OF STUDENT CUMULATIVE EDUCATION SAVINGS: Amount of student’s Cumulative Education Savings Allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_CUM_ED_SAVINGS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AMOUNT OF PARENT CUMULATIVE EDUCATION SAVINGS: Amount of parents’ Cumulative Education Savings Allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LOW_INC_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT LOW INCOME ALLOWANCE: Amount of student’s low income allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_LOW_INC_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT LOW INCOME ALLOWANCE: Amount of parents’ low income allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_EMERG_RES_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT EMERGENCY RESERVE ALLOWANCE: Amount of student’s Emergency Reserve Allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_EMERG_RES_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT EMERGENCY RESERVE ALLOWANCE: Amount of parents’ Emergency Reserve Allowance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_SIB_PRE_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SIBLINGS’ PRE-PAID TUITION PLAN AMOUNT. Value of parent’s assets in prepaid tuition plans for the student’s brothers and sisters.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_STU_PRE_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S PRE-PAID TUITION PLAN AMOUNT. Value of parent’s assets in prepaid tuition plans for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_39</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 39 INDICATOR: Indicates whether CSS message 39 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_52</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 52 INDICATOR: Indicates whether CSS message 52 is present or not.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_65</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 65 INDICATOR: Indicates whether CSS message 65 is present or not.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_OPT_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM PARENTS’ TOTAL INCOME: The parents’ Institutional Methodology total income based on the optional calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OPT_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM PARENTS’ CONTRIBUTION FOR THE STUDENT: The parents’ Institutional Methodology contribution for the student based on the optional calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_OPT_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM PARENTS’ CONTRIBUTION FROM INCOME: The parents’ Institutional Methodology optional contribution from income based on the optional calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OPT_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM PARENTS’ CONTRIBUTION FROM ASSETS: The parents’ Institutional Methodology optional contribution from assets based on the optional calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_S_EST_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S ESTIMATED TOTAL INCOME: The student’s Institutional Methodology estimated total income based on current year data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_S_EST_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S ESTIMATED CONTRIBUTION FOR STUDENT: The student’s Institutional Methodology estimated contribution based on current year data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_S_EST_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S ESTIMATED CONTRIBUTION FROM INCOME: The student’s Institutional Methodology estimated contribution from income based on current year data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_S_EST_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S ESTIMATED CONTRIBUTION FROM ASSETS: The student’s Institutional Methodology estimated contribution from assets based on current year data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_S_OPT_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S TOTAL INCOME: The student’s Institutional Methodology total income based on the optional calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_S_OPT_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S CONTRIBUTION: The student’s Institutional Methodology contribution based on the optional calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_S_OPT_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S CONTRIBUTION FROM INCOME: The student’s Institutional Methodology optional contribution from income based on the optional calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_S_OPT_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM STUDENT’S CONTRIBUTION FROM ASSETS: The student’s Institutional Methodology optional contribution from assets based on the optional calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_FM_INST_1_PELL_AWD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FM ESTIMATED PELL AWARD: The student’s estimated Pell award as calculated by CSS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_COLA_ALT_ADJ_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COST OF LIVING ADJUSTMENT OPTION: 1 = Institutional option for Cost of Living adjustment used in option calculation. BLANK = Not used.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_STU_FAM_ASSETS_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TREAT STUDENT ASSETS AS PARENT ASSETS OPTION: 1 = Institutional option to treat student assets as parent assets in option calculation. BLANK = Not used.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_IPT_ASSETS_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INPUT PARENT ASSETS OPTION: 1 = Institutional option to input parent assets from interest and dividend income used in option calculation. BLANK = Not used.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_IPT_ASSETS_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INPUT STUDENT ASSETS OPTION: 1 = Institutional option to input student assets from interest and dividend income used in option calculation. BLANK = Not used.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_COLA_ADJ_VALUE_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">ADJUSTMENT FACTOR TO IPA AND ERA: Adjustment factor used to modify IPA and ERA. Format: x.xx%. May be blank.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_IND_STU_IPT_ASSETS_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OPTION TO IMPUTE INDEPENDENT STUDENT ASSETS: Option to Impute Independent Student Assets from Interest and Dividend: 1, Option Used; blank, Option Not Used.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_STU_LIVES_WITH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT STUDENT LIVED WITH MORE: The parent who the student lived with more during the past 12 months.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_STU_MOST_SUPPORT_FROM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT WHO PROVIDED MORE SUPPORT: The parent who provided more support to the student during the past 12 months.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LOCATION_COMPUTER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOCATION OF COMPUTER USED FOR PROFILE: Location of computer used for completing the PROFILE application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_CUST_PAR_CTRB_ADJ_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CUSTODIAL PARENT CONTRIBUTION ADJUSTMENT OPTION: If blank, indicates the custodial parent contribution adjustment was not used.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CUST_PAR_OPT_PCT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM WITH OPTIONS CUSTODIAL PARENT PERCENT OF INCOME: Custodial parent’s percentage of income using options.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_OPT_CTRB_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM WITH OPTIONS CUSTODIAL PC FROM INCOME: Custodial parent’s contribution from income using options.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OPT_CTRB_ASSETS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM WITH OPTIONS CUSTODIAL PC FROM ASSETS: Custodial parent’s contribution from assets using options.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_OPT_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM WITH OPTIONS CUSTODIAL PARENT TOTAL CONTRIBUTION: Custodial parent’s total contribution using options.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_OWN_BUS_HM_SELF_EMP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OWNS BUS HOME SELF EMPLOYED: Indicates whether or not the applicant owns all or part of a business, home or is self employed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_SMALL_BUSINESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OWNS SMALL BUSINESS: Indicates whether or not the business that the applicant owns employs more than 100 full-time or full-time equivalent employees.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_FATH_RET_ACCT_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FATHER’S RETIREMENT ASSETS: Indicates the current value of the applicant’s father’s tax-deferred retirement assets.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MOTH_RET_ACCT_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MOTHER’S RETIREMENT ASSETS: Indicates the current value of the applicant’s mother’s tax-deferred retirement assets.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_SELF_EMPLOYED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EITHER PARENT SELF EMPLOYED: Indicates whether or not either of the applicant’s parents’ is self-employed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_SMALL_BUSINESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ SMALL BUSINESS: Indicates whether or not the business that the applicant’s parents own employs more than 100 full-time or full-time equivalent employees.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MSG_53</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FNAR MESSAGE 53: Indicates whether the student’s biological/adoptive parents are treated as married.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_MSG_40</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MESSAGE 40: Indicates whether CSS message 40 is present.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_SCHOOL_ASSIGNED_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">STUDENT SCHOOL ASSIGNED ID: The student’s reported ID assigned to the student by the student’s college.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EXP_TUIT_BENEFIT_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">STUDENT EXPECTED TUITION BENEFIT INDICATOR: Indicates whether the student will receive tuition benefits from the parent employers.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_EXP_GOV_SUPP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">STUDENT EXPECTED GOVERNMENT SUPPORT INDICATOR: Indicates whether the student expects to receive support from the government to pay for educational expenses for the academic year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EXP_FOUND_SUPP_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">STUDENT EXPECTED FOUNDATION SUPPORT INDICATOR: Indicates whether the student expects to receive support from agencies or foundations to pay for educational expenses for the academic year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_ADDL_CHILD_TX_CRED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT ADDITIONAL CHILD TAX CREDIT: The additional child tax credit claimed by parent on their tax returns.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_MIL_HOUS_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT MILITARY HOUSING ALLOWANCE: The parent reported military housing allowance.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_IM_OTH_UNTAXED_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM OTHER UNTAXED INCOME: Other parental untaxed income to be used for IM only.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_FAM_SUPPORT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FAMILY SUPPORT INCOME: The parent reported support of the family provided by others.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OWED_BY_OTHERS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT OWED BY OTHERS: The amount owed to parent by others.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_INC_FROM_DEBTS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT INCOME FROM DEBTS: The annual income realized by the parent from debts owed to them.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_OTHER_ASSETS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT OTHER ASSETS: The value of any assets not already reported by the parent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_UTILITIES_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT UTILITY EXPENSE: The amount the parent reported as the annual utility expenses of the family.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_FOOD_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FOOD EXPENSE: The amount the parent reported as the annual food expense of the family.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_CLOTHING_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CLOTHING EXPENSE: The amount the parent reported as the annual clothing expense for the family.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_HOUSEHOLD_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT HOUSEHOLD EXPENSE: The amount the parent reported as the annual household expenses for the family.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_DEBT_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT DEBT EXPENSE: The amount the parent reported as owed to others.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_ANNUAL_DEBT_PAY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT ANNUAL DEBT PAYMENT: The amount the parent reported as their annual payments against their total debt.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_AUTO_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COMMUTING EXPENSES: The amount the parents report as their commuting expenses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_PROPERTY_INSUR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT PROPERTY INSURANCE: The amount the parent reported as the cost of their property insurance.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_VACATION_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT VACATION EXPENSE: The amount the family reported spending on vacation expenses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_ENTERTAIN_COSTS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT ENTERTAINMENT COSTS: The amount the family reported spending on entertainment costs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_NBR_EMPLOYED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT NUMBER EMPLOYED IN HOUSEHOLD: The number of people the parent reported as employed in the home.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_AMT_PD_HOME_EMPLOY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT AMOUNT PAID TO HOME EMPLOYEES: The amount the parent reported as paid to the employees who work in the home.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_OTH_EXPENSE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT OTHER EXPENSES: The cost of any parental expenses not reported anywhere else on the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CURRENCY_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CURRENCY CODE: The currency in which the original data was reported by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_CURRENCY_RATE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CURRENCY RATE: The currency conversion rate used to process the student’s data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_COUNTRY_COEFFICIENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT COUNTRY COEFFICIENT: The country coefficient used to process the parent financial data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_CONV_CURRENCY_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">CONVERT CURRENCY CODE: The original currency converted into US dollars reported by citizens living abroad and Canadians.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CONV_CURRENCY_RATE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONVERT CURRENCY RATE: The rate the student used in converting their currency into US dollars reported by citizens living abroad and Canadians.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_IPT_HOME_VALUE_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">IMPUTE PARENTS’ HOME VALUE: Option to impute parents’ home value.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_IPT_HOME_VALUE_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">IMPUTE STUDENT’S HOME VALUE: Option to impute student’s home value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 1: The tax return filed for the first business reported by the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 2: The tax return filed for the second business reported by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 3: The tax return filed for the third business reported by the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 4: The tax return filed for the fourth business reported by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 5: The tax return filed for the fifth business reported by the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 6: The tax return filed for the sixth business reported by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 7: The tax return filed for the seventh business reported by the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 8: The tax return filed for the eighth business reported by the parents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_BUS_TAX_RTRN_CDE_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ BUSINESS TAX RETURN CODE 9: The tax return filed for the ninth business reported by the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_TRAVEL_PAY_PLAN_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TRAVEL PAYMENT SOURCE CODE: The source of the money to pay for the student’s travel while enrolled.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_FATHER_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">FATHER’S NAME: The name of the parent providing the information on the PROFILE and assigned to the traditional father position.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MOTHER_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">MOTHER’S NAME: The name of the parent providing the information on the PROFILE and assigned to the traditional mother position.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE4_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">LINE 4 NAME: The name of the person listed forth on the family member’s matrix (CSS source and format only).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE5_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">LINE 5 NAME: The name of the person listed fifth on the family member’s matrix (CSS source and format only).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE6_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">LINE 6 NAME: The name of the person listed sixth on the family member’s matrix (CSS source and format only).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE7_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">LINE 7 NAME: The name of the person listed seventh on the family member’s matrix (CSS source and format only).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE8_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">LINE 8 NAME: The name of the person listed eighth on the family member’s matrix (CSS source and format only).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_NON_CUST_PAR_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">NON-CUSTODIAL PARENT NAME: The name of the non-custodial parent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EXPLANATIONS_TEXT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">EXPLANATIONS TEXT: Any actual explanations and special circumstances text provided by the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_UPWARD_BOUND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">UPWARD BOUND: Indicates if the student was in the upward bound program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_COLL_NAME_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 9: The ninth college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_COLL_NAME_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 10: The tenth college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ADDL_COLL_NAME_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 9: The ninth school name if more than ten school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ADDL_COLL_NAME_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 10: The tenth school name if more than ten school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EMAIL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">E-MAIL ADDRESS: Student’s e-mail address as reported on PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_P_EMAIL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">E-MAIL ADDRESS: Parents’ e-mail address as reported on PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_1_RECENT_YR_INCOME</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 1 RECENT YEAR EARNED INCOME: Parent 1 recent earnings from work.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_2_RECENT_YR_INCOME</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 2 RECENT YEAR EARNED INCOME: Parent 2 recent earnings from work.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_RECENT_YR_TAX_INCOME</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS RECENT YEAR OTHER TAXABLE INCOME: Parents’ recent other taxable income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_RECENT_YR_UNTAX_INCOME</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS RECENT YEAR UNTAXED INCOME: Parents’ recent untaxed income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_P_REC_YR_CHILD_SUPP_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS RECENT YEAR CHILD SUPPORT PAID: The amount of child support the parents’ expect to pay (or paid) in the most recent year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_P_REC_YR_ED_LN_PAY_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS RECENT YEAR EDUCATIONAL LOAN REPAYMENT: The amount of educational loan repayment the parents’ expect to pay (or paid) in the most recent year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_P_REC_YR_MED_DEN_EXPN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS RECENT YEAR MEDICAL AND DENTAL EXPENSES: The amount of medical and dental expenses the parents’ expect to pay (or paid) in the most recent year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_1_ANTICIPATED_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 1 ANTICIPATED EARNED INCOME: Parent 1 anticipated earnings from work in the coming year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_2_ANTICIPATED_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 2 ANTICIPATED EARNED INCOME: Parent 2 anticipated earnings from work in the coming year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ANTICIPATED_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ANTICIPATED OTHER TAXABLE INCOME: Parents’ anticipated other taxable income in the coming year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ANTICIPATED_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ANTICIPATED UNTAXED INCOME: Parents’ anticipated untaxed income in the coming year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_ADM_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">ADMISSION TYPE: Indicates if student is applying to this school early action, early decision or regular decision.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_EFM_WARD_OF_COURT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COMPUTED ORPHAN EFM: Computed ward of court field for EFM calculations.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_HHB</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HHB: This tag indicates if there is an indication in the application that a noncustodial household can exist for this student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_HOUSEHOLD_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSHOLD TYPE: Indicates whether the household is HHA (custodial) or HHB (non-custodial).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE2_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER FIRST NAME: Family member 2’s first name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE3_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER FIRST NAME: Family member 3’s first name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE4_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER FIRST NAME: Family member 4’s first name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE5_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER FIRST NAME: Family member 5’s first name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE6_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER FIRST NAME: Family member 6’s first name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE7_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER FIRST NAME: Family member 7’s first name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE8_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER FIRST NAME: Family member 8’s first name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE2_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER LAST NAME: Family member 2’s last name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE3_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER LAST NAME: Family member 3’s last name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE4_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER LAST NAME: Family member 4’s last name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE5_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER LAST NAME: Family member 5’s last name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE6_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER LAST NAME: Family member 6’s last name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE7_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER LAST NAME: Family member 7’s last name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE8_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">FAMILY MEMBER LAST NAME: Family member 8’s last name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR1_COMP_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 1 COMPUTED AGE: Parent 1’s computed age.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR2_COMP_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 2 COMPUTED AGE: Parent 2’s computed age.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_NC_PAR_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">NON-CUSTODIAL LAST NAME: Noncustodial parent’s last name</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_NC_PAR_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">NON-CUSTODIAL FIRST NAME: Noncustodial parent’s first name.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR_MARRIAGE_YEAR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">YEAR OF MARRIAGE: The year the parent married or remarried.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR_AGR_EDU_SUPP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NONCUSTODIAL PARENT AGREEMENT: Indicates whether there is an agreement for the noncustodial parent to contribute to the student’s education.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_PAR1_EMAIL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">512</td>
+<td style="text-align: left;">PARENT1 E-MAIL: Parent1 email address.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PAR2_EMAIL_ADDRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">512</td>
+<td style="text-align: left;">PARENT2 E-MAIL: Parent2 email address.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_TRANSFER_STU</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TRANSFER STUDENT: Indicates whether student is transfer or not at this school.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_S_COUNTRY_COEFFICIENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT COUNTRY COEFFICIENT: The country coefficient used to process the student financial data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_STUDENT_IM_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">STUDENT IM ZIP: The ZIP code for the student provided on the PROFILE used in the IM Calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_PARENT_IM_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">PARENT IM ZIP: The ZIP code for the parent provided on the PROFILE used in the IM Calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_NO_2ND_BAP_RESP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NO SECOND BAP RESPONSE: The response provided by the applicant when only one BAP is provided.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE2_SCHL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SCHOOL NAME: Name 2 of K12 or University provided in the family member list.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE3_SCHL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SCHOOL NAME: Name 3 of K12 or University provided in the family member list.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE4_SCHL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SCHOOL NAME: Name 4 of K12 or University provided in the family member list.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE5_SCHL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SCHOOL NAME: Name 5 of K12 or University provided in the family member list.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE6_SCHL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SCHOOL NAME: Name 6 of K12 or University provided in the family member list.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_LINE7_SCHL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SCHOOL NAME: Name 7 of K12 or University provided in the family member list.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_LINE8_SCHL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">SCHOOL NAME: Name 8 of K12 or University provided in the family member list.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CHANGE_EMPLOYMENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CHANGE IN EMPLOYMENT: Indicator that the applicant had a change of employment in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_SCHOLARSHIPS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SCHOLARSHIPS: Indicator that the applicant had a scholarship in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_MED_DENTAL_EXP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MEDICAL DENTAL INDICATOR: Indicator that the applicant had medical or dental expenses in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_SIB_PRIV_SCHOOL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SIBLINGS PRIVATE SCHOOL: Indicator that the applicant had a sibling in private school in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_CATASTROPHIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CATATROPHIC EVENT: Indicator that the applicant had a catastrophic event in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_ELDER_CARE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ELDER CARE: Indicator that the applicant had elder care expenses in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_NONRECURRING_INC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NONRECURRING INCOME: Indicator that the applicant had nonrecurring incoming in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_FINANCIAL_SUPPORT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FINANCIAL SUPPORT: Indicator that the applicant provided financial support to others in the special circumstances section of the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_NONE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NONE: Indicator that the applicant had no special circumstances on the PROFILE.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_OTHER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OTHER: Indicator that the applicant had other special circumstances not listed on the PROFILE.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP5_FEE_PAY_CODE_USED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEE PAYMENT CODE INDICATOR: Indicates if the applicant used a Fee Payment Code for this institution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP5_SCHOOL_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">NAME OF SCHOOL: The current school of the student.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

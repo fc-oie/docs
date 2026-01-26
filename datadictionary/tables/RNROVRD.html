@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rnrovrd – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rnrovrd" id="toc-rnrovrd" class="nav-link active" data-scroll-target="#rnrovrd">RNROVRD</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rnrovrd" class="level1">
+<h1>RNROVRD</h1>
+<p>Below are the column names for <strong>RNROVRD</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RNROVRD</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 81%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year to be associated with the student’s override record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information in this record was entered or last updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_FORMULA_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FORMULA INDICATOR: Indicates whether the system should use the results of the (S)imple, (O)ther, the (H)igher, or the (L)ower of the two formulas for the student contribution when the family qualifies for the simple needs test.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_FORMULA_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT FORMULA INDICATOR: Indicates whether the system should use the results of the (S)imple, (O)ther, the (H)igher, or the (L)ower of the two formulas for the parent contribution when the family qualifies for the simple needs test.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PELL_FORMULA_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL FORMULA INDICATOR: Indicates whether the system should use the results of the (S)imple, (O)ther, the (H)igher, or the (L)ower of the two formulas for the Pell Grant Index if the family qualifies for the Simple Needs Test.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_USE_PROJ_INC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS USE PROJECTED INCOME: Indicates whether the system should use projected year income for the parents instead of base year income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_USE_PROJ_INC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">USE PROJECTED INCOME: This indicates if the system is to use projected calendar year income (1) or projected academic year income (2) instead of base year income for the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_MIN_EARNINGS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MINIMUM EARNINGS: The minimum amount to be used for the student’s contribution rather than the standard $700/$900.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_COST_LIV_INDEX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">COST OF LIVING INDEX: The percentage to be applied to the standard maintenance allowance to account for regional differences in the cost of living.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EMPLOYMENT ALLOWANCE: The amount to be used for the employment allowance instead of the calculated amount.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_CHG_DEPEND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CHANGE DEPENDENCY: Indicates whether the student’s dependency status should be changed from dependent to independent (I) or from independent to dependent (D).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PC_NON_CUST_PAR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CONTRIBUTION FROM NON-CUSTODIAL PARENT: The amount of the contribution from the non-custodial parent to be added to the parent contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_INV_PROJ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INVESTMENT PROJECTION: Indicates if the globally set investment projection option should be turned off for this student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_BUDG_DUR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET DURATION: The number of months the student will be enrolled during the school year if it is other than the standard 9 months.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ACT_ST_LOC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ACTUAL STATE AND LOCAL TAXES: The actual amount of state and local income taxes paid by the student’s parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ACT_ST_LOC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACTUAL STATE AND LOCAL TAXES: The actual amount of state and local income taxes paid by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ACT_FICA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ACTUAL FICA: The actual amount of FICA (Social Security) taxes paid by the student’s parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ACT_FICA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ACTUAL FICA: The actual amount of FICA (Social Security) taxes paid by the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ZERO_LOSS_RECALC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ZERO LOSS RECALCULATION: Indicates if the system is to recalculate the contributions and add back to income any business/farm losses, other taxable income losses, or adjustments to income. See INAS manual for codes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_HOME_VAL_PROJ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOME VALUE PROJECTION: Indicates if the globally set home value projection option should be turned off for this student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_TABLE_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TABLE ID: If the globally set option to project home value is turned on, then the number entered here directs the system to use the values in table 1, 2, or 3 to project home values.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_FIELD_NO1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 1: The value for the first methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_VALUE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 1: The value to be used for the first methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_C_METH_IND1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.1: Indicates if the congressional methodology formula is to be modified by using the first methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_I_METH_IND1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 1: Indicates if the institutional methodology formula is to be modified by using the first methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_P_METH_IND1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 1: Indicates if the Pell Grant formula is to be modified by using the first methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_FIELD_NO2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 2: The value for the second methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_VALUE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 2: The value to be used for the second methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_C_METH_IND2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.2: Indicates if the congressional methodology formula is to be modified by using the second methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_I_METH_IND2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 2: Indicates if the institutional methodology formula is to be modified by using the second methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_P_METH_IND2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 2: Indicates if the Pell Grant formula is to be modified by using the second methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_FIELD_NO3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 3: The value for the third methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_VALUE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 3: The value to be used for the third methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_C_METH_IND3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.3: Indicates if the congressional methodology formula is to be modified by using the third methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_I_METH_IND3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 3: Indicates if the institutional methodology formula is to be modified by using the third methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_P_METH_IND3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 3: Indicates if the Pell Grant formula is to be modified by using the third methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_FIELD_NO4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 4: The value for the fourth methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_VALUE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 4: The value to be used for the fourth methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_C_METH_IND4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.4: Indicates if the congressional methodology formula is to be modified by using the fourth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_I_METH_IND4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 4: Indicates if the institutional methodology formula is to be modified by using the fourth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_P_METH_IND4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 4: Indicates if the Pell Grant formula is to be modified by using the fourth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_FIELD_NO5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 5: The value for the fifth methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_VALUE5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 5: The value to be used for the fifth methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_C_METH_IND5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.5: Indicates if the congressional methodology formula is to be modified by using the fifth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_I_METH_IND5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 5: Indicates if the institutional methodology formula is to be modified by using the fifth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_P_METH_IND5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 5: Indicates if the Pell Grant formula is to be modified by using the fifth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_FIELD_NO6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 6: The value for the sixth methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_VALUE6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 6: The value to be used for the sixth methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_C_METH_IND6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.6: Indicates if the congressional methodology formula is to be modified by using the sixth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_I_METH_IND6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 6: Indicates if the institutional methodology formula is to be modified by using the sixth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_P_METH_IND6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 6: Indicates if the Pell Grant formula is to be modified by using the first methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_FIELD_NO7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 7: The value for the seventh methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_VALUE7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 7: The value to be used for the seventh methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_C_METH_IND7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.7: Indicates if the congressional methodology formula is to be modified by using the seventh methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_I_METH_IND7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 7: Indicates if the institutional methodology formula is to be modified by using the seventh methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_P_METH_IND7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 7: Indicates if the Pell Grant formula is to be modified by using the seventh methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_FIELD_NO8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 8: The value for the eighth methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_VALUE8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 8: The value to be used for the eighth methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_C_METH_IND8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.8: Indicates if the congressional methodology formula is to be modified by using the eighth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_I_METH_IND8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 8: Indicates if the institutional methodology formula is to be modified by using the eighth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_P_METH_IND8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 8: Indicates if the Pell Grant formula is to be modified by using the eighth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_FIELD_NO9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FIELD NO. 9: The value for the ninth methodology specific change.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_VALUE9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">VALUE NO. 9: The value to be used for the ninth methodology specific change.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_C_METH_IND9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONGRESSIONAL METHODOLOGY INDICATOR NO.9: Indicates if the congressional methodology formula is to be modified by using the ninth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_I_METH_IND9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL METHODOLOGY INDICATOR NO. 9: Indicates if the institutional methodology formula is to be modified by using the ninth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_P_METH_IND9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL METHODOLOGY INDICATOR NO. 9: Indicates if the Pell Grant formula is to be modified by using the ninth methodology specific data element field and value entered.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ADJUST_SC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ADJUST STUDENT CONTRIBUTION: An indicator as to whether or not to adjust the student contribution for periods of enrollment of less than 9 months for a dependent student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_INCL_P_TUIT_EXP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for including parents expenses of elementary and secondary tuition (FM/IM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_INCL_P_MED_EXP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for including parents medical/dental expenses (FM/IM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_INCL_S_MED_EXP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for including students medical/dental expenses (FM/IM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_S_INV_PROJ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for projecting value of students investments (FM/IM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_CALC_PC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the the global option for calculating PC for independent students.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ALLOW_NEG_INC_SUPP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for allowing negative income supplement to reduce income (IM only)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_P_AGI_ASM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for assuming parents AGI (IM only)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_P_ASSET_ASM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for assuming parents assets (IM only)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_S_ASSET_ASM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for assuming students assets (IM only)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_P_OTH_INC_ASM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for assuming parents other untaxed income or benefits (IM only)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_NUM_IN_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Represents the option for overriding the global option for replacing the number in college.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_INCL_P_INC_EXCL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Specifies whether INAS will include the parents income exclusion in the calculation of total income.Valid values are Y, N and blank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_INCL_S_INC_EXCL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Specifies whether INAS will include the students income exclusion in the calculation of total income.Valid values are Y, N and blank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_REMOVE_EST_FLAG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Used to override the flagging of FM results as Estimated for a specific student.Valid values are Y, N and blank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_INCL_S_TUIT_EXP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Used to override the inclusion of expenses of elementary and secondary schooling for independent students with dependents, as a reduction to income. Valid values are Y,N and blank.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_BUDG_DUR_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FM BUDGET DURATION: The number of months to be used as the budget duration by the FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_CHG_DEPEND_FM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CHANGE FM DEPENDENCY: Indicates whether the student dependency status should be changed for the FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_CALC_US_TAX_FM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATE STUDENT U.S. TAX AMOUNT FOR FM: Represents the option for overriding the global option regarding calculation of student FM taxes when the reported value is blank.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_CALC_US_TAX_FM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATE PARENT U.S. TAX AMOUNT FOR FM: Represents the option for overriding the global option regarding calculation of parent FM taxes when the reported value is blank.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_TUIT_EXP_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM TUITION EXPENSES: The amount of tuition expenses to be included in the student FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_TUIT_EXP_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM TUITION EXPENSES: The amount of tuition expenses to be included in the parent FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_MED_DENT_EXP_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM MEDICAL AND DENTAL EXPENSES: The amount of medical and dental expenses to be included in the student FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_MED_DENT_EXP_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM MEDICAL AND DENTAL EXPENSES: The amount of medical and dental expenses to be included in the parent FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_OTH_INC_ALLOW_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM OTHER INCOME ALLOWANCE: The amount of the optional other income allowance to be included in the student FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_OTH_INC_ALLOW_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM OTHER INCOME ALLOWANCE: The amount of the optional other income allowance to be included in the parent FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_OTH_ASSET_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM OTHER ASSET AMOUNT: The amount of the optional other asset to be included in the student FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_OTH_ASSET_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM OTHER ASSET AMOUNT: The amount of the optional other asset to be included in the parent FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ASSET_ALLOW_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT FM ASSET ALLOWANCE: The amount of the optional asset allowance to be included in the student FM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_ASSET_ALLOW_FM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT FM ASSET ALLOWANCE: The amount of the optional asset allowance to be included in the parent FM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_CHG_DEPEND_IM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CHANGE IM DEPENDENCY: Indicates whether the student dependency status should be changed for the IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_BUDG_DUR_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IM BUDGET DURATION: The number of months to be used as the budget duration by the IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_CALC_PC_IM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATE IM PC FOR INDEPENDENT STUDENT: Indicates whether an IM parental contribution should be calculated for an independent student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_TUIT_EXP_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM TUITION EXPENSES: The amount of tuition expenses to be included in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_TUIT_EXP_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM TUITION EXPENSES: The amount of tuition expenses to be included in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_MED_DENT_EXP_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM MEDICAL AND DENTAL EXPENSES: The amount of medical and dental expenses to be included in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_MED_DENT_EXP_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM MEDICAL AND DENTAL EXPENSES: The amount of medical and dental expenses to be included in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_STU_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT EMPLOYMENT ALLOWANCE: The employment allowance to be used for an independent student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT EMPLOYMENT ALLOWANCE: The employment allowance to be used for the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_OTH_INC_ALLOW_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM OTHER INCOME ALLOWANCE: The amount of the optional other income allowance to be included in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_OTH_INC_ALLOW_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM OTHER INCOME ALLOWANCE: The amount of the optional other income allowance to be included in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_STU_COST_LIV_INDEX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT COST OF LIVING INDEX: The index (e.g.&nbsp;090=90%, 136=136%) to be used for calculating the IM income protection allowance for an independent student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_COST_LIV_INDEX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT COST OF LIVING INDEX: The index (e.g.&nbsp;090=90%, 136=136%) to be used for calculating the IM income protection allowance for the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_IPA_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT INCOME PROTECTION ALLOWANCE: The income protection allowance amount to be used for an independent student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_IPA_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT INCOME PROTECTION ALLOWANCE: The income protection allowance amount to be used for the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_US_TAX_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT U.S. TAXES PAID: The U.S. tax amount to be used for the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_US_TAX_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT U.S. TAXES PAID: The U.S. tax amount to be used for the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_CALC_US_TAX_IM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATE STUDENT U.S. TAX AMOUNT FOR IM: Represents the option for overriding the global option regarding calculation of student IM taxes when the reported value is blank.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_CALC_US_TAX_IM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATE PARENT U.S. TAX AMOUNT FOR IM: Represents the option for overriding the global option regarding calculation of parent IM taxes when the reported value is blank.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_EST_TAX_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT ESTIMATED U.S. TAXES: The estimated U.S. tax amount associated with projected year data used for the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_EST_TAX_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT ESTIMATED U.S. TAXES: The estimated U.S. tax amount associated with projected year data used for the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ST_LOC_TAX_RATE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT STATE AND LOCAL TAX RATE: The tax rate (e.g.&nbsp;07=7%) to be used to calculate state and local taxes during the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ST_LOC_TAX_RATE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT STATE AND LOCAL TAX RATE: The tax rate (e.g.&nbsp;07=7%) to be used to calculate state and local taxes during the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_INC_ASSESS_RATE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INCOME ASSESSMENT RATE: The income assessment percentage (e.g.&nbsp;075=75%) to be used in the IM calculation for an independent student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ZERO_LOSS_BUS_FARM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ZERO LOSS FOR BUSINESS/FARM: Indicates whether the IM calculation should add back to income any business/farm losses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ZERO_LOSS_OTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ZERO LOSS OTHER TAXABLE INCOME: Indicates whether the IM calculation should add back to income any losses associated with other taxable income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ZERO_LOSS_INC_ADJ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ZERO LOSS INCOME ADJUSTMENTS: Indicates whether the IM calculation should add back to income any losses associated with adjustments to income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_AAI_TBL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT AAI TABLE: Indicates the AAI table to be used in the IM calculation for independents with dependents.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_AAI_TBL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT AAI TABLE: Indicates the AAI table to be used in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_OTH_ASSET_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM OTHER ASSET AMOUNT: The amount of the optional other asset to be included in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_OTH_ASSET_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM OTHER ASSET AMOUNT: The amount of the optional other asset to be included in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ASSET_ALLOW_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM ASSET ALLOWANCE: The amount of the optional asset allowance to be included in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ASSET_ALLOW_IM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM ASSET ALLOWANCE: The amount of the optional asset allowance to be included in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_S_HOME_VAL_PROJ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT HOME VALUE PROJECTION: Indicates the option to be used when computing home value for an independent student in the IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_HOME_VAL_CAP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT HOME VALUE CAP: The cap, represented as a multiple of income (e.g.&nbsp;250=2.50 times income), on the calculated IM home value for an independent student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_HOME_VAL_CAP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT HOME VALUE CAP: The cap, represented as a multiple of income (e.g.&nbsp;250=2.50 times income), on the calculated IM parent home value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_IRA_KEOGH_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT RETIREMENT ASSETS: The percentage of student retirement assets to be included in the IM net worth.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_S_ALLOW_NEG_INC_SUPP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT NEGATIVE INCOME SUPPLEMENT: Indicates whether a negative income supplement will be allowed in the IM calculation for an independent student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_P_ALLOW_NEG_INC_SUPP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT NEGATIVE INCOME SUPPLEMENT: Indicates whether a negative income supplement will be allowed in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ASSET_ASSESS_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT ASSET ASSESSMENT PERCENTAGE: The asset assessment percentage (e.g.&nbsp;075=75%) to be used in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ASSET_ASSESS_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT ASSET ASSESSMENT PERCENTAGE: The asset assessment percentage (e.g.&nbsp;075=75%) to be used in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ELIM_APA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ELIMINATE STUDENT ASSET PROTECTION ALLOWANCE: Indicates whether the asset protection allowance should be eliminated for the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ELIM_APA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ELIMINATE PARENT ASSET PROTECTION ALLOWANCE: Indicates whether the asset protection allowance should be eliminated for the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_STU_NUM_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT NUMBER IN COLLEGE: The number of family members in college to be used in the IM calculation for an independent student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_NUM_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT NUMBER IN COLLEGE: The number of family members in college to be used in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_MIN_SC_FROM_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MINIMUM STUDENT CONTRIBUTION FROM INCOME: The minimum IM contribution from income expected from the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_MIN_PC_FROM_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MINIMUM PARENTAL CONTRIBUTION FROM INCOME: The minimum IM contribution from income expected from the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_MIN_SC_FROM_ASSETS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MINIMUM STUDENT CONTRIBUTION FROM ASSETS: The minimum IM contribution from assets expected from the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_MIN_PC_FROM_ASSETS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MINIMUM PARENTAL CONTRIBUTION FROM ASSETS: The minimum IM contribution from assets expected from the parents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PRIOR_YR_SC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PRIOR YEAR STUDENT CONTRIBUTION: The student contribution from the prior year; used with RNROVRD_SC_PCT_INCREASE to determine the minimum IM student contribution for the current year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PRIOR_YR_PC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PRIOR YEAR PARENTAL CONTRIBUTION: The parent contribution from the prior year; used with RNROVRD_PC_PCT_INCREASE to determine the minimum IM parental contribution for the current year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_SC_PCT_INCREASE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT CONTRIBUTION PERCENT INCREASE: The percentage (e.g.&nbsp;125=12.5%) that the current IM student contribution should, at a minimum, exceed the prior year student contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PC_PCT_INCREASE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTAL CONTRIBUTION PERCENT INCREASE: The percentage (e.g.&nbsp;125=12.5%) that the current IM parental contribution should, at a minimum, exceed the prior year parental contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_MAX_PC_OTH_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MAXIMUM PARENTAL CONTRIBUTION FOR OTHERS IN COLLEGE: The maximum parental contribution to be allocated to other siblings in college.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ALLOW_IM_SC_LOWR_FM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">USE FM OR IM STUDENT CONTRIBUTION AS MINIMUM: Indicates whether the student IM contribution can be less that the student FM contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ALLOW_IM_PC_LOWR_FM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">USE FM OR IM PARENTAL CONTRIBUTION AS MINIMUM: Indicates whether the parent IM contribution can be less that the parent FM contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_CALC_PC_FM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATE FM PC FOR INDEPENDENT STUDENT: Indicates whether a FM parental contribution should be calculated for an independent student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_AGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM AGI: The amount of Adjusted Gross Income to be used in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_AGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM AGI: The amount of Adjusted Gross Income to be used in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT IM UNTAXED INCOME: The amount of Untaxed Income to be used in the student IM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT IM UNTAXED INCOME: The amount of Untaxed Income to be used in the parent IM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_USE_PROJ_INC_EFM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT EFM PROJECTED INCOME: Indicates whether student projected year income should be used for the EFM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_USE_PROJ_INC_EFM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT EFM PROJECTED INCOME: Indicates whether parent projected year income should be used for the EFM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_NUM_IN_COLL_EFM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT EFM NUMBER-IN-COLLEGE: The number-in-college to be used in the student EFM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_NUM_IN_COLL_EFM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT EFM NUMBER-IN-COLLEGE: The number-in-college to be used in the parent EFM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_NUM_IN_HSLD_EFM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT EFM NUMBER-IN-HOUSEHOLD: The number-in-household to be used in the student EFM calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_NUM_IN_HSLD_EFM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT EFM NUMBER-IN-HOUSEHOLD: The number-in-household to be used in the parent EFM calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_NON_CUST_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">WHICH NON-CUSTODIAL PARENTAL CONTRIBUTION: Represents the option for overriding the ROBINST option regarding which non-custodial PC should be passed to INAS.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_SKIP_AGE_EXCL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SKIP AGE EXCLUSION FOR IM: Represents the option for overriding the global options regarding exclusion of family members from number in family/college based on age.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_NON_CUST_PC_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">USE NON-CUSTODIAL PC FOR IM: Represents the option for overriding the global option regarding increasing of the custodial parents PC by the non-custodial PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_LIMIT_PC_BY_BDGT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LIMIT OTHERS SHARE OF PC BY BUDGET: Represents the option for overriding the global option regarding limiting family members share of PC based on sum or percentage of budget.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_STU_BUDGET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT TOTAL BUDGET: The actual student budget amount; used to override the global options regarding average total budgets.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_AGI_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT AGI OPTION FOR IM: Represents the option for overriding the global option regarding which (reported or calculated) AGI to use.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ADD_BK_HOPE_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT ADD BACK HOPE OPTION: Option to add back the amount reported by the student for the Hope and Lifetime Learning tax credits to federal taxes paid; Y=Add back Hope/LTL, N=Don’t add back.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ADD_BK_HOPE_OPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT ADD BACK HOPE OPTION: Option to add back the amount reported by the parent for the Hope and Lifetime Learning tax credits to federal taxes paid; Y=Add back Hope/LTL, N=Don’t add back.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_FM_PAR_NUM_COL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FM PARENT NUMBER IN COLLEGE: A one-character code to indicate if the one parent in college assumption should be overridden.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ALLOW_PAR_IN_COL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IM ALLOW PARENT IN COLLEGE: A one-character code to indicated that parent(s) included in number in college.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ALLOW_PAR_IN_COL_EFM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EFM ALLOW PARENT IN COLLEGE: A one-character code to indicate that parent(s) included in number in college.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_USE_P_ST_TAX_ALWNCE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">USE PARENT STATE LOCAL TAX TABLE: Only use with independent students with dependents.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_FAMILY_ASSETS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FAMILY ASSETS: A one-character code to indicate if student assets are to be combined with parents’ assets.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_REJ_A_INAS_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT A INAS OVERRIDE: Option to override the ‘birth year’ reject edit (Reject A). This is an INAS, FM override only.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_REJ_C_INAS_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT C INAS OVERRIDE: Option to override ‘Taxes Paid = AGI’ reject edit (Reject C). This is an INAS, FM override only.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_SSN_NO_DOB_REJ_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT R: Option to suppress the “Social Security Match but no date of birth match” reject edit. This is an INAS, FM Override only.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_F_SSN_NO_DOB_REJ_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT S: Option to suppress the “Parent 1 Social Security Match but no date of birth match” reject edit. This is an INAS, FM Override only.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_M_SSN_NO_DOB_REJ_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT T: Option to suppress the “Parent 2 Social Security Match but no date of birth match” reject edit. This is an INAS, FM Override only.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_EXCL_TUIT_DED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OPTION EXCLUDING TUITION AND FEES: Institutional methodology option disallowing tuition and fee deduction as untaxed income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_CAP_HOME_EQT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OPTION CAPPING FINAL HOME EQUITY: Institutional option capping final home equity for independent students at two times income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_CAP_HOME_EQT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OPTION CAPPING PARENT FINAL HOME EQUITY: Institutional methodology option capping final home equity for parents at two times income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_SSN_NO_NAME_REJ_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT D: Option to suppress the “Student’s Social Security Match but no name match” reject edit. This is an INAS, FM Override only.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_F_SSN_NO_NAME_REJ_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT E: Option to suppress the “Parent 1 Social Security Match but no name match” reject edit. This is an INAS, FM Override only.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_M_SSN_NO_NAME_REJ_OVRD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REJECT F: Option to suppress the “Parent 2 Social Security Match but no name match” reject edit. This is an INAS, FM Override only.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_CAP_EQT_FACTOR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CAP HOME EQUITY FACTOR: If option is chosen, the final home equity for the independent student will be capped at 0.0 to 9.99 times income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_CAP_EQT_FACTOR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CAP PARENT HOME EQUITY FACTOR: If option is chosen, the final home equity for the parents will be capped at 0.0 to 9.99 times income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_MIN_SC_FROM_INC_CALC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ALTERNATE STUDENT CONTRIBUTION FROM INCOME CALCULATION: Indicates whether the alternate student contribution calculation should be performed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_EXCL_FWS_FR_INC_EXC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ALWAYS ALLOW STUDENT WORK STUDY AS INCOME EXCLUSION: Indicates whether work study should always be treated as an income exclusion or only when less than or equal to 50 percent of income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_CAP_INTL_STU_IPA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">LIMIT IPA FOR INTERNATIONAL STUDENT’S PARENTS: Limit an international student’s parents’ IPA to an amount not greater than 25% of parental total income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_CALC_TCA_W_CC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">INTERNATIONAL ASSET PROTECTION ALLOWANCE: This indicates whether to apply an international asset protection allowance based on the country coefficient value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_HSG_MULT_OVRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT HOUSING MULTIPLIER OVERRIDE: Projected student home value percentage (e.g.&nbsp;1.50=1.5%) to be used to project current home value based on home purchase price for an independent student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_HSG_MULT_OVRD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT HOUSING MULTIPLIER OVERRIDE: Projected parent home value percentage (e.g.&nbsp;1.50=1.5%) to be used to project current home value based on home purchase price for parents of a dependent student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_FSA_HEALTH_CARE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT HEALTH CARE FSA OPTION: Overrides the global option that determines if parent health care FSA funds are included in untaxed income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_PAR_FSA_DEPENDENT_CARE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT DEPENDENT CARE FSA OPTION: Overrides the global option that determines if parent dependent care FSA funds are included in untaxed income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_HSA_PRE_TAX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS HEALTH SAVINGS ACCOUNT PRE-TAX CONTRIBUTION OPTION: Overrides the global option that determines if parent HSA pre-tax contributions are included as untaxed income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_P_INDEX_PC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTAL CONTRIBUTION PERCENT INCREASE: The percentage that the current IM parental contribution should, at a minimum, exceed the prior year parental contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_S_INDEX_SC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT CONTRIBUTION PERCENT INCREASE: The percentage that the current IM student contribution should, at a minimum, exceed the prior year student contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ANTICIPATED_US_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT ANTICIPATED U.S. TAXES: The anticipated (base+2) U.S. tax amount to use for the student when using anticipated year income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_ANTICIPATED_US_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ANTICIPATED U.S. TAXES: The anticipated (base+2) U.S. tax amount to use for the parents when using anticipated year income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_USE_ANT_YR_INCOME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT SELECT INCOME: This indicates which AGI or income to use for student tax filers.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_USE_ANT_YR_INCOME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT SELECT INCOME: This indicates which AGI or income to use for parent tax filers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_USE_ANT_INC_EFM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT IM INCOME FOR EFM: The option to determine which income fields to use for the EFM calculations for the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_PAR_USE_ANT_INC_EFM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT IM INCOME FOR EFM: The option to determine which income fields to use for the EFM calculations for the parent.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RNROVRD_ALLOW_INC_EXCL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ALLOW STUDENT INCOME EXCLUSIONS: Allows all income exclusions to be applied, skipping the 50 percent income exclusion calculation for the student.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RNROVRD_ALLOW_PAR_INC_EXCL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ALLOW PARENT INCOME EXCLUSIONS: Allows all income exclusions to be applied, skipping the 50 percent income exclusion calculation for the parent.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,2720 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rcrtmp1 – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rcrtmp1" id="toc-rcrtmp1" class="nav-link active" data-scroll-target="#rcrtmp1">RCRTMP1</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rcrtmp1" class="level1">
+<h1>RCRTMP1</h1>
+<p>Below are the column names for <strong>RCRTMP1</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RCRTMP1</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 81%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year to be associated with information in this record. EXAMPLES: 9091, 9192, 9293, etc. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">INTERFACE TAPE CODE: A code from the Interface Tape Table indicating the source and format of the application record. EXAMPLES: CSS, ACT-CSS (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEQUENCE NUMBER: The number to uniquely identify the application if multiple applications have been stored from the same processor/source. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_CURR_REC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CURRENT RECORD INDICATOR: Indicates if this application record has been flagged as the ‘current’ record for processing. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CREATOR_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">APPLICATION CREATOR ID: The ID of the person who created this application record on the database. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The logon ID of the user who entered or last updated the record in this table. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CREATE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">APPLICATION CREATED DATE: The date that this application record was created on the database. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information for this record in the table was entered or last updated (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_COLL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE: The four digit college code identifying the school for which this application tape record was created. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ACYR_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ACADEMIC YEAR CODE: The last two digits of the first year for the academic year being processed. EXAMPLE: ‘90’ for the 1990-91 academic year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LAST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">LAST NAME: The student’s last name as reported on the aid application. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_FIRST_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">FIRST NAME: The student’s first name as reported on the aid application. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">MIDDLE INITIAL: The student’s middle initial as reported on the aid application. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_TITLE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TITLE: The student’s title. (Mr.&nbsp;or Miss, Ms., Mrs.) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS: The student’s number and street for their address as reported on their aid application. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">CITY: The city of the student’s address from the aid application. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_STAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">STATE CODE: The two character postal abbreviation for the student’s state reported as part of the address. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ZIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">ZIP CODE: The zip code for the student’s address. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SSN_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SOCIAL SECURITY NUMBER PREFIX: A one character prefix before the student’s nine character SSN. (ACT format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">SOCIAL SECURITY NUMBER: The student’s social security number as reported on the aid application. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">BIRTH DATE: The student’s date of birth. (In Oracle format) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PHONE_AREA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">STUDENT’S PHONE NUMBER AREA CODE: The area code of the student’s home telephone number. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PHONE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">STUDENT’S PHONE NUMBER: The student’s home telephone number without area code. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_STAT_CODE_RES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">STATE OF LEGAL RESIDENCE: The student’s state of legal residence. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_START_RES_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">COLUMN NO LONGER USED.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RCPT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">APPLICATION RECEIPT DATE: The date that the processor received the aid application. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_REV_RCPT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REVISION RECEIPT DATE: The date that the processor received a request for revisions from the student. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ORIG_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ORIGINAL COMPUTE DATE: The date that the application was originally processed by the processor. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_REV_COMP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">REVISION COMPUTE DATE: The date that the processor processed a revised report for the applicant. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_CITZ_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CITIZENSHIP INDICATOR: 1=U.S. Citizen, 2=Eligible Non-Citizen, 3=None of the above, Blank= Not reported. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ALIEN_REG_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">ALIEN REGISTRATION NUMBER: The number assigned by the Immigration and Naturalization Service (INS) to all eligible permanent resident non-citizens. A nine digit identification beginning with the letter ’</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">A’. (TEMPORARY)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MRTL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MARITAL STATUS: The student’s reported marital status. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_HS_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">HIGH SCHOOL CODE: The six digit code for the student’s high school. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_ENROLL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EXPECTED ENROLLMENT STATUS: The column is no longer used as of the 8.18.2 Release. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_YR_IN_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">YEAR IN COLLEGE: Indicates which year in college the student will be enrolled in during the school year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CRSE_OF_STUDY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">COURSE OF STUDY: A code to indicate the student’s anticipated college major. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_GRAD_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">EXPECTED GRADUATION MONTH AND YEAR: The student’s expected graduation date. (MMYY format) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_DEGREE_BY_JULY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGREE BY JULY 1, 1990: Indicates if the student will have a first bachelor’s degree by July 1, 1990. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_MORE_THAN_3_PREV_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MORE THAN 3 PREVIOUS COLLEGES: Indicates whether or not the student attended more than three previous colleges. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_NO_SCH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER OF PREVIOUS SCHOOLS ATTENDED: The number of schools, beyond high school, that the student has attended. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PREV_COLL1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PREVIOUS COLLEGE #1: The school code number of the most previously attended school since high school. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PREV_COLL2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PREVIOUS COLLEGE #2: The school code number of the second most previously attended school since high school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PREV_COLL3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PREVIOUS COLLEGE #3: The school code number of the third most previously attended school since high school. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_DRIVER_LIC_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">DRIVER’S LICENSE NUMBER: The student’s driver’s license number. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_STAT_CODE_LIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">STATE OF DRIVER’S LICENSE: The state that issued the student’s driver’s license. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_DISL_WRK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DISLOCATED WORKER: Indicates if the student or spouse has been certified as a dislocated worker by the appropriate agency. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_DISP_HME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DISPLACED HOMEMAKER: Indicates if the student or spouse is a displaced homemaker. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_FAM_MEMB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FAMILY MEMBERS: The number of people in the student’s household during the school year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER IN COLLEGE: The total number of family members in the student’s household that will attend college at least half-time. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CASH, SAVINGS AND CHECKING ACCOUNTS: The amount the student currently has in cash on hand and in savings and checking accounts. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HOME VALUE: The current market value of the student’s home. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HME_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HOME DEBT: The student’s current outstanding debts against the home. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S REAL ESTATE AND INVESTMENTS VALUE: The student’s current market value of other real estate and investment assets. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RE_INV_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S REAL ESTATE AND INVESTMENTS DEBTS: The student’s current outstanding debts against other real estate and investment assets. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_BUS_FARM_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUSINESS AND FARM VALUE: The current market value of the student’s business and farm assets. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_BUS_FARM_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUSINESS AND FARM DEBT: The amount of the student’s outstanding debts against business and farm assets. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_INCL_FARM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSETS INCLUDE FARM: Indicates whether or not the student’s reported business/farm assets includes farm assets. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_BORN_BEFORE_1_1_XX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BORN BEFORE 1-1-XX: Indicates whether or not the student was born before Jan.&nbsp;1, 19xx. The xx is 67 for the 1990-91, 68 for 1991-92, etc. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_US_VET</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VETERAN OF THE US ARMED FORCES: Indicates if the student is a veteran of the US Armed Forces. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_WARD_OF_COURT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">WARD OF COURT: Student ward of court at any time since turning 13.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_HAS_LEGAL_DEPEND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HAS LEGAL DEPENDENTS: Indicates whether or not the student has legal dependents other than a spouse for determining dependency status. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_TAX_FORM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">TAX FORM INDICATOR: Indicates which type of federal tax return the student filed (or will file) and whether or not the income data is estimated. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_NO_EXEMPT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER OF TAX EXEMPTIONS: The number of tax exemptions claimed by the student on their federal tax return. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_US_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED GROSS INCOME: The amount of AGI in the base year reported by the student on his/her federal tax return. Starting in 24-25 this will only be populated if an FAA does a PJ.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_US_INC_TAX_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INCOME TAX PAID: The amount of federal income taxes paid by the student in the base year as reported on the student’s US income tax return. Starting in 24-25 this will only be populated if an FAA does a PJ.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INCOME FROM WORK: The amount of the student’s base year income from working. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SPS_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SPOUSE INCOME FROM WORK: The amount of income earned from work by the student’s spouse in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SS_BENE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SOCIAL SECURITY BENEFITS: The amount of social security benefits received by the student (and spouse) in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_AFDC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AID TO FAMILIES WITH DEPENDENT CHILDREN: Student’s base year income from the Aid to Families with Dependent Children program (AFDC or ADC). (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CHILD_SUPP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S CHILD SUPPORT RECEIVED: Amount of student’s child support received.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_OTH_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S OTHER UNTAXED INCOME: Amount of student’s other untaxed income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MEDICAL AND DENTAL EXPENSES: The student’s reported base year medical and dental expenses not paid by insurance. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_TUIT_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TUITION PAID: The amount of elementary, jr. or sr. high school tuition expenses paid by the student in the base year for his/her dependent children. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_NO_CHILD_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER OF CHILDREN WHO PAID TUITION: The number of dependent children for the student who paid elementary, jr. high, or high school tuition. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_TAX_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED TAX PAID: The student’s expected calendar year taxes paid. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED INCOME FROM WORK: The student’s expected calendar year income from work. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_SPS_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED SPOUSE INCOME FROM WORK: The expected calendar year income from work for the student’s spouse. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_OTH_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED OTHER TAXABLE INCOME: The student’s expected calendar year other taxable income. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED UNTAXED INCOME: The student’s expected calendar year nontaxable income and benefits. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_SMR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED SUMMER INCOME: The student’s expected income from work for the summer (3 months). (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_ACYR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED ACADEMIC YEAR INCOME FROM WORK: The student’s expected academic year (9 months) income from wages. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_SPS_SMR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED SPOUSE SUMMER INCOME: The expected income from work during the summer (3 months) for the student’s spouse. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_SPS_ACYR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED SPOUSE ACADEMIC YEAR INCOME: The student’s spouse’s academic year (9 month) income from work. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_SMR_OTH_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED SUMMER OTHER TAXABLE INCOME: The student’s expected other taxable income for the summer (3 months). (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_ACYR_OTH_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED ACADEMIC YEAR OTHER TAXABLE INCOME: The student’s expected academic year (9 months) other taxable income. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_SMR_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED SUMMER UNTAXED INCOME: The student’s expected nontaxable income and benefits for the summer (3 months). (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_ACYR_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED ACADEMIC YEAR UNTAXED INCOME: The student’s expected academic year (9 months) nontaxable income and benefits. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_GI_DEAB_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GI BILL / DEPENDENTS EDUCATIONAL ASSISTANCE BENEFITS: The monthly amount of the student’s GI Bill and Dependents Educational Assistance Benefits (DEAB) from the Veterans Administration (VA). (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_GI_DEAB_MTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GI BILL / DEPENDENTS EDUCATIONAL ASSISTANCE BENEFITS MONTHS: The number of months the student will receive the VA benefits during the 12 month award year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_VEAP_BEN_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VEAP BENEFITS AMOUNT: The amount of monthly VA Contributory Benefits that the student expects to receive during the school year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_VEAP_BEN_MTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VEAP BENEFITS NUMBER OF MONTHS: The number of months that the student expects to receive VA Contributory Benefits during the school year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_OTH_VA_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OTHER VA BENEFITS AMOUNT: The amount per month from other VA programs. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_OTH_VA_MTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OTHER VA BENEFITS NUMBER OF MONTHS: The number of months that the other VA benefits will be received during the award year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CLM_AS_TAX_EXEMPT_2YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CLAIMED AS TAX EXEMPTION IN 1988: Indicator of whether or not the student was claimed as a tax exemption by his or her parents for 1988. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_CLM_AS_TAX_EXEMPT_1YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CLAIMED AS TAX EXEMPTION IN 1989: Indicator of whether or not the student was claimed as a tax exemption by his or her parents for 1989. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CLM_AS_TAX_EXEMPT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CLAIMED AS TAX EXEMPTION IN 1990: Indicator of whether or not the student was or will be claimed as a tax exemption by his or her parents for 1990. (For married or graduate/professional students only</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">.) (TEMPORARY)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_WHEN_RCVD_AID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">WHEN AID WAS FIRST RECEIVED: Indicates during what school year the student first received federal student aid. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_1985_RSRC_4000_8788</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1985 FOR 87-88 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1985 if aid was received first in the 1987-88 school year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_1986_RSRC_4000_8788</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1986 FOR 87-88 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1986 if aid was received first in the 1987-88 school year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_1986_RSRC_4000_8889</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1986 FOR 88-89 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1986 if aid was received first in the 1988-89 school year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_1987_RSRC_4000_8889</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1987 FOR 88-89 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1987 if aid was received first in the 1988-89 school year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_1987_RSRC_4000_8990</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1987 FOR 89-90 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1987 if aid was received first in the 1989-90 school year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_1988_RSRC_4000_8990</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1988 FOR 89-90 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1988 if aid was received first in the 1989-90 school year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_1988_RSRC_4000_9091</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1988 FOR 90-91 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1988 if aid was received first in the 1990-91 school year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_1989_RSRC_4000_9091</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1989 FOR 90-91 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1989 if aid was received first in the 1990-91 school year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_NO_AID_RSRC_4000_2YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1988 FOR NONE OF 87-88, 88-89 or 89-90: Indicates if the student had resources of $4000 or more in 1988 if aid was not received first in the 1987-88, 1988-89 or 1989-90 school years.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(TEMPORARY)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_NO_AID_RSRC_4000_1YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1989 FOR NONE OF 87-88, 88-89 or 89-90: Indicates if the student had resources of $4000 or more in 1989 if aid was not received first in the 1987-88, 1988-89 or 1989-90 school years.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">(TEMPORARY)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LINE2_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 2 RELATIONSHIP: The code for the relationship to the student applicant for the person listed second on the family members matrix. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LINE2_ATTEND_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 2 ATTENDS COLLEGE: Indicates whether or not the person listed second on the family members matrix will attend college at least half-time. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LINE3_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 3 RELATIONSHIP: The code for the relationship to the student applicant for the person listed third on the family members matrix. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LINE3_ATTEND_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 3 ATTENDS COLLEGE: Indicates whether or not the person listed third on the family members matrix will attend college at least half-time. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LINE4_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 4 RELATIONSHIP: The code for the relationship to the student applicant for the person listed fourth on the family members matrix. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LINE4_ATTEND_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 4 ATTENDS COLLEGE: Indicates whether or not the person listed fourth on the family members matrix will attend college at least half-time. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LINE5_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 5 RELATIONSHIP: The code for the relationship to the student applicant for the person listed fifth on the family members matrix. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LINE5_ATTEND_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 5 ATTENDS COLLEGE: Indicates whether or not the person listed fifth on the family members matrix will attend college at least half-time. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LINE6_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 6 RELATIONSHIP: The code for the relationship to the student applicant for the person listed sixth on the family members matrix. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LINE6_ATTEND_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 6 ATTENDS COLLEGE: Indicates whether or not the person listed sixth on the family members matrix will attend college at least half-time. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LINE7_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 7 RELATIONSHIP: The code for the relationship to the student applicant for the person listed seventh on the family members matrix. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LINE7_ATTEND_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 7 ATTENDS COLLEGE: Indicates whether or not the person listed second on the family members matrix will attend college at least half-time. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LINE8_RELSHIP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 8 RELATIONSHIP: The code for the relationship to the student applicant for the person listed eighth on the family members matrix. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_LINE8_ATTEND_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LINE 8 ATTENDS COLLEGE: Indicates whether or not the person listed eighth on the family members matrix will attend college at least half-time. (CSS source and format only) (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_MRTL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS MARITAL STATUS: The marital status for the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_OLDER_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGE OF OLDER PARENT: The age of the older parent. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_STAT_CODE_RES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PARENTS STATE OF LEGAL RESIDENCE: The state of legal residence for the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_DISL_WRK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS DISLOCATED WORKER INDICATOR: Indicates whether or not either of the student’s parents are certified as a dislocated worker. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_DISP_HME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS DISPLACED HOMEMAKER INDICATOR: Indicates whether or not either of the student’s parents is a displaced homemaker. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_FAM_MEMB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS FAMILY MEMBERS: The number of family members in the parents household. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS NUMBER OF FAMILY MEMBERS IN COLLEGE: The number of people in the parents household that will be enrolled in college at least half-time. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS CASH ASSETS AMOUNT: The value of cash, savings and checking accounts reported by the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS HOME VALUE: The current market value of the student’s parents home. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_HME_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS HOME DEBT: The current outstanding debts against the home for the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS REAL ESTATE AND INVESTMENTS VALUE: The current market value of other real estate and investment assets reported by the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_RE_INV_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS REAL ESTATE AND INVESTMENTS DEBT: The current debts against other real estate and investment assets reported by the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_CURR_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS CURRENT INVESTMENTS VALUE: The value of current investments reported by the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_BUS_FARM_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS BUSINESS / FARM VALUE: The value of business and farm assets reported by the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_BUS_FARM_DBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS BUSINESS / FARM DEBTS: The amount of business and farm debts reported by the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_INCL_FARM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS ASSETS INCLUDE FARM ASSETS INDICATOR: Indicates whether or not the business / farm assets amount reported by the student’s parents includes any farm assets. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_HME_YR_PURCH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS HOME YEAR PURCHASED: The last two digits of the year that the student’s parents purchased their home. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_HME_PURCH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS HOME PURCHASE PRICE: The amount that the student’s parents paid for their home. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_DIV_SEP_REM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DIVORCED, SEPARATED, OR REMARRIED PARENTS INFORMATION INDICATOR: Indicates whether or not information was supplied by the student about divorced, separated or remarried parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_TAX_FORM_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PARENTS TAX FORM INDICATOR: Indicates which federal income tax return form the student’s parents filed. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_NO_EXEMPT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS NUMBER OF EXEMPTIONS: The number of income tax exemptions claimed by the student’s parents on their federal tax return. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_US_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED GROSS INCOME: The amount of AGI in the base year reported by the parent on his/her federal tax return. Starting in 24-25 this will only be populated if an FAA does a PJ.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_WAGES</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS WAGES: The amount of wages, salaries, tips, etc. in the base year reported by the student’s parents on their federal tax return. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_INT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS INTEREST INCOME: The amount of interest income received in the base year by the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_DIV_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS DIVIDEND INCOME: The amount of income received from dividends by the student’s parents in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_BUS_FARM_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS BUSINESS / FARM INCOME: The amount of income the student’s parents received from business, farm, rents, royalties, partnerships, estates, trusts, etc. in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_OTH_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS OTHER TAXABLE INCOME: The other taxable income reported by the student’s parents from alimony, capital gains, pensions, annuities, etc. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_ADJ_TO_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ADJUSTMENTS TO INCOME: The amount that the parents reported as adjustments to income on their federal tax return. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_US_INC_TAX_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INCOME TAX PAID: The amount of federal income taxes paid by the parent in the base year as reported on the student’s US income tax return. Starting in 24-25 this will only be populated if an FAA does a PJ.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_FATH_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 1 INCOME FROM WORK: The amount of income earned from work by the student’s father/mother/stepparent in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_MOTH_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT 2 INCOME FROM WORK: The amount of income earned from work by the student’s father/mother/stepparent in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_SS_BENE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS SOCIAL SECURITY BENEFITS: The social security benefits received in the base year by the student’s parents for all household members. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_AFDC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS AFDC: The amount of AFDC (Aid to Families with Dependent Children) received by the student’s parents in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_CHILD_SUPP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S CHILD SUPPORT RECEIVED: Amount of parent’s child support received.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_OTH_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S OTHER UNTAXED INCOME: Amount of parent’s other untaxed income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS MEDICAL / DENTAL EXPENSES: The amount of medical and dental expenses paid by the student’s parents in the base year that was not paid by insurance. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_TUIT_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS TUITION PAID: The amount of elementary, jr. high, and high school tuition paid by the student’s parents in the base year. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_NO_CHILD_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS NUMBER OF CHILDREN PAYING TUITION: The number of children in the parents household that incurred elementary, jr. high, or high school tuition expenses. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_PAR_TAX_PD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED PARENTS TAX PAID: The expected calendar year taxes to be paid for the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_PAR_OTH_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED PARENTS OTHER TAXABLE INCOME: The expected calendar year other taxable income for the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_PAR_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED PARENTS UNTAXED INCOME: The expected calendar year nontaxable income and benefits for the student’s parents. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_FATH_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED FATHER’S INCOME FROM WORK: The expected calendar year income from work for the student’s father. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXP_MOTH_INC_FR_WRK</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXPECTED MOTHER’S INCOME FROM WORK: The expected calendar year income from work for the student’s mother. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_FED_COLL_CHOICE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">FEDERAL COLLEGE CHOICE #1: The student’s first choice of a college to receive information from the Central Processing System. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_FED_COLL_CHOICE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">FEDERAL COLLEGE CHOICE #2: The student’s second choice of a college to receive information from the Central Processing System. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_FED_COLL_CHOICE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">FEDERAL COLLEGE CHOICE #3: The student’s third choice of a college to receive information from the Central Processing System. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CHOICE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COLLEGE CHOICE NUMBER: Indicates whether the school receiving the application record was the student’s first, second, third, fourth, etc. choice. (ACT format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_IN_DEFAULT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IN DEFAULT: Indicates whether or not the student reported being in default on an educational loan. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_OWES_REFUND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OWES REFUND: Indicates whether or not the student reported owing a refund on a federal grant. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CONSIDER_FOR_STAF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONSIDERED FOR STAFFORD LOAN: Indicator as to whether or not the student wants to be considered for a Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_BAL_ON_ALL_STAF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BALANCE ON ALL STAFFORD LOANS: The unpaid balance on the cumulative amount of Stafford Loans for the student. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RECENT_STAF_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MOST RECENT STAFFORD BALANCE: The total unpaid balance on the student’s most recent Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RECENT_STAF_INT_RATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MOST RECENT STAFFORD INTEREST RATE: The code for the interest rate of the student’s most recent Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RECENT_STAF_FR_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">MOST RECENT STAFFORD FROM MONTH AND YEAR: The beginning date (month and year) of the loan period for the student’s most recent Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RECENT_STAF_TO_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">MOST RECENT STAFFORD TO MONTH AND YEAR: The ending date (month and year) of the loan period for the student’s most recent Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RECENT_STAF_CLASS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">MOST RECENT STAFFORD CLASS: The class level code for the student’s most recently received Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RQST_FA_PREF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REQUESTED FINANCIAL AID PREFERENCE: A code indicating the student’s preference for loans, jobs, both, or neither. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RQST_FA_FR_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">REQUESTED AID FROM MONTH AND YEAR: The beginning date (month and year) of the period of time that the student requested aid. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RQST_FA_TO_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">REQUESTED AID TO MONTH AND YEAR: The ending date (month and year) of the period of time that the student requested aid. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RQST_STAF_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REQUESTED STAFFORD AMOUNT: The amount that the student wishes to borrow under the Stafford Loan program. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RQST_STAF_FA_FR_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">REQUESTED STAFFORD FROM MONTH AND YEAR: The beginning date (month and year) of the loan period that the student desires a Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RQST_STAF_FA_TO_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">REQUESTED STAFFORD TO MONTH AND YEAR: The ending date (month and year) of the loan period that the student desires a Stafford Loan. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RQST_FA_SUMMER_THIS_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REQUESTED AID FOR THE SUMMER THIS YEAR: The column is no longer used as of the 8.18.2 Release. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RQST_FA_FALL_THIS_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REQUESTED AID FOR FALL THIS YEAR: The column is no longer used as of the 8.18.2 Release. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RQST_FA_WINTER_NEXT_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REQUESTED AID FOR WINTER NEXT YEAR: The column is no longer used as of the 8.18.2 Release. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RQST_FA_SPRING_NEXT_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REQUESTED AID FOR SPRING NEXT YEAR: The column is no longer used as of the 8.18.2 Release. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RQST_FA_SUMMER_NEXT_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REQUESTED AID FOR SUMMER NEXT YEAR: The column is no longer used as of the 8.18.2 Release. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RQST_FA_OTHER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">REQUESTED AID FOR OTHER TERM: Indicates if the student requested aid for a term not listed on the application. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_CLASSIFICATION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CLASSIFICATION: 1=Entering freshman, 2=Transfer student, 3=Continuing student, 4=Former student, Blank=No response. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EXP_WRK_HRS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EXPECTED WORK HOURS: The number of hours per week that the student expects to work off-campus during the school year. 1=None, 2=under 10, 3=11 to 25, 4=26 to 34, 5=35 or more. From ACT application only. (T</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EMPORARY)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_INST_HOUS_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INSTITUTIONAL HOUSING CODE: The housing code reported by the student applicant for the school that is receiving this application record. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 1: The first college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 1: The housing code for the school listed first on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 2: The second college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 2: The housing code for the school listed second on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 3: The third college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 3: The housing code for the school listed third on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 4: The fourth college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 4: The housing code for the school listed fourth on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 5: The fifth college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 5: The housing code for the school listed fifth on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 6: The sixth college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 6: The housing code for the school listed sixth on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 7: The seventh college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 7: The housing code for the school listed seventh on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_CDE_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">COLLEGE CODE 8: The eighth college/program code listed by the student on the aid application for receipt of information. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_HOUS_CDE_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOUSING CODE 8: The housing code for the school listed eighth on the application indicating the student’s expected place of residence at school. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 1: The first school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 2: The second school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 3: The third school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 4: The fourth school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 5: The fifth school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 6: The sixth school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 7: The seventh school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_CDE_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE CODE 8: The eighth school code if more than eight school codes were requested through an original application or an additional college request. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EXTRA_REQUEST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EXTRA REQUEST: Indicates if more than four college codes were requested on the student’s application. (ACT format only) (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_REL_TO_STATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RELEASE TO STATE: Indicates whether or not the processor sent information from the application to the financial aid agency in the student’s state. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_REL_TO_US_ED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RELEASE TO US DEPT. OF ED.: Indicates whether or not the student gave permission for the processor to release information from the application to the US Dept. of Education. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_REL_US_ED_TO_STATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RELEASE FROM US DEPT. OF ED. TO STATE: Indicates whether or not the student gave permission for the US Dept. of Education to release information from the application to the financial aid agency in t</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">he student’s state. (TEMPORARY)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_REL_US_ED_TO_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RELEASE FROM US DEPT. OF ED. TO COLLEGE: Indicates whether or not the student gave permission for the US Dept. of Education to release application data to the student’s college. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_BUS_FARM_SUPP_FILED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BUSINESS/FARM SUPPLEMENT FILED: Indicator as to whether or not the student filed a special Business and Farm Supplement along with the application. 1=Yes, blank=No (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SIGNED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SIGNED BY STUDENT: Indicates if the application was signed by the student. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SIGNED_SPS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SIGNED BY SPOUSE: Indicates if the application was signed by the student’s spouse. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SIGNED_FATH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SIGNED BY FATHER: Indicates if the application was signed by the student’s father. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SIGNED_MOTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SIGNED BY MOTHER: Indicates if the application was signed by the student’s mother. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SIGNED_PAR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SIGNED BY PARENT: Indicates if the application was signed by either parent. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SIGNED_MTH_DAY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SIGNATURE DATE (MONTH/DAY): The month and day that the application was signed. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SIGNED_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SIGNATURE DATE (YR): The year that the application was signed. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_DEPEND_AGE_0_5</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DEPENDENTS BETWEEN AGES 0 AND 5: The number of dependents the student has, other than a spouse, between the ages of 0 and 5. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_DEPEND_AGE_6_12</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DEPENDENTS BETWEEN AGES 6 AND 12: The number of dependents the student has, other than a spouse, between the ages of 6 and 12. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_DEPEND_AGE_13_PLUS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DEPENDENTS AGES 13 AND OVER: The number of dependents the student has, other than a spouse, ages 13 and over. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_CONT_WRK_ACYR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONTINUE WORKING DURING ACADEMIC YEAR: Indicator as to whether or not the student intends to continue working for the reported employer during the school year. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PERMIT_DRAFT_REG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PERMIT DRAFT REGISTRATION: Indicates whether or not the student gave permission to the processor to send data to the Selective Service for draft registration. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PELL_REL_MSG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL RELEASE MESSAGE: Indicates whether or not the processor released student data from the application to the U.S. Dept. of Ed. for a Pell Grant and other federal aid. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ST_AGENCY_REL_MSG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STATE AGENCY RELEASE RELEASE MESSAGE: Indicates if the student gave permission for the processor to release application data to the financial aid agency in the student’s state. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_VERIFICATION_MSG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VERIFICATION MESSAGE: Indicates whether or not the student has been selected for verification by US Dept. of Ed edits or by the institution. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_VERIFICATION_PRTY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">VERIFICATION TRACKING FLAG: Identifies the verification group used to select the student for data verification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_INS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEPARTMENT OF HOMELAND SECURITY (DHS): Indicates whether or not the student’s permanent resident status has been confirmed by DHS. Prior to 2004-2005, Immigration and Naturalization Service, INS.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SELECTIVE_SERVICE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SELECTIVE SERVICE: Indicates whether or not the student’s draft registration status was confirmed by Selective Service. (TEMPORARY)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SPEC_COND_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SPECIAL CONDITION INDICATOR: Indicates if the student applicant has met the requirements for having the Pell Grant Index calculated using estimated year data due to unusual circumstances as defined by th</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">e Dept. of Ed. (TEMPORARY)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_TITLE_IV_DEFAULT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TITLE IV DEFAULT INDICATOR: Indicates whether or not the student is listed as being in default on any Title IV student loan through the national student loan database. (TEMPORARY)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_INAS_OPTION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">INAS OPTION: Indicates whether the last INAS calculation performed on this record was a long (full) or short (partial) calculation. I.E. All or some fields in RCRAPP2/RCRAPP4 were updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EDE_SOURCE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EDE SOURCE: Identifies which source originated the EDE record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_EDE_SPEC_COND_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SPECIAL CONDITION/PROFESSIONAL JUDGEMENT INDICATOR: Indicates if a request for special condition treatment was received and if so, was it accepted. Y=Submitted, accepted N=Submitted, rejected blank=n</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">one submitted</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_USED_TRANS_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">USED TRANSACTION NUMBER: The one up sequence number assigned by the Central Processing System to this application/correction record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_DEF_MATCH_REGION</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEFAULT MATCH REGION CODE: The ED regional office to contact for Title IV loan default status information. 4=Atlanta, 5=Chicago, 9=San Francisco, blank=none</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PREV_COLL4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PREVIOUS COLLEGE #4: The school code number of the fourth most previously attended school since high school.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_1989_RSRC_4000_9192</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1989 FOR 91-92 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1989 if aid was received first in the 1991-92 school year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_1990_RSRC_4000_9192</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RESOURCES IN 1990 FOR 91-92 SCHOOL YEAR: Indicates if the student had resources of $4000 or more in 1990 if aid was received first in the 1991-92 school year.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_IN_DEF_OWE_REF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">IN DEFAULT OR OWE REFUND INDICATOR: 1 = Default, 2 = Owe Refund, 3 = Both, and 4 = Neither.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_SS_BENE_STU_ONLY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SOCIAL SECURITY BENEFITS RECEIVED FOR STUDENT: The portion of Social Security Benefits received by the family for the student. IM will exclude student’s benefits. EFM will include student’s be</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nefits.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COMPLETION_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DATE APPLICATION COMPLETED. The date the application was completed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_REMARRIAGE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DATE OF REMARRIAGE: Date parent remarried.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LOWEST_INC_FILER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOWEST INCOME FILER: Indicates whether or not the student is the lowest income filer.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MEANS_TEST_BEN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MEANS TESTED BENEFITS: Indicates whether or not the applicant or spouse received benefits from any federal benefits program.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_RECD_TANF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS RECEIVED TANF: Indicates whether or not the applicant’s parents received Temporary Assistance for Needy Families.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_RECD_SSI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ RECEIVED SSI: Indicates whether or not the applicant’s parents received Supplemental Security Income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_MEANS_TEST_BEN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ MEANS TESTED BENEFITS: Indicates whether or not the applicant’s parents received benefits from any federal benefits program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_HOUS_STAT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ HOUSING STATUS: Indicates applicant’s parents’ housing status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ACTIVE_DUTY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACTIVE DUTY IN THE U.S. ARMED FORCES: Indicates applicant is on active duty in the US Armed Forces.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_FOOD_STAMPS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENT RECEIVED SUPPLEMENTAL NUTRITION ASSISTANCE: Indicates whether anyone in the parents’ household received Supplemental Nutrition Assistance Program (SNAP) benefits.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_SCHOOL_LUNCH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS RECEIVED FREE OR REDUCED SCHOOL LUNCH: Indicates whether anyone in the applicant’s parents’ household received Free or Reduced Price School Lunch benefits.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_RECD_WIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS RECEIVED WIC: Indicates whether anyone in the applicant’s parents’ household received assistance from the Women, Infants, and Children Program.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RECD_SSI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECEIVED SSI: Indicates whether anyone in the applicant’s household received Supplemental Security Income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_FOOD_STAMPS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECEIVED SUPPLEMENTAL NUTRITION ASSISTANCE: Indicates whether anyone in the applicant’s household received Supplemental Nutrition Assistance Program (SNAP) benefits.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SCHOOL_LUNCH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECEIVED FREE OR REDUCED SCHOOL LUNCH: Indicates whether anyone in the applicant’s household received Free or Reduced Price School Lunch benefits.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RECD_TANF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECEIVED TANF: Indicates whether anyone in the applicant’s household received Temporary Assistance For Needy Families.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_RECD_WIC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECEIVED WIC: Indicates whether anyone in the applicant’s household received assistance from the Women, Infants, and Children Program.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_RECV_VET_BENEFITS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECEIVING VETERAN’S BENEFITS: Indicates if the student is receiving veteran’s benefits.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_TYPE_VET_BENEFITS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TYPE OF VETERAN’S BENEFITS: Indicates the type of veteran’s benefits that the student is receiving.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_IRA_DISTRIBUTIONS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S IRA DISTRIBUTIONS: Amount of student’s untaxed IRA distributions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_UNTAX_PENSIONS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S UNTAXED PENSIONS: Amount of student’s untaxed pensions.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_VETS_NON_ED_BEN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S VETERANS NON-EDUCATION BENEFITS: Amount of student’s veterans non-education benefits.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_OTH_NON_REPORT_MONEY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S OTHER NON-REPORTED MONEY: Amount of student’s other non-reported money.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EMANCIPATED_MINOR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EMANCIPATED MINOR: Indicates if student is an emancipated minor.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_LEGAL_GUARDIAN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LEGAL GUARDIAN: Indicates if student is in legal guardianship.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_UNACCOMP_YOUTH_SCHOOL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">UNACCOMPANIED YOUTH DETERMINED BY SCHOOL: Indicates if student is an unaccompanied youth determined by school district liaison.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_UNACCOMP_YOUTH_HUD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">UNACCOMPANIED YOUTH DETERMINED BY HUD: Indicates if student is an unaccompanied youth determined by HUD.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_AT_RISK_HOMELESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HOMELESS OR AT RISK OF HOMELESSNESS: Student unaccompanied and either (1) homeless or (2) self-supporting and at risk of being homeless.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_IRA_DISTRIBUTIONS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S IRA DISTRIBUTIONS: Amount of parent’s untaxed IRA distributions.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_UNTAX_PENSIONS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S UNTAXED PENSIONS: Amount of parent’s untaxed pensions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_VETS_NON_ED_BEN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S VETERANS NON-EDUCATION BENEFITS: Amount of parent’s veterans non-education benefits.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_SURNAME_PREFIX</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">SURNAME PREFIX: Name tag preceding the last name or surname. (Van, Von, Mac. etc.)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_CTRY_CODE_PHONE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TELEPHONE COUNTRY CODE: Telephone code designating the region or country.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDR2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS2: Financial aid applicant’s number and street name for address line 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDR3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS3: Financial aid applicant’s number and street name for address line 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDR4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">ADDRESS4: Financial aid applicant’s number and street name for address line 4.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_HOUSE_NUMBER</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HOUSE NUMBER: Financial aid applicant’s building or lot number on a street or in an area.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_CNTRY_CODE_RES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">PARENT COUNTRY OF RESIDENCE CODE: Indicates the parent country of residence.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_MAIL_ADDR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">MAILING ADDRESS: The number and street of the student’s mailing address as reported on their application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MAIL_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">MAILING CITY: The city of the student’s mailing address as reported on their application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_MAIL_STAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">MAILING STATE: The two character postal abbreviation for state of the student’s mailing address as reported on their application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MAIL_POSTAL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">MAILING POSTAL CODE: The postal code of the student’s mailing address as reported on their application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_INTL_PHONE_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">INTERNATIONAL PHONE NUMBER: The phone number for a student who resides in a country outside the U.S.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MAIL_COUNTRY_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">MAILING COUNTRY CODE: The country code of the student’s mailing address as reported on their application.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PREFERRED_NAME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">PREFERRED NAME: The student’s preferred name as reported on the aid application.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_TAX_FILING_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">STUDENT’S TAX RETURN FILING STATUS: The student’s tax filing status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_ADDL_MEDICARE_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS ADDITIONAL MEDICARE TAX: The additional Medicare tax paid reported by the parents on their income tax return.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_TAX_FILING_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS TAX RETURN FILING STATUS: The parents tax filing status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 1: The first college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 2: The second college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 3: The third college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 4: The fourth college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 5: The fifth college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 6: The sixth college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 7: The seventh college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_COLL_NAME_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">COLLEGE NAME 8: The eighth college/program name listed by the student on the aid application for receipt of information.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 1: The first school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 2: The second school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 3: The third school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 4: The fourth school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 5: The fifth school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 6: The sixth school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 7: The seventh school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_ADDL_COLL_NAME_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: left;">ADDITIONAL COLLEGE NAME 8: The eighth school name if more than eight school codes were requested through an original application or an additional college request.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_ADD_COLL_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COLLEGE SUBMIT DATE: The date add college request was submitted for this school.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_BUS_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUSINESS VALUE: The total reported value of the student’s businesses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_BUS_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUSINESS DEBT: The total reported debt of the student’s businesses.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_FARM_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FARM VALUE: The total reported value of the student’s farms.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_FARM_DEBT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FARM DEBT: The total reported debt of the student’s farms.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_MEDICAID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RECEIVED MEDICAID: Indicates whether the student reported the receipt of Medicaid.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_MEDICAID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS MEDICAID: Indicates whether the parents receive Medicaid.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_CHILD_SUPP_STU</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CHILD SUPPORT RECEIVED FOR STUDENT: Amount of child support the custodial household received from the noncustodial household for the applicant.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_MAIL_ADDR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">PARENT MAILING ADDRESS: The number and street of the mailing address for applicant parent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_MAIL_CITY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">PARENT MAILING CITY: The city of the mailing address for applicant parent.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_MAIL_STAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PARENT MAILING STATE: The two character postal abbreviation for state of the mailing address for applicant parent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_MAIL_POSTAL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: left;">PARENT MAILING POSTAL CODE: The postal code of the mailing address for applicant parent.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_MAIL_COUNTRY_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PARENT MAILING COUNTRY CODE: The country code of the mailing address for applicant parent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_EX_ADV_PREM_TAX_CRED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EXCESS ADVANCE PREMIUM TAX CREDIT: The Excess Advance Premium Tax Credit reported by the parents on their income tax return.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_ALIMONY_RECD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ALIMONY RECEIVED: The alimony income reported for the parent on their income tax return.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_PAR_QUAL_BUS_INC_DED</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">QUALIFIED BUSINESS INCOME DEDUCTION: The Qualified Business Income Deduction reported for the parent on their tax return.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRTMP1_PAR_UNTAX_IRA_PNS_DIST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">UNTAXED IRA AND PENSIONS DISTRIBUTION: The amount of untaxed IRA and pension distributions for the parent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRTMP1_UNTAX_IRA_PNS_DIST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT UNTAXED IRA AND PENSION DISTRIBUTIONS: The amount of untaxed IRA and pension distributions for the student.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>rcrapp2 – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rcrapp2" id="toc-rcrapp2" class="nav-link active" data-scroll-target="#rcrapp2">RCRAPP2</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="rcrapp2" class="level1">
+<h1>RCRAPP2</h1>
+<p>Below are the column names for <strong>RCRAPP2</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for RCRAPP2</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 81%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_AIDY_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">AID YEAR CODE: The aid year to be associated with information in this record. EXAMPLES: 9091, 9192, 9293, etc.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_INFC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">INTERFACE TAPE CODE: A code from the Interface Tape Table indicating the source and format of the application record. EXAMPLES: CSS, ACT, ACT-CSS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_SEQ_NO</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SEQUENCE NUMBER: The number to uniquely identify the application if multiple applications have been stored from the same processor/source.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_MODEL_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MODEL CODE: Indicates if the student is (I)ndependent or (D)ependent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_DATA_PRESENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ DATA PRESENT INDICATOR: Indicates if minimal data is present to calculate a Parents’ Contribution for simple, displaced homemaker, or regular analysis (1) or not (2).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_DATA_PRESENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DATA PRESENT INDICATOR: Indicates if minimal data is present to calculate an independent student contribution for simple, displaced homemaker, or regular analysis (1) or not (2).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_DEPEND_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COMPUTED DEPENDENCY STATUS: Indicates the students dependency status as computed by INAS or loaded from the tape record. Uses a code from 1-8.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGE: The student’s age used in all calculations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_MRTL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MARITAL STATUS: The computed student’s marital status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_FAM_MEMB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FAMILY MEMBERS: The number of people in the independent student’s household as computed by the need analysis processor.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER IN COLLEGE: The number of people in the student’s family that will be in college at least half-time as computed by the need analysis processor.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_MRTL_STATUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ MARITAL STATUS: The parents’ marital status as used in the calculation of the PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_FAM_MEMB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ FAMILY MEMBERS: The number of family members in the parents’ household as used in the calculation of the PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NUMBER IN COLL: The number of people in the parents household who will be in college as used in the calculation of the PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_PAR_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ PARENTS IN COLLEGE: The number in college that are parents of the student. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_OTH_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ OTHERS IN COLLEGE: The number of non-parents in the household that will be in college as used in the calculation of PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_ASSUME_YR_IN_COLL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ASSUMED STUDENT’S YEAR IN COLLEGE: The year in college used in all calculations</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type used to determine the primary Parent Calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_AGI_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED GROSS INCOME/TAXABLE INCOME: The AGI/taxable income used in the calculation of the primary parents’ contribution. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_TOT_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL UNTAXED INCOME: The total untaxed income used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL INCOME: The total income used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_US_INC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ US INCOME TAXES PAID: The amount of US income taxes paid used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_ST_OTH_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STATE AND OTHER TAXES PAID: The amount of state and other taxes paid used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_FICA_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ FICA TAX: The amount of FICA taxes used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ MEDICAL/DENTAL EXPENSES: The amount of medical and dental expenses used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_SCH_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ELEMENTARY/SECONDARY SCHOOL TUITION PAID: The amount of elementary and secondary school tuition paid used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ EMPLOYMENT ALLOWANCE: The employment allowance used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_MNT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STANDARD MAINTENANCE ALLOWANCE: The SMA used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_TOT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL ALLOWANCES: The total allowances used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_AVAIL_DISC_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ AVAILABLE DISCRETIONARY INCOME: The available discretionary income used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CASH AMOUNT: The amount of parents’ cash, savings and checking accounts used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ HOME EQUITY: The home equity used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ REAL ESTATE/INVESTMENT EQUITY: The other real estate and investment equity used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_ADJ_BF_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED BUSINESS/FARM NET WORTH: The adjusted business/farm net worth used in the primary calculation of the PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NET WORTH: The net worth used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_PROT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ASSET PROTECTION ALLOWANCE: The asset protection allowance used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_DISC_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ DISCRETIONARY NET WORTH: The discretionary net worth used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_CONV_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONVERSION PERCENT: The discretionary net worth conversion percent used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_INC_SUPPLEMENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ INCOME SUPPLEMENT: The income supplement used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_ADJ_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED AVAILABLE INCOME: The amount of the AAI that was used in the primary calculation of the Parent Contribution. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL CONTRIBUTION: The total primary PC before adjustment for the number of family members in college. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NUMBER IN COLLEGE: The number of people in the parents’ household who will be enrolled in college at least half-time as used in the calculation of the primary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FOR STUDENT: The primary parent contribution. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION OFFICIAL/ESTIMATED INDICATOR: Indicates if the primary PC is official (1) or estimated (2).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM INCOME: The portion of the primary PC that came from income. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM ASSETS: The portion of the primary PC that came from assets. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type used to determine the secondary Parent Calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_AGI_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED GROSS INCOME/TAXABLE INCOME: The AGI/taxable income used in the calculation of the secondary PC. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_TOT_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL UNTAXED INCOME: The total untaxed income used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL INCOME: The total income used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_US_INC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ US INCOME TAXES PAID: The amount of US income taxes paid used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_ST_OTH_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STATE AND OTHER TAXES PAID: The amount of state and other taxes paid used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_FICA_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ FICA TAX: The amount of FICA taxes used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ MEDICAL/DENTAL EXPENSES: The amount of medical and dental expenses used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_SCH_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ELEMENTARY/SECONDARY SCHOOL TUITION PAID: The amount of elementary and secondary school tuition paid used in the calculation of the secondary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ EMPLOYMENT ALLOWANCE: The employment allowance used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_MNT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STANDARD MAINTENANCE ALLOWANCE: The standard maintenance allowance used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_TOT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL ALLOWANCES: The total allowances used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_AVAIL_DISC_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ AVAILABLE DISCRETIONARY INCOME: The available discretionary income used in the calculation of the secondary PC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CASH AMOUNT: The amount of parents’ cash, savings and checking accounts used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ HOME EQUITY: The home equity used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ REAL ESTATE/INVESTMENT EQUITY: The other real estate and investment equity used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_ADJ_BF_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ BUSINESS/FARM NET WORTH: The amount of business and farm net worth used in the calculation of the secondary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NET WORTH: The net worth used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_PROT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ASSET PROTECTION ALLOWANCE: The asset protection allowance used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_DISC_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ DISCRETIONARY NET WORTH: The discretionary net worth used in the calculation of the secondary PC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_CONV_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONVERSION PERCENT: The discretionary net worth conversion percent used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_INC_SUPPLEMENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ INCOME SUPPLEMENT: The income supplement used in the calculation of the secondary PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_ADJ_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED AVAILABLE INCOME: The AAI used in the calculation of the secondary PC. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL CONTRIBUTION: The total PC before adjustment for the number of family members in college for the secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER IN COLLEGE ADJUSTMENT (PARENT): The percentage of adjustment to the parent contribution for differing numbers of family members in college. Prior to 0001, this contains the number in college</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">as used in the calculation of EFC.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FOR STUDENT: The secondary parent contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION OFFICIAL/ESTIMATED INDICATOR: Indicates if the secondary PC is official (1) or estimated (2).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM INCOME: The portion of the secondary PC that came from income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM ASSETS: The portion of the secondary PC that came from assests.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type used to determine the primary Student Calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_AGI_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED GROSS INCOME/TAXABLE INCOME: The student’s AGI/Taxable Income for the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_TOT_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL UNTAXED INCOME: The amount of total untaxed income used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL INCOME: The total income used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_US_INC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">US INCOME TAX PAID: The amount of US income taxes paid used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_ST_OTH_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STATE/OTHER TAXES: The amount of state and other taxes used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_FICA_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FICA TAX: The amount of FICA Tax used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MEDICAL/DENTAL EXPENSES: The amount of medical and dental expenses used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_SCH_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ELEMENTARY/SECONDARY SCHOOL TUITION PAID: The amount of elementary/secondary school tuition paid that was used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EMPLOYMENT ALLOWANCE: The student’s employment allowance used in the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_MNT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STANDARD MAINTENANCE ALLOWANCE: The SMA used for the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_AVAIL_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AVAILABLE TAXABLE INCOME: The student’s available taxable income for the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_AVAIL_DISC_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AVAILABLE DISCRETIONARY INCOME: The student’s available discretionary income for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CASH AMOUNT: The student’s amounts in cash, savings and checking accounts used in the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HOME EQUITY: The Home Equity used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REAL ESTATE/INVESTMENTS VALUE: The amount of other real estate/investment equity used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_ADJ_BF_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED BUSINESS/FARM NET WORTH: The student’s adjusted business or farm net worth for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NET WORTH: The amount of the student’s net worth used in the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_PROT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PROTECTION ALLOWANCE: The amount of the student’s asset protection allowance in the primary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_DISC_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DISCRETIONARY NET WORTH: The student’s discretionary net worth used in the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_CONV_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONVERSION PERCENT: The conversion percent used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_INC_SUPPLEMENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INCOME SUPPLEMENT: The amount of the income supplement used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_ADJ_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED AVAILABLE INCOME: The student’s calculated AAI for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL CONTRIBUTION: The total student contribution before the number in college adjustment for the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER IN COLLEGE: The number of people in the student’s household that will be in college as used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FOR STUDENT: The Congressional Methodology student contribution for the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONTRIBUTION OFFICIAL/ESTIMATED INDICATOR: Indicates if the student contribution for the primary calculation is official (1) or estimated (2). (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FROM INCOME: The student’s contribution from income for the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FROM ASSETS: The student’s contribution from assets for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_VA_BEN_INCL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VA BENEFITS INCLUDED INDICATOR: Indicates if VA benefits have been included in the calculation of the student’s primary contribution. 1=Yes, 2=No (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_TAX_INC_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TAXABLE INCOME CONTRIBUTION: The taxable income contribution for single independent students for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_TOT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL ALLOWANCES: The amount of total allowances used in the student’s primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_CALC_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CALCULATED AVAILABLE INCOME: The student’s calculated available income for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type used to determine the secondary Student Calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_AGI_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED GROSS INCOME/TAXABLE INCOME: The student’s AGI/Taxable Income for the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_TOT_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL UNTAXED INCOME: The amount of total untaxed income used in the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL INCOME: The total income used in the student’s secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_US_INC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">US INCOME TAX PAID: The amount of US income taxes paid used in the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_ST_OTH_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STATE/OTHER TAXES: The amount of state and other taxes used in the student’s secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_FICA_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FICA TAX: The amount of FICA Tax used in the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">MEDICAL/DENTAL EXPENSES: The amount of medical and dental expenses used in the student’s secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_SCH_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ELEMENTARY/SECONDARY SCHOOL TUITION PAID: The amount of elementary/secondary school tuition paid that was used in the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">EMPLOYMENT ALLOWANCE: The student’s employment allowance used in the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_MNT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STANDARD MAINTENANCE ALLOWANCE: The SMA used for the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_AVAIL_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AVAILABLE TAXABLE INCOME: The student’s available taxable income for the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_AVAIL_DISC_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AVAILABLE DISCRETIONARY INCOME: The student’s available discretionary income for the secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CASH AMOUNT: The student’s amounts in cash, savings and checking accounts used in the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">HOME EQUITY: The Home Equity used in the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REAL ESTATE/INVESTMENTS VALUE: The amount of other real estate/investment equity used in the student’s secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_ADJ_BF_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED BUSINESS/FARM NET WORTH: The student’s adjusted business or farm net worth for the secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NET WORTH: The amount of the student’s net worth used in the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_PROT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PROTECTION ALLOWANCE: The amount of the student’s asset protection allowance in the secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_DISC_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DISCRETIONARY NET WORTH: The student’s discretionary net worth used in the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_CONV_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONVERSION PERCENT: The conversion percent used in the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_INC_SUPPLEMENT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INCOME SUPPLEMENT: The amount of the income supplement used in the student’s secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_ADJ_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADJUSTED AVAILABLE INCOME: The student’s calculated AAI for the secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL CONTRIBUTION: The total student contribution before the number in college adjustment for the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUMBER IN COLLEGE ADJUSTMENT (STUDENT): The percentage of adjustment to the student contribution for differing numbers of family members in college. Prior to 0001, this contains the number in college</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">as used in the calculation of EFC.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FOR STUDENT: The Congressional Methodology student contribution for the secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CONTRIBUTION OFFICIAL/ESTIMATED INDICATOR: Indicates if the student contribution for the secondary calculation is official (1) or estimated (2).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FROM INCOME: The student’s contribution from income for the secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CONTRIBUTION FROM ASSETS: The student’s contribution from assets for the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_VA_BEN_INCL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">VA BENEFITS INCLUDED INDICATOR: Indicates if VA benefits have been included in the calculation of the student’s secondary contribution. 1=Yes, 2=No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_TAX_INC_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TAXABLE INCOME CONTRIBUTION: The taxable income contribution for single independent students for the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_TOT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL ALLOWANCES: The amount of total allowances used in the student’s secondary calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_CALC_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CALCULATED AVAILABLE INCOME: The student’s calculated available income for the secondary calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: This is the primary TFC loaded in from AFSA/EDE records which replaces the student/parent contributions. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_TFC_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION OFFICIAL/ESTIMATE INDICATOR: Indicates if the TFC (not the field labeled as ‘Total’) is official (1) or is estimated (2) for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_2_TOT_FAM_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: This is the primary TFC loaded in from AFSA/EDE records which replaces the student/parent contributions. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_2_TFC_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION OFFICIAL/ESTIMATE INDICATOR: Indicates if the TFC (not the field labeled as ‘Total’) is official (1) or is estimated (2) for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type for the primary system PGI. (Parent share)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_AGI_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED GROSS INCOME/TAXABLE INCOME: The parents’ AGI/taxable income used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_TOT_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL UNTAXED INCOME: The amount of total untaxed income for the parents used in the Pell calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL INCOME: The total income used in the parents’ Pell calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_US_INC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ US INCOME TAX PAID: The amount of parents’ US income taxes paid used in the Pell calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_ST_OTH_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STATE AND OTHER TAXES PAID: The amount of state and other taxes paid used in the calculation of Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ MEDICAL/DENTAL EXPENSES: The amount of medical and dental expenses used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_SCH_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ELEMENTARY/SECONDARY SCHOOL TUITION PAID: The amount of elementary and secondary school tuition paid used in the calculation of Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ EMPLOYMENT ALLOWANCE: The employment allowance used in the calculation of Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_MNT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STANDARD MAINTENANCE ALLOWANCE: The standard maintenance a used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_TOT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL ALLOWANCES: The total allowances used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_AVAIL_DISC_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ AVAILABLE DISCRETIONARY INCOME: The available discretionary income used the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CASH AMOUNT: The amount of parents’ cash, savings and checking accounts used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ HOME EQUITY: The home equity used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ REAL ESTATE/INVESTMENT EQUITY: The other real estate and investment equity used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_ADJ_BF_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED BUSINESS/FARM NET WORTH: The adjusted business/farm net worth used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NET WORTH: The net worth used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_PROT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ASSET PROTECTION ALLOWANCE: The asset protection allowance used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_DISC_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ DISCRETIONARY NET WORTH: The discretionary net worth used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_CONV_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONVERSION PERCENT: The discretionary net worth conversion percent used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL CONTRIBUTION: The total PC before adjustment for the number of family members in college for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NUMBER IN COLLEGE: The number of people in the parents’ household who will be enrolled in college at least half-time as used tin the calculation of the PC for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FOR STUDENT: The Pell parent contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION OFFICIAL/ESTIMATED INDICATOR: Indicates if the Pell PC is official (1) or estimated (2).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM INCOME: The portion of the Pell PC that came from income.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_P_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM ASSETS: The portion of the Pell PC that came from assets.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_P_2_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type for the secondary system Pell PGI. (Parent share)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type for the primary system Pell PGI. (Student share)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_AGI_TAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED GROSS INCOME/TAXABLE INCOME: The parents’ AGI/taxable income used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_TOT_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL UNTAXED INCOME: The amount of total untaxed income for the parents used in the Pell calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_TOT_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL INCOME: The total income used in the parents’ Pell calculation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_US_INC_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ US INCOME TAX PAID: The amount of parents’ US income taxes paid used in the Pell calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_ST_OTH_TAX</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STATE AND OTHER TAXES PAID: The amount of state and other taxes paid used in the calculation of Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_MED_DEN_EXP</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ MEDICAL/DENTAL EXPENSES: The amount of medical and dental expenses used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_SCH_TUIT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ELEMENTARY/SECONDARY SCHOOL TUITION PAID: The amount of elementary and secondary school tuition paid used in the calculation of Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_EMP_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ EMPLOYMENT ALLOWANCE: The employment allowance used in the calculation of Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_MNT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ STANDARD MAINTENANCE ALLOWANCE: The standard maintenance a used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_TOT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL ALLOWANCES: The total allowances used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_AVAIL_DISC_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ AVAILABLE DISCRETIONARY INCOME: The available discretionary income used the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_CASH_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CASH AMOUNT: The amount of parents’ cash, savings and checking accounts used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_HME_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ HOME EQUITY: The home equity used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_RE_INV_VAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ REAL ESTATE/INVESTMENT EQUITY: The other real estate and investment equity used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_ADJ_BF_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ADJUSTED BUSINESS/FARM NET WORTH: The adjusted business/farm net worth used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NET WORTH: The net worth used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_PROT_ALLOW</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ ASSET PROTECTION ALLOWANCE: The asset protection allowance used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_DISC_NET_WTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ DISCRETIONARY NET WORTH: The discretionary net worth used in the calculation for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_CONV_PCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONVERSION PERCENT: The discretionary net worth conversion percent used in the calculation for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_TOT_CTRB</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ TOTAL CONTRIBUTION: The total PC before adjustment for the number of family members in college for Pell.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_NO_IN_COLL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ NUMBER IN COLLEGE: The number of people in the parents’ household who will be enrolled in college at least half-time as used tin the calculation of the PC for Pell.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_CTRB_FOR_STDT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FOR STUDENT: The Pell parent contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_CTRB_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION OFFICIAL/ESTIMATED INDICATOR: Indicates if the Pell PC is official (1) or estimated (2).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_CTRB_FR_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM INCOME: The portion of the Pell PC that came from income.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_CTRB_FR_ASSET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CONTRIBUTION FROM ASSETS: The portion of the Pell PC that came from assets.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PELL SYSTEM PGI: The primary system Pell PGI.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_PGI_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL PGI OFFICIAL/ESTIMATED INDICATOR: Indicates if the primary system Pell PGI is official (1) or estimated (2).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_2_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type for the secondary system PGI. (Student share)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_PELL_2_PGI</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SECONDARY PELL GRANT INDEX: The secondary system PGI.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_PELL_2_PGI_OFFL_EST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PELL GRANT INDEX OFFICIAL/ESTIMATED INDICATOR: Indicates if the secondary system PGI is official (1) or estimated (2).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_IM_BUDG_LENGTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET LENGTH: The budget length used in the institutional methodology formulas.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_IM_1_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type used for the primary SC. (IM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_IM_1_SC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT CONTRIBUTION: The primary institutional methodology student contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_IM_1_PAR_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARENTS’ ANALYSIS TYPE: The analysis type used for the primary PC. (IM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_IM_1_PC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CONTRIBUTION: The primary institutional methodology parent contribution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_IM_1_UNASSESSED_VA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">UNASSESSED VA BENEFITS: The unassessed VA benefits used in the primary IM student contribution calculation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_IM_1_TFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">TOTAL FAMILY CONTRIBUTION: The primary institutional methodology TFC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_IM_2_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type used for the secondary institutional methodology SC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_IM_2_SC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT CONTRIBUTION: The secondary institutional methodology SC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_IM_2_PAR_ANLY_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ANALYSIS TYPE: The analysis type used for the secondary institutional methodology parent contribution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_IM_2_PC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT CONTRIBUTION: The secondary institutional methodology PC.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_IM_2_UNASSESSED_VA</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">UNASSESSED VA BENEFITS: The amount of unassessed VA benefits used in the secondary calculation of SC.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_INAS_CTR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">INAS COUNTER: The counter for the number of times an INAS calculation has been run locally for a student. Stops counting at 9. May be reset to 0 on RNAOVRD Form.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_RQST_SLS_AMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REQUESTED SLS AMOUNT: The amount that the student requests to borrow from the SLS program.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_DEFER_SLS_PMTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEFER SLS PAYMENTS: Indicates if the student chooses to defer principal payments on an SLS loan while enrolled.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_SLS_INTS_PMTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SLS INTEREST PAYMENTS: This indicates the student’s choice as to the treatment of SLS interest payments while enrolled. 1=Accrue:Capitalize, 2=Periodic Installment Payments</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_BAL_ON_ALL_SLS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BALANCE ON ALL SLS LOANS: The current outstanding balance on all SLS loans.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_RECENT_SLS_BAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">RECENT BALANCE ON SLS LOANS: The current outstanding balance on the most recent SLS loan taken out by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_RECENT_SLS_FR_MTH_YR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">RECENT SLS FROM DATE: The beginning date (month/year) for the loan period of the student’s most recent SLS loan.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_RECENT_SLS_CLASS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">RECENT SLS CLASS YEAR: The class year of the student for which the most recent SLS loan was processed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_LENDER_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">LENDER CODE: A code identifying the student’s lender.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_DEGREE_SOUGHT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DEGREE SOUGHT: Student’s current postsecondary degree/certificate objective. (1=Cert., 2=AA/Transfer, 3=1st Bach, 4=2nd Bach, 5=Teacher Cred., 6=Grad/Prof, 7=Other) (ACT Format Only)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_DRUG_ABUSE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DRUG ABUSE INDICATOR: Indicates whether student application on hold because of prior drug abuse. (1=Hold File-Released, 2=Hold File)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_ELIGIBILITY_MSG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">U.S.E.D. ELIGIBILITY STATUS MESSAGE: 1= (C)heck it out. The result of data base matches indicates further investigation by the aid administrator needed.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_EPS_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">ENROLLMENT PLANNING SERVICE: The EPS Marketing code based on the student’s zip code. Used to provide a standard geographic region code for use in planning and research. (CSS formats only)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_HS_GRADUATE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">HIGH SCHOOL GRADUATE: Indicates if the student will be a high school graduate or will have a GED by Sept.&nbsp;1 of the first year of the aid year. (ACT only)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_ORIG_RCPT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ORIGINAL FAF RECEIPT DATE: The date that CSS initially received the FAF/SAAC. (ORACLE Format date)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_DUR_ELIG_OVRD_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DURATION OF ELIGIBILITY OVERRIDE INDICATOR: Indicates if the 5 year Pell Grant limit has been overridden for the student. Also used as an EDE Stage 2 input field to report to the CPS that you are req</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">uesting an override.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_1_UNADJ_BUS_NET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">UNADJUSTED BUSINESS NET: The student’s bussiness net worth for the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_1_UNADJ_FARM_NET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">UNADJUSTED FARM NET: The student’s farm net worth for the primary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_UNADJ_BUS_NET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ UNADJUSTED BUSINESS NET: The parents’ unadjusted business net worth used in the primary calculation. (FM)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_1_UNADJ_FARM_NET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ UNADJUSTED FARM NET: The parents’ unadjusted farm net worth used in theprimary calculation. (FM)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_CALC_AVAIL_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ CALCULATED AVAILABLE INCOME: The parents’ calculated available income used in the secondary calculation (FM).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_UNADJ_BUS_NET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ UNADJUSTED BUSINESS NET: The parents’ unadjusted business net worth used in the secondary calculation (FM).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_2_UNADJ_FARM_NET</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENTS’ UNADJUSTED FARM NET: The parents’ unadjusted farm net worth used in thesecondary calculation (FM).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_FM_INST_1_FED_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 1 - FEDERAL EFFECTIVE FAMILY CONTRIBUTION: The amount of federal EFC estimated for budget number 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_FM_INST_1_FED_ELIG</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 1 - FEDERAL ELIGIBILITY: The amount of federal eligibility estimated for budget number 1.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_FM_INST_1_VA_BEN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 1 - VETERANS BENEFITS: The amount of veterans benefits estimated for budget number 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_FM_INST_2_FED_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 2 - FEDERAL EFFECTIVE FAMILY CONTRIBUTION: The amount of federal EFC estimated for budget number 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_FM_INST_2_FED_ELIG</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 2 - FEDERAL ELIGIBILITY: The amount of federal eligibility estimated for budget number 2.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_FM_INST_2_VA_BEN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 2 - VETERANS BENEFITS: The amount of veterans benefits estimated for budget number 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_FM_INST_3_FED_EFC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 3 - FEDERAL EFFECTIVE FAMILY CONTRIBUTION: The amount of federal EFC estimated for budget number 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_FM_INST_3_FED_ELIG</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 3 - FEDERAL ELIGIBILITY: The amount of federal eligibility estimated for budget number 3.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_FM_INST_3_VA_BEN</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">BUDGET 3 - VETERANS BENEFITS: The amount of veterans benefits estimated for budget number 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_CM2_IM_CALC_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CALCULATED INDICATOR: contains an ‘I’ value for the 1993-94 aid year and later. This indicates that student/parents FAFNAR column II values will represent the values used in IM. A blank indicates the</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">secondary FM (previously called CM)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_AGE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">AGE OF OLDER PARENT: Calculated age of older parent using the parents’ date of birth.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID that created or last updated the record.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date the record was created or last updated.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_ADDL_FINANCIAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S CALCULATED ADDITIONAL FINANCIAL INFORMATION: Student’s calculated additional financial information total.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STUDENT’S CALCULATED UNTAXED INCOME: Student’s total calculated untaxed income amount.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_ADDL_FINANCIAL</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S CALCULATED ADDITIONAL FINANCIAL INFORMATION: Parent’s calculated additional financial information total.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_PAR_UNTAX_INC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PARENT’S CALCULATED UNTAXED INCOME: Parent’s total calculated untaxed income amount.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_C_PAR_CNTRY_COEFF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CALCULATED PARENTS’ COUNTRY COEFFICIENT: The calculated country coefficient for the parents used by the IM need analysis process.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RCRAPP2_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RCRAPP2_C_STU_CNTRY_COEFF</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">CALCULATED STUDENT COUNTRY COEFFICIENT: The calculated country coefficient used for the student used by the IM need analysis process.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

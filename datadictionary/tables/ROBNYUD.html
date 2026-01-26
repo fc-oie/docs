@@ -1,0 +1,2840 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>robnyud – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#robnyud" id="toc-robnyud" class="nav-link active" data-scroll-target="#robnyud">ROBNYUD</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="robnyud" class="level1">
+<h1>ROBNYUD</h1>
+<p>Below are the column names for <strong>ROBNYUD</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for ROBNYUD</caption>
+<colgroup>
+<col style="width: 15%">
+<col style="width: 6%">
+<col style="width: 8%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: The internal system student identification number.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: The date that information for this record in the table was entered or last updated.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #1: The value stored in non year user-defined variable field number 1.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #2: The value stored in non year user-defined variable field number 2.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #3: The value stored in non year user-defined variable field number 3.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #4: The value stored in non year user-defined variable field number 4.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #5: The value stored in non year user-defined variable field number 5.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #6: The value stored in non year user-defined variable field number 6.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #7: The value stored in non year user-defined variable field number 7.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #8: The value stored in non year user-defined variable field number 8.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #9: The value stored in non year user-defined variable field number 9.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #10: The value stored in non year user-defined variable field number 10.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #11: The value stored in non year user-defined variable field number 11.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #12: The value stored in non year user-defined variable field number 12.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #13: The value stored in non year user-defined variable field number 13.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #14: The value stored in non year user-defined variable field number 14.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #15: The value stored in non year user-defined variable field number 15.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #16: The value stored in non year user-defined variable field number 16.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #17: The value stored in non year user-defined variable field number 17.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #18: The value stored in non year user-defined variable field number 18.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #19: The value stored in non year user-defined variable field number 19.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #20: The value stored in non year user-defined variable field number 20.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #21: The value stored in non year user-defined variable field number 21.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #22: The value stored in non year user-defined variable field number 22.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #23: The value stored in non year user-defined variable field number 23.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #24: The value stored in non year user-defined variable field number 24.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #25: The value stored in non year user-defined variable field number 25.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #26: The value stored in non year user-defined variable field number 26.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #27: The value stored in non year user-defined variable field number 27.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #28: The value stored in non year user-defined variable field number 28.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #29: The value stored in non year user-defined variable field number 29.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #30: The value stored in non year user-defined variable field number 30.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_31</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #31: The value stored in non year user-defined variable field number 31.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_32</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #32: The value stored in non year user-defined variable field number 32.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_33</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #33: The value stored in non year user-defined variable field number 33.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_34</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #34: The value stored in non year user-defined variable field number 34.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_35</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #35: The value stored in non year user-defined variable field number 35.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_36</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #36: The value stored in non year user-defined variable field number 36.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_37</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #37: The value stored in non year user-defined variable field number 37.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_38</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #38: The value stored in non year user-defined variable field number 38.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_39</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #39: The value stored in non year user-defined variable field number 39.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_40</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #40: The value stored in non year user-defined variable field number 40.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_41</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #41: The value stored in non year user-defined variable field number 41.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_42</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #42: The value stored in non year user-defined variable field number 42.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_43</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #43: The value stored in non year user-defined variable field number 43.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_44</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #44: The value stored in non year user-defined variable field number 44.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_45</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #45: The value stored in non year user-defined variable field number 45.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_46</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #46: The value stored in non year user-defined variable field number 46.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_47</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #47: The value stored in non year user-defined variable field number 47.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_48</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #48: The value stored in non year user-defined variable field number 48.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_49</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #49: The value stored in non year user-defined variable field number 49.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_50</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #50: The value stored in non year user-defined variable field number 50.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_51</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #51: The value stored in non year user-defined variable field number 51.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_52</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #52: The value stored in non year user-defined variable field number 52.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_53</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #53: The value stored in non year user-defined variable field number 53.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_54</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #54: The value stored in non year user-defined variable field number 54.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_55</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #55: The value stored in non year user-defined variable field number 55.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_56</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #56: The value stored in non year user-defined variable field number 56.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_57</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #57: The value stored in non year user-defined variable field number 57.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_58</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #58: The value stored in non year user-defined variable field number 58.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_59</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #59: The value stored in non year user-defined variable field number 59.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_60</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #60: The value stored in non year user-defined variable field number 60.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_61</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #61: The value stored in non year user-defined variable field number 61.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_62</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #62: The value stored in non year user-defined variable field number 62.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_63</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #63: The value stored in non year user-defined variable field number 63.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_64</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #64: The value stored in non year user-defined variable field number 64.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_65</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #65: The value stored in non year user-defined variable field number 65.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_66</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #66: The value stored in non year user-defined variable field number 66.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_67</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #67: The value stored in non year user-defined variable field number 67.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_68</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #68: The value stored in non year user-defined variable field number 68.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_69</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #69: The value stored in non year user-defined variable field number 69.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_70</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #70: The value stored in non year user-defined variable field number 70.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_71</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #71: The value stored in non year user-defined variable field number 71.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_72</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #72: The value stored in non year user-defined variable field number 72.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_73</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #73: The value stored in non year user-defined variable field number 73.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_74</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #74: The value stored in non year user-defined variable field number 74.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_75</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #75: The value stored in non year user-defined variable field number 75.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_76</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #76: The value stored in non year user-defined variable field number 76.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_77</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #77: The value stored in non year user-defined variable field number 77.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_78</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #78: The value stored in non year user-defined variable field number 78.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_79</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #79: The value stored in non year user-defined variable field number 79.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_80</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #80: The value stored in non year user-defined variable field number 80.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_81</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #81: The value stored in non year user-defined variable field number 81.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_82</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #82: The value stored in non year user-defined variable field number 82.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_83</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #83: The value stored in non year user-defined variable field number 83.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_84</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #84: The value stored in non year user-defined variable field number 84.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_85</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #85: The value stored in non year user-defined variable field number 85.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_86</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #86: The value stored in non year user-defined variable field number 86.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_87</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #87: The value stored in non year user-defined variable field number 87.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_88</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #88: The value stored in non year user-defined variable field number 88.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_89</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #89: The value stored in non year user-defined variable field number 89.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_90</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #90: The value stored in non year user-defined variable field number 90.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_91</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #91: The value stored in non year user-defined variable field number 91.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_92</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #92: The value stored in non year user-defined variable field number 92.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_93</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #93: The value stored in non year user-defined variable field number 93.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_94</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #94: The value stored in non year user-defined variable field number 94.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_95</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #95: The value stored in non year user-defined variable field number 95.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_96</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #96: The value stored in non year user-defined variable field number 96.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_97</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #97: The value stored in non year user-defined variable field number 97.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_98</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #98: The value stored in non year user-defined variable field number 98.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_99</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #99: The value stored in non year user-defined variable field number 99.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_100</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #100: The value stored in non year user-defined variable field number 100.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_101</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #101: The value stored in non year user-defined variable field number 101.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_102</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #102: The value stored in non year user-defined variable field number 102.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_103</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #103: The value stored in non year user-defined variable field number 103.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_104</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #104: The value stored in non year user-defined variable field number 104.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_105</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #105: The value stored in non year user-defined variable field number 105.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_106</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #106: The value stored in non year user-defined variable field number 106.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_107</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #107: The value stored in non year user-defined variable field number 107.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_108</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #108: The value stored in non year user-defined variable field number 108.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_109</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #109: The value stored in non year user-defined variable field number 109.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_110</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #110: The value stored in non year user-defined variable field number 110.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_111</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #111: The value stored in non year user-defined variable field number 111.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_112</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #112: The value stored in non year user-defined variable field number 112.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_113</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #113: The value stored in non year user-defined variable field number 113.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_114</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #114: The value stored in non year user-defined variable field number 114.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_115</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #115: The value stored in non year user-defined variable field number 115.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_116</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #116: The value stored in non year user-defined variable field number 116.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_117</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #117: The value stored in non year user-defined variable field number 117.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_118</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #118: The value stored in non year user-defined variable field number 118.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_119</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #119: The value stored in non year user-defined variable field number 119.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_120</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #120: The value stored in non year user-defined variable field number 120.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_121</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #121: The value stored in non year user-defined variable field number 121.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_122</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #122: The value stored in non year user-defined variable field number 122.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_123</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #123: The value stored in non year user-defined variable field number 123.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_124</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #124: The value stored in non year user-defined variable field number 124.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_125</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #125: The value stored in non year user-defined variable field number 125.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_126</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #126: The value stored in non year user-defined variable field number 126.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_127</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #127: The value stored in non year user-defined variable field number 127.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_128</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #128: The value stored in non year user-defined variable field number 128.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_129</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #129: The value stored in non year user-defined variable field number 129.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_130</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #130: The value stored in non year user-defined variable field number 130.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_131</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #131: The value stored in non year user-defined variable field number 131.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_132</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #132: The value stored in non year user-defined variable field number 132.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_133</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #133: The value stored in non year user-defined variable field number 133.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_134</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #134: The value stored in non year user-defined variable field number 134.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_135</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #135: The value stored in non year user-defined variable field number 135.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_136</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #136: The value stored in non year user-defined variable field number 136.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_137</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #137: The value stored in non year user-defined variable field number 137.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_138</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #138: The value stored in non year user-defined variable field number 138.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_139</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #139: The value stored in non year user-defined variable field number 139.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_140</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #140: The value stored in non year user-defined variable field number 140.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_141</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #141: The value stored in non year user-defined variable field number 141.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_142</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #142: The value stored in non year user-defined variable field number 142.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_143</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #143: The value stored in non year user-defined variable field number 143.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_144</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #144: The value stored in non year user-defined variable field number 144.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_145</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #145: The value stored in non year user-defined variable field number 145.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_146</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #146: The value stored in non year user-defined variable field number 146.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_147</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #147: The value stored in non year user-defined variable field number 147.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_148</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #148: The value stored in non year user-defined variable field number 148.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_149</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #149: The value stored in non year user-defined variable field number 149.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_150</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #150: The value stored in non year user-defined variable field number 150.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_151</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #151: The value stored in non year user-defined variable field number 151.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_152</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #152: The value stored in non year user-defined variable field number 152.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_153</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #153: The value stored in non year user-defined variable field number 153.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_154</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #154: The value stored in non year user-defined variable field number 154.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_155</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #155: The value stored in non year user-defined variable field number 155.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_156</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #156: The value stored in non year user-defined variable field number 156.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_157</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #157: The value stored in non year user-defined variable field number 157.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_158</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #158: The value stored in non year user-defined variable field number 158.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_159</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #159: The value stored in non year user-defined variable field number 159.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_160</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #160: The value stored in non year user-defined variable field number 160.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_161</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #161: The value stored in non year user-defined variable field number 161.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_162</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #162: The value stored in non year user-defined variable field number 162.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_163</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #163: The value stored in non year user-defined variable field number 163.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_164</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #164: The value stored in non year user-defined variable field number 164.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_165</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #165: The value stored in non year user-defined variable field number 165.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_166</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #166: The value stored in non year user-defined variable field number 166.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_167</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #167: The value stored in non year user-defined variable field number 167.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_168</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #168: The value stored in non year user-defined variable field number 168.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_169</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #169: The value stored in non year user-defined variable field number 169.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_170</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #170: The value stored in non year user-defined variable field number 170.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_171</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #171: The value stored in non year user-defined variable field number 171.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_172</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #172: The value stored in non year user-defined variable field number 172.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_173</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #173: The value stored in non year user-defined variable field number 173.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_174</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #174: The value stored in non year user-defined variable field number 174.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_175</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #175: The value stored in non year user-defined variable field number 175.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_176</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #176: The value stored in non year user-defined variable field number 176.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_177</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #177: The value stored in non year user-defined variable field number 177.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_178</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #178: The value stored in non year user-defined variable field number 178.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_179</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #179: The value stored in non year user-defined variable field number 179.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_180</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #180: The value stored in non year user-defined variable field number 180.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_181</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #181: The value stored in non year user-defined variable field number 181.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_182</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #182: The value stored in non year user-defined variable field number 182.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_183</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #183: The value stored in non year user-defined variable field number 183.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_184</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #184: The value stored in non year user-defined variable field number 184.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_185</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #185: The value stored in non year user-defined variable field number 185.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_186</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #186: The value stored in non year user-defined variable field number 186.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_187</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #187: The value stored in non year user-defined variable field number 187.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_188</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #188: The value stored in non year user-defined variable field number 188.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_189</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #189: The value stored in non year user-defined variable field number 189.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_190</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #190: The value stored in non year user-defined variable field number 190.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_191</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #191: The value stored in non year user-defined variable field number 191.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_192</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #192: The value stored in non year user-defined variable field number 192.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_193</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #193: The value stored in non year user-defined variable field number 193.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_194</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #194: The value stored in non year user-defined variable field number 194.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_195</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #195: The value stored in non year user-defined variable field number 195.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_196</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #196: The value stored in non year user-defined variable field number 196.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_197</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #197: The value stored in non year user-defined variable field number 197.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_198</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #198: The value stored in non year user-defined variable field number 198.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_199</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #199: The value stored in non year user-defined variable field number 199.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_200</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #200: The value stored in non year user-defined variable field number 200.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_201</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #201: The value stored in non year user-defined variable field number 201.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_202</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #202: The value stored in non year user-defined variable field number 202.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_203</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #203: The value stored in non year user-defined variable field number 203.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_204</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #204: The value stored in non year user-defined variable field number 204.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_205</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #205: The value stored in non year user-defined variable field number 205.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_206</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #206: The value stored in non year user-defined variable field number 206.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_207</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #207: The value stored in non year user-defined variable field number 207.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_208</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #208: The value stored in non year user-defined variable field number 208.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_209</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #209: The value stored in non year user-defined variable field number 209.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_210</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #210: The value stored in non year user-defined variable field number 210.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_211</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #211: The value stored in non year user-defined variable field number 211.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_212</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #212: The value stored in non year user-defined variable field number 212.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_213</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #213: The value stored in non year user-defined variable field number 213.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_214</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #214: The value stored in non year user-defined variable field number 214.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_215</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #215: The value stored in non year user-defined variable field number 215.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_216</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #216: The value stored in non year user-defined variable field number 216.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_217</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #217: The value stored in non year user-defined variable field number 217.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_218</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #218: The value stored in non year user-defined variable field number 218.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_219</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #219: The value stored in non year user-defined variable field number 219.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_220</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #220: The value stored in non year user-defined variable field number 220.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_221</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #221: The value stored in non year user-defined variable field number 221.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_222</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #222: The value stored in non year user-defined variable field number 222.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_223</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #223: The value stored in non year user-defined variable field number 223.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_224</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #224: The value stored in non year user-defined variable field number 224.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_225</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #225: The value stored in non year user-defined variable field number 225.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_226</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #226: The value stored in non year user-defined variable field number 226.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_227</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #227: The value stored in non year user-defined variable field number 227.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_228</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #228: The value stored in non year user-defined variable field number 228.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_229</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #229: The value stored in non year user-defined variable field number 229.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_230</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #230: The value stored in non year user-defined variable field number 230.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_231</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #231: The value stored in non year user-defined variable field number 231.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_232</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #232: The value stored in non year user-defined variable field number 232.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_233</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #233: The value stored in non year user-defined variable field number 233.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_234</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #234: The value stored in non year user-defined variable field number 234.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_235</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #235: The value stored in non year user-defined variable field number 235.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_236</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #236: The value stored in non year user-defined variable field number 236.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_237</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #237: The value stored in non year user-defined variable field number 237.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_238</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #238: The value stored in non year user-defined variable field number 238.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_239</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #239: The value stored in non year user-defined variable field number 239.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_240</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #240: The value stored in non year user-defined variable field number 240.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_241</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #241: The value stored in non year user-defined variable field number 241.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_242</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #242: The value stored in non year user-defined variable field number 242.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_243</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #243: The value stored in non year user-defined variable field number 243.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_244</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #244: The value stored in non year user-defined variable field number 244.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_245</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #245: The value stored in non year user-defined variable field number 245.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_246</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #246: The value stored in non year user-defined variable field number 246.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_247</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #247: The value stored in non year user-defined variable field number 247.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_248</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #248: The value stored in non year user-defined variable field number 248.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_249</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #249: The value stored in non year user-defined variable field number 249.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_250</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #250: The value stored in non year user-defined variable field number 250.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_251</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #251: The value stored in non year user-defined variable field number 251.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_252</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #252: The value stored in non year user-defined variable field number 252.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_253</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #253: The value stored in non year user-defined variable field number 253.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_254</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #254: The value stored in non year user-defined variable field number 254.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_255</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #255: The value stored in non year user-defined variable field number 255.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_256</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #256: The value stored in non year user-defined variable field number 256.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_257</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #257: The value stored in non year user-defined variable field number 257.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_258</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #258: The value stored in non year user-defined variable field number 258.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_259</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #259: The value stored in non year user-defined variable field number 259.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_260</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #260: The value stored in non year user-defined variable field number 260.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_261</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #261: The value stored in non year user-defined variable field number 261.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_262</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #262: The value stored in non year user-defined variable field number 262.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_263</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #263: The value stored in non year user-defined variable field number 263.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_264</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #264: The value stored in non year user-defined variable field number 264.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_265</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #265: The value stored in non year user-defined variable field number 265.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_266</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #266: The value stored in non year user-defined variable field number 266.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_267</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #267: The value stored in non year user-defined variable field number 267.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_268</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #268: The value stored in non year user-defined variable field number 268.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_269</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #269: The value stored in non year user-defined variable field number 269.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_270</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #270: The value stored in non year user-defined variable field number 270.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_271</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #271: The value stored in non year user-defined variable field number 271.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_272</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #272: The value stored in non year user-defined variable field number 272.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_273</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #273: The value stored in non year user-defined variable field number 273.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_274</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #274: The value stored in non year user-defined variable field number 274.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_275</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #275: The value stored in non year user-defined variable field number 275.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_276</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #276: The value stored in non year user-defined variable field number 276.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_277</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #277: The value stored in non year user-defined variable field number 277.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_278</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #278: The value stored in non year user-defined variable field number 278.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_279</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #279: The value stored in non year user-defined variable field number 279.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_280</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #280: The value stored in non year user-defined variable field number 280.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_281</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #281: The value stored in non year user-defined variable field number 281.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_282</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #282: The value stored in non year user-defined variable field number 282.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_283</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #283: The value stored in non year user-defined variable field number 283.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_284</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #284: The value stored in non year user-defined variable field number 284.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_285</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #285: The value stored in non year user-defined variable field number 285.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_286</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #286: The value stored in non year user-defined variable field number 286.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_287</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #287: The value stored in non year user-defined variable field number 287.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_288</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #288: The value stored in non year user-defined variable field number 288.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_289</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #289: The value stored in non year user-defined variable field number 289.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_290</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #290: The value stored in non year user-defined variable field number 290.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_291</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #291: The value stored in non year user-defined variable field number 291.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_292</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #292: The value stored in non year user-defined variable field number 292.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_293</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #293: The value stored in non year user-defined variable field number 293.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_294</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #294: The value stored in non year user-defined variable field number 294.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_295</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #295: The value stored in non year user-defined variable field number 295.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_296</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #296: The value stored in non year user-defined variable field number 296.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_297</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #297: The value stored in non year user-defined variable field number 297.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_298</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #298: The value stored in non year user-defined variable field number 298.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_299</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #299: The value stored in non year user-defined variable field number 299.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_300</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #300: The value stored in non year user-defined variable field number 300.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_301</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #301: The value stored in non year user-defined variable field number 301.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_302</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #302: The value stored in non year user-defined variable field number 302.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_303</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #303: The value stored in non year user-defined variable field number 303.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_304</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #304: The value stored in non year user-defined variable field number 304.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_305</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #305: The value stored in non year user-defined variable field number 305.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_306</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #306: The value stored in non year user-defined variable field number 306.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_307</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #307: The value stored in non year user-defined variable field number 307.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_308</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #308: The value stored in non year user-defined variable field number 308.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_309</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #309: The value stored in non year user-defined variable field number 309.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_310</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #310: The value stored in non year user-defined variable field number 310.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_311</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #311: The value stored in non year user-defined variable field number 311.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_312</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #312: The value stored in non year user-defined variable field number 312.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_313</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #313: The value stored in non year user-defined variable field number 313.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_314</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #314: The value stored in non year user-defined variable field number 314.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_315</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #315: The value stored in non year user-defined variable field number 315.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_316</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #316: The value stored in non year user-defined variable field number 316.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_317</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #317: The value stored in non year user-defined variable field number 317.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_318</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #318: The value stored in non year user-defined variable field number 318.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_319</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #319: The value stored in non year user-defined variable field number 319.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_320</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #320: The value stored in non year user-defined variable field number 320.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_321</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #321: The value stored in non year user-defined variable field number 321.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_322</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #322: The value stored in non year user-defined variable field number 322.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_323</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #323: The value stored in non year user-defined variable field number 323.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_324</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #324: The value stored in non year user-defined variable field number 324.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_325</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #325: The value stored in non year user-defined variable field number 325.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_326</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #326: The value stored in non year user-defined variable field number 326.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_327</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #327: The value stored in non year user-defined variable field number 327.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_328</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #328: The value stored in non year user-defined variable field number 328.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_329</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #329: The value stored in non year user-defined variable field number 329.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_330</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #330: The value stored in non year user-defined variable field number 330.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_331</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #331: The value stored in non year user-defined variable field number 331.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_332</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #332: The value stored in non year user-defined variable field number 332.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_333</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #333: The value stored in non year user-defined variable field number 333.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_334</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #334: The value stored in non year user-defined variable field number 334.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_335</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #335: The value stored in non year user-defined variable field number 335.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_336</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #336: The value stored in non year user-defined variable field number 336.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_337</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #337: The value stored in non year user-defined variable field number 337.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_338</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #338: The value stored in non year user-defined variable field number 338.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_339</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #339: The value stored in non year user-defined variable field number 339.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_340</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #340: The value stored in non year user-defined variable field number 340.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_341</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #341: The value stored in non year user-defined variable field number 341.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_342</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #342: The value stored in non year user-defined variable field number 342.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_343</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #343: The value stored in non year user-defined variable field number 343.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_344</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #344: The value stored in non year user-defined variable field number 344.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_345</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #345: The value stored in non year user-defined variable field number 345.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_346</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #346: The value stored in non year user-defined variable field number 346.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_347</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #347: The value stored in non year user-defined variable field number 347.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_348</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #348: The value stored in non year user-defined variable field number 348.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_349</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #349: The value stored in non year user-defined variable field number 349.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_350</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #350: The value stored in non year user-defined variable field number 350.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_351</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #351: The value stored in non year user-defined variable field number 351.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_352</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #352: The value stored in non year user-defined variable field number 352.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_353</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #353: The value stored in non year user-defined variable field number 353.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_354</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #354: The value stored in non year user-defined variable field number 354.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_355</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #355: The value stored in non year user-defined variable field number 355.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_356</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #356: The value stored in non year user-defined variable field number 356.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_357</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #357: The value stored in non year user-defined variable field number 357.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_358</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #358: The value stored in non year user-defined variable field number 358.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VALUE_359</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #359: The value stored in non year user-defined variable field number 359.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VALUE_360</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">USER-DEFINED DATA VALUE #360: The value stored in non year user-defined variable field number 360.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ROBNYUD_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ROBNYUD_GUID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">144</td>
+<td style="text-align: left;">GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

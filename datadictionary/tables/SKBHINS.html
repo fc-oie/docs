@@ -1,0 +1,2660 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>skbhins – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 23, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#skbhins" id="toc-skbhins" class="nav-link active" data-scroll-target="#skbhins">SKBHINS</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="skbhins" class="level1">
+<h1>SKBHINS</h1>
+<p>Below are the column names for <strong>SKBHINS</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SKBHINS</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 3%">
+<col style="width: 4%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_PIDM</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PIDM: Internal Identification Number of the person</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_NUMHUS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">NUMHUS: Student instance identifier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_PRIORITY</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PRIORITY: Curriculum priority</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_TERM_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">TERM CODE: The Curriculum Admit Term Code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_RETURN_TYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RETURN TYPE: HESA return type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_USER_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">USER ID: The user that created or updated this record</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_ACTIVITY_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACTIVITY DATE: Date on which the record was added or last changed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SURROGATE_ID</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_VERSION</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">VERSION: Optimistic lock token.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_ACTIVE_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACTIVE IND: Active indicator Y = Active</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_ADDSUPCT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">ADD SUP CT: Level of additional support the provider is claiming for the learner</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_RECFEE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">REC FEE: Amount of tuition fees received / expected for the student</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_CAMPID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CAMP ID: Campus with which a student instance is associated</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_MCDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">MODE CHANGE DATE: Change of mode date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_MODLANG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">MOD LANG: Module taught in a Celtic language</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_LANGPCNT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">LANG PERCENT: Percentage of module taught in Celtic language</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_CSTAT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">COMPLETION STAT: Completion status</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DHFUND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">DH FUND: Department of Health funding body</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DESTIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">DESTIN: Destination</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DESTOCM1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">DEST OCM1: Destination of outward credit mobile students</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DESTOCM2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">DEST OCM2: Destination of outward credit mobile students</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DESTOCM3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">DEST OCM3: Destination of outward credit mobile students</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DISALL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DIS ALL: Disabled Student Allowance</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_DISUPFAC</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DIS UP FAC: Disadvantage uplift factor</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ELIDISUP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ELIG DIS UP: Eligibility for disadvantage uplift</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ELIGENFD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ELIG ENHANCED FUND: Eligibility for enhanced funding</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_EMPROLE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EMP ROLE: Employer role</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_ENDDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">END DATE: End date of instance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_EXCHANGE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">EXCHANGE: Exchange programmes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SPLENGTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SP LENGTH: Expected length of study</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FESTUMK</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FE STU MK: FE student marker</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FEELIG</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEE ELIG: Fee eligibility</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_BRIDGE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BRIDGE: Foundation degree to degree bridging course</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FRANPART</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">FRAN PART: Franchise partner</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FROUTARR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FR OUT ARR: Franchised out arrangements</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FTEMETHOD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FTE METHOD: FTE method</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FUNDCODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FUND CODE: Fundability code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PROGRESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PROGRESS: Good standing marker</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_GOVINIT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">GOV INIT: Government initiatives</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_GOVINIT2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">GOV INIT2: Government initiatives</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_GLHRS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">GLHRS: Guided learning hours</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_IMPRATE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">IMP RATE: Implied rate of council partial funding</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_NSTCAMP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">INST CAMP: Institutions own campus identifier</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ITTPHSC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">ITT PHSC: ITT phase / scope</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ITTSCHMS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ITT SCHMS: ITT schemes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_LEARNDIF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">LEARN DIF: Learning difficulty</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FUNDLEV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FUND LEV: Level applicable to funding council HESES</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_LOCSDY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">LOC SDY: Location of study</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_MSTUFEE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">MS TUFEE: Major source of tuition fees</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_MODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">MODE: Mode of study</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_NHSEMP</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">NHS EMP: NHS employer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_NUMUNITS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NUM UNITS: Number of units completed</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_NOUNTACH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">NOUNTACH: Number of units to achieve full qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_PHDSUB</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">PHD SUB: PhD submission date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_QTS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">QTS: Qualified teacher status</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_RSNEND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">RSN END: Reason for ending instance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_NONPAY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">NON PAY: Reason for partial or full non-payment of tuition fees</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_REDUCEDI</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">REDUCED INSTANCE: Reduced instance return indicator</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_RCSTDNT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">RC STDNT: Research council student</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_RCSTDID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">RC STD ID: Research student identifier</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_DHREGREF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">DH REG REF: Regulatory body reference number</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ST13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ST13: SLDD-discrete provision</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SPECFEE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SPEC FEE: Special fee indicator</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_COMDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COM DATE: Start date of instance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_STULOAD</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">STU LOAD: Student instance FTE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_NOTACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NOT ACT: Suspension of active studies</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_TREFNO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">TEACHER REF NO: Teacher Reference Number</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_TYPEYR</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">TYPE YR: Type of instance year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_UNITLGTH</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">UNIT LGTH: Units of length</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_OUTCOME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">OUTCOME: Outcome of ITT instance</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ACCESS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ACCESS: Access programmes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ARTICLN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ARTICLN: Articulation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PARED</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">PARED: Parental education</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_QUAL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL: Qualification awarded</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DOMICILE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">DOMICILE: Domicile</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PREVINST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">PREV INST: Last institution attended</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SOC2000</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SOC2000: Occupation code</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_CIPC_1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">CIPC1: PGCE subject of undergraduate degree</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_CIPC_2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">CIPC2: PGCE subject of undergraduate degree</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_POSTCODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">POSTCODE: Postcode</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SEC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SEC: Socio-economic classification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_WELBACC</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">WELBACC: Welsh Baccalaureate Advanced Diploma</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_NEWENT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">NEW ENT: New entrant to higher education</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_YRLLINST</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">YR LL INST: Year left last institution</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_AWCONF_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">AW CONF DATE: Award confirmation date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_INSTTEXT1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">INST TEXT1: Institution reporting text field</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_INSTDATE1</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE1: Institution reporting date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_INSTDATE2</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE2: Institution reporting date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_INSTDATE3</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE3: Institution reporting date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_INSTDATE4</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE4: Institution reporting date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_INSTDATE5</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE5: Institution reporting date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST1: Institution reporting data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST2: Institution reporting data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST3: Institution reporting data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST4: Institution reporting data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST5: Institution reporting data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_APPLICANT_NO</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">APPLICANT NO: UCAS Applicant number</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_FPAY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FPAY: Fee payer code field from UCAS *K record</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_FEELEVEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FEE LEVEL: Fee level</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_PGCELSS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PG CELSS: Graduate certificate in Education</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE1: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE2: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE3: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE4: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE5: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE6: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE7: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE8: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE9: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE10: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE11: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE12: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE13: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE14: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE15: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE16: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE17: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE18: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE19: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE20: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE21: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE22: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE23: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE24: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE25: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE26: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE27: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE28: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALGRADE29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE29: Final grade reported for qualification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALGRADE30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">QUAL GRADE30: Final grade reported for qualification</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT1: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT2: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT3: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT4: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT5: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT6: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT7: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT8: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT9: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT10: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT11: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT12: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT13: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT14: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT15: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT16: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT17: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT18: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT19: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT20: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT21: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT22: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT23: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT24: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT25: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT26: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT27: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT28: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSIT29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT29: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSIT30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">QUAL SIT30: Exam sitting; S indicates Summer and W indicates Winter</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ1: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ2: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ3: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ4: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ5: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ6: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ7: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ8: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ9: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ10: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ11: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ12: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ13: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ14: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ15: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ16: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ17: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ18: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ19: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ20: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ21: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ22: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ23: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ24: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ25: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ26: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ27: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ28: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALSBJ29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ29: Qualification Subject</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALSBJ30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL SBJ30: Qualification Subject</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE1: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE2: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE3: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE4: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE5: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE6: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE7: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE8: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE9: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE10: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE11: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE12: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE13: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE14: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE15: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE16: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE17: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE18: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE19: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE20: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE21: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE22: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE23: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE24: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE25: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE26: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE27: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE28: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALTYPE29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE29: Qualification Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALTYPE30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">QUAL TYPE30: Qualification Type</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR1: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR2: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR3: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR4: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR5: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR6: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR7: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR8: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR9: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR10: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR11</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR11: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR12</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR12: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR13</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR13: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR14</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR14: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR15</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR15: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR16</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR16: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR17</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR17: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR18</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR18: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR19</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR19: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR20</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR20: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR21</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR21: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR22</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR22: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR23</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR23: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR24</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR24: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR25</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR25: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR26</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR26: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR27</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR27: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR28</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR28: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_QUALYEAR29</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR29: Qualification Year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_QUALYEAR30</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">QUAL YEAR30: Qualification Year</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DEGCTRY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">DEG CTRY: Previous Degree country</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DEGEST</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">DEG EST: Previous Degree establishment</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_DEGTYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">DEG TYPE: Previous Degree Type</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_CIPC_3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">CIPC 3: PGCE subject of undergraduate degree</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_DEGSTDT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DEG STDT: Previous Degree Start Date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_DEGENDDT</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DEG END DT: Previous Degree End Date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_DEGLENGTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">DEG LENGTH: Previous Degree Length in Years</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_CHRT_CODE_ITT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">CHRT CODE ITT: ITT cohort code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_CHRT_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">CHRT DATE: ITT cohort date.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INITIATV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">INITIATIVE: This field identifies students who are part of a specific scheme that is to be monitored independently. Valid entries will change from year to year to reflect current schemes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SASDAYS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">SAS DAYS: This field records the number of Student Associate Scheme (SAS) days completed.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SASSCHL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SAS SCHL: This field records the reference number for the school at which the student undertakes their Student Associate Scheme (SAS) placement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SKEITT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">SKE ITT: This field records the institution at which an Subject Knowledge Enhancement (SKE) student will be undertaking their ITT. (Students are only eligible for SKE courses if they are holding an offer of an ITT place.)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_CRMODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CR MODE: This field indicates the mode the student was reported on for the TDA census in their first year.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SBJCA</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SBJ CA: Subject of ITT Course.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_QUALENT3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">QUALENT3: Highest Qualification on Entry.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INITIATV2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">INITIATIVE2: This field identifies students who are part of a specific scheme that is to be monitored independently. Valid entries will change from year to year to reflect current schemes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_ENTRY_PROFILE_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ENTRY PROFILE DATE: Last change date for the Entry Profile</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_ITTCOMDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ITT COMDATE: Start date of ITT course</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_FEEREGIME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FEE REGIME: The fee regime that the student is following.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_ELQ</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ELQ: Aiming for an Equivalent or Lower Qualification.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">SSN: Student Support Number.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_BURSLEV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">BURS LEV: Bursary Level Award</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_DISCFUND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DISC FUND: Discretionary Funding</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_ITT_INITIATIVES1</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">INITIATIVES1: Initiatives (ITT)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_ITT_INITIATIVES2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">INITIATIVES2: Initiatives (ITT)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_EMPFEES</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">EMP FEES: Employer fees</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_EMPFUND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">EMP FUND: Employer funding</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_INTENTLEV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">INTENT LEV: Intended level of MPhil / PhD studies</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SOC2010</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">SOC2010: Occupation code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_ALLPLACE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ALL PLACE: Initial teacher training place allocated by the NCTL.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_INSTDATE6</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE6: Institution reporting date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_INSTDATE7</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE7: Institution reporting date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_INSTDATE8</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE8: Institution reporting date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_INSTDATE9</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE9: Institution reporting date</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_INSTDATE10</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">INST DATE10: Institution reporting date</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST6</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST6: Institution reporting data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST7</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST7: Institution reporting data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST8</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST8: Institution reporting data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST9</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST9: Institution reporting data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INST10</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">INST10: Institution reporting data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_COLFROMDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COL FROM DATE: Records the date when reporting responsibilities for a student were transferred to this provider.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_COLTODATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">COL TO DATE: Records the date when reporting responsibilities for a student were transferred to a different provider.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_COLFROMPROV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">COL FROM PROV: Records the UK Provider Reference Number of the provider that previously held reporting responsibilities for a student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_COLTOPROV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">COL TO PROV: Records the UK Provider Reference Number of the provider to whom reporting responsibilities for a student are transferred to.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_NUMHUSPREV</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">NUMHUS PREV: Records the previous student instance identifier used by the previous reporting provider, before reporting responsibilities where taken over at the submitting provider.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_FEEWAIVETYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FEE WAIVE TYPE: This field records the reasons for part-time fee waivers being given to students under the HEFCW part-time fee waiver scheme.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_FEEWAIVEAMT</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FEE WAIVE AMT: This field records the amount of a part-time fee waiver being given to students under the HEFCW part-time fee waiver scheme.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SEC2010</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">SEC2010 : Socio-Economic Classification</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ITTAIM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">ITT AIM : Holds only the general qualification aim of the programme in terms of both qualifications and professional statuses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_ENTRYRTE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ENTRY RTE: This field describes the route by which the student has accessed ITT provision.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_ACHDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">ACH DATE: Date of the final learning aim or programme aim achieved by the student.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_PROGTYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">PROG TYPE: Identifies the type of programme which the learner is undertaking.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_FUNDMODEL</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FUND MODEL: The funding model to be applied when calculating funding for this learning aim.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_FUNDADJOTH</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FUND ADJ OTH: The factor used to adjust the funding to which the learner is entitled for this aim.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_FUNDADJPRIOR</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FUND ADJ PRIOR: The proportion of this learning aim still to be delivered.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_LEARNPLANENDDATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">LEARN PLAN END DATE: Date by which the provider and learner plan to complete the learning related to this learning aim.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_AIMTYPE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AIM TYPE: Learner aim type.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_WITHDRAWREASON</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">WITHDRAW REASON: The reason why the learner has withdrawn from the learning aim.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_FEOUTCOME</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">FE OUTCOME: Indicates whether the learner achieved the learning aim, achieved partially or had no success.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_PLANLEARNHOURS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PLAN LEARN HOURS: The total planned hours for learning activities.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_PARTNERUKPRN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">PARTNER UK PRN: UK Provider Reference Number of the partner provider.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_PROGRAM</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">PROGRAM: Program code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_TERM_CODE_EFF</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">TERM CODE EFF: Effective term code.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_MAJR_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">MAJR CODE: Major Code.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SDLEAD</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SD LEAD: Unique reference number of the lead school</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SDEMPLOY</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SD EMPLOY: Unique reference number of the employing school</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_FWORKCODE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">FRAMEWORK CODE: This field identifies the Framework code for the type of learning being undertaken.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_PWAYCODE</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">PATHWAY CODE: This field identifies the pathway of the Apprenticeship Framework being undertaken.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SERVICE_LEAVE_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">SERVICE LEAVE CODE: Service leavers status.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_POSTGRAD_APP_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">POST GRADUATE APP DATE: Start date of postgraduate teaching apprenticeship.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_LEGAL_ENT_APP_ACT</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">LEGAL ENTITY APPRECNTICESHIP: Agreement identifier associated to an employer apprenticeship account.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_COLLEGE_CAMPUS_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">CAMPUS IDENTIFIER IN COLLEGE GROUP: Campus identifier within a college group.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_OFF_JOB_TRAIN_HRS</td>
+<td style="text-align: left;">NUMBER</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">OFF JOB TRAINING HOURS: Cumulative total of actual Off-the-job training hours to date, to the individual apprentice.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_LEARNING_AIM_ID</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">128</td>
+<td style="text-align: left;">LEARNING AIM IDENTIFIER: A unique identifier for the learning aim for software suppliers and providers.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SBJCD_HECOS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SUBJECT CODE HECOS : HECoS (Higher Education Classification of Subjects) Subject Code for Initial Teacher Training Course.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_INITIATV3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">INITIATIVE3: This field identifies students who are part of a specific scheme that is to be monitored independently.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PGCESJ1HECOS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PGCE SUBJECT 1 CODE HECOS: HECoS (Higher Education Classification of Subjects) Postgraduate Certificate in Education(PGCE) subject 1 code for undergraduate degree.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PGCESJ2HECOS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PGCE SUBJECT 2 CODE HECOS: HECoS (Higher Education Classification of Subjects) Postgraduate Certificate in Education(PGCE) subject 2 code for undergraduate degree.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PGCESJ3HECOS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PGCE SUBJECT 3 CODE HECOS: HECoS (Higher Education Classification of Subjects) Postgraduate Certificate in Education(PGCE) subject 3 code for undergraduate degree.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PGCESJ4HECOS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PGCE SUBJECT 4 CODE HECOS: HECoS (Higher Education Classification of Subjects) Postgraduate Certificate in Education(PGCE) subject 4 code for undergraduate degree.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_PGCESJ5HECOS</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">PGCE SUBJECT 5 CODE HECOS: HECoS (Higher Education Classification of Subjects) Postgraduate Certificate in Education(PGCE) subject 5 code for undergraduate degree.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SBJCD_HECOS2</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SUBJECT CODE HECOS2 : HECoS (Higher Education Classification of Subjects) Subject 2 Code for Initial Teacher Training Course.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SBJCD_HECOS3</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SUBJECT CODE HECOS3 : HECoS (Higher Education Classification of Subjects) Subject 3 Code for Initial Teacher Training Course.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SBJCD_HECOS4</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SUBJECT CODE HECOS4 : HECoS (Higher Education Classification of Subjects) Subject 4 Code for Initial Teacher Training Course.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_SSDT_CODE_SBJCD_HECOS5</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">SUBJECT CODE HECOS5 : HECoS (Higher Education Classification of Subjects) Subject 5 Code for Initial Teacher Training Course.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SKBHINS_DATA_ORIGIN</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SKBHINS_VPDI_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">VPDI CODE: Multi-entity processing code.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
