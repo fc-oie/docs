@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-01-26">
+
+<title>svroctl – Fullerton College Banner Data Dictionary</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0fada2d03c2f6c8f7e7c17fa957f8fff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Fullerton College Banner Data Dictionary
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+            <p class="subtitle lead">Fullerton College Banner Data Dictionary</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 26, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Fullerton College Banner Data Dictionary</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#svroctl" id="toc-svroctl" class="nav-link active" data-scroll-target="#svroctl">SVROCTL</a>
+  <ul class="collapse">
+  <li><a href="#subject-area" id="toc-subject-area" class="nav-link" data-scroll-target="#subject-area">Subject Area</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- force title block participation -->
+<section id="svroctl" class="level1">
+<h1>SVROCTL</h1>
+<p>Below are the column names for <strong>SVROCTL</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Columns for SVROCTL</caption>
+<colgroup>
+<col style="width: 1%">
+<col style="width: 0%">
+<col style="width: 0%">
+<col style="width: 96%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">COLUMN_NAME</th>
+<th style="text-align: left;">DATA_TYPE</th>
+<th style="text-align: right;">DATA_LENGTH</th>
+<th style="text-align: left;">COMMENTS</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">SVROCTL_COLLEGE_CDE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">COLLEGE CDE: Initials used for identifying the college.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_OCAS_BIRTH_DATE</td>
+<td style="text-align: left;">DATE</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">OCAS BIRTH DATE: Birth date to be used when the applicant does not have a valid birth date.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVROCTL_OCAS_ADDR_ATYP_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">OCAS ADDR ATYP CODE: Address type code to be used when processing the OCAS data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_OCAS_TELE_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">OCAS TELE CODE: Telephone type code to be used when processing the OCAS data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVROCTL_OCAS_ALT_TELE_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">OCAS ALT TELE CODE: Cell (formerly Alternate) telephone type code to be used when processing the OCAS data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_OCAS_FAX_TELE_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">OCAS FAX TELE CODE: Telephone fax type code to be used when processing the OCAS data.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVROCTL_OCAS_EMAL_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">OCAS EMAL CODE: E-mail code to be used when processing the OCAS data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_GENPER_UPDINS_IND</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GENPER UPDINS IND: General person update/insert indicator to indicate what to do when an update transaction is coming for the general person record. It can be</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U or I.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_DF_OCAT_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">DF OCAT CODE: Default applicant category to be used when calculating category of an applicant and none rules exist for any category or when calculating</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">eligibility/scoring. The default value assigned by SVAOCTL to this field will be DEFAULT.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_ACW_BAN_APDC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ACW BAN APDC CODE: Banner Application Decision Code to be used when an AC-W record is processed and the applicant had already accepted an offer, then APDC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">code needs to be updated in the admissions tables to reflect the withdraw transaction. Valid values defined in baseline validation table STVAPDC.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_ACN_BAN_APDC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ACN BAN APDC CODE: Banner Application Decision Code to be used when an AC-N record is processed and the applicant had already accepted an offer, then APDC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">code needs to be updated in the admissions tables to reflect the non-payment transaction. Valid values defined in baseline validation table STVAPDC.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_ACX_BAN_APDC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">ACX BAN APDC CODE: Banner Application Decision Code to be used when an AC-X record is processed and the applicant had already accepted an offer, then APDC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">code needs to be updated in the admissions tables to reflect the deceased transaction. Valid values defined in baseline validation table STVAPDC.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_CCY_BAN_APDC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CCY BAN APDC CODE: Banner Application Decision Code to be used when a CC-Y record is processed and the applicant has accepted an offer, then APDC record needs</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">to be set on in the admissions tables to reflect the acceptance. Valid values defined in baseline validation table STVAPDC.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_CCD_BAN_APDC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CCD BAN APDC CODE: Banner Application Decision Code to be used when a CC-D record is processed and the applicant had already accepted an offer, then APDC code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">needs to be updated in the admissions tables to reflect the deleted program. Valid values defined in baseline validation table STVAPDC.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVROCTL_OFC_BAN_APDC_CODE</td>
+<td style="text-align: left;">VARCHAR2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">OFC BAN APDC CODE: Banner Application Decision Code to be used when an OFFER has been CANCELLED and the applicant already accepted that offer, then APDC code</td>
+</tr>
+</tbody>
+</table>
+<p>needs to be updated in the admissions tables to reflect the CANCELLATION of the Banner Admissions record.Valid values defined in baseline validation table STVAPDC. | |SVROCTL_MARK_IND |VARCHAR2 | 4|MARK INDICATOR: Mark indicator to indicate the rule to follow when picking the grades (marks) of the courses used for eligibility/scoring calculation. Values can be 1 or 2. For all the cases the completion date should be observed for all the marks. This date must not be older than the defined in SVROPRS_OLD_MARK_DATE field for all the marks. For the mid-term marks the completion date must be greater or equal than the date where the checking of marks is being executed (SYSDATE). When 1 means that will look at the final first, if exists then will take that mark no matter the value (as long as it passes the min-requirement and the date rule) and wont look at any other mark for that course. If there is no final for the course then will look for the mid-term mark, if not then look for the substitute group, if not then look for the estimated mark, if not then flag the course as checked but not used. NOTE: This case will look for the final and as long as passes the rule will ignore any other mark for the course. The comparison is made inside the course between the course marks. When 2 means that will look for final and mid-term marks together and will take the best mark of those for a course. Otherwise will look for the substitute group, if not then look for the estimated mark, if not then flag the course as checked but not used. NOTE: This case will look for the finals and mid-term for one course at a time. The comparison is made inside the course between the course marks only. | |SVROCTL_SCORE_IND |VARCHAR2 | 4|SCORE IND: Score indicator to indicate the rule to follow when picking the scores for eligibility/scoring calculation. Values can be 1 or 2. When 1 means that will look for the best score no matter the test date (The oldest date for the score still has to be checked). When 2 means that will look for the score of the test with the most recent date. | |SVROCTL_STYP_CODE |VARCHAR2 | 4|STYP CODE: Banner Student Type Code to be used when applicant is inserted into the Banner tables when applicant accepted offer (CC-Y was received).Valid values defined in baseline validation table STVSTYP. | |SVROCTL_ADMT_CODE |VARCHAR2 | 8|ADMT CODE: Banner Admission Type Code to be used when applicant is inserted into the Banner tables when applicant accepted offer (CC-Y was received). Valid values defined in baseline validation table STVADMT. This value has to be unique for OCAS applicants, so it is recommended to create a new code that has not been used in Banner baseline. | |SVROCTL_MIDT_LOOSENESS |NUMBER | 22|MIDTERM LOOSENESS: Midterm looseness. Its the number of days that the eligibility, scoring and alternate processes can look back in the past for the completion date when evaluating if a Midterm mark for a course is used or not.Based in the rule that midterm courses are only valid when the completion date is in the future (equal or after SYSDATE), it is required to have a looseness period in order to accept midterm marks of courses for which the finals have not been received yet. Default value for this field is 0 (zero).Sample: SYSDATE= MAR-07-2004, Course completion date = FEB-05-2004.If midterm looseness = 0 then midterm mark is not used.If midterm looseness = 30 then midterm mark is not used.If midterm looseness = 31 then midterm mark is used.If midterm looseness = 90 then midterm mark is used. | |SVROCTL_APPL_DEACT_IND |VARCHAR2 | 4|APPLICATION DEACTIVATE INDICATOR: It indicates whether application must be DE-ACTIVATED or not when an AC-W, AC-N or AC-X is processed by SVPOCAT. This field is used when processing transactions regardless of the stages (it will be used in both EARLY and LATER stages). Values are: Y - Application will be de-activated, N - Application will not be de-activated. | |SVROCTL_SFBETRM_ACC_IND |VARCHAR2 | 4|ACCEPTANCE INDICATOR: Student registration acceptance indicator to indicate whether a SFBETRM record will be created or not when Banner Admissions records are created since applicant accepted the offer, this is when CC-Y is processed. Values are: Y- A record will be created in SFBETRM when CC-Y is processed and a SGBSTDN record exists. N - No record will be created in SFBETRM when CC-Y is processed. | |SVROCTL_ON_LINE_CONF_IND |VARCHAR2 | 4|ONLINE CONFIRMATION INDICATOR: On-Line Confirmation Indicator to indicate if OCAS On-Line confirmation processing is activated or not. Values are: Y - On-line confirmation is ACTIVATED. N - On-line confirmation is NOT activated. Default when adding this field to the table is Y (activated). | |SVROCTL_ALT_ID_IND |VARCHAR2 | 4|ALTERNATE ID INDICATOR: Alternate ID indicator to indicate whether and alternate ID will be created or not by OCAS processing using the OCAS applicant number every time that a general person record is inserted/updated. Values are: Y - Create alternate ID using OCAS APPL NUM, N - DO NOT create alternate ID using OCAS APPL NUM. | |SVROCTL_USER |VARCHAR2 | 120|USER: User id that created/modified the record | |SVROCTL_SAME_TERM_OFFR_IND |VARCHAR2 | 4|SAME TERM OFFERS INDICATOR: Same Term Offers indicator to determine 1. whether an additional offer will be generated for a program when an applicant has accepted an offer for another program within the same term; 2.whether the new program offer can be accepted. Values are: Y - Support same term offers, N - Do not support same term offers. | |SVROCTL_ALT_WHEN_OFFR_IND |VARCHAR2 | 4|ALTERNATE WHEN OFFER INDICATOR: Generate alternate when offer indicator to indicate whether alternate offer will be generated for a program when the applicant already got an offer for another program within the same term. Values are: Y - Support alternate offers for the same term, N - Do not support alternate offers for the same term. | |SVROCTL_ALL_ALTERNATE_IND |VARCHAR2 | 4|ALL POSSIBLE ALTERNATES INDICATOR: Generate all possible alternates indicator to indicate whether all the possible alternates will be generated for each program or a maximum of 3 alternates ordered by priority. Values are: Y - Support all possible alternates for each program, N - maximum of 3 alternates. | |SVROCTL_MULTI_OFFR_LETR_IND |VARCHAR2 | 4|MULTIPLE OFFER LETTER GENERATION INDICATOR: Multiple Offer Letter Generation indicator. Values: Y - All the offer letters are inserted into GURMAIL table by the SVPOOFR process even though the process is run for only a specific program; N - Offer letters only for that specific program. | |SVROCTL_REG_IND |VARCHAR2 | 4|REGISTRATION INDICATOR: Registration indicator. Controls the way registration will be determined. Via SFBETRM or SFRSTCR. Values: 1 (use SFBETRM); 2 (use SFRSTCR). | |SVROCTL_RECR_IND |VARCHAR2 | 4|RECRUITMENT CREATION INDICATOR: Field has been obsolete. Its value will be set to “N”; however, it will NOT have any impact in any functionality since recruitment records will NO longer be created from the OCAS system. | |SVROCTL_NUM_AF_IND |VARCHAR2 | 4|NUMBER OF APPLICATION FORMS INDICATOR: It indicates if the institution will allow applicant to apply to one or many OCAS application forms in the same OCAS year. Valid values are: S-The applicant will be able to apply to only one single application form in the OCAS year. M- The applicant will be able to apply to multiple application forms in the OCAS year. Default value is S (single). | |SVROCTL_BAN_ID_DISP_IND |VARCHAR2 | 4|BANNER ID DISPLAY INDICATOR: It indicates if the Banner ID of the applicant will be displayed or not in the web pages. Valid values are: Y - Display. The Banner ID will be shown to the applicant on the web app. N - Do not display. The Banner ID will not be shown to the applicant on the web app. Default value is Y (display). | |SVROCTL_OCAS_ID_DISP_IND |VARCHAR2 | 4|OCAS ID DISPLAY INDICATOR: It indicates if the applicant number of the applicant will be displayed or not in the web pages. Valid values are: Y - Display. The applicant number will be shown to the applicant on the web app. N - Do not display. The applicant number will not be shown to the applicant on the web app. Default value is Y (display). | |SVROCTL_APP_NAME_DISP_IND |VARCHAR2 | 4|APPLICANT NAME DISPLAY INDICATOR: It indicates if the applicants name of the applicant will be displayed or not in the web pages. Valid values are: Y - Display. The applicants name will be shown to the applicant on the web app. N - Do not display. The applicants name will not be shown to the applicant on the web app. Default value is Y (display). | |SVROCTL_EADM_IND |VARCHAR2 | 4|EARLY ADMISSIONS INDICATOR: To control whether the Banner Admissions related data will be created or not for every new program combination to which an applicant has applied at an early stage (before CCY and as soon as the program is created), or later (after CCY). Values are: “Y” - Create Banner Admissions related data at an early stage (before CCY, as soon as the program is created), “N” - Do NOT create Banner Admissions related data at an early stage (after CCY; as it was in the original logic). Default value is “N” (no early stage, so it will run as it was originally). | |SVROCTL_EBAN_OFI_APDC_CODE |VARCHAR2 | 8|EARLY STAGE OFFER PROGRAM CREATION BANNER APPLICATION DECISION CODE: Code to be used when an OFFER has been created at an early stage (before CCY, as soon as program is created), then APDC code needs to be set on the admissions tables to reflect the decision made for that program. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_EBAN_CCD_APDC_CODE |VARCHAR2 | 8|EARLY STAGE PROGRAM DELETE BANNER APPLICATION DECISION CODE: Code to be used when a CC-D record is processed at an early stage (before CCY, as soon as program is created), then APDC code needs to be updated in the admissions tables to reflect the deleted program. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_EBAN_ACW_APDC_CODE |VARCHAR2 | 8|EARLY STAGE APPLICATION WITHDRAWN BANNER APPLICATION DECISION CODE: Code to be used when an AC-W record is processed at an early stage (before CCY, as soon as program is created), then APDC code needs to be updated in the admissions tables to reflect the withdrawn transaction. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_EBAN_ACX_APDC_CODE |VARCHAR2 | 8|EARLY STAGE APPLICANT DECEASED BANNER APPLICATION DECISION CODE: Code to be used when an AC-X record is processed at an early stage (before CCY, as soon as program is created), then APDC code needs to be updated in the admissions tables to reflect the deceased transaction. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_EBAN_ACN_APDC_CODE |VARCHAR2 | 8|EARLY STAGE APPLICATION NON PAYMENT BANNER APPLICATION DECISION CODE: Code to be used when an AC-N record is processed at an early stage (before CCY, as soon as program is created), then APDC code needs to be updated in the admissions tables to reflect the non-payment transaction. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_EBAN_OFC_APDC_CODE |VARCHAR2 | 8|EARLY STAGE OFFER PROGRAM CANCELLATION BANNER APPLICATION DECISION CODE: Code to be used when an OFFER has been CANCELLED at an early stage (before CCY, as soon as program is created), then APDC code needs to be set on the admissions tables to reflect the decision made for that program. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_CCN_BAN_APDC_CODE |VARCHAR2 | 8|APPLICANT PROGRAM OFFER NOT ACCEPTED BANNER APPLICATION DECISION CODE: Code to be used when a CC-N record is processed and the applicant did not accept an offer, then APDC record needs to be set on in the admissions tables to reflect the applicants non-acceptance. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_EBAN_STYP_CODE |VARCHAR2 | 4|EARLY STAGE BANNER STUDENT TYPE CODE: Code to be used when applicant is inserted into the Banner tables at an early stage (before CCY, as soon as program is created). Valid values defined in baseline validation table STVSTYP. | |SVROCTL_EBAN_ADMT_CODE |VARCHAR2 | 8|EARLY STAGE BANNER ADMISSION TYPE CODE: Code to be used when applicant is inserted into the Banner tables at an early stage (before CCY, as soon as program is created). Valid values defined in baseline validation table STVADMT. This value has to be unique for OCAS applicants, so it is recommended to create a new code that has not been used in Banner baseline. | |SVROCTL_EBAN_CCN_APDC_CODE |VARCHAR2 | 8|EARLY STAGE APPLICANT PROGRAM OFFER NOT ACCEPTED BANNER APPLICATION DECISION CODE: Code to be used when a CC-N record is processed and the applicant declined an offer at an early stage (before CCY, as soon as program is created), then APDC record needs to be set on the admissions tables to reflect the applicants non-acceptance. Valid values defined in baseline validation table STVAPDC. | |SVROCTL_ACTIVITY_DATE |DATE | 7|ACTIVITY DATE: Most recent date a record was created or updated | |SVROCTL_SURROGATE_ID |NUMBER | 22|SURROGATE ID: Immutable unique key | |SVROCTL_VERSION |NUMBER | 22|VERSION: Optimistic lock token. | |SVROCTL_USER_ID |VARCHAR2 | 120|USER ID: The user ID of the person who inserted or last updated this record. | |SVROCTL_DF_OCMP_CODE |VARCHAR2 | 16|DF OCMP CODE: Default OCAS Campus code to be used when SVRORCC_OCMP_CODE has a NULL value in the OCAS file, so the default campus will be used to replace the missing campus in the CC record. If there is no value for SVROCTL_DF_OCMP_CODE then an error will be reported for the CC record by SVPOCAS when SVRORCC_OCMP_CODE is NULL. | |SVROCTL_LAST_OC_FILE_SEQNO |NUMBER | 22|LAST OC FILE SEQNO: Last Sequence Number that was used when OC file (Offer Data for On-Line Confirmation) was generated. - If zero means that no files have been generated yet. - If one means that last file that was generated had “00001” as sequence number in the filename. - If two means that last file that was generated had “00002” as sequence number in the filename. | |SVROCTL_LAST_OC_FILE_NAME |VARCHAR2 | 120|LAST OC FILE NAME: Last OC file name. This is the name of last OC File that was generated by the SVPOOCF process. Format: OF_AAAAYYYYMMDD#####.DAT Where: AAAA - College, YYYY -Year of the SYSDATE when OC file was generated, MM - Month of the SYSDATE when OC file was generated, DD - Day of the SYSDATE when OC file was generated, ##### - Sequence number of OC file in the cycle (SVROCTL_LAST_OC_FILE_SEQNO). Sample: OF_MOHA200502240001.DAT. Etc. | |SVROCTL_WL_GEN_MSG |VARCHAR2 | 4000|WL GEN MSG: Waitlist general statement to be visible on the OCAS web for all the applicants who are assigned to a waitlist. | |SVROCTL_SEC_QUES_NUM |NUMBER | 22|SECURITY QUESTIONS NUMBER: The number of security questions that will be asked to the applicant in order to recover their PIN. | |SVROCTL_DATA_ORIGIN |VARCHAR2 | 120|DATA ORIGIN: Source system that created or updated the data. | |SVROCTL_VPDI_CODE |VARCHAR2 | 24|VPDI CODE: Multi-entity processing code. |</p>
+</div>
+</div>
+<section id="subject-area" class="level2">
+<h2 class="anchored" data-anchor-id="subject-area">Subject Area</h2>
+<p><span class="tag-pill"></span></p>
+<hr>
+<p><a href="../index.html">← Back to Table Index</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const searchInput = document.querySelector(".quarto-search input");
+
+  if (!searchInput) return;
+
+
+
+  searchInput.addEventListener("keydown", function (e) {
+
+    if (e.key === "Enter") {
+
+      e.preventDefault();
+
+      const q = encodeURIComponent(searchInput.value.trim());
+
+      if (q) {
+
+        window.location.href = "search.html?q=" + q;
+
+      }
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/fc-oie\.github\.io\/docs\/datadictionary");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
