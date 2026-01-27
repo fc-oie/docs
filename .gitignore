@@ -29,8 +29,10 @@
 # ==================================================
 !data/**
 !tables/**
+!table/**
 !template/**
 !scripts/**
+!script/**
 
 # ==================================================
 # Keep rendered web assets (safety net)
