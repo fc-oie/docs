@@ -2,49 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fullerton College OIE Reports</title>
 
   <style>
+    :root {
+      --navy: #0F406B;
+      --navy-light: #e8eff6;
+      --text: #1f2933;
+      --muted: #616e7c;
+      --border: #d9e2ec;
+      --bg: #f5f7fa;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       font-family: "Century Gothic", Arial, sans-serif;
-      max-width: 900px;
-      margin: 2rem auto;
-      line-height: 1.6;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
     }
 
-    h1 {
-      color: #0F406B;
-      border-bottom: 2px solid #0F406B;
-      padding-bottom: 0.3em;
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 2rem 1rem;
     }
 
-    .entry {
-      margin-bottom: 0.6em;
+    header .inner,
+    main {
+      max-width: 960px;
+      margin: 0 auto;
     }
 
-    a {
-      color: #0F406B;
+    header h1 {
+      margin: 0 0 0.3rem;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.85;
+    }
+
+    main {
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    #search {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      font: inherit;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    #search:focus {
+      outline: 2px solid var(--navy);
+      border-color: transparent;
+    }
+
+    #repo-contents {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .category {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .category h2 {
+      margin: 0;
+      padding: 0.8rem 1rem;
+      font-size: 1.1rem;
+      color: var(--navy);
+      background: var(--navy-light);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .category ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .category li + li {
+      border-top: 1px solid var(--border);
+    }
+
+    .category a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1rem;
+      color: var(--text);
       text-decoration: none;
+    }
+
+    .category a:hover {
+      background: var(--navy-light);
+      color: var(--navy);
+    }
+
+    .label {
       font-weight: bold;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .badge {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.1rem 0.5rem;
+      white-space: nowrap;
+    }
+
+    .status {
+      color: var(--muted);
     }
   </style>
 </head>
 
 <body>
-  <h1>Fullerton College Office of Institutional Effectiveness</h1>
+  <header>
+    <div class="inner">
+      <h1>Office of Institutional Effectiveness</h1>
+      <p>Fullerton College reports and resources</p>
+    </div>
+  </header>
 
-  <p>
-    This lists all folders containing a <strong>report</strong> file or a
-    folder-level <strong>index.html</strong>.
-  </p>
-
-<p>Reports may take time to load since this is a self-updating list.</p>
-
-  <div id="repo-contents"></div>
+  <main>
+    <input id="search" type="search" placeholder="Filter reports…" aria-label="Filter reports">
+    <div id="repo-contents"><p class="status">Loading reports…</p></div>
+  </main>
 
   <script>
     const repoOwner = "fc-oie";
@@ -53,6 +153,21 @@
     // One request for the whole repo tree (the per-folder contents API
     // hits GitHub's 60 requests/hour unauthenticated limit)
     const treeUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/git/trees/${branch}?recursive=1`;
+
+    // Optional nicer names for top-level folders; anything not listed
+    // gets its CamelCase split into words (e.g. HealthyMinds -> Healthy Minds)
+    const displayNames = {
+      "datadictionary": "Data Dictionary",
+      "R-Tutorial": "R Tutorials",
+      "PLO": "Professional Learning Office",
+      "RealCollegeCA": "#RealCollegeCA Survey",
+      "FYE": "First Year Experience"
+    };
+
+    function prettyName(folder) {
+      return displayNames[folder] ||
+        folder.replace(/([a-z])([A-Z])/g, "$1 $2");
+    }
 
     async function collectReports() {
       const response = await fetch(treeUrl);
@@ -88,8 +203,59 @@
       return results;
     }
 
-    async function buildIndex() {
+    function renderCategories(entries) {
       const container = document.getElementById("repo-contents");
+      container.innerHTML = "";
+
+      // Group by top-level folder
+      const groups = {};
+      for (const entry of entries) {
+        const top = entry.trail[0];
+        (groups[top] = groups[top] || []).push(entry);
+      }
+
+      const topFolders = Object.keys(groups)
+        .sort((a, b) => prettyName(a).localeCompare(prettyName(b)));
+
+      for (const top of topFolders) {
+        const section = document.createElement("section");
+        section.className = "category";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = prettyName(top);
+        section.appendChild(h2);
+
+        const ul = document.createElement("ul");
+        for (const entry of groups[top]) {
+          const li = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = entry.path;
+
+          // Subfolders below the category, e.g. "2026 → SIP";
+          // a file sitting directly in the top folder is its main page
+          const sub = entry.trail.slice(1).join(" → ");
+          const label = document.createElement("span");
+          label.className = "label";
+          label.textContent = sub || "Main page";
+
+          const badge = document.createElement("span");
+          badge.className = "badge";
+          badge.textContent = entry.file.split(".").pop();
+
+          link.append(label, badge);
+          li.appendChild(link);
+          ul.appendChild(li);
+        }
+        section.appendChild(ul);
+        container.appendChild(section);
+      }
+
+      if (topFolders.length === 0) {
+        container.innerHTML = '<p class="status">No matching reports.</p>';
+      }
+    }
+
+    async function buildIndex() {
       const entries = await collectReports();
 
       // Alphabetical sort by folder path, then filename
@@ -98,22 +264,21 @@
           .localeCompare(b.trail.join("/") + b.file)
       );
 
-      for (const entry of entries) {
-        const div = document.createElement("div");
-        div.className = "entry";
+      renderCategories(entries);
 
-        const link = document.createElement("a");
-        link.href = entry.path;
-        link.textContent =
-          entry.trail.join(" → ") + " → " + entry.file;
-
-        div.appendChild(link);
-        container.appendChild(div);
-      }
+      document.getElementById("search").addEventListener("input", e => {
+        const q = e.target.value.trim().toLowerCase();
+        renderCategories(entries.filter(entry =>
+          (prettyName(entry.trail[0]) + " " + entry.path)
+            .toLowerCase().includes(q)
+        ));
+      });
     }
 
     buildIndex().catch(err => {
-      document.getElementById("repo-contents").textContent =
+      document.getElementById("repo-contents").innerHTML =
+        '<p class="status"></p>';
+      document.querySelector("#repo-contents .status").textContent =
         "Could not load the report list: " + err.message;
     });
   </script>
