@@ -49,33 +49,37 @@
   <script>
     const repoOwner = "fc-oie";
     const repoName = "docs";
-    const apiBase = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
+    const branch = "main";
+    // One request for the whole repo tree (the per-folder contents API
+    // hits GitHub's 60 requests/hour unauthenticated limit)
+    const treeUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/git/trees/${branch}?recursive=1`;
 
-    async function collectReports(path = "", trail = []) {
-      const response = await fetch(apiBase + path);
-      const items = await response.json();
-      if (!Array.isArray(items)) return [];
+    async function collectReports() {
+      const response = await fetch(treeUrl);
+      const data = await response.json();
+      if (!Array.isArray(data.tree)) {
+        throw new Error(data.message || "Could not load repository contents");
+      }
 
       let results = [];
 
-      for (const item of items) {
-        if (item.type === "dir") {
-          const subResults = await collectReports(
-            path + item.name + "/",
-            [...trail, item.name]
-          );
-          results = results.concat(subResults);
+      for (const item of data.tree) {
+        if (item.type !== "blob") continue;
 
-        } else if (
-          /^report\.(html|pdf|docx)$/i.test(item.name) ||
+        const parts = item.path.split("/");
+        const name = parts.pop();
+        const trail = parts;
+
+        if (
+          /^report\.(html|pdf|docx)$/i.test(name) ||
           (
-            /^index\.html$/i.test(item.name) &&
+            /^index\.html$/i.test(name) &&
             trail.length > 0          // ✅ EXCLUDE root index.html
           )
         ) {
           results.push({
             trail: trail,
-            file: item.name,
+            file: name,
             path: item.path
           });
         }
@@ -108,7 +112,10 @@
       }
     }
 
-    buildIndex();
+    buildIndex().catch(err => {
+      document.getElementById("repo-contents").textContent =
+        "Could not load the report list: " + err.message;
+    });
   </script>
 </body>
 </html>
