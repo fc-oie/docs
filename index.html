@@ -199,6 +199,7 @@
 
         if (
           /^report\.(html|pdf|docx)$/i.test(name) ||
+          /^presentation\.html$/i.test(name) ||
           (
             /^index\.html$/i.test(name) &&
             trail.length > 0          // ✅ EXCLUDE root index.html
