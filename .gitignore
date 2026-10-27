@@ -52,6 +52,10 @@
 !**/*.wasm
 !**/*.yml
 
+# PDFs linked from presentations (only here, so reports with
+# real data elsewhere stay ignored)
+!Presentations/**/*.pdf
+
 # ==================================================
 # Ignore Quarto / R / OS junk
 # ==================================================
